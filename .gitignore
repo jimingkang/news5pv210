@@ -1,0 +1,10 @@
+#
+# Normal rules
+#
+*~
+
+#
+# Top-level generic files
+#
+/release
+/release/*

@@ -1,0 +1,33 @@
+开机注意：
+ 1.com-usb口在靠近电源一侧
+ 2.先按reset，后长按power键重启动console
+
+
+A）编译环境：
+[root@mo-cn-491 arm]# ls
+android-kernel-samsung-dev  chinaembed_code  samsung-dev-uboot
+arm-2009q3                  dnw-linux        tftboot
+busybox-1.20.0              notes.txt        zhulaoshicode
+a)samsung-dev-uboot为s5pv210的定制的uboot
+b）android-kernel-samsung-dev为kernel
+c）arm-2009q3 为编译器
+d）tftboot为共享的ftp服务，给uboot下载文件使用
+
+B）uboot进去后，环境变量：
+172.16.96.215为我的主机
+172.16.96.253 是给uboot开发板设置的ip
+
+x210 # printenv
+bootcmd=movi read kernel 30008000; movi read rootfs 30B00000 300000; bootm 30008000 30B00000
+mtdpart=80000 400000 3000000
+bootdelay=3
+baudrate=115200
+ethaddr=00:40:5c:26:0a:5b
+serverip=172.16.96.215
+gatewayip=172.16.96.215
+netmask=255.255.254.0
+ipaddr=172.16.96.253
+bootargs=root=/dev/nfs rw nfsroot=172.16.96.215:/arm-nfs,proto=tcp,nfsvers=3,nolock  ip=172.16.96.253:172.16.96.215:172.16.96.1:255.255.254.0::eth0:off console=ttySAC2,115200 init=/linuxrc
+
+ 
+

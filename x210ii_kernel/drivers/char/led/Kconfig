@@ -1,0 +1,6 @@
+config X210_LED_DRIVER
+	bool "x210 led driver"
+	default y
+	help
+	compile for leddriver,y for kernel,m for module.
+

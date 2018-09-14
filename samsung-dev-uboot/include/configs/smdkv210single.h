@@ -153,6 +153,9 @@
 
 #define CONFIG_CMDLINE_EDITING
 
+//jimmy add #define CONFIG_S3C64XX_I2C and comment #undef CONFIG_S3C64XX_I2C
+//#define CONFIG_CMD_I2C
+//#define CONFIG_S3C64XX_I2C
 #undef CONFIG_S3C64XX_I2C		/* this board has H/W I2C */
 #ifdef CONFIG_S3C64XX_I2C
 #define CONFIG_HARD_I2C		1

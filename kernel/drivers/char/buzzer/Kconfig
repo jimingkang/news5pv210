@@ -1,0 +1,5 @@
+config X210_BUZZER_DRIVER
+	bool "x210 buzzer driver"
+	default y
+	help
+	compile for buzzer driver,y for kernel,m for module.

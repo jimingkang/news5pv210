@@ -167,12 +167,12 @@ static int __init chrdev_init(void)
     	printk(KERN_INFO "major = %d, minor = %d.\n", MAJOR(mydev), MINOR(mydev));
 	// 第2步：注册字符设备驱动
 		pcdev = cdev_alloc();			// 给pcdev分配内存，指针实例化
-    	//cdev_init(pcdev, &test_fops);
     	pcdev->owner = THIS_MODULE;
     	pcdev->ops = &test_fops;
 
-    	retval = cdev_add(pcdev, mydev, MYCNT);
+    	retval = cdev_add(pcdev, mydev, MYCNT);  //关联pcdev设备与设备号mydev ，可以认为pcdev是给内核用；设备号给应用程序用，用来找到内核的对应设备
     	if (retval) {
+
     		printk(KERN_ERR "Unable to cdev_add\n");
     		return -EINVAL;
     	}

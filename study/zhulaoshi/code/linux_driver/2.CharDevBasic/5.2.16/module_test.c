@@ -10,8 +10,8 @@
 #define MYMAJOR		200
 #define MYNAME		"testchar"
 
-#define GPJ0CON		S5PV210_GPJ0CON
-#define GPJ0DAT		S5PV210_GPJ0DAT
+#define GPJ0CON		S5PV210_GPJ0CON   //0xFD050240 virtual_address
+#define GPJ0DAT		S5PV210_GPJ0DAT   //0xFD050240
 
 #define rGPJ0CON	*((volatile unsigned int *)GPJ0CON)
 #define rGPJ0DAT	*((volatile unsigned int *)GPJ0DAT)

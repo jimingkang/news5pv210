@@ -2,15 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cf9f09c-2f16-4dd1-b7aa-50741ff05041" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/module_test/Makefile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/module_test/module_test.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/register_chrdev/Makefile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/register_chrdev/module_test.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/Makefile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/4.file_ops/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/4.file_ops/app.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/4.file_ops/module_test.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/5.led_gpio_static_mapping/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/5.led_gpio_static_mapping/app.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/5.led_gpio_static_mapping/module_test.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/6.register_chrdev_region/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/6.register_chrdev_region/app.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/6.register_chrdev_region/module_test.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/7.alloc_chrdev_region/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/7.alloc_chrdev_region/app.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/7.alloc_chrdev_region/module_test.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/8.alloc_chrdev_region_cdev_alloc/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/8.alloc_chrdev_region_cdev_alloc/app.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/8.alloc_chrdev_region_cdev_alloc/module_test.c" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.8/module_test.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.8/module_test.c" />
-      <change beforePath="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.9/module_test.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.9/module_test.c" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/module_test/Makefile" afterPath="$PROJECT_DIR$/study/mydriver/3.register_chrdev_major_0/Makefile" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/module_test/module_test.c" afterPath="$PROJECT_DIR$/study/mydriver/1.module_test/module_test.c" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev/Makefile" afterPath="$PROJECT_DIR$/study/mydriver/2.register_chrdev/Makefile" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev/module_test.c" afterPath="$PROJECT_DIR$/study/mydriver/2.register_chrdev/module_test.c" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/.module_test.ko.cmd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/.module_test.mod.o.cmd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/.module_test.o.cmd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/.tmp_versions/module_test.mod" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/Makefile" afterPath="$PROJECT_DIR$/study/mydriver/1.module_test/Makefile" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/Module.symvers" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.c" afterPath="$PROJECT_DIR$/study/mydriver/3.register_chrdev_major_0/module_test.c" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.ko" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.mod.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.mod.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/modules.order" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.16/module_test.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.16/module_test.c" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +47,27 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.1/module_test.c">
+        <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.17/module_test.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="150" column="51" lean-forward="false" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/6.register_chrdev_region/module_test.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="170" column="48" lean-forward="false" selection-start-line="167" selection-start-column="4" selection-end-line="170" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/7.alloc_chrdev_region/app.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -31,48 +76,58 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/7.alloc_chrdev_region/module_test.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="159" column="39" lean-forward="false" selection-start-line="159" selection-start-column="34" selection-end-line="159" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leds-s5pv210.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/5.platform/5.5.1/leds-s5pv210.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1242">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/3.CharDevSenior/5.3.3/module_test.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="161" column="18" lean-forward="false" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/3.CharDevSenior/5.3.4/module_test.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3321">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study/mydriver/module_test/Makefile">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/8.alloc_chrdev_region_cdev_alloc/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study/mydriver/module_test/module_test.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.8/module_test.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev/module_test.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-378">
-              <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/Makefile">
+      <file leaf-file-name="app.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/8.alloc_chrdev_region_cdev_alloc/app.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -82,36 +137,25 @@
         </entry>
       </file>
       <file leaf-file-name="module_test.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.c">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/8.alloc_chrdev_region_cdev_alloc/module_test.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.9/module_test.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev/Makefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="277">
+              <caret line="201" column="44" lean-forward="false" selection-start-line="201" selection-start-column="44" selection-end-line="201" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>rGPJ0CON</find>
+      <find>test_fops</find>
+      <find>mydev</find>
+      <find>test_cdev</find>
+      <find>pcdev</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -130,6 +174,14 @@
         <option value="$PROJECT_DIR$/study/mydriver/register_chrdev/module_test.c" />
         <option value="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.9/module_test.c" />
         <option value="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.c" />
+        <option value="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.11/Makefile" />
+        <option value="$PROJECT_DIR$/study/mydriver/file_ops/Makefile" />
+        <option value="$PROJECT_DIR$/study/mydriver/4.file_ops/Makefile" />
+        <option value="$PROJECT_DIR$/study/mydriver/4.register_chrdev_region/Makefile" />
+        <option value="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.16/module_test.c" />
+        <option value="$PROJECT_DIR$/study/mydriver/5.led_gpio_static_mapping/module_test.c" />
+        <option value="$PROJECT_DIR$/study/mydriver/7.alloc_chrdev_region/module_test.c" />
+        <option value="$PROJECT_DIR$/study/mydriver/8.alloc_chrdev_region_cdev_alloc/module_test.c" />
       </list>
     </option>
   </component>
@@ -183,21 +235,28 @@
               <item name="arm" type="462c0819:PsiDirectoryNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="mydriver" type="462c0819:PsiDirectoryNode" />
-              <item name="module_test" type="462c0819:PsiDirectoryNode" />
+              <item name="4.file_ops" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="arm" type="b2602c69:ProjectViewProjectNode" />
               <item name="arm" type="462c0819:PsiDirectoryNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="mydriver" type="462c0819:PsiDirectoryNode" />
-              <item name="register_chrdev" type="462c0819:PsiDirectoryNode" />
+              <item name="6.register_chrdev_region" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="arm" type="b2602c69:ProjectViewProjectNode" />
               <item name="arm" type="462c0819:PsiDirectoryNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="mydriver" type="462c0819:PsiDirectoryNode" />
-              <item name="register_chrdev_major_0" type="462c0819:PsiDirectoryNode" />
+              <item name="7.alloc_chrdev_region" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arm" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="mydriver" type="462c0819:PsiDirectoryNode" />
+              <item name="8.alloc_chrdev_region_cdev_alloc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="arm" type="b2602c69:ProjectViewProjectNode" />
@@ -236,8 +295,36 @@
               <item name="zhulaoshi" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
               <item name="linux_driver" type="462c0819:PsiDirectoryNode" />
-              <item name="2.CharDevBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="5.2.9" type="462c0819:PsiDirectoryNode" />
+              <item name="3.CharDevSenior" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arm" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="zhulaoshi" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="linux_driver" type="462c0819:PsiDirectoryNode" />
+              <item name="3.CharDevSenior" type="462c0819:PsiDirectoryNode" />
+              <item name="5.3.3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arm" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="zhulaoshi" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="linux_driver" type="462c0819:PsiDirectoryNode" />
+              <item name="3.CharDevSenior" type="462c0819:PsiDirectoryNode" />
+              <item name="5.3.4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arm" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="zhulaoshi" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="linux_driver" type="462c0819:PsiDirectoryNode" />
+              <item name="8.input" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -257,6 +344,8 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/study/mydriver" />
+      <recent name="$PROJECT_DIR$/study/mydriver/4.register_chrdev_region" />
+      <recent name="$PROJECT_DIR$/study/mydriver/file_ops" />
       <recent name="$PROJECT_DIR$/study/mydriver/register_chrdev" />
       <recent name="$PROJECT_DIR$/study/mydriver/module_test" />
     </key>
@@ -372,12 +461,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539246229961</updated>
-      <workItem from="1539246231168" duration="2774000" />
+      <workItem from="1539246231168" duration="7129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2774000" />
+    <option name="totallyTimeSpent" value="7129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -391,11 +480,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19584055" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31715772" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29289427" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4430956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38088012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -406,7 +496,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -453,7 +542,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study/mydriver/module_test/Makefile">
+    <entry file="file://$PROJECT_DIR$/study/mydriver/1.module_test/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
@@ -461,7 +550,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev/Makefile">
+    <entry file="file://$PROJECT_DIR$/study/mydriver/2.register_chrdev/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -477,7 +566,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study/mydriver/module_test/module_test.c">
+    <entry file="file://$PROJECT_DIR$/study/mydriver/1.module_test/module_test.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
@@ -485,7 +574,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev/module_test.c">
+    <entry file="file://$PROJECT_DIR$/study/mydriver/2.register_chrdev/module_test.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-378">
           <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="25" />
@@ -501,7 +590,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/Makefile">
+    <entry file="file://$PROJECT_DIR$/study/mydriver/3.register_chrdev_major_0/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -509,10 +598,306 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.c">
+    <entry file="file://$PROJECT_DIR$/study/mydriver/3.register_chrdev_major_0/module_test.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.10/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.11/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="79" column="29" lean-forward="false" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.12/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.10/app.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.11/app.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.12/app.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/4.file_ops/app.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.10/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.11/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.9/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/file_ops/app">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.12/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.15/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="94" column="35" lean-forward="false" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/3.CharDevSenior/5.3.1/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/4.file_ops/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/6.register_chrdev_region/app.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/6.register_chrdev_region/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/test/app">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/test/app.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/test/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/3.CharDevSenior/5.3.1/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2190">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/5.led_gpio_static_mapping/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/5.led_gpio_static_mapping/app.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.16/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2160">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/4.file_ops/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/5.led_gpio_static_mapping/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="127" column="56" lean-forward="false" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.17/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="150" column="51" lean-forward="false" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/5.platform/5.5.1/leds-s5pv210.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1242">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/7.alloc_chrdev_region/app.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/4.LEDDriver/5.4.8/leds-s5pv210.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/6.register_chrdev_region/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="170" column="48" lean-forward="false" selection-start-line="167" selection-start-column="4" selection-end-line="170" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/8.alloc_chrdev_region_cdev_alloc/app.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/8.alloc_chrdev_region_cdev_alloc/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/7.alloc_chrdev_region/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="159" column="39" lean-forward="false" selection-start-line="159" selection-start-column="34" selection-end-line="159" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/3.CharDevSenior/5.3.3/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="161" column="18" lean-forward="false" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/3.CharDevSenior/5.3.4/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3321">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/8.alloc_chrdev_region_cdev_alloc/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="201" column="44" lean-forward="false" selection-start-line="201" selection-start-column="44" selection-end-line="201" selection-end-column="44" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,51 @@
+
+led.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	e59f0050 	ldr	r0, [pc, #80]	; 58 <delay_loop+0x10>
+   4:	e59f1050 	ldr	r1, [pc, #80]	; 5c <delay_loop+0x14>
+   8:	e5810000 	str	r0, [r1]
+
+0000000c <flash>:
+   c:	e3e00008 	mvn	r0, #8
+  10:	e59f1048 	ldr	r1, [pc, #72]	; 60 <delay_loop+0x18>
+  14:	e5810000 	str	r0, [r1]
+  18:	eb000008 	bl	40 <delay>
+  1c:	e3e00010 	mvn	r0, #16
+  20:	e59f1038 	ldr	r1, [pc, #56]	; 60 <delay_loop+0x18>
+  24:	e5810000 	str	r0, [r1]
+  28:	eb000004 	bl	40 <delay>
+  2c:	e3e00020 	mvn	r0, #32
+  30:	e59f1028 	ldr	r1, [pc, #40]	; 60 <delay_loop+0x18>
+  34:	e5810000 	str	r0, [r1]
+  38:	eb000000 	bl	40 <delay>
+  3c:	eafffff2 	b	c <flash>
+
+00000040 <delay>:
+  40:	e59f201c 	ldr	r2, [pc, #28]	; 64 <delay_loop+0x1c>
+  44:	e3a03000 	mov	r3, #0
+
+00000048 <delay_loop>:
+  48:	e2422001 	sub	r2, r2, #1
+  4c:	e1520003 	cmp	r2, r3
+  50:	1afffffc 	bne	48 <delay_loop>
+  54:	e1a0f00e 	mov	pc, lr
+  58:	11111111 	tstne	r1, r1, lsl r1
+  5c:	e0200240 	eor	r0, r0, r0, asr #4
+  60:	e0200244 	eor	r0, r0, r4, asr #4
+  64:	00895440 	addeq	r5, r9, r0, asr #8
+
+Disassembly of section .ARM.attributes:
+
+00000000 <.ARM.attributes>:
+   0:	00001a41 	andeq	r1, r0, r1, asr #20
+   4:	61656100 	cmnvs	r5, r0, lsl #2
+   8:	01006962 	tsteq	r0, r2, ror #18
+   c:	00000010 	andeq	r0, r0, r0, lsl r0
+  10:	45543505 	ldrbmi	r3, [r4, #-1285]	; 0x505
+  14:	08040600 	stmdaeq	r4, {r9, sl}
+  18:	Address 0x00000018 is out of bounds.
+

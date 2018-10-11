@@ -2,1420 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cf9f09c-2f16-4dd1-b7aa-50741ff05041" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/2.lcd/lcd.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/2.lcd/led.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/2.lcd/link.lds" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/2.lcd/main.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/2.lcd/main.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/2.lcd/sdram_init.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/2.lcd/start.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/3.lcd/lcd.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/3.lcd/led.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/3.lcd/link.lds" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/3.lcd/main.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/3.lcd/main.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/3.lcd/sdram_init.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/3.lcd/start.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/ascii.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/lcd.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/led.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/link.lds" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/main.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/main.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/sdram_init.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/start.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/800480.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/ascii.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/lcd.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/led.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/link.lds" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/main.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/main.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/sdram_init.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/start.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL1/led.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL1/link.lds" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL1/sd_relocate.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL1/sdram_init.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL1/start.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/800480.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/ascii.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/lcd.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/link.lds" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/main.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/main.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/start.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/Makefile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/led.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/link.lds" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/sd_relocate.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/sdram_init.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/start.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/800400.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/ascii.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/lcd.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/led.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/link.lds" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/main.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/start.S" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/Makefile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/lcd.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/module_test/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/module_test/module_test.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/register_chrdev/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/register_chrdev/module_test.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.c" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/1.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.11/1.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.11/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.11/file.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.12/1.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.12/2.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.12/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.12/file.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.13.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.14.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.3/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.3/a.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.3/file1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.4/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.4/a.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.4/file1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.5/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.5/a.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.5/file1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.8/123.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.8/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.8/a.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.8/cal_len.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.8/file1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.8/kongdong.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.9/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.9/a.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.9/file.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/3.1.9/file2.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/1.fileio/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/2.fileproperty/1.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/2.fileproperty/3.2.2.filepropertyget.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/2.fileproperty/3.2.3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/2.fileproperty/3.2.4.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/2.fileproperty/3.2.5.access.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/2.fileproperty/3.2.5.chmod.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/2.fileproperty/3.2.6.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/2.fileproperty/3.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/2.fileproperty/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/3.osinfo/3.3.1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/3.osinfo/3.3.2.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/3.osinfo/3.3.5.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/3.osinfo/3.3.7.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/3.osinfo/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/3.osinfo/test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/1.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/3.4.1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/3.4.14.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/3.4.15.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/3.4.16.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/3.4.2.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/3.4.3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/3.4.4.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/3.4.5.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/3.4.7.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/3.4.8.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/3.4.9.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/hello" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/hello.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/hello2.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/ls" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/4.process/test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/5.signal/3.5.3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/5.signal/3.5.4.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/5.signal/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/6.seniorIO/3.6.2.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/6.seniorIO/3.6.3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/6.seniorIO/3.6.5.poll.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/6.seniorIO/3.6.5.select.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/6.seniorIO/3.6.6.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/6.seniorIO/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/7.thread/3.7.1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/7.thread/3.7.2.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/7.thread/3.7.4.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/7.thread/3.7.6.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/7.thread/3.7.7.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/7.thread/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/9.net/3.9.5.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/9.net/3.9.6/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/9.net/3.9.6/client.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/9.net/3.9.6/server.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/9.net/3.9.8/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/9.net/3.9.8/client.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/9.net/3.9.8/server.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/9.net/3.9.9/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/9.net/3.9.9/client.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/9.net/3.9.9/server.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/3.linux应用编程和网络编程/test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.2.BitOperatate/4.2.1.bit_convert.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.2.BitOperatate/4.2.2.reg_edit.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.2.BitOperatate/4.2.3.shift.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.2.BitOperatate/4.2.4.shizhan.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.2.BitOperatate/4.2.6.macro.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.2.BitOperatate/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.3.PointerBase/4.3.1.what_is_pointer.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.3.PointerBase/4.3.10.input_output_param.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.3.PointerBase/4.3.2.pointer_symbol.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.3.PointerBase/4.3.3.wild_pointer.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.3.PointerBase/4.3.4.const_pointer.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.3.PointerBase/4.3.5.array.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.3.PointerBase/4.3.6.array_pointer.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.3.PointerBase/4.3.7.type_convert.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.3.PointerBase/4.3.8.sizeof.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.3.PointerBase/4.3.9.func_param.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.3.PointerBase/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.4.PointerAdvanced/4.4.2.func_pointer.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.4.PointerAdvanced/4.4.3/4.4.3_1.func_pointer.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.4.PointerAdvanced/4.4.4/cal.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.4.PointerAdvanced/4.4.4/cal.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.4.PointerAdvanced/4.4.4/framework.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.4.PointerAdvanced/4.4.5.typedef.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.4.PointerAdvanced/4.4.6.double_pointer.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.4.PointerAdvanced/4.4.7.2darray.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.4.PointerAdvanced/4.4.8.2darray_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.4.PointerAdvanced/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.1.statck.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.11.struct_macro.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.12.union.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.13.endian1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.14.endian2.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.15.enumeration.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.2.heap.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.4.data_section.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.5.string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.6.array_string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.7.struct_define.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/4.5.8.struct_align.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.5.ArrayStringSturctUnionEnum/test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.1.preprocess.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.10.math.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.11.archiveuse/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.11.archiveuse/aston.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.11.archiveuse/aston.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.11.archiveuse/aston.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.11.archiveuse/testlib/aston.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.11.archiveuse/testlib/libaston.a" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.11.archiveuse/testlib/test" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.11.archiveuse/testlib/test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.12.sharedobject.c/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.12.sharedobject.c/aston.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.12.sharedobject.c/aston.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.12.sharedobject.c/aston.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.12.sharedobject.c/sotest/aston.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.12.sharedobject.c/sotest/libaston.so" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.12.sharedobject.c/sotest/test" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.12.sharedobject.c/sotest/test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.2.preprocess_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.3.macro1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.4.macro2.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.6.function_use.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.7.recursive.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/4.6.8.library.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/t1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/test.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/test/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/test/aston.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/test/aston.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/test/aston.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/test/libaston.a" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/test/test" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/test/test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/testso/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/testso/aston.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/testso/aston.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/testso/aston.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.6.PreprocessFunction/testso/test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.7/4.7.1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.7/4.7.4/a.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.7/4.7.4/ab" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.7/4.7.4/b.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.7/4.7.5.zuoyongyu.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.7/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.8/4.8.2.main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.8/4.8.3.mainparam.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.8/4.8.4.void.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.8/4.8.6.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.8/4.8.8.debug.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.8/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.8/return.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.10.shuanglianbiao2.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.11.shuanglianbiao_bianli.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.12.shuanglianbiao_deletenode.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.14.kernellinkedlist.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.16.statemachine.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.2.danlianbiao1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.3.danlianbiao2.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.4.danlianbiao3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.5.danlianbiao4.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.6.bianli.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.7.deletenode.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.8.reverse_linkedlist.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/4.9.9.shuanglianbiao1.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/4.C语言高级专题/4.9.linkedlist/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/10.bock/request_block/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/10.bock/request_block/blkdev.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/11.net/net_demo/.net.c.swp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/11.net/net_demo/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/11.net/net_demo/net.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.1/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.1/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.10/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.10/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.10/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.11/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.11/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.11/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.12/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.12/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.12/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/.module_test.ko.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/.module_test.mod.o.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/.module_test.o.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/.tmp_versions/module_test.mod" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/Module.symvers" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/app" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/module_test.ko" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/module_test.mod.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/module_test.mod.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/module_test.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.15/modules.order" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.16/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.16/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.16/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.17/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.17/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.17/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.8/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.8/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.9/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/5.2.9/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/.module_test.ko.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/.module_test.mod.o.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/.module_test.o.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/.tmp_versions/module_test.mod" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/Module.symvers" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/app" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/module_test.ko" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/module_test.mod.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/module_test.mod.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/module_test.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/2.CharDevBasic/test/modules.order" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.1/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.1/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.1/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.11/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.11/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.11/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.12/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.12/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.12/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.3/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.3/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.3/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.4/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.4/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.4/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.7/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.7/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/3.CharDevSenior/5.3.7/module_test.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/4.LEDDriver/5.4.16/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/4.LEDDriver/5.4.16/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/4.LEDDriver/5.4.16/leds-s5pv210.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/4.LEDDriver/5.4.17/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/4.LEDDriver/5.4.17/leds-s5pv210.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/4.LEDDriver/5.4.6/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/4.LEDDriver/5.4.6/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/4.LEDDriver/5.4.6/leds-s5pv210.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/4.LEDDriver/5.4.8/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/4.LEDDriver/5.4.8/app.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/4.LEDDriver/5.4.8/leds-s5pv210.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/.built-in.o.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/.leds-s5pv210.ko.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/.leds-s5pv210.mod.o.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/.leds-s5pv210.o.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/.tmp_versions/leds-s5pv210.mod" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/Module.symvers" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/leds-s5pv210.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/leds-s5pv210.ko" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/leds-s5pv210.mod.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/leds-s5pv210.mod.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/leds-s5pv210.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/5.platform/5.5.1/modules.order" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/6.misc/6.1.buzzer/app_buzzer" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/6.misc/6.1.buzzer/app_buzzer.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/7.framebuffer/7.1.fb1/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/7.framebuffer/7.1.fb1/appfb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/7.framebuffer/7.1.fb1/appfb.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/7.framebuffer/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/7.framebuffer/logo_linux_clut224.ppm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/8.input/8.11.keydriver/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/8.input/8.11.keydriver/key-s5pv210.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/8.input/8.2.1/app_input.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/8.input/8.3.app_input/app_input.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/9.13.gslX680/gslX680.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/9.13.gslX680/gslX680.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/9.13.gslX680/gsl_point_id" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/9.15.ft5x06/ft5x06_touch_5p.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/9.15.ft5x06/x210ii_app.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/9.4.tasklet/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/9.4.tasklet/key-s5pv210.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/9.5.workqueue/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/9.5.workqueue/key-s5pv210.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/.gslX680.ko.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/.gslX680.mod.o.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/.gslX680.o.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/.tmp_versions/gslX680.mod" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/Module.symvers" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/gslX680.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/gslX680.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/gslX680.ko" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/gslX680.mod.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/gslX680.mod.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/gslX680.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/gsl_point_id" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/test/modules.order" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/.ft5x06_touch_5p.ko.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/.ft5x06_touch_5p.mod.o.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/.ft5x06_touch_5p.o.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/.tmp_versions/ft5x06_touch_5p.mod" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/Module.symvers" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/ft5x06_touch_5p.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/ft5x06_touch_5p.ko" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/ft5x06_touch_5p.mod.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/ft5x06_touch_5p.mod.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/ft5x06_touch_5p.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/modules.order" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/driver/9.touchscreen/testft/x210ii_app.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.5.devicecopyfunction.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/BL1/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/BL1/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/BL1/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/BL1/s5pv210.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/BL1/sd_relocate.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/BL1/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/BL1/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/BL2/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/BL2/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/BL2/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/BL2/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.6.sd_relocate/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL1/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL1/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL1/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL1/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL1/s5pv210.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL1/sd_relocate.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL1/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL1/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL2/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL2/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL2/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/BL2/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.7.sd_relocate/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/BL1.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/bootloader1.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/bootloader1.elf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/bootloader1_elf.dis" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/led.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/mkx210" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/s5pv210.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/sd_relocate.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/sd_relocate.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/sdram_init.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL1/start.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL2/BL2.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL2/BL2.elf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL2/BL2_elf.dis" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL2/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL2/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL2/led.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL2/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL2/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/BL2/start.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter10/1.10.8.soft_start/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/adc.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/main.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter13/1.adc/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/1.lcd/lcd.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/1.lcd/lcd.c" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/2.lcd/Makefile" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/Makefile" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/2.lcd/lcd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/2.lcd/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/2.lcd/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/2.lcd/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/2.lcd/main.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/2.lcd/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/2.lcd/s5pv210.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/2.lcd/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/2.lcd/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/2.lcd/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/3.lcd/Makefile" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/Makefile" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/3.lcd/lcd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/3.lcd/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/3.lcd/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/3.lcd/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/3.lcd/main.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/3.lcd/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/3.lcd/s5pv210.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/3.lcd/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/3.lcd/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/3.lcd/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/Makefile" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/3.lcd/Makefile" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/ascii.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/lcd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/main.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/s5pv210.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/4.lcd/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/800480.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/Makefile" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/2.lcd/Makefile" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/ascii.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/lcd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/main.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/s5pv210.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/5.lcd/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/BL1.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/bootloader1.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/bootloader1.elf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/bootloader1_elf.dis" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/led.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL1/led.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/mkx210" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/s5pv210.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/sd_relocate.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/sd_relocate.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/sdram_init.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL1/start.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL1/start.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/800480.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/BL2.bin" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/BL2.bin" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/BL2.elf" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/BL2.elf" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/BL2_elf.dis" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/BL2_elf.dis" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/Makefile" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/Makefile" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/ascii.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/lcd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/lcd.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/lcd.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/main.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/main.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/main.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/BL2/start.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL2/start.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/6.lcd/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/BL1.bin" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/BL1.bin" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/Makefile" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/Makefile" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/bootloader1.bin" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/bootloader1.bin" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/bootloader1.elf" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/bootloader1.elf" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/bootloader1_elf.dis" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/bootloader1_elf.dis" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/led.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/led.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/mkx210" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/s5pv210.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/sd_relocate.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/sd_relocate.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/sd_relocate.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/sdram_init.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL1/start.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/start.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/800400.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/BL2.bin" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/BL2.bin" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/BL2.elf" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/BL2.elf" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/BL2_elf.dis" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/BL2_elf.dis" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/Makefile" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/Makefile" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/ascii.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/lcd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/lcd.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/lcd.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/led.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/led.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/main.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/main.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/BL2/start.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL2/start.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/3.lcd/write2sd" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/write2sd" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/lcd.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/lcd.c" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter14/test/lcd.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/1.shell_echo/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL1/Makefile" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL1/Makefile" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL1/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL1/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL1/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL1/s5pv210.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL1/sd_relocate.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL1/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL1/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/adc.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/ascii.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/cmd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/env.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lcd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/pwm.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/s5pv210.h" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/s5pv210.h" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/shell.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/stdio.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/wdt.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/BL2/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/10.shell_env2/write2sd" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/write2sd" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/2.shell_cmd/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/2.shell_cmd/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/3.shell_x210/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/3.shell_x210/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/3.shell_x210/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/3.shell_x210/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/3.shell_x210/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/3.shell_x210/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/3.shell_x210/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/3.shell_x210/stdio.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/3.shell_x210/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/3.shell_x210/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/cmd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/shell.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/stdio.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/4.shell_cmd/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/cmd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/shell.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/stdio.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/5.shell_cmd_led/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/cmd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/pwm.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/shell.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/stdio.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/6.shell_cmd_led_buzzer/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/adc.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/ascii.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/cmd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lcd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/pwm.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/s5pv210.h" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL1/s5pv210.h" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/shell.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/stdio.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/7.shell_cmd_led_buzzer_adc_lcd/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/adc.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/ascii.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/cmd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lcd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/pwm.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/s5pv210.h" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/s5pv210.h" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/shell.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/stdio.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/wdt.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/8.shell_autorun/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/adc.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/ascii.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/cmd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/env.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lcd.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/pwm.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/s5pv210.h" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/s5pv210.h" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/shell.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/stdio.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/wdt.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter16/9.shell_env/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/1.leds_s/210.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/1.leds_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/1.leds_s/led.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/1.leds_s/led.elf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/1.leds_s/led_elf.dis" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/1.leds_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/1.leds_s/mkx210" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/1.leds_s/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/1.leds_s/start.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/1.leds_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/1.leds_s/说明.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/2.leds_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/2.leds_s/led.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/2.leds_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/2.leds_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/3.leds_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/3.leds_s/led.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/3.leds_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/3.leds_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/4.leds_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/4.leds_s/led.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/4.leds_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/4.leds_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/5.leds_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/5.leds_s/led.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/5.leds_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/5.leds_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/6.leds_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/6.leds_s/led.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/6.leds_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/6.leds_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/7.leds_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/7.leds_s/led.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/7.leds_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/7.leds_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/8.leds_s/210.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/8.leds_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/8.leds_s/led.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/8.leds_s/led.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/8.leds_s/led.elf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/8.leds_s/led.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/8.leds_s/led_elf.dis" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/8.leds_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/8.leds_s/mkx210" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter4/8.leds_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/1.wdt_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/1.wdt_s/led.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/1.wdt_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/1.wdt_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/2.set_sp_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/2.set_sp_s/led.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/2.set_sp_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/2.set_sp_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/3.set_sp_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/3.set_sp_s/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/3.set_sp_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/3.set_sp_s/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/3.set_sp_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/4.set_sp_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/4.set_sp_s/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/4.set_sp_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/4.set_sp_s/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/4.set_sp_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/210.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/led.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/led.elf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/led.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/led_elf.dis" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/mkx210" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/start.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/5.icache/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/6.relocate_sram/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/6.relocate_sram/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/6.relocate_sram/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/6.relocate_sram/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/6.relocate_sram/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/6.relocate_sram/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/7.sdram_init/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/7.sdram_init/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/7.sdram_init/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/7.sdram_init/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/7.sdram_init/s5pv210.h" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/3.lcd/s5pv210.h" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/7.sdram_init/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/7.sdram_init/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter5/7.sdram_init/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/1.clock_init_s/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/1.clock_init_s/clock.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/1.clock_init_s/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/1.clock_init_s/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/1.clock_init_s/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/1.clock_init_s/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/2.clock_init_c/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/2.clock_init_c/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/2.clock_init_c/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/2.clock_init_c/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/2.clock_init_c/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter6/2.clock_init_c/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/210.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/clock.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/led.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/main.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/mkx210" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/start.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/uart.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/uart.elf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/uart.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/uart_elf.dis" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/1.uart_c/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/210.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/clock.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/led.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/ctype.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/div64.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/lib1funcs.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/libc.a" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/muldi3.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/printf.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/string.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/lib/vsprintf.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/main.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/mkx210" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/start.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/uart.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/uart.elf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/uart.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/uart_elf.dis" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/2.uart_c_printf/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/210.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/led.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/ctype.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/div64.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/lib1funcs.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/libc.a" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/muldi3.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/printf.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/string.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/lib/vsprintf.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/main.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/mkx210" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/s5pv210.h" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/2.lcd/s5pv210.h" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/sdram_init" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/sdram_init.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/sdram_init.o" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/sdram_init.o" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/start.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/uart.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/uart.elf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/uart.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/uart_elf.dis" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/3.uart_stdio_relocate/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/210.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/clock.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/led.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/ctype.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/div64.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/lib1funcs.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/libc.a" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/muldi3.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/printf.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/string.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/lib/vsprintf.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/main.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/mkx210" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/mkx210" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/printf.rar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/start.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/uart.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/uart.elf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/uart.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/uart_elf.dis" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/uart_c_testok/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter7/别人移植好的printf.rar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/1.key_polling/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/1.key_polling/key.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/1.key_polling/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/1.key_polling/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/1.key_polling/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/1.key_polling/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/210.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/clock.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/key.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/key.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/led.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/ctype.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/div64.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/lib1funcs.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/libc.a" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/muldi3.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/printf.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/string.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/lib/vsprintf.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/main.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/mkx210" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL1/mkx210" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/start.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/uart.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/uart.elf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/uart.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/uart_elf.dis" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/2.key_polling_stdio/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/key.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/3.key_interrupt_stdio/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/key.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/4.key_interrupt_stdio2/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/key.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/mkv210_image.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/5.key_interrupt_stdio3/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/key.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/main.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/mkv210_image.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/test/3.lcd/BL1/mkv210_image.c" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/6.key_interrupt_stdio4/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/key.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/main.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/mkv210_image.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/6.lcd/BL1/mkv210_image.c" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter8/test/write2sd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/mkv210_image.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/mkv210_image.c" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/pwm.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/1.buzzer_pwm1/write2sd" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/5.lcd/write2sd" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/key.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/main.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/mkv210_image.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/mkv210_image.c" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/wdt.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/2.wdt_interrupt/write2sd" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/4.lcd/write2sd" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/key.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/main.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/mkv210_image.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/3.lcd/mkv210_image.c" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/wdt.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/3.wdt_reset/write2sd" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/3.lcd/write2sd" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/clock.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/include/ctype.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/include/gcclib.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/include/kernel.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/include/stdio.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/include/string.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/include/system.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/include/types.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/int.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/int.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/key.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/led.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/lib/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/lib/ctype.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/lib/div64.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/lib/div64.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/lib/lib1funcs.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/lib/muldi3.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/lib/printf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/lib/printf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/lib/string.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/lib/vsprintf.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/lib/vsprintf.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/link.lds" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/main.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/main.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/mkv210_image.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/2.lcd/mkv210_image.c" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/rtc.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/start.S" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/uart.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/wdt.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/study/chinaembed_code/raw_code/chapter9/4.rtc/write2sd" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集/chapter14/2.lcd/write2sd" />
+      <change beforePath="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.8/module_test.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.8/module_test.c" />
+      <change beforePath="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.9/module_test.c" afterPath="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.9/module_test.c" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1425,7 +20,98 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.1/module_test.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/module_test/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/module_test/module_test.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.8/module_test.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev/module_test.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-378">
+              <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module_test.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.9/module_test.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-198">
+              <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1433,6 +119,18 @@
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/study/mydriver/module_test/Makefile" />
+        <option value="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.8/module_test.c" />
+        <option value="$PROJECT_DIR$/study/mydriver/module_test/module_test.c" />
+        <option value="$PROJECT_DIR$/study/mydriver/register_chrdev/module_test.c" />
+        <option value="$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.9/module_test.c" />
+        <option value="$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.c" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -1478,6 +176,33 @@
               <item name="arm" type="b2602c69:ProjectViewProjectNode" />
               <item name="arm" type="462c0819:PsiDirectoryNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="mydriver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arm" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="mydriver" type="462c0819:PsiDirectoryNode" />
+              <item name="module_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arm" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="mydriver" type="462c0819:PsiDirectoryNode" />
+              <item name="register_chrdev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arm" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="mydriver" type="462c0819:PsiDirectoryNode" />
+              <item name="register_chrdev_major_0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arm" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="zhulaoshi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1493,7 +218,7 @@
               <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="zhulaoshi" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="1.ARM裸机全集" type="462c0819:PsiDirectoryNode" />
+              <item name="linux_driver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="arm" type="b2602c69:ProjectViewProjectNode" />
@@ -1501,8 +226,18 @@
               <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="zhulaoshi" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="1.ARM裸机全集" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter14" type="462c0819:PsiDirectoryNode" />
+              <item name="linux_driver" type="462c0819:PsiDirectoryNode" />
+              <item name="2.CharDevBasic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arm" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="zhulaoshi" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="linux_driver" type="462c0819:PsiDirectoryNode" />
+              <item name="2.CharDevBasic" type="462c0819:PsiDirectoryNode" />
+              <item name="5.2.9" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1520,6 +255,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/study/mydriver" />
+      <recent name="$PROJECT_DIR$/study/mydriver/register_chrdev" />
+      <recent name="$PROJECT_DIR$/study/mydriver/module_test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/study/zhulaoshi/code/1.ARM裸机全集" />
     </key>
@@ -1632,12 +372,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539246229961</updated>
-      <workItem from="1539246231168" duration="1214000" />
+      <workItem from="1539246231168" duration="2774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1214000" />
+    <option name="totallyTimeSpent" value="2774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -1650,11 +390,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5961872" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19584055" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31715772" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4430956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4430956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1693,6 +433,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-486">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.1/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.1/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/module_test/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.8/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/module_test/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/zhulaoshi/code/linux_driver/2.CharDevBasic/5.2.9/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/mydriver/register_chrdev_major_0/module_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding />
         </state>
       </provider>

@@ -3,7 +3,7 @@
 #include <linux/fs.h>
 
 #define MYMAJOR		200
-#define MYNAME		"testchar"
+#define MYNAME		"testmajor0"
 
 int mymajor;
 

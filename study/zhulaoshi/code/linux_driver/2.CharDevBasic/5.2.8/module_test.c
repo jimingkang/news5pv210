@@ -66,7 +66,7 @@ module_exit(chrdev_exit);
 
 // MODULE_xxx这种宏作用是用来添加模块描述信息
 MODULE_LICENSE("GPL");				// 描述模块的许可证
-MODULE_AUTHOR("aston");				// 描述模块的作者
+MODULE_AUTHOR("jimmy");				// 描述模块的作者
 MODULE_DESCRIPTION("module test");	// 描述模块的介绍信息
 MODULE_ALIAS("alias xxx");			// 描述模块的别名信息
 

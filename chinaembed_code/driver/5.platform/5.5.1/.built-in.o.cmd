@@ -1,1 +1,0 @@
-cmd_/mnt/hgfs/winshare/s5pv210/LinuxDriver/5.platform/5.5.1/built-in.o :=  rm -f /mnt/hgfs/winshare/s5pv210/LinuxDriver/5.platform/5.5.1/built-in.o; /usr/local/arm/arm-2009q3/bin/arm-none-linux-gnueabi-ar rcs /mnt/hgfs/winshare/s5pv210/LinuxDriver/5.platform/5.5.1/built-in.o

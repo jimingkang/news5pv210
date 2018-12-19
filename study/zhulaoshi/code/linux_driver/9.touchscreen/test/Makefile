@@ -4,15 +4,16 @@
 
 		
 # 开发板的linux内核的源码树目录
-KERN_DIR = /root/x210_bsp/kernel
+KERN_DIR = /arm/x210ii_kernel
 
-obj-m	+= gslX680.o 
 obj-m 	+= gsl_point_id
+obj-m	+= gslX680.o 
+
 
 all:
 	make -C $(KERN_DIR) M=`pwd` modules 
 cp:
-	cp gslX680.ko /root/rootfs/driver_test -f
+	cp gslX680.ko /arm-nfs/x210_driver -f
 
 .PHONY: clean	
 clean:

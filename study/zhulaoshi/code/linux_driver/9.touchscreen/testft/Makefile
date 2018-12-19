@@ -4,14 +4,14 @@
 
 		
 # 开发板的linux内核的源码树目录
-KERN_DIR = /root/x210_bsp/kernel
+KERN_DIR = /arm/x210ii_kernel
 
 obj-m	+= ft5x06_touch_5p.o
 
 all:
 	make -C $(KERN_DIR) M=`pwd` modules 
 cp:
-	cp ft5x06_touch_5p.ko /root/rootfs/driver_test -f
+	cp ft5x06_touch_5p.ko /arm-nfs/x210_driver -f
 
 .PHONY: clean	
 clean:

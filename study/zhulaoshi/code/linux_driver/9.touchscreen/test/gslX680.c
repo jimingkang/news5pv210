@@ -345,7 +345,7 @@ static void startup_chip(struct i2c_client *client)
 	u8 tmp = 0x00;
 	
 #ifdef GSL_NOID_VERSION
-	gsl_DataInit(gsl_config_data_id);
+	//gsl_DataInit(gsl_config_data_id);
 #endif
 	gsl_ts_write(client, 0xe0, &tmp, 1);
 	msleep(10);	
@@ -411,6 +411,8 @@ static void check_mem_data(struct i2c_client *client)
 	
 	msleep(30);
 	gsl_ts_read(client,0xb0, read_buf, sizeof(read_buf));
+	print_info("#########check test mem read 0xb0 = %x %x %x %x #########\n", read_buf[3], read_buf[2], read_buf[1], read_buf[0]);
+
 	
 	if (read_buf[3] != 0x5a || read_buf[2] != 0x5a || read_buf[1] != 0x5a || read_buf[0] != 0x5a)
 	{
@@ -620,7 +622,7 @@ static void gslX680_ts_worker(struct work_struct *work)
 	}
 	cinfo.finger_num=(ts->touch_data[3]<<24)|(ts->touch_data[2]<<16)
 		|(ts->touch_data[1]<<8)|(ts->touch_data[0]);
-	gsl_alg_id_main(&cinfo);
+	//gsl_alg_id_main(&cinfo);
 	tmp1=gsl_mask_tiaoping();
 	print_info("[tp-gsl] tmp1=%x\n",tmp1);
 	if(tmp1>0&&tmp1<0xffffffff)

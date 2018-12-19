@@ -1656,6 +1656,11 @@ static struct i2c_board_info i2c_devs1[] __initdata = {
 		I2C_BOARD_INFO("s5p_ddc", (0x74>>1)),
 	},
 #endif
+#ifdef CONFIG_TOUCHSCREEN_FT5X06
+	{
+		I2C_BOARD_INFO("ft5x06-iic", 0x38),
+	},
+#endif
 #ifdef CONFIG_TOUCHSCREEN_GSLX680
 	{
 		I2C_BOARD_INFO("gslX680", 0x40),

@@ -1,0 +1,10 @@
+1 VM Player64位下的编译器问题:
+因为xubuntu系统是64位的，而ARM的交叉编译工具是32的，需要安装64位转32的库
+sudo apt-get install ia32-libs 
+sudo apt-get install lib32ncurses5
+
+2.fastboot驱动安装：
+注意要在xboot启动后输入fastboot后，在windows才有提示要你安装android驱动
+
+3.DNW驱动安装：
+参考：http://liaoxingyu.com/code/2018/05/13/Win10_64%E4%BD%8D%E4%B8%8B%E5%AE%89%E8%A3%85DNW%E9%A9%B1%E5%8A%A8/

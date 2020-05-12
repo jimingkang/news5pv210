@@ -1,0 +1,14 @@
+
+
+1.破话掉零扇区：
+busybox dd if=/dev/zero of=/dev/block/mmcblk0 bs=512 seek=1 count=1 conv=sync
+
+2.虚拟机识别sd卡
+
+3.格式化sd卡
+
+4.编译uboot
+> make x210_sd_config ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi-
+>make  ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- 
+>cd sd_fusing
+>./sd_fusing.sh /dev/sda

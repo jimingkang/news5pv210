@@ -7,7 +7,7 @@
 # published by the Free Software Foundation.
 #
 ####################################
-reader_type1="/dev/sdb"
+reader_type1="/dev/sda"
 reader_type2="/dev/mmcblk0"
 
 if [ -z $1 ]
@@ -47,8 +47,8 @@ fi
 # make partition
 echo "make sd card partition"
 echo "./sd_fdisk $1" 
-./sd_fdisk $1 
-dd iflag=dsync oflag=dsync if=sd_mbr.dat of=$1 
+sudo ./sd_fdisk $1 
+sudo dd iflag=dsync oflag=dsync if=sd_mbr.dat of=$1 
 rm sd_mbr.dat
  
 ####################################
@@ -59,7 +59,7 @@ umount $partition3 2> /dev/null
 umount $partition4 2> /dev/null
 
 echo "mkfs.vfat -F 32 $partition1"
-mkfs.vfat -F 32 $partition1
+sudo mkfs.vfat -F 32 $partition1
 
 #echo "mkfs.ext2 $partition2"
 #mkfs.ext2 $partition2  
@@ -83,14 +83,14 @@ bl1_position=1
 uboot_position=49
 
 echo "BL1 fusing"
-./mkbl1 ../u-boot.bin SD-bl1-8k.bin 8192
-dd iflag=dsync oflag=dsync if=SD-bl1-8k.bin of=$1 seek=$bl1_position
+sudo ./mkbl1 ../u-boot.bin SD-bl1-8k.bin 8192
+sudo dd iflag=dsync oflag=dsync if=SD-bl1-8k.bin of=$1 seek=$bl1_position
 rm SD-bl1-8k.bin
 
 ####################################
 #<u-boot fusing>
 echo "u-boot fusing"
-dd iflag=dsync oflag=dsync if=../u-boot.bin of=$1 seek=$uboot_position
+sudo dd iflag=dsync oflag=dsync if=../u-boot.bin of=$1 seek=$uboot_position
 
 ####################################
 #<Message Display>

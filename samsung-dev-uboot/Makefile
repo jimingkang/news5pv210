@@ -145,6 +145,7 @@ ifeq ($(ARCH),arm)
 #CROSS_COMPILE = /usr/local/arm/4.4.1-eabi-cortex-a8/usr/bin/arm-linux-
 #CROSS_COMPILE = /usr/local/arm/4.2.2-eabi/usr/bin/arm-linux-
 CROSS_COMPILE = /arm/arm-2009q3/bin/arm-none-linux-gnueabi-
+#CROSS_COMPILE = /usr/bin/arm-linux-gnueabi-
 endif
 ifeq ($(ARCH),i386)
 CROSS_COMPILE = i386-linux-

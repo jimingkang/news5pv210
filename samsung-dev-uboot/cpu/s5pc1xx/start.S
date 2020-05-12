@@ -43,13 +43,13 @@
 /*
  * Information for iROM
  */
-
-#if !defined(CONFIG_S5PC100_EVT1) && !defined(CONFIG_S5PC100_EVT2)
+//jimmy comment if
+//#if !defined(CONFIG_S5PC100_EVT1) && !defined(CONFIG_S5PC100_EVT2)
 .word 0x2000
 .word 0x0
 .word 0x0
 .word 0x0
-#endif
+//#endif
 
 /*
  *************************************************************************

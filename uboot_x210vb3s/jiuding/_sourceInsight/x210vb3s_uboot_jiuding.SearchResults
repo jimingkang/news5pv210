@@ -1,0 +1,19 @@
+---- _start Matches (8 in 4 files) ----
+crt0.S (e:\workspace\x210vb3s_uboot\jiuding\api_examples):	.globl _start
+crt0.S (e:\workspace\x210vb3s_uboot\jiuding\api_examples):_start:
+Init.s (e:\workspace\x210vb3s_uboot\jiuding\onenand_bl1\smdkc110):.globl _start
+Init.s (e:\workspace\x210vb3s_uboot\jiuding\onenand_bl1\smdkc110):_start:
+Remote.c (e:\workspace\x210vb3s_uboot\jiuding\tools\gdb):					tttttttt = address of symbol "_start"
+start.S (e:\workspace\x210vb3s_uboot\jiuding\cpu\s5pc11x):.globl _start
+start.S (e:\workspace\x210vb3s_uboot\jiuding\cpu\s5pc11x):_start: b	reset
+start.S (e:\workspace\x210vb3s_uboot\jiuding\cpu\s5pc11x):	.word _start
+---- MOVI_BL2_POS Matches (9 in 2 files) ----
+Movi.c (e:\workspace\x210vb3s_uboot\jiuding\cpu\s5pc11x):		ret = copy_bl2(0, MOVI_BL2_POS, MOVI_BL2_BLKCNT,
+Movi.c (e:\workspace\x210vb3s_uboot\jiuding\cpu\s5pc11x):		ret = copy_bl2(2, MOVI_BL2_POS, MOVI_BL2_BLKCNT,
+Movi.c (e:\workspace\x210vb3s_uboot\jiuding\cpu\s5pc11x):	printf("%d, %d, %d\n", MOVI_BL2_POS, MOVI_BL2_BLKCNT, MOVI_ENV_BLKCNT);
+Movi.h (e:\workspace\x210vb3s_uboot\jiuding\include):#define MOVI_BL2_POS		(MOVI_LAST_BLKPOS - MOVI_BL1_BLKCNT - MOVI_BL2_BLKCNT - MOVI_ENV_BLKCNT)
+Movi.h (e:\workspace\x210vb3s_uboot\jiuding\include):#define MOVI_ZIMAGE_POS		(MOVI_BL2_POS - MOVI_ZIMAGE_BLKCNT)
+Movi.h (e:\workspace\x210vb3s_uboot\jiuding\include):#define MOVI_BL2_POS		((eFUSE_SIZE / MOVI_BLKSIZE) + (FWBL1_SIZE / MOVI_BLKSIZE) + MOVI_BL1_BLKCNT + MOVI_ENV_BLKCNT)
+Movi.h (e:\workspace\x210vb3s_uboot\jiuding\include):#define MOVI_BL2_POS		((eFUSE_SIZE / MOVI_BLKSIZE) + MOVI_BL1_BLKCNT + MOVI_ENV_BLKCNT)
+Movi.h (e:\workspace\x210vb3s_uboot\jiuding\include):#define MOVI_BL2_POS		(MOVI_LAST_BLKPOS - MOVI_BL1_BLKCNT - MOVI_BL2_BLKCNT - MOVI_ENV_BLKCNT)
+Movi.h (e:\workspace\x210vb3s_uboot\jiuding\include):// #define MOVI_ZIMAGE_POS		(MOVI_BL2_POS - MOVI_ZIMAGE_BLKCNT)

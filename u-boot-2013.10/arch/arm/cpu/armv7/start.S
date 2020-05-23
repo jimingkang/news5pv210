@@ -18,10 +18,13 @@
 #include <version.h>
 #include <asm/system.h>
 #include <linux/linkage.h>
-        .word 0x2000
+//jimmy add
+// 添加16字节占位，否则和sd_fusing中mkbl1不适配，就会出现校验和失败
+	.word 0x2000
 	.word 0x0
 	.word 0x0
 	.word 0x0
+
 .globl _start
 _start: b	reset
 	ldr	pc, _undefined_instruction
@@ -89,6 +92,15 @@ _bss_end_ofs:
 _end_ofs:
 	.word _end - _start
 
+
+//jimmy add
+.globl _bss_start
+_bss_start:
+	.word __bss_start
+.globl _bss_end
+_bss_end:
+	.word _end
+
 #ifdef CONFIG_USE_IRQ
 /* IRQ stack memory (calculated at run-time) */
 .globl IRQ_STACK_START
@@ -145,8 +157,63 @@ reset:
 	bl	cpu_init_cp15
 	bl	cpu_init_crit
 #endif
+//jimmy add
+	// 在cpu_init_crit函数中最后初始化完了DDR，然后在下面跳转到了第二阶段，所以
+	// 重定位代码就在这里进行
 
-	bl	_main
+	// 第一步: 加一个调试信息串口输出字符来做调试定位
+	// 打印字符'A'
+	ldr r1, =0x41414141
+	ldr r2, =0xE2900820
+	str r1, [r2]		@'A'
+
+	// 正式开始重定位
+	
+	/* get ready to call C functions */
+	ldr	sp, _TEXT_BASE	/* setup temp stack pointer */
+	sub	sp, sp, #12
+	mov	fp, #0			/* no previous frame, so fp=0 */
+
+	ldr	r0, =0xff000fff
+	bic	r1, pc, r0		/* r0 <- current base addr of code */
+	ldr	r2, _TEXT_BASE		/* r1 <- original base addr in ram */
+	bic	r2, r2, r0		/* r0 <- current base addr of code */
+	cmp     r1, r2                  /* compare r0, r1                  */
+	beq     after_copy		/* r0 == r1 then skip flash copy   */
+
+/* If BL1 was copied from SD/MMC CH2 */
+	ldr	r0, =0xD0037488
+	ldr	r1, [r0]
+	ldr	r2, =0xEB200000
+	cmp	r1, r2
+	beq     mmcsd_boot
+	
+mmcsd_boot:
+		bl		movi_bl2_copy
+		b		after_copy
+
+after_copy:
+	// 这里有一些设置sp的代码，暂时不要，到时候不对了再说
+	
+clear_bss:
+	ldr	r0, _bss_start		/* find start of bss segment        */
+	ldr	r1, _bss_end		/* stop here                        */
+	mov 	r2, #0x00000000		/* clear                            */
+
+clbss_l:
+	str	r2, [r0]		/* clear loop...                    */
+	add	r0, r0, #4
+	cmp	r0, r1
+	ble	clbss_l
+	
+//	bl	_main
+	// 第一阶段和第二阶段的分界点
+	ldr	pc, __main
+
+__main:	.word _main
+
+
+
 
 /*------------------------------------------------------------------------------*/
 

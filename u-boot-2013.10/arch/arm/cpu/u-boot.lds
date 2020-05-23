@@ -19,6 +19,9 @@ SECTIONS
 	{
 		*(.__image_copy_start)
 		CPUDIR/start.o (.text*)
+                board/samsung/goni/lowlevel_init.o (.text*)
+		board/samsung/goni/cpu_init.o (.text*)
+		board/samsung/goni/movi.o (.text*)
 		*(.text*)
 	}
 

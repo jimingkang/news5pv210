@@ -1,0 +1,3349 @@
+Archive member included because of file (symbol)
+
+cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+                              cpu/s5pc11x/start.o (do_irq)
+cpu/s5pc11x/libs5pc11x.a(cpu.o)
+                              cpu/s5pc11x/libs5pc11x.a(interrupts.o) (reset_cpu)
+cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+                              cpu/s5pc11x/libs5pc11x.a(cpu.o) (setup_hsmmc_cfg_gpio)
+cpu/s5pc11x/libs5pc11x.a(serial.o)
+                              cpu/s5pc11x/libs5pc11x.a(cpu.o) (serial_tstc)
+cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+                              cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o) (get_MPLL_CLK)
+lib_arm/libarm.a(_divsi3.o)   cpu/s5pc11x/libs5pc11x.a(interrupts.o) (__divsi3)
+lib_arm/libarm.a(_udivsi3.o)  cpu/s5pc11x/libs5pc11x.a(interrupts.o) (__udivsi3)
+lib_arm/libarm.a(board.o)     cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o) (hang)
+lib_arm/libarm.a(div0.o)      lib_arm/libarm.a(_divsi3.o) (__div0)
+lib_arm/libarm.a(_modsi3.o)   lib_arm/libarm.a(board.o) (__modsi3)
+net/libnet.a(net.o)           lib_arm/libarm.a(board.o) (copy_filename)
+net/libnet.a(tftp.o)          net/libnet.a(net.o) (TftpStart)
+net/libnet.a(bootp.o)         net/libnet.a(net.o) (BootpRequest)
+net/libnet.a(rarp.o)          net/libnet.a(net.o) (RarpRequest)
+net/libnet.a(eth.o)           lib_arm/libarm.a(board.o) (eth_initialize)
+net/libnet.a(nfs.o)           net/libnet.a(net.o) (NfsStart)
+drivers/mmc/libmmc.a(mmc.o)   cpu/s5pc11x/movi.o (movi_write)
+drivers/mmc/libmmc.a(s3c_hsmmc.o)
+                              cpu/s5pc11x/libs5pc11x.a(cpu.o) (smdk_s3c_hsmmc_init)
+drivers/net/libnet.a(dm9000x.o)
+                              net/libnet.a(net.o) (eth_halt)
+common/libcommon.a(main.o)    lib_arm/libarm.a(board.o) (run_command)
+common/libcommon.a(cmd_autoscript.o)
+                              (__u_boot_cmd_autoscr)
+common/libcommon.a(cmd_bdinfo.o)
+                              (__u_boot_cmd_bdinfo)
+common/libcommon.a(image.o)   common/libcommon.a(cmd_autoscript.o) (genimg_get_format)
+common/libcommon.a(cmd_boot.o)
+                              (__u_boot_cmd_go)
+common/libcommon.a(cmd_bootm.o)
+                              common/libcommon.a(main.o) (do_bootd)
+common/libcommon.a(cmd_cache.o)
+                              (__u_boot_cmd_icache)
+common/libcommon.a(cmd_console.o)
+                              (__u_boot_cmd_coninfo)
+common/libcommon.a(cmd_elf.o)
+                              common/libcommon.a(cmd_bootm.o) (do_bootvx)
+common/libcommon.a(cmd_ext2.o)
+                              (__u_boot_cmd_ext2ls)
+common/libcommon.a(cmd_fat.o)
+                              (__u_boot_cmd_fatload)
+common/libcommon.a(cmd_flash.o)
+                              (__u_boot_cmd_flinfo)
+common/libcommon.a(cmd_itest.o)
+                              (__u_boot_cmd_itest)
+common/libcommon.a(cmd_load.o)
+                              (__u_boot_cmd_loads)
+common/libcommon.a(cmd_mem.o)
+                              common/libcommon.a(cmd_itest.o) (cmd_get_data_size)
+common/libcommon.a(cmd_misc.o)
+                              (__u_boot_cmd_sleep)
+common/libcommon.a(cmd_mmc.o)
+                              (__u_boot_cmd_mmcinfo)
+common/libcommon.a(cmd_net.o)
+                              (__u_boot_cmd_bootp)
+common/libcommon.a(cmd_nvedit.o)
+                              lib_arm/libarm.a(board.o) (getenv_r)
+common/libcommon.a(cmd_reginfo.o)
+                              (__u_boot_cmd_reginfo)
+common/libcommon.a(cmd_usbd.o)
+                              (__u_boot_cmd_dnw)
+common/libcommon.a(cmd_ximg.o)
+                              (__u_boot_cmd_imxtract)
+common/libcommon.a(command.o)
+                              common/libcommon.a(main.o) (find_cmd)
+common/libcommon.a(console.o)
+                              cpu/s5pc11x/movi.o (printf)
+common/libcommon.a(devices.o)
+                              lib_arm/libarm.a(board.o) (devices_init)
+common/libcommon.a(dlmalloc.o)
+                              drivers/mmc/libmmc.a(mmc.o) (free)
+common/libcommon.a(env_common.o)
+                              common/libcommon.a(cmd_nvedit.o) (env_get_addr)
+common/libcommon.a(exports.o)
+                              lib_arm/libarm.a(board.o) (jumptable_init)
+common/libcommon.a(flash.o)   common/libcommon.a(cmd_load.o) (addr2info)
+common/libcommon.a(hush.o)    common/libcommon.a(main.o) (u_boot_hush_start)
+common/libcommon.a(lists.o)   common/libcommon.a(cmd_console.o) (ListGetPtrToItem)
+common/libcommon.a(s_record.o)
+                              common/libcommon.a(cmd_load.o) (srec_decode)
+common/libcommon.a(usb.o)     common/libcommon.a(cmd_bootm.o) (usb_stop)
+common/libcommon.a(xyzModem.o)
+                              common/libcommon.a(cmd_load.o) (xyzModem_error)
+common/libcommon.a(cmd_movi.o)
+                              drivers/mmc/libmmc.a(mmc.o) (init_raw_area_table)
+common/libcommon.a(cmd_fastboot.o)
+                              lib_arm/libarm.a(board.o) (update_all)
+common/libcommon.a(cmd_mmc_fdisk.o)
+                              common/libcommon.a(cmd_fastboot.o) (get_mmc_part_info)
+common/libcommon.a(env_auto.o)
+                              common/libcommon.a(env_common.o) (env_get_char_spec)
+common/libcommon.a(gunzip.o)  common/libcommon.a(cmd_bootm.o) (gunzip)
+common/libcommon.a(crc16.o)   common/libcommon.a(xyzModem.o) (cyg_crc16)
+board/samsung/x210/libx210.a(x210.o)
+                              lib_arm/libarm.a(board.o) (board_init)
+board/samsung/x210/libx210.a(flash.o)
+                              cpu/s5pc11x/start.o (read_hword)
+lib_generic/libgeneric.a(crc32.o)
+                              common/libcommon.a(image.o) (crc32)
+lib_generic/libgeneric.a(ctype.o)
+                              common/libcommon.a(hush.o) (_ctype)
+lib_generic/libgeneric.a(display_options.o)
+                              lib_arm/libarm.a(board.o) (print_size)
+lib_generic/libgeneric.a(lmb.o)
+                              common/libcommon.a(cmd_bootm.o) (lmb_init)
+lib_generic/libgeneric.a(string.o)
+                              net/libnet.a(net.o) (strcpy)
+lib_generic/libgeneric.a(vsprintf.o)
+                              lib_arm/libarm.a(board.o) (simple_strtoul)
+lib_generic/libgeneric.a(zlib.o)
+                              common/libcommon.a(gunzip.o) (inflateEnd)
+cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+                              common/libcommon.a(usb.o) (submit_bulk_msg)
+cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+                              common/libcommon.a(cmd_usbd.o) (s3c_usbc_activate)
+cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+                              common/libcommon.a(cmd_fastboot.o) (fastboot_shutdown)
+cpu/s5pc11x/libs5pc11x.a(fimd.o)
+                              common/libcommon.a(cmd_fastboot.o) (LCD_setfgcolor)
+lib_arm/libarm.a(_umodsi3.o)  net/libnet.a(tftp.o) (__umodsi3)
+lib_arm/libarm.a(bootm.o)     common/libcommon.a(cmd_bootm.o) (do_bootm_linux)
+lib_arm/libarm.a(cache.o)     common/libcommon.a(cmd_elf.o) (flush_cache)
+fs/fat/libfat.a(fat.o)        common/libcommon.a(cmd_fat.o) (file_fat_detectfs)
+fs/ext2/libext2fs.a(ext2fs.o)
+                              common/libcommon.a(cmd_ext2.o) (ext2fs_format)
+fs/ext2/libext2fs.a(dev.o)    fs/ext2/libext2fs.a(ext2fs.o) (ext2fs_devread)
+disk/libdisk.a(part.o)        fs/fat/libfat.a(fat.o) (dev_print)
+disk/libdisk.a(part_dos.o)    disk/libdisk.a(part.o) (test_part_dos)
+drivers/rtc/librtc.a(date.o)  common/libcommon.a(image.o) (to_tm)
+drivers/video/libvideo.a(mpadfb.o)
+                              board/samsung/x210/libx210.a(x210.o) (mpadfb_init)
+drivers/video/libvideo.a(fbsoft.o)
+                              drivers/video/libvideo.a(mpadfb.o) (fb_soft_blit_bitmap)
+drivers/video/libvideo.a(bitmap.o)
+                              drivers/video/libvideo.a(mpadfb.o) (get_bitmap_format)
+drivers/video/libvideo.a(logo.o)
+                              drivers/video/libvideo.a(mpadfb.o) (display_logo)
+drivers/video/libvideo.a(fbblit.o)
+                              drivers/video/libvideo.a(fbsoft.o) (common_bitmap_blit)
+drivers/video/libvideo.a(fbfill.o)
+                              drivers/video/libvideo.a(fbsoft.o) (common_bitmap_fill_rect)
+drivers/video/libvideo.a(rect.o)
+                              drivers/video/libvideo.a(logo.o) (rect_set)
+drivers/video/libvideo.a(graphic.o)
+                              drivers/video/libvideo.a(logo.o) (fb_map_color)
+drivers/video/libvideo.a(fbcolor.o)
+                              drivers/video/libvideo.a(fbsoft.o) (bitmap_map_color)
+drivers/video/libvideo.a(fbpixel.o)
+                              drivers/video/libvideo.a(fbblit.o) (bitmap_get_pointer)
+drivers/video/libvideo.a(fbviewport.o)
+                              drivers/video/libvideo.a(graphic.o) (bitmap_get_viewport)
+lib_generic/libgeneric.a(div64.o)
+                              drivers/video/libvideo.a(mpadfb.o) (div64)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                . = 0x0
+                0x00000000                . = ALIGN (0x4)
+
+.text           0xc3e00000    0x2a0b0
+ cpu/s5pc11x/start.o(.text)
+ .text          0xc3e00000      0x6c0 cpu/s5pc11x/start.o
+                0xc3e00010                _start
+                0xc3e00050                _end_vect
+                0xc3e00058                _armboot_start
+                0xc3e0005c                _bss_start
+                0xc3e00060                _bss_end
+                0xc3e001fc                copy_from_nand
+                0xc3e00248                theLastJump
+                0xc3e00540                arm_cache_flush
+                0xc3e00560                v7_flush_dcache_all
+                0xc3e00600                disable_l2cache
+                0xc3e00620                enable_l2cache
+                0xc3e00640                set_l2cache_auxctrl
+                0xc3e00660                set_l2cache_auxctrl_cycle
+ cpu/s5pc11x/s5pc110/cpu_init.o(.text)
+ .text          0xc3e006c0      0x410 cpu/s5pc11x/s5pc110/cpu_init.o
+                0xc3e006c0                mem_ctrl_asm_init
+                0xc3e00a38                cleanDCache
+                0xc3e00a44                cleanFlushDCache
+                0xc3e00a50                cleanFlushCache
+ board/samsung/x210/lowlevel_init.o(.text)
+ .text          0xc3e00ad0      0x4e0 board/samsung/x210/lowlevel_init.o
+                0xc3e00ad4                lowlevel_init
+ cpu/s5pc11x/onenand_cp.o(.text)
+ .text          0xc3e00fb0      0x164 cpu/s5pc11x/onenand_cp.o
+                0xc3e00fb0                onenand_readw
+                0xc3e00fb8                onenand_writew
+                0xc3e00fc0                onenand_loadpage
+                0xc3e01044                onenand_isbad
+                0xc3e0106c                onenand_readpage
+                0xc3e010b8                onenand_bl2_copy
+ cpu/s5pc11x/nand_cp.o(.text)
+ .text          0xc3e01114      0x180 cpu/s5pc11x/nand_cp.o
+                0xc3e011b4                copy_uboot_to_ram
+ cpu/s5pc11x/movi.o(.text)
+ .text          0xc3e01294      0x144 cpu/s5pc11x/movi.o
+                0xc3e01294                movi_bl2_copy
+                0xc3e012f8                movi_zImage_copy
+                0xc3e0133c                print_movi_bl2_info
+                0xc3e01354                movi_write_bl1
+                0xc3e013a8                movi_write_env
+                0xc3e013c0                movi_read_env
+ common/secure_boot.o(.text)
+ .text          0xc3e013d8       0xa8 common/secure_boot.o
+                0xc3e013d8                Check_Signature
+ common/ace_sha1.o(.text)
+ .text          0xc3e01480       0xa0 common/ace_sha1.o
+                0xc3e01480                SHA1_digest
+ cpu/s5pc11x/pmic.o(.text)
+ .text          0xc3e01520      0x344 cpu/s5pc11x/pmic.o
+                0xc3e01520                Delay
+                0xc3e01524                SCLH_SDAH
+                0xc3e01548                SCLH_SDAL
+                0xc3e0156c                SCLL_SDAH
+                0xc3e01590                SCLL_SDAL
+                0xc3e015b4                IIC_ELow
+                0xc3e015cc                IIC_EHigh
+                0xc3e015e4                IIC_EStart
+                0xc3e015fc                IIC_EEnd
+                0xc3e01614                IIC_EAck
+                0xc3e01694                IIC_ESetport
+                0xc3e016e4                IIC_EWrite
+                0xc3e01788                PMIC_InitIp
+ *(.text)
+ .text          0xc3e01864      0x47c cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+                0xc3e01864                enable_interrupts
+                0xc3e01868                disable_interrupts
+                0xc3e01870                set_timer
+                0xc3e01880                reset_timer_masked
+                0xc3e018a0                reset_timer
+                0xc3e018a4                get_timer_masked
+                0xc3e018ec                get_timer
+                0xc3e01900                udelay
+                0xc3e01970                udelay_masked
+                0xc3e019e0                get_ticks
+                0xc3e019f4                get_tbclk
+                0xc3e01a0c                interrupt_init
+                0xc3e01a88                show_regs
+                0xc3e01bc8                bad_mode
+                0xc3e01be4                do_irq
+                0xc3e01c08                do_fiq
+                0xc3e01c2c                do_not_used
+                0xc3e01c50                do_data_abort
+                0xc3e01c74                do_prefetch_abort
+                0xc3e01c98                do_software_interrupt
+                0xc3e01cbc                do_undefined_instruction
+ .text          0xc3e01ce0      0x1b4 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+                0xc3e01d1c                cpu_init
+                0xc3e01d24                icache_enable
+                0xc3e01d40                icache_disable
+                0xc3e01d5c                icache_status
+                0xc3e01d70                dcache_enable
+                0xc3e01d8c                dcache_disable
+                0xc3e01da8                dcache_status
+                0xc3e01dbc                branch_enable
+                0xc3e01dd8                branch_disable
+                0xc3e01df4                branch_status
+                0xc3e01e08                cpu_mmc_init
+                0xc3e01e1c                reset_cpu
+                0xc3e01e50                do_reset
+                0xc3e01e68                cleanup_before_linux
+ .text          0xc3e01e94      0x188 cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+                0xc3e01e94                setup_hsmmc_cfg_gpio
+                0xc3e01f08                setup_sdhci0_cfg_card
+                0xc3e01f88                setup_hsmmc_clock
+ .text          0xc3e0201c       0xa8 cpu/s5pc11x/libs5pc11x.a(serial.o)
+                0xc3e0201c                serial_setbrg
+                0xc3e02020                serial_init
+                0xc3e0203c                serial_tstc
+                0xc3e02050                serial_putc
+                0xc3e02080                serial_puts
+                0xc3e020a8                serial_getc
+ .text          0xc3e020c4      0x43c cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+                0xc3e0214c                get_UCLK
+                0xc3e02154                get_MPLL_CLK
+                0xc3e0215c                get_FCLK
+                0xc3e02164                get_SCLKA2M
+                0xc3e0218c                get_HCLKP
+                0xc3e021e8                get_PCLKP
+                0xc3e02210                get_HCLKD
+                0xc3e0226c                get_PCLKD
+                0xc3e02294                get_HCLK
+                0xc3e022ec                get_PCLK
+                0xc3e02314                get_ARMCLK
+                0xc3e0233c                print_cpuinfo
+ .text          0xc3e02500      0x140 lib_arm/libarm.a(_divsi3.o)
+                0xc3e02500                __divsi3
+ .text          0xc3e02640       0x98 lib_arm/libarm.a(_udivsi3.o)
+                0xc3e02640                __udivsi3
+ .text          0xc3e026d8      0x438 lib_arm/libarm.a(board.o)
+                0xc3e026d8                sbrk
+                0xc3e02710                coloured_LED_init
+                0xc3e02710                __coloured_LED_init
+                0xc3e02714                red_LED_on
+                0xc3e02714                __red_LED_on
+                0xc3e02718                __red_LED_off
+                0xc3e02718                red_LED_off
+                0xc3e0271c                green_LED_on
+                0xc3e0271c                __green_LED_on
+                0xc3e02720                __green_LED_off
+                0xc3e02720                green_LED_off
+                0xc3e02724                __yellow_LED_on
+                0xc3e02724                yellow_LED_on
+                0xc3e02728                __yellow_LED_off
+                0xc3e02728                yellow_LED_off
+                0xc3e0272c                hang
+                0xc3e0282c                strmhz
+                0xc3e02894                start_armboot
+ .text          0xc3e02b10        0x4 lib_arm/libarm.a(div0.o)
+                0xc3e02b10                __div0
+ *fill*         0xc3e02b14        0xc 00
+ .text          0xc3e02b20      0x100 lib_arm/libarm.a(_modsi3.o)
+                0xc3e02b20                __modsi3
+ .text          0xc3e02c20     0x1330 net/libnet.a(net.o)
+                0xc3e02c6c                NetSetHandler
+                0xc3e02c7c                NetCksum
+                0xc3e02cc4                NetCksumOk
+                0xc3e02ce8                copy_filename
+                0xc3e02d40                string_to_VLAN
+                0xc3e02d8c                getenv_VLAN
+                0xc3e02d9c                string_to_ip
+                0xc3e02e04                getenv_IPaddr
+                0xc3e02e14                NetEthHdrSize
+                0xc3e02e58                VLAN_to_string
+                0xc3e02eb8                ip_to_string
+                0xc3e02efc                print_IPaddr
+                0xc3e02f20                NetSetIP
+                0xc3e03020                NetSetEther
+                0xc3e03130                NetSendPacket
+                0xc3e03134                ArpRequest
+                0xc3e03220                NetReceive
+                0xc3e03788                PingSend
+                0xc3e038c4                NetSetTimeout
+                0xc3e038f4                NetSendUDPPacket
+                0xc3e03a34                NetStartAgain
+                0xc3e03ab0                ArpTimeoutCheck
+                0xc3e03b40                NetLoop
+ .text          0xc3e03f50      0x700 net/libnet.a(tftp.o)
+                0xc3e040e8                TftpStart
+ .text          0xc3e04650      0x9d8 net/libnet.a(bootp.o)
+                0xc3e04e2c                BootpRequest
+                0xc3e04fdc                DhcpRequest
+ .text          0xc3e05028      0x1a0 net/libnet.a(rarp.o)
+                0xc3e05028                RarpRequest
+ .text          0xc3e051c8        0x8 net/libnet.a(eth.o)
+                0xc3e051c8                eth_initialize
+ .text          0xc3e051d0      0xe80 net/libnet.a(nfs.o)
+                0xc3e059bc                NfsStart
+ .text          0xc3e06050     0x114c drivers/mmc/libmmc.a(mmc.o)
+                0xc3e0606c                mmc_send_cmd
+                0xc3e0607c                mmc_set_blocklen
+                0xc3e060b0                mmc_send_ext_csd
+                0xc3e06100                mmc_set_relative_addr
+                0xc3e06134                mmc_switch
+                0xc3e06180                mmc_change_freq
+                0xc3e06260                sd_switch
+                0xc3e062d0                mmc_set_ios
+                0xc3e062e0                mmc_set_clock
+                0xc3e06300                mmc_set_bus_width
+                0xc3e06308                mmc_send_if_cond
+                0xc3e06384                board_mmc_init
+                0xc3e0638c                print_mmc_devices
+                0xc3e06400                find_mmc_device
+                0xc3e0644c                mmc_get_dev
+                0xc3e06524                movi_write
+                0xc3e06664                movi_read
+                0xc3e0667c                sd_change_freq
+                0xc3e06850                mmc_startup
+                0xc3e06e48                mmc_send_app_op_cond
+                0xc3e06f44                mmc_go_idle
+                0xc3e06f98                mmc_send_op_cond
+                0xc3e07038                mmc_init
+                0xc3e0709c                mmc_initialize
+                0xc3e07134                mmc_register
+ .text          0xc3e0719c      0x5f8 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+                0xc3e0728c                smdk_s3c_hsmmc_init
+ .text          0xc3e07794      0xbb8 drivers/net/libnet.a(dm9000x.o)
+                0xc3e07970                write_srom_word
+                0xc3e079c8                read_srom_word
+                0xc3e07a74                eth_halt
+                0xc3e07ba4                eth_rx
+                0xc3e07cec                eth_send
+                0xc3e07dc0                eth_init
+ .text          0xc3e0834c      0xdac common/libcommon.a(main.o)
+                0xc3e0834c                __show_boot_progress
+                0xc3e0834c                show_boot_progress
+                0xc3e08350                parse_line
+                0xc3e083dc                do_run
+                0xc3e08450                run_command
+                0xc3e08958                readline_into_buffer
+                0xc3e08fbc                readline
+                0xc3e08fc8                main_loop
+ .text          0xc3e090f8      0x18c common/libcommon.a(cmd_autoscript.o)
+                0xc3e09114                autoscript
+                0xc3e09240                do_autoscript
+ .text          0xc3e09284      0x108 common/libcommon.a(cmd_bdinfo.o)
+                0xc3e09298                do_bdinfo
+ .text          0xc3e0938c      0x838 common/libcommon.a(image.o)
+                0xc3e093c8                image_multi_count
+                0xc3e0941c                genimg_get_os_name
+                0xc3e09434                genimg_get_arch_name
+                0xc3e0944c                genimg_get_type_name
+                0xc3e09464                genimg_get_comp_name
+                0xc3e0947c                genimg_get_image
+                0xc3e09480                genimg_has_config
+                0xc3e094d4                genimg_get_comp_id
+                0xc3e094ec                genimg_get_type_id
+                0xc3e09504                genimg_get_arch_id
+                0xc3e0951c                genimg_get_os_id
+                0xc3e09558                genimg_get_format
+                0xc3e095a4                image_multi_getimg
+                0xc3e0962c                memmove_wd
+                0xc3e09630                getenv_bootm_size
+                0xc3e09664                getenv_bootm_low
+                0xc3e09698                getenv_yesno
+                0xc3e096e8                image_print_contents
+                0xc3e098cc                image_check_dcrc
+                0xc3e09914                image_check_hcrc
+                0xc3e09968                boot_get_ramdisk
+ .text          0xc3e09bc4       0x9c common/libcommon.a(cmd_boot.o)
+                0xc3e09bc4                do_go_exec
+                0xc3e09bdc                do_go
+ .text          0xc3e09c60      0xb24 common/libcommon.a(cmd_bootm.o)
+                0xc3e09c7c                board_lmb_reserve
+                0xc3e09c7c                __board_lmb_reserve
+                0xc3e09e30                print_image_hdr
+                0xc3e09fd8                do_iminfo
+                0xc3e0a038                do_bootd
+                0xc3e0a05c                do_bootm
+ .text          0xc3e0a784      0x144 common/libcommon.a(cmd_cache.o)
+                0xc3e0a7c0                do_dcache
+                0xc3e0a844                do_icache
+ .text          0xc3e0a8c8      0x104 common/libcommon.a(cmd_console.o)
+                0xc3e0a8c8                do_coninfo
+ .text          0xc3e0a9cc      0x3ac common/libcommon.a(cmd_elf.o)
+                0xc3e0a9cc                valid_elf_image
+                0xc3e0aa20                load_elf_image
+                0xc3e0ab20                do_bootvx
+                0xc3e0ac9c                do_bootelf_exec
+                0xc3e0ace0                do_bootelf
+ .text          0xc3e0ad78      0x528 common/libcommon.a(cmd_ext2.o)
+                0xc3e0ad78                ext_format
+                0xc3e0ae64                do_ext3_format
+                0xc3e0ae74                do_ext2_format
+                0xc3e0ae84                do_ext2load
+                0xc3e0b15c                do_ext2ls
+ .text          0xc3e0b2a0      0x48c common/libcommon.a(cmd_fat.o)
+                0xc3e0b2a0                do_fat_format
+                0xc3e0b388                do_fat_fsinfo
+                0xc3e0b488                do_fat_ls
+                0xc3e0b590                do_fat_fsload
+ .text          0xc3e0b72c      0xac0 common/libcommon.a(cmd_flash.o)
+                0xc3e0b8d8                flash_sect_protect
+                0xc3e0bc70                do_protect
+                0xc3e0bf00                flash_sect_erase
+                0xc3e0bfd8                do_flerase
+                0xc3e0c170                do_flinfo
+ .text          0xc3e0c1ec      0x2ec common/libcommon.a(cmd_itest.o)
+                0xc3e0c250                binary_test
+                0xc3e0c430                do_itest
+ .text          0xc3e0c4d8      0xd10 common/libcommon.a(cmd_load.o)
+                0xc3e0c4d8                ktrans
+                0xc3e0c500                chk1
+                0xc3e0c584                k_data_init
+                0xc3e0c5a4                k_data_save
+                0xc3e0c5c8                k_data_restore
+                0xc3e0c5e8                k_data_char
+                0xc3e0c63c                send_pad
+                0xc3e0c66c                s1_sendpacket
+                0xc3e0c698                handle_send_packet
+                0xc3e0c85c                send_nack
+                0xc3e0c8bc                send_ack
+                0xc3e0ca70                do_load_serial_bin
+                0xc3e0d108                do_load_serial
+ .text          0xc3e0d1e8      0x984 common/libcommon.a(cmd_mem.o)
+                0xc3e0d1e8                do_mem_base
+                0xc3e0d22c                do_mem_crc
+                0xc3e0d2e8                do_mem_mtest
+                0xc3e0d410                cmd_get_data_size
+                0xc3e0d460                do_mem_loop
+                0xc3e0d564                do_mem_cp
+                0xc3e0d690                do_mem_cmp
+                0xc3e0d82c                do_mem_mw
+                0xc3e0da4c                do_mem_nm
+                0xc3e0da6c                do_mem_mm
+                0xc3e0da8c                do_mem_md
+ .text          0xc3e0db6c       0x90 common/libcommon.a(cmd_misc.o)
+                0xc3e0db6c                do_sleep
+ .text          0xc3e0dbfc      0x468 common/libcommon.a(cmd_mmc.o)
+                0xc3e0dbfc                do_mmcinfo
+                0xc3e0dd64                do_mmcops
+ .text          0xc3e0e064      0x3c0 common/libcommon.a(cmd_net.o)
+                0xc3e0e064                do_ping
+                0xc3e0e3e8                do_nfs
+                0xc3e0e3f4                do_dhcp
+                0xc3e0e400                do_rarpb
+                0xc3e0e40c                do_tftpb
+                0xc3e0e418                do_bootp
+ .text          0xc3e0e424      0x7ec common/libcommon.a(cmd_nvedit.o)
+                0xc3e0e424                envmatch
+                0xc3e0e484                getenv_r
+                0xc3e0e524                do_saveenv
+                0xc3e0e550                getenv
+                0xc3e0e5b8                _do_setenv
+                0xc3e0ea1c                do_setenv
+                0xc3e0ea54                setenv
+                0xc3e0ea98                do_printenv
+ .text          0xc3e0ec10        0x8 common/libcommon.a(cmd_reginfo.o)
+                0xc3e0ec10                do_reginfo
+ .text          0xc3e0ec18      0x108 common/libcommon.a(cmd_usbd.o)
+                0xc3e0ec18                do_usbd_dnw
+ .text          0xc3e0ed20      0x23c common/libcommon.a(cmd_ximg.o)
+                0xc3e0ed20                do_imgextract
+ .text          0xc3e0ef5c      0x770 common/libcommon.a(command.o)
+                0xc3e0ef5c                find_cmd
+                0xc3e0eff0                do_echo
+                0xc3e0f070                do_help
+                0xc3e0f214                do_version
+                0xc3e0f234                do_exit
+                0xc3e0f264                do_test
+ .text          0xc3e0f6cc      0x544 common/libcommon.a(console.o)
+                0xc3e0f76c                fgetc
+                0xc3e0f794                ftstc
+                0xc3e0f7bc                fputc
+                0xc3e0f7e8                fputs
+                0xc3e0f814                disable_ctrlc
+                0xc3e0f82c                had_ctrlc
+                0xc3e0f83c                clear_ctrlc
+                0xc3e0f850                dbg
+                0xc3e0f85c                console_init_f
+                0xc3e0f86c                console_assign
+                0xc3e0f8fc                fprintf
+                0xc3e0f944                puts
+                0xc3e0f960                vprintf
+                0xc3e0f98c                printf
+                0xc3e0f9cc                console_init_r
+                0xc3e0fb34                serial_printf
+                0xc3e0fb74                putc
+                0xc3e0fb94                tstc
+                0xc3e0fbac                getc
+                0xc3e0fbc4                ctrlc
+ .text          0xc3e0fc10       0xec common/libcommon.a(devices.o)
+                0xc3e0fc10                devices_done
+                0xc3e0fc2c                device_register
+                0xc3e0fc50                devices_init
+ .text          0xc3e0fcfc     0x1034 common/libcommon.a(dlmalloc.o)
+                0xc3e0fcfc                malloc_bin_reloc
+                0xc3e0fd34                malloc_usable_size
+                0xc3e0fd78                mallopt
+                0xc3e0fdf0                malloc_trim
+                0xc3e0febc                free
+                0xc3e100e0                cfree
+                0xc3e100e4                malloc
+                0xc3e106bc                memalign
+                0xc3e107cc                pvalloc
+                0xc3e107e4                valloc
+                0xc3e107f0                calloc
+                0xc3e108d0                realloc
+ .text          0xc3e10d30      0x108 common/libcommon.a(env_common.o)
+                0xc3e10d30                env_get_char_memory
+                0xc3e10d54                env_get_addr
+                0xc3e10d78                set_default_env
+                0xc3e10d84                env_relocate
+                0xc3e10ddc                env_get_char
+                0xc3e10e0c                env_crc_update
+ .text          0xc3e10e38       0xe4 common/libcommon.a(exports.o)
+                0xc3e10e3c                get_version
+                0xc3e10e44                jumptable_init
+ .text          0xc3e10f1c      0x368 common/libcommon.a(flash.o)
+                0xc3e10f1c                flash_protect
+                0xc3e10ff4                addr2info
+                0xc3e1103c                flash_perror
+                0xc3e1111c                flash_write
+ .text          0xc3e11284     0x1be4 common/libcommon.a(hush.o)
+                0xc3e112a0                simple_itoa
+                0xc3e113c0                mapset
+                0xc3e113ec                u_boot_hush_start
+                0xc3e11660                new_pipe
+                0xc3e118cc                reserved_word
+                0xc3e11d28                update_ifs_map
+                0xc3e12d58                parse_file_outer
+                0xc3e12da0                parse_string_outer
+ .text          0xc3e12e68      0x3d8 common/libcommon.a(lists.o)
+                0xc3e12e68                GetHandleSize
+                0xc3e12e70                ListSetAllocationPolicy
+                0xc3e12e84                ListGetPtrToItem
+                0xc3e12eb4                ListGetDataPtr
+                0xc3e12ec0                ListGetItemSize
+                0xc3e12ecc                ListNumItems
+                0xc3e12ed8                ListGetItems
+                0xc3e12f1c                SetHandleSize
+                0xc3e12f98                ListInsertItems
+                0xc3e13158                ListInsertItem
+                0xc3e13160                DisposeHandle
+                0xc3e13180                ListDispose
+                0xc3e13184                NewHandle
+                0xc3e131e0                ListCreate
+ .text          0xc3e13240      0x2dc common/libcommon.a(s_record.o)
+                0xc3e132ac                srec_decode
+ .text          0xc3e1351c     0x1608 common/libcommon.a(usb.o)
+                0xc3e1351c                usb_disable_asynch
+                0xc3e13534                usb_maxpacket
+                0xc3e13558                usb_set_maxpacket
+                0xc3e13678                usb_get_dev_index
+                0xc3e136a8                usb_hub_reset
+                0xc3e136bc                usb_hub_allocate
+                0xc3e13704                usb_alloc_new_device
+                0xc3e137a4                usb_parse_config
+                0xc3e138f4                usb_submit_int_msg
+                0xc3e138f8                usb_stop
+                0xc3e13928                wait_ms
+                0xc3e1394c                usb_bulk_msg
+                0xc3e139b0                usb_control_msg
+                0xc3e13a88                usb_get_port_status
+                0xc3e13ae8                usb_get_hub_status
+                0xc3e13b3c                usb_set_port_feature
+                0xc3e13b9c                usb_clear_port_feature
+                0xc3e13bfc                usb_clear_hub_feature
+                0xc3e13c50                usb_get_hub_descriptor
+                0xc3e13cb0                usb_get_string
+                0xc3e13e40                usb_string
+                0xc3e13f3c                usb_get_class_descriptor
+                0xc3e13fb4                usb_get_report
+                0xc3e1402c                usb_set_idle
+                0xc3e14090                usb_set_protocol
+                0xc3e140f0                usb_set_configuration
+                0xc3e14160                usb_set_interface
+                0xc3e14220                usb_set_address
+                0xc3e14264                usb_get_descriptor
+                0xc3e142d4                usb_get_configuration_no
+                0xc3e1436c                usb_clear_halt
+                0xc3e14454                usb_hub_port_connect_change
+                0xc3e14590                usb_hub_configure
+                0xc3e147b8                usb_hub_probe
+                0xc3e14814                usb_new_device
+                0xc3e14a44                usb_scan_devices
+                0xc3e14aa8                usb_init
+ .text          0xc3e14b24      0x964 common/libcommon.a(xyzModem.o)
+                0xc3e14b24                parse_num
+                0xc3e14c48                xyzModem_error
+                0xc3e14c68                xyzModem_stream_close
+                0xc3e14cb8                CYGACC_COMM_IF_PUTC
+                0xc3e14cc0                CYGACC_COMM_IF_GETC_TIMEOUT
+                0xc3e14d40                xyzModem_stream_terminate
+                0xc3e1509c                xyzModem_stream_read
+                0xc3e15330                xyzModem_stream_open
+ .text          0xc3e15488      0x4f8 common/libcommon.a(cmd_movi.o)
+                0xc3e15488                do_movi
+                0xc3e157ec                init_raw_area_table
+ .text          0xc3e15980     0x1960 common/libcommon.a(cmd_fastboot.o)
+                0xc3e1599c                fastboot_flash_get_ptn
+                0xc3e159c0                fastboot_flash_get_ptn_count
+                0xc3e159d0                fastboot_flash_find_ptn
+                0xc3e15a44                fastboot_flash_dump_ptn
+                0xc3e15b24                fastboot_flash_add_ptn
+                0xc3e16014                do_fastboot
+                0xc3e16f74                update_all
+                0xc3e17090                do_sdfuse
+ .text          0xc3e172e0      0xb24 common/libcommon.a(cmd_mmc_fdisk.o)
+                0xc3e172e0                calc_unit
+                0xc3e17340                encode_chs
+                0xc3e17360                get_SDInfo
+                0xc3e17448                make_partitionInfo
+                0xc3e17640                put_mmc_mbr
+                0xc3e176b4                get_mmc_mbr
+                0xc3e17724                get_mmc_block_count
+                0xc3e17770                decode_partitionInfo
+                0xc3e177b0                get_mmc_part_info
+                0xc3e1784c                print_mmc_part_info
+                0xc3e179e0                encode_partitionInfo
+                0xc3e17a50                make_mmc_partition
+                0xc3e17d04                create_mmc_fdisk
+                0xc3e17d8c                do_fdisk
+ .text          0xc3e17e04      0x388 common/libcommon.a(env_auto.o)
+                0xc3e17e04                env_get_char_spec
+                0xc3e17e10                env_init
+                0xc3e17e2c                saveenv_nand
+                0xc3e17e34                saveenv_nand_adv
+                0xc3e17ec8                env_relocate_spec_onenand
+                0xc3e17ecc                env_relocate_spec_nand
+                0xc3e17ed0                env_relocate_spec_movinand
+                0xc3e17f48                env_relocate_spec_nor
+                0xc3e17fa0                env_relocate_spec
+                0xc3e17fec                saveenv_onenand
+                0xc3e18004                saveenv_nor
+                0xc3e180f8                saveenv_movinand
+                0xc3e18124                saveenv
+ .text          0xc3e1818c      0x170 common/libcommon.a(gunzip.o)
+                0xc3e1818c                gunzip
+                0xc3e182e4                zfree
+                0xc3e182ec                zalloc
+ .text          0xc3e182fc       0x48 common/libcommon.a(crc16.o)
+                0xc3e182fc                cyg_crc16
+ .text          0xc3e18344       0xdc board/samsung/x210/libx210.a(x210.o)
+                0xc3e18344                board_init
+                0xc3e183ac                dram_init
+                0xc3e183e0                board_late_init
+                0xc3e183e8                virt_to_phy_smdkc110
+                0xc3e183f8                x210_preboot_init
+                0xc3e18408                checkboard
+ .text          0xc3e18420      0x7dc board/samsung/x210/libx210.a(flash.o)
+                0xc3e18420                read_hword
+                0xc3e18434                flash_print_info
+                0xc3e1866c                write_buff
+                0xc3e18848                flash_erase_all
+                0xc3e1894c                flash_erase
+                0xc3e18b38                flash_init
+ .text          0xc3e18bfc      0x110 lib_generic/libgeneric.a(crc32.o)
+                0xc3e18bfc                crc32
+                0xc3e18d08                crc32_wd
+ .text          0xc3e18d0c        0x0 lib_generic/libgeneric.a(ctype.o)
+ .text          0xc3e18d0c      0x248 lib_generic/libgeneric.a(display_options.o)
+                0xc3e18d0c                print_size
+                0xc3e18dd4                display_options
+                0xc3e18df4                print_buffer
+ .text          0xc3e18f54      0x56c lib_generic/libgeneric.a(lmb.o)
+                0xc3e18f54                lmb_dump_all
+                0xc3e18fb8                lmb_init
+                0xc3e191b0                lmb_add
+                0xc3e191b4                lmb_free
+                0xc3e192ac                lmb_reserve
+                0xc3e192b4                lmb_overlaps_region
+                0xc3e19314                __lmb_alloc_base
+                0xc3e19424                lmb_is_reserved
+                0xc3e19484                lmb_alloc_base
+                0xc3e194b8                lmb_alloc
+ .text          0xc3e194c0      0x558 lib_generic/libgeneric.a(string.o)
+                0xc3e194c0                strcpy
+                0xc3e194dc                strncpy
+                0xc3e19504                strcat
+                0xc3e19534                strncat
+                0xc3e19590                strcmp
+                0xc3e195c0                strncmp
+                0xc3e19608                strchr
+                0xc3e19634                strlen
+                0xc3e19654                strrchr
+                0xc3e1968c                strnlen
+                0xc3e196b4                strspn
+                0xc3e196f8                strpbrk
+                0xc3e19730                strtok
+                0xc3e197ac                strsep
+                0xc3e197e0                strswab
+                0xc3e19828                memset
+                0xc3e19848                bcopy
+                0xc3e19870                memcpy
+                0xc3e19894                memmove
+                0xc3e198f0                memcmp
+                0xc3e19928                memscan
+                0xc3e19958                strstr
+                0xc3e199b8                memchr
+                0xc3e199e4                strdup
+ .text          0xc3e19a18      0x7f0 lib_generic/libgeneric.a(vsprintf.o)
+                0xc3e19a18                simple_strtoul
+                0xc3e19ac8                simple_strtol
+                0xc3e19d6c                panic
+                0xc3e19dbc                vsprintf
+                0xc3e1a1e0                sprintf
+ .text          0xc3e1a208     0x2d20 lib_generic/libgeneric.a(zlib.o)
+                0xc3e1ab30                inflateEnd
+                0xc3e1abc4                inflateReset
+                0xc3e1ac24                inflateSync
+                0xc3e1ad24                inflateInit2
+                0xc3e1ae68                inflateInit
+                0xc3e1ae70                adler32
+                0xc3e1afe4                inflateIncomp
+                0xc3e1b278                inflate
+ .text          0xc3e1cf28      0x6a0 cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+                0xc3e1cf64                rh_check_port_status
+                0xc3e1cf6c                submit_common_msg
+                0xc3e1cf74                submit_bulk_msg
+                0xc3e1cf7c                submit_control_msg
+                0xc3e1cf84                submit_int_msg
+                0xc3e1cf8c                usb_lowlevel_init
+                0xc3e1cf94                usb_lowlevel_stop
+                0xc3e1d084                sohci_submit_job
+ .text          0xc3e1d5c8     0x1d88 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+                0xc3e1d5c8                s3c_usb_phy_off
+                0xc3e1d5f4                s3c_usb_core_soft_reset
+                0xc3e1d614                s3c_usb_init_core
+                0xc3e1d630                s3c_usb_check_current_mode
+                0xc3e1d644                s3c_usb_set_soft_disconnect
+                0xc3e1d658                s3c_usb_clear_soft_disconnect
+                0xc3e1d66c                s3c_usb_init_device
+                0xc3e1d694                s3c_usbc_activate
+                0xc3e1d69c                s3c_usb_stop
+                0xc3e1d6b0                s3c_usb_set_inep_xfersize
+                0xc3e1d6dc                s3c_usb_set_outep_xfersize
+                0xc3e1d70c                s3c_usb_write_ep0_fifo
+                0xc3e1d75c                s3c_usb_write_in_fifo
+                0xc3e1d7ac                s3c_usb_read_out_fifo
+                0xc3e1d7f8                s3c_usb_get_desc
+                0xc3e1d904                s3c_usb_clear_feature
+                0xc3e1d974                s3c_usb_set_feature
+                0xc3e1dac8                s3c_usb_get_status
+                0xc3e1db60                s3c_usb_ep0_int_hndlr
+                0xc3e1dce8                s3c_usb_set_otherspeed_conf_desc
+                0xc3e1ddd0                s3c_usb_transfer_ep0
+                0xc3e1e65c                s3c_usb_int_bulkin
+                0xc3e1e720                s3c_usb_upload_start
+                0xc3e1e870                s3c_usb_download_start
+                0xc3e1e98c                s3c_usb_dma_in_done
+                0xc3e1ea24                s3c_usb_set_all_outep_nak
+                0xc3e1ea4c                s3c_usb_clear_all_outep_nak
+                0xc3e1ea74                s3c_usb_set_max_pktsize
+                0xc3e1eab0                s3c_usb_set_endpoint
+                0xc3e1eaf0                s3c_usb_set_descriptors
+                0xc3e1ec40                s3c_usb_check_speed
+                0xc3e1ec58                s3c_usb_clear_dnfile_info
+                0xc3e1ec74                s3c_usb_clear_upfile_info
+                0xc3e1ec90                s3c_usb_check_setconf
+                0xc3e1eca8                s3c_usb_set_opmode
+                0xc3e1ed14                s3c_usb_reset
+                0xc3e1ed70                s3c_usb_set_init
+                0xc3e1edcc                s3c_usb_verify_checksum
+                0xc3e1ee74                s3c_usb_download_continue
+                0xc3e1ef1c                s3c_usb_int_bulkout
+                0xc3e1ef44                s3c_usb_pkt_receive
+                0xc3e1efb8                s3c_usb_print_pkt
+                0xc3e1f004                s3c_usb_dma_out_done
+                0xc3e1f0a8                s3c_usb_transfer
+                0xc3e1f1a0                s3c_udc_int_hndlr
+                0xc3e1f23c                s3c_usb_wait_cable_insert
+                0xc3e1f288                s3c_usb_init_phy
+                0xc3e1f2c8                s3c_usbctl_init
+ .text          0xc3e1f350     0x2018 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+                0xc3e1f350                fboot_usb_phy_off
+                0xc3e1f37c                fboot_usb_core_soft_reset
+                0xc3e1f39c                fboot_usb_init_core
+                0xc3e1f3b8                fboot_usb_check_current_mode
+                0xc3e1f3cc                fboot_usb_set_soft_disconnect
+                0xc3e1f3e0                fboot_usb_clear_soft_disconnect
+                0xc3e1f3f4                fboot_usb_init_device
+                0xc3e1f41c                fboot_usbc_activate
+                0xc3e1f424                fboot_usb_stop
+                0xc3e1f438                fboot_usb_set_inep_xfersize
+                0xc3e1f464                fboot_usb_set_outep_xfersize
+                0xc3e1f494                fboot_usb_write_ep0_fifo
+                0xc3e1f4e4                fboot_usb_write_in_fifo
+                0xc3e1f534                fboot_usb_read_out_fifo
+                0xc3e1f580                fboot_usb_get_desc
+                0xc3e1f6a0                fboot_usb_clear_feature
+                0xc3e1f710                fboot_usb_set_feature
+                0xc3e1f864                fboot_usb_get_status
+                0xc3e1f8fc                fboot_usb_ep0_int_hndlr
+                0xc3e1fa84                fboot_usb_set_otherspeed_conf_desc
+                0xc3e1fb6c                fboot_usb_transfer_ep0
+                0xc3e20418                fboot_usb_upload_start
+                0xc3e20568                fboot_usb_download_start
+                0xc3e20684                fboot_usb_dma_in_done
+                0xc3e2071c                fboot_usb_set_all_outep_nak
+                0xc3e20744                fboot_usb_clear_all_outep_nak
+                0xc3e2076c                fboot_usb_set_max_pktsize
+                0xc3e207a8                fboot_usb_set_endpoint
+                0xc3e207e8                fboot_usb_set_descriptors
+                0xc3e2093c                fboot_usb_check_speed
+                0xc3e20954                fboot_usb_clear_dnfile_info
+                0xc3e20970                fboot_usb_clear_upfile_info
+                0xc3e2098c                fboot_usb_check_setconf
+                0xc3e209a4                fboot_usb_set_opmode
+                0xc3e20a10                fboot_usb_reset
+                0xc3e20a6c                fastboot_shutdown
+                0xc3e20a70                fastboot_fifo_size
+                0xc3e20a8c                fastboot_getvar
+                0xc3e20a94                fboot_usb_int_bulkin
+                0xc3e20b1c                fastboot_preboot
+                0xc3e20bb8                fboot_usb_set_init
+                0xc3e20c14                fboot_usb_verify_checksum
+                0xc3e20cb0                fboot_usb_download_continue
+                0xc3e20d58                fboot_usb_print_pkt
+                0xc3e20d98                fboot_usb_dma_out_done
+                0xc3e20e3c                fboot_usb_transfer
+                0xc3e20f38                fboot_usb_wait_cable_insert
+                0xc3e20f74                fboot_usb_init_phy
+                0xc3e20fb4                fboot_usbctl_init
+                0xc3e2103c                fastboot_init
+                0xc3e21114                fboot_usb_int_bulkout
+                0xc3e211a0                fboot_usb_pkt_receive
+                0xc3e21214                fboot_usb_int_hndlr
+                0xc3e212cc                fastboot_poll
+                0xc3e2131c                fastboot_tx_status
+ .text          0xc3e21368       0xd8 cpu/s5pc11x/libs5pc11x.a(fimd.o)
+                0xc3e21368                LCD_setfgcolor
+                0xc3e21378                LCD_setleftcolor
+                0xc3e21388                LCD_setprogress
+                0xc3e21434                LCD_Initialize_NONAME1
+                0xc3e2143c                LCD_turnon
+ .text          0xc3e21440       0xb4 lib_arm/libarm.a(_umodsi3.o)
+                0xc3e21440                __umodsi3
+ .text          0xc3e214f4      0x30c lib_arm/libarm.a(bootm.o)
+                0xc3e214f4                setup_mtdpartition_tag
+                0xc3e215a8                do_bootm_linux
+ .text          0xc3e21800        0x4 lib_arm/libarm.a(cache.o)
+                0xc3e21800                flush_cache
+ .text          0xc3e21804     0x195c fs/fat/libfat.a(fat.o)
+                0xc3e21830                disk_read
+                0xc3e21c54                file_fat_detectfs
+                0xc3e22098                do_fat_read
+                0xc3e229a0                file_fat_read
+                0xc3e229d8                file_fat_ls
+                0xc3e229e8                fat_register_device
+                0xc3e22af8                fat_format_device
+ .text          0xc3e23160     0x36e0 fs/ext2/libext2fs.a(ext2fs.o)
+                0xc3e23160                get_random_val
+                0xc3e2317c                default_journal_size
+                0xc3e231bc                ext2fs_format
+                0xc3e25a54                ext2fs_free_node
+                0xc3e25a74                ext2fs_close
+                0xc3e25bf0                ext2fs_mount
+                0xc3e25ca0                ext2fs_read_file
+                0xc3e26174                ext2fs_read
+                0xc3e26424                ext2fs_find_file1
+                0xc3e266b4                ext2fs_find_file
+                0xc3e26734                ext2fs_open
+                0xc3e267cc                ext2fs_ls
+ .text          0xc3e26840      0x220 fs/ext2/libext2fs.a(dev.o)
+                0xc3e26840                ext2fs_devread
+                0xc3e26a14                ext2fs_set_blk_dev
+ .text          0xc3e26a60      0x350 disk/libdisk.a(part.o)
+                0xc3e26a60                dev_print
+                0xc3e26c30                get_partition_info
+                0xc3e26c54                init_part
+                0xc3e26c70                get_dev
+                0xc3e26cd4                print_part
+ .text          0xc3e26db0      0x4fc disk/libdisk.a(part_dos.o)
+                0xc3e26df4                test_part_dos
+                0xc3e27094                get_partition_info_dos
+                0xc3e27280                print_part_dos
+ .text          0xc3e272ac      0x290 drivers/rtc/librtc.a(date.o)
+                0xc3e272ac                GregorianDay
+                0xc3e2739c                to_tm
+                0xc3e274a4                mktime
+ .text          0xc3e2753c      0x6d8 drivers/video/libvideo.a(mpadfb.o)
+                0xc3e2753c                backlight_brigness_init
+                0xc3e27584                lcd_port_init
+                0xc3e276ac                fb_init
+                0xc3e2779c                lcd_reg_init
+                0xc3e27bec                mpadfb_init
+ .text          0xc3e27c14      0x188 drivers/video/libvideo.a(fbsoft.o)
+                0xc3e27c14                fb_soft_blit_bitmap
+                0xc3e27cd4                fb_soft_fill_rect
+                0xc3e27d70                fb_soft_unmap_color
+                0xc3e27d7c                fb_soft_map_color
+ .text          0xc3e27d9c      0x56c drivers/video/libvideo.a(bitmap.o)
+                0xc3e27d9c                get_bitmap_format
+                0xc3e27f84                bitmap_destroy
+                0xc3e27fb8                bitmap_load_from_picture
+                0xc3e28170                bitmap_create
+ .text          0xc3e28308      0x1b8 drivers/video/libvideo.a(logo.o)
+                0xc3e28308                display_logo
+ .text          0xc3e284c0      0xcfc drivers/video/libvideo.a(fbblit.o)
+                0xc3e28530                common_bitmap_blit
+ .text          0xc3e291bc      0x264 drivers/video/libvideo.a(fbfill.o)
+                0xc3e291bc                common_bitmap_fill_rect
+ .text          0xc3e29420      0x364 drivers/video/libvideo.a(rect.o)
+                0xc3e29420                rect_set
+                0xc3e2942c                rect_intersect
+                0xc3e294b8                rect_align
+ .text          0xc3e29784      0x29c drivers/video/libvideo.a(graphic.o)
+                0xc3e29784                fb_map_color
+                0xc3e297c0                fb_unmap_color
+                0xc3e297f0                fb_fill_rect
+                0xc3e29828                fb_blit_bitmap
+                0xc3e2987c                bitmap_blit
+                0xc3e29950                bitmap_fill_rect
+                0xc3e299f8                fb_get_viewport
+                0xc3e29a0c                fb_set_viewport
+ .text          0xc3e29a20      0x1d8 drivers/video/libvideo.a(fbcolor.o)
+                0xc3e29a20                bitmap_map_color
+                0xc3e29ae4                bitmap_unmap_color
+ .text          0xc3e29bf8      0x23c drivers/video/libvideo.a(fbpixel.o)
+                0xc3e29bf8                bitmap_get_pointer
+                0xc3e29c80                bitmap_get_pixel
+                0xc3e29d5c                bitmap_set_pixel
+ .text          0xc3e29e34       0xbc drivers/video/libvideo.a(fbviewport.o)
+                0xc3e29e34                bitmap_get_viewport
+                0xc3e29e6c                bitmap_set_viewport
+ .text          0xc3e29ef0      0x1c0 lib_generic/libgeneric.a(div64.o)
+                0xc3e29ef0                __div64_32
+                0xc3e2a080                div64
+                0xc3e2a094                mod64
+
+.glue_7         0xc3e2a0b0        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0xc3e2a0b0        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0xc3e2a0b0        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0xc3e2a0b0        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+                0xc3e2a0b0                . = ALIGN (0x4)
+
+.rodata         0xc3e2a0b0    0x22b24
+ *(.rodata)
+ .rodata        0xc3e2a0b0       0x80 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .rodata        0xc3e2a130       0x30 lib_arm/libarm.a(board.o)
+                0xc3e2a130                version_string
+ .rodata        0xc3e2a160        0x7 net/libnet.a(net.o)
+ *fill*         0xc3e2a167        0x1 00
+ .rodata        0xc3e2a168       0xc4 common/libcommon.a(cmd_bootm.o)
+ .rodata        0xc3e2a22c       0x58 common/libcommon.a(cmd_mem.o)
+ .rodata        0xc3e2a284       0x20 common/libcommon.a(xyzModem.o)
+ .rodata        0xc3e2a2a4      0x200 common/libcommon.a(crc16.o)
+ .rodata        0xc3e2a4a4      0x400 lib_generic/libgeneric.a(crc32.o)
+ .rodata        0xc3e2a8a4       0x90 lib_generic/libgeneric.a(zlib.o)
+ .rodata        0xc3e2a934       0xac cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+                0xc3e2a934                config_full
+                0xc3e2a940                config_full_total
+                0xc3e2a960                config_high
+                0xc3e2a96c                config_high_total
+                0xc3e2a98c                qualifier_desc
+                0xc3e2a998                string_desc0
+                0xc3e2a99c                string_desc1
+                0xc3e2a9b4                string_desc2
+ .rodata        0xc3e2a9e0       0xb4 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+                0xc3e2a9e0                fboot_config_full
+                0xc3e2a9ec                fboot_config_full_total
+                0xc3e2aa0c                fboot_config_high
+                0xc3e2aa18                fboot_config_high_total
+                0xc3e2aa38                fboot_qualifier_desc
+                0xc3e2aa44                fboot_string_desc0
+                0xc3e2aa48                fboot_string_desc1
+                0xc3e2aa60                fboot_string_desc2
+                0xc3e2aa78                string_desc3
+ .rodata        0xc3e2aa94       0x10 disk/libdisk.a(part.o)
+ .rodata        0xc3e2aaa4       0x30 drivers/rtc/librtc.a(date.o)
+ .rodata        0xc3e2aad4    0x22100 drivers/video/libvideo.a(logo.o)
+
+.rodata.str1.1  0xc3e4cbd4     0x6f86
+ .rodata.str1.1
+                0xc3e4cbd4       0x1d cpu/s5pc11x/movi.o
+ .rodata.str1.1
+                0xc3e4cbf1      0x264 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+                                0x27b (size before relaxing)
+ .rodata.str1.1
+                0xc3e4ce55        0xd cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .rodata.str1.1
+                0xc3e4ce62      0x10b cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .rodata.str1.1
+                0xc3e4cf6d       0xbe lib_arm/libarm.a(board.o)
+                                 0xc4 (size before relaxing)
+ .rodata.str1.1
+                0xc3e4d02b      0x1b1 net/libnet.a(net.o)
+                                0x1bc (size before relaxing)
+ .rodata.str1.1
+                0xc3e4d1dc      0x18e net/libnet.a(tftp.o)
+                                0x1cc (size before relaxing)
+ .rodata.str1.1
+                0xc3e4d36a      0x108 net/libnet.a(bootp.o)
+                                0x138 (size before relaxing)
+ .rodata.str1.1
+                0xc3e4d472       0x13 net/libnet.a(rarp.o)
+                                 0x47 (size before relaxing)
+ .rodata.str1.1
+                0xc3e4d485       0xed net/libnet.a(nfs.o)
+                                0x16c (size before relaxing)
+ .rodata.str1.1
+                0xc3e4d572      0x1ac drivers/mmc/libmmc.a(mmc.o)
+                                0x1b8 (size before relaxing)
+ .rodata.str1.1
+                0xc3e4d71e      0x141 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .rodata.str1.1
+                0xc3e4d85f      0x20b drivers/net/libnet.a(dm9000x.o)
+                                0x219 (size before relaxing)
+ .rodata.str1.1
+                0xc3e4da6a       0xec common/libcommon.a(main.o)
+                                 0xed (size before relaxing)
+ .rodata.str1.1
+                0xc3e4db56      0x10f common/libcommon.a(cmd_autoscript.o)
+ .rodata.str1.1
+                0xc3e4dc65       0xb2 common/libcommon.a(cmd_bdinfo.o)
+ .rodata.str1.1
+                0xc3e4dd17      0x444 common/libcommon.a(image.o)
+                                0x4dd (size before relaxing)
+ .rodata.str1.1
+                0xc3e4e15b      0x106 common/libcommon.a(cmd_boot.o)
+                                0x114 (size before relaxing)
+ .rodata.str1.1
+                0xc3e4e261      0x72d common/libcommon.a(cmd_bootm.o)
+                                0x8ff (size before relaxing)
+ .rodata.str1.1
+                0xc3e4e98e      0x115 common/libcommon.a(cmd_cache.o)
+                                0x12a (size before relaxing)
+ .rodata.str1.1
+                0xc3e4eaa3       0x6b common/libcommon.a(cmd_console.o)
+                                 0x6c (size before relaxing)
+ .rodata.str1.1
+                0xc3e4eb0e      0x297 common/libcommon.a(cmd_elf.o)
+                                0x2a0 (size before relaxing)
+ .rodata.str1.1
+                0xc3e4eda5      0x481 common/libcommon.a(cmd_ext2.o)
+                                0x4b4 (size before relaxing)
+ .rodata.str1.1
+                0xc3e4f226      0x3c7 common/libcommon.a(cmd_fat.o)
+                                0x51c (size before relaxing)
+ .rodata.str1.1
+                0xc3e4f5ed      0x744 common/libcommon.a(cmd_flash.o)
+                                0x760 (size before relaxing)
+ .rodata.str1.1
+                0xc3e4fd31       0xbd common/libcommon.a(cmd_itest.o)
+                                 0xca (size before relaxing)
+ .rodata.str1.1
+                0xc3e4fdee      0x35c common/libcommon.a(cmd_load.o)
+                                0x376 (size before relaxing)
+ .rodata.str1.1
+                0xc3e5014a      0x59b common/libcommon.a(cmd_mem.o)
+                                0x5c0 (size before relaxing)
+ .rodata.str1.1
+                0xc3e506e5       0x6b common/libcommon.a(cmd_misc.o)
+                                 0x76 (size before relaxing)
+ .rodata.str1.1
+                0xc3e50750      0x222 common/libcommon.a(cmd_mmc.o)
+                                0x237 (size before relaxing)
+ .rodata.str1.1
+                0xc3e50972      0x24a common/libcommon.a(cmd_net.o)
+                                0x282 (size before relaxing)
+ .rodata.str1.1
+                0xc3e50bbc      0x305 common/libcommon.a(cmd_nvedit.o)
+                                0x388 (size before relaxing)
+ .rodata.str1.1
+                0xc3e50ec1       0x2e common/libcommon.a(cmd_reginfo.o)
+ .rodata.str1.1
+                0xc3e50eef       0x93 common/libcommon.a(cmd_usbd.o)
+                                 0x9e (size before relaxing)
+ .rodata.str1.1
+                0xc3e50f82      0x11a common/libcommon.a(cmd_ximg.o)
+                                0x1a8 (size before relaxing)
+ .rodata.str1.1
+                0xc3e5109c      0x2ea common/libcommon.a(command.o)
+                                0x31a (size before relaxing)
+ .rodata.str1.1
+                0xc3e51386       0x76 common/libcommon.a(console.o)
+                                 0x7a (size before relaxing)
+ .rodata.str1.1
+                0xc3e513fc       0x2f common/libcommon.a(devices.o)
+                                 0x43 (size before relaxing)
+ .rodata.str1.1
+                0xc3e5142b       0x62 common/libcommon.a(env_common.o)
+ .rodata.str1.1
+                0xc3e5148d      0x10c common/libcommon.a(flash.o)
+ .rodata.str1.1
+                0xc3e51599      0x156 common/libcommon.a(hush.o)
+                                0x1af (size before relaxing)
+ .rodata.str1.1
+                0xc3e516ef      0x265 common/libcommon.a(usb.o)
+ .rodata.str1.1
+                0xc3e51954       0xe3 common/libcommon.a(xyzModem.o)
+                                 0xe5 (size before relaxing)
+ .rodata.str1.1
+                0xc3e51a37      0x2ff common/libcommon.a(cmd_movi.o)
+                                0x336 (size before relaxing)
+ .rodata.str1.1
+                0xc3e51d36      0x908 common/libcommon.a(cmd_fastboot.o)
+                                0x9bd (size before relaxing)
+ .rodata.str1.1
+                0xc3e5263e      0x231 common/libcommon.a(cmd_mmc_fdisk.o)
+                                0x233 (size before relaxing)
+ .rodata.str1.1
+                0xc3e5286f       0x82 common/libcommon.a(env_auto.o)
+                                 0xb7 (size before relaxing)
+ .rodata.str1.1
+                0xc3e528f1       0x7f common/libcommon.a(gunzip.o)
+ .rodata.str1.1
+                0xc3e52970       0x10 board/samsung/x210/libx210.a(x210.o)
+ .rodata.str1.1
+                0xc3e52980      0x10b board/samsung/x210/libx210.a(flash.o)
+                                0x115 (size before relaxing)
+ .rodata.str1.1
+                0xc3e52a8b       0x11 lib_generic/libgeneric.a(display_options.o)
+                                 0x36 (size before relaxing)
+ .rodata.str1.1
+                0xc3e52a9c       0x34 lib_generic/libgeneric.a(lmb.o)
+ .rodata.str1.1
+                0xc3e52ad0       0x51 lib_generic/libgeneric.a(vsprintf.o)
+ .rodata.str1.1
+                0xc3e52b21      0x1f3 lib_generic/libgeneric.a(zlib.o)
+                                0x1f4 (size before relaxing)
+ .rodata.str1.1
+                0xc3e52d14       0xbd cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .rodata.str1.1
+                0xc3e52dd1      0x145 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+                                0x14a (size before relaxing)
+ .rodata.str1.1
+                0xc3e52f16       0x66 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+                                0x17d (size before relaxing)
+ .rodata.str1.1
+                0xc3e52f7c       0x6e lib_arm/libarm.a(bootm.o)
+                                 0x77 (size before relaxing)
+ .rodata.str1.1
+                0xc3e52fea      0x359 fs/fat/libfat.a(fat.o)
+                                0x35e (size before relaxing)
+ .rodata.str1.1
+                0xc3e53343      0x4ef fs/ext2/libext2fs.a(ext2fs.o)
+                                0x579 (size before relaxing)
+ .rodata.str1.1
+                0xc3e53832       0xdc fs/ext2/libext2fs.a(dev.o)
+ .rodata.str1.1
+                0xc3e5390e      0x15f disk/libdisk.a(part.o)
+                                0x18b (size before relaxing)
+ .rodata.str1.1
+                0xc3e53a6d       0xea disk/libdisk.a(part_dos.o)
+                                 0xf6 (size before relaxing)
+ .rodata.str1.1
+                0xc3e53b57        0x3 drivers/video/libvideo.a(mpadfb.o)
+                0xc3e53b5c                . = ALIGN (0x4)
+
+.data           0xc3e53b5c     0x4d30
+ *(.data)
+ .data          0xc3e53b5c        0x0 cpu/s5pc11x/start.o
+ .data          0xc3e53b5c        0x0 cpu/s5pc11x/s5pc110/cpu_init.o
+ .data          0xc3e53b5c        0x0 board/samsung/x210/lowlevel_init.o
+ .data          0xc3e53b5c        0x0 cpu/s5pc11x/onenand_cp.o
+ .data          0xc3e53b5c        0x0 cpu/s5pc11x/nand_cp.o
+ .data          0xc3e53b5c        0x0 cpu/s5pc11x/movi.o
+ .data          0xc3e53b5c        0x0 common/secure_boot.o
+ .data          0xc3e53b5c        0x0 common/ace_sha1.o
+ .data          0xc3e53b5c        0x0 cpu/s5pc11x/pmic.o
+ .data          0xc3e53b5c        0x0 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .data          0xc3e53b5c        0x0 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .data          0xc3e53b5c        0x0 cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .data          0xc3e53b5c        0x0 cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .data          0xc3e53b5c        0x0 cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .data          0xc3e53b5c        0x0 lib_arm/libarm.a(_divsi3.o)
+ .data          0xc3e53b5c        0x0 lib_arm/libarm.a(_udivsi3.o)
+ .data          0xc3e53b5c       0x38 lib_arm/libarm.a(board.o)
+                0xc3e53b5c                init_sequence
+                0xc3e53b90                check_flash_flag
+ .data          0xc3e53b94        0x0 lib_arm/libarm.a(div0.o)
+ .data          0xc3e53b94        0x0 lib_arm/libarm.a(_modsi3.o)
+ .data          0xc3e53b94        0xc net/libnet.a(net.o)
+                0xc3e53b94                NetOurVLAN
+                0xc3e53b98                NetBcastAddr
+                0xc3e53b9e                NetOurNativeVLAN
+ .data          0xc3e53ba0        0x2 net/libnet.a(tftp.o)
+ .data          0xc3e53ba2        0x0 net/libnet.a(bootp.o)
+ .data          0xc3e53ba2        0x0 net/libnet.a(rarp.o)
+ .data          0xc3e53ba2        0x0 net/libnet.a(eth.o)
+ *fill*         0xc3e53ba2        0x2 00
+ .data          0xc3e53ba4        0x4 net/libnet.a(nfs.o)
+ .data          0xc3e53ba8        0x4 drivers/mmc/libmmc.a(mmc.o)
+ .data          0xc3e53bac        0x0 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .data          0xc3e53bac        0x0 drivers/net/libnet.a(dm9000x.o)
+ .data          0xc3e53bac        0x4 common/libcommon.a(main.o)
+ .data          0xc3e53bb0        0x0 common/libcommon.a(cmd_autoscript.o)
+ .data          0xc3e53bb0        0x0 common/libcommon.a(cmd_bdinfo.o)
+ .data          0xc3e53bb0      0x1f8 common/libcommon.a(image.o)
+ .data          0xc3e53da8        0x0 common/libcommon.a(cmd_boot.o)
+ .data          0xc3e53da8        0x4 common/libcommon.a(cmd_bootm.o)
+                0xc3e53da8                load_addr
+ .data          0xc3e53dac        0x0 common/libcommon.a(cmd_cache.o)
+ .data          0xc3e53dac        0x0 common/libcommon.a(cmd_console.o)
+ .data          0xc3e53dac        0x0 common/libcommon.a(cmd_elf.o)
+ .data          0xc3e53dac        0x0 common/libcommon.a(cmd_ext2.o)
+ .data          0xc3e53dac        0x0 common/libcommon.a(cmd_fat.o)
+ .data          0xc3e53dac        0x0 common/libcommon.a(cmd_flash.o)
+ .data          0xc3e53dac       0x68 common/libcommon.a(cmd_itest.o)
+                0xc3e53dac                op_table
+ .data          0xc3e53e14        0x4 common/libcommon.a(cmd_load.o)
+ .data          0xc3e53e18        0x4 common/libcommon.a(cmd_mem.o)
+                0xc3e53e18                dp_last_length
+ .data          0xc3e53e1c        0x0 common/libcommon.a(cmd_misc.o)
+ .data          0xc3e53e1c        0x0 common/libcommon.a(cmd_mmc.o)
+ .data          0xc3e53e1c        0x0 common/libcommon.a(cmd_net.o)
+ .data          0xc3e53e1c        0x0 common/libcommon.a(cmd_nvedit.o)
+ .data          0xc3e53e1c        0x0 common/libcommon.a(cmd_reginfo.o)
+ .data          0xc3e53e1c        0x0 common/libcommon.a(cmd_usbd.o)
+ .data          0xc3e53e1c        0x0 common/libcommon.a(cmd_ximg.o)
+ .data          0xc3e53e1c        0x0 common/libcommon.a(command.o)
+ .data          0xc3e53e1c        0x0 common/libcommon.a(console.o)
+ .data          0xc3e53e1c        0xc common/libcommon.a(devices.o)
+                0xc3e53e1c                stdio_names
+ .data          0xc3e53e28      0x414 common/libcommon.a(dlmalloc.o)
+ .data          0xc3e5423c     0x4004 common/libcommon.a(env_common.o)
+                0xc3e5423c                default_environment
+                0xc3e5823c                default_environment_size
+ .data          0xc3e58240        0x0 common/libcommon.a(exports.o)
+ .data          0xc3e58240        0x0 common/libcommon.a(flash.o)
+ .data          0xc3e58240       0xac common/libcommon.a(hush.o)
+ .data          0xc3e582ec        0x0 common/libcommon.a(lists.o)
+ .data          0xc3e582ec        0x0 common/libcommon.a(s_record.o)
+ .data          0xc3e582ec        0x0 common/libcommon.a(usb.o)
+ .data          0xc3e582ec        0x0 common/libcommon.a(xyzModem.o)
+ .data          0xc3e582ec        0x0 common/libcommon.a(cmd_movi.o)
+ .data          0xc3e582ec       0x1c common/libcommon.a(cmd_fastboot.o)
+ .data          0xc3e58308        0x0 common/libcommon.a(cmd_mmc_fdisk.o)
+ .data          0xc3e58308        0x4 common/libcommon.a(env_auto.o)
+                0xc3e58308                env_name_spec
+ .data          0xc3e5830c        0x0 common/libcommon.a(gunzip.o)
+ .data          0xc3e5830c        0x0 common/libcommon.a(crc16.o)
+ .data          0xc3e5830c        0x0 board/samsung/x210/libx210.a(x210.o)
+ .data          0xc3e5830c        0x0 board/samsung/x210/libx210.a(flash.o)
+ .data          0xc3e5830c        0x0 lib_generic/libgeneric.a(crc32.o)
+ .data          0xc3e5830c      0x100 lib_generic/libgeneric.a(ctype.o)
+                0xc3e5830c                _ctype
+ .data          0xc3e5840c        0x0 lib_generic/libgeneric.a(display_options.o)
+ .data          0xc3e5840c        0x0 lib_generic/libgeneric.a(lmb.o)
+ .data          0xc3e5840c        0x0 lib_generic/libgeneric.a(string.o)
+ .data          0xc3e5840c        0x0 lib_generic/libgeneric.a(vsprintf.o)
+ .data          0xc3e5840c      0x210 lib_generic/libgeneric.a(zlib.o)
+                0xc3e585f8                zlib_version
+                0xc3e585fc                z_errmsg
+ .data          0xc3e5861c        0x0 cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .data          0xc3e5861c       0x38 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+                0xc3e5861c                test_pkt
+ .data          0xc3e58654      0x100 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+                0xc3e58654                fboot_test_pkt
+                0xc3e5868c                ptable_default
+                0xc3e58750                ptable_default_size
+ .data          0xc3e58754        0x8 cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .data          0xc3e5875c        0x0 lib_arm/libarm.a(_umodsi3.o)
+ .data          0xc3e5875c        0x0 lib_arm/libarm.a(bootm.o)
+ .data          0xc3e5875c        0x0 lib_arm/libarm.a(cache.o)
+ .data          0xc3e5875c        0x4 fs/fat/libfat.a(fat.o)
+ .data          0xc3e58760        0x8 fs/ext2/libext2fs.a(ext2fs.o)
+                0xc3e58760                indir1_blkno
+                0xc3e58764                indir2_blkno
+ .data          0xc3e58768        0x0 fs/ext2/libext2fs.a(dev.o)
+ .data          0xc3e58768        0x0 disk/libdisk.a(part.o)
+ .data          0xc3e58768        0x0 disk/libdisk.a(part_dos.o)
+ .data          0xc3e58768       0x30 drivers/rtc/librtc.a(date.o)
+ .data          0xc3e58798       0xf4 drivers/video/libvideo.a(mpadfb.o)
+ .data          0xc3e5888c        0x0 drivers/video/libvideo.a(fbsoft.o)
+ .data          0xc3e5888c        0x0 drivers/video/libvideo.a(bitmap.o)
+ .data          0xc3e5888c        0x0 drivers/video/libvideo.a(logo.o)
+ .data          0xc3e5888c        0x0 drivers/video/libvideo.a(fbblit.o)
+ .data          0xc3e5888c        0x0 drivers/video/libvideo.a(fbfill.o)
+ .data          0xc3e5888c        0x0 drivers/video/libvideo.a(rect.o)
+ .data          0xc3e5888c        0x0 drivers/video/libvideo.a(graphic.o)
+ .data          0xc3e5888c        0x0 drivers/video/libvideo.a(fbcolor.o)
+ .data          0xc3e5888c        0x0 drivers/video/libvideo.a(fbpixel.o)
+ .data          0xc3e5888c        0x0 drivers/video/libvideo.a(fbviewport.o)
+ .data          0xc3e5888c        0x0 lib_generic/libgeneric.a(div64.o)
+                0xc3e5888c                . = ALIGN (0x4)
+
+.got
+ *(.got)
+                0xc3e5888c                __u_boot_cmd_start = .
+
+.u_boot_cmd     0xc3e5888c      0x630
+ *(.u_boot_cmd)
+ .u_boot_cmd    0xc3e5888c       0x18 common/libcommon.a(cmd_autoscript.o)
+                0xc3e5888c                __u_boot_cmd_autoscr
+ .u_boot_cmd    0xc3e588a4       0x18 common/libcommon.a(cmd_bdinfo.o)
+                0xc3e588a4                __u_boot_cmd_bdinfo
+ .u_boot_cmd    0xc3e588bc       0x48 common/libcommon.a(cmd_boot.o)
+                0xc3e588bc                __u_boot_cmd_go
+                0xc3e588d4                __u_boot_cmd_reset
+                0xc3e588ec                __u_boot_cmd_re
+ .u_boot_cmd    0xc3e58904       0x78 common/libcommon.a(cmd_bootm.o)
+                0xc3e58904                __u_boot_cmd_bootm
+                0xc3e5891c                __u_boot_cmd_boot
+                0xc3e58934                __u_boot_cmd_bootd
+                0xc3e5894c                __u_boot_cmd_iminfo
+                0xc3e58964                __u_boot_cmd_imls
+ .u_boot_cmd    0xc3e5897c       0x30 common/libcommon.a(cmd_cache.o)
+                0xc3e5897c                __u_boot_cmd_icache
+                0xc3e58994                __u_boot_cmd_dcache
+ .u_boot_cmd    0xc3e589ac       0x18 common/libcommon.a(cmd_console.o)
+                0xc3e589ac                __u_boot_cmd_coninfo
+ .u_boot_cmd    0xc3e589c4       0x30 common/libcommon.a(cmd_elf.o)
+                0xc3e589c4                __u_boot_cmd_bootelf
+                0xc3e589dc                __u_boot_cmd_bootvx
+ .u_boot_cmd    0xc3e589f4       0x60 common/libcommon.a(cmd_ext2.o)
+                0xc3e589f4                __u_boot_cmd_ext2ls
+                0xc3e58a0c                __u_boot_cmd_ext2load
+                0xc3e58a24                __u_boot_cmd_ext2format
+                0xc3e58a3c                __u_boot_cmd_ext3format
+ .u_boot_cmd    0xc3e58a54       0x60 common/libcommon.a(cmd_fat.o)
+                0xc3e58a54                __u_boot_cmd_fatload
+                0xc3e58a6c                __u_boot_cmd_fatls
+                0xc3e58a84                __u_boot_cmd_fatinfo
+                0xc3e58a9c                __u_boot_cmd_fatformat
+ .u_boot_cmd    0xc3e58ab4       0x48 common/libcommon.a(cmd_flash.o)
+                0xc3e58ab4                __u_boot_cmd_flinfo
+                0xc3e58acc                __u_boot_cmd_erase
+                0xc3e58ae4                __u_boot_cmd_protect
+ .u_boot_cmd    0xc3e58afc       0x18 common/libcommon.a(cmd_itest.o)
+                0xc3e58afc                __u_boot_cmd_itest
+ .u_boot_cmd    0xc3e58b14       0x48 common/libcommon.a(cmd_load.o)
+                0xc3e58b14                __u_boot_cmd_loads
+                0xc3e58b2c                __u_boot_cmd_loadb
+                0xc3e58b44                __u_boot_cmd_loady
+ .u_boot_cmd    0xc3e58b5c       0xf0 common/libcommon.a(cmd_mem.o)
+                0xc3e58b5c                __u_boot_cmd_md
+                0xc3e58b74                __u_boot_cmd_mm
+                0xc3e58b8c                __u_boot_cmd_nm
+                0xc3e58ba4                __u_boot_cmd_mw
+                0xc3e58bbc                __u_boot_cmd_cp
+                0xc3e58bd4                __u_boot_cmd_cmp
+                0xc3e58bec                __u_boot_cmd_crc32
+                0xc3e58c04                __u_boot_cmd_base
+                0xc3e58c1c                __u_boot_cmd_loop
+                0xc3e58c34                __u_boot_cmd_mtest
+ .u_boot_cmd    0xc3e58c4c       0x18 common/libcommon.a(cmd_misc.o)
+                0xc3e58c4c                __u_boot_cmd_sleep
+ .u_boot_cmd    0xc3e58c64       0x30 common/libcommon.a(cmd_mmc.o)
+                0xc3e58c64                __u_boot_cmd_mmcinfo
+                0xc3e58c7c                __u_boot_cmd_mmc
+ .u_boot_cmd    0xc3e58c94       0x90 common/libcommon.a(cmd_net.o)
+                0xc3e58c94                __u_boot_cmd_bootp
+                0xc3e58cac                __u_boot_cmd_tftpboot
+                0xc3e58cc4                __u_boot_cmd_rarpboot
+                0xc3e58cdc                __u_boot_cmd_dhcp
+                0xc3e58cf4                __u_boot_cmd_nfs
+                0xc3e58d0c                __u_boot_cmd_ping
+ .u_boot_cmd    0xc3e58d24       0x60 common/libcommon.a(cmd_nvedit.o)
+                0xc3e58d24                __u_boot_cmd_printenv
+                0xc3e58d3c                __u_boot_cmd_setenv
+                0xc3e58d54                __u_boot_cmd_saveenv
+                0xc3e58d6c                __u_boot_cmd_run
+ .u_boot_cmd    0xc3e58d84       0x18 common/libcommon.a(cmd_reginfo.o)
+                0xc3e58d84                __u_boot_cmd_reginfo
+ .u_boot_cmd    0xc3e58d9c       0x18 common/libcommon.a(cmd_usbd.o)
+                0xc3e58d9c                __u_boot_cmd_dnw
+ .u_boot_cmd    0xc3e58db4       0x18 common/libcommon.a(cmd_ximg.o)
+                0xc3e58db4                __u_boot_cmd_imxtract
+ .u_boot_cmd    0xc3e58dcc       0x90 common/libcommon.a(command.o)
+                0xc3e58dcc                __u_boot_cmd_version
+                0xc3e58de4                __u_boot_cmd_echo
+                0xc3e58dfc                __u_boot_cmd_test
+                0xc3e58e14                __u_boot_cmd_exit
+                0xc3e58e2c                __u_boot_cmd_help
+                0xc3e58e44                __u_boot_cmd_question_mark
+ .u_boot_cmd    0xc3e58e5c       0x18 common/libcommon.a(cmd_movi.o)
+                0xc3e58e5c                __u_boot_cmd_movi
+ .u_boot_cmd    0xc3e58e74       0x30 common/libcommon.a(cmd_fastboot.o)
+                0xc3e58e74                __u_boot_cmd_fastboot
+                0xc3e58e8c                __u_boot_cmd_sdfuse
+ .u_boot_cmd    0xc3e58ea4       0x18 common/libcommon.a(cmd_mmc_fdisk.o)
+                0xc3e58ea4                __u_boot_cmd_fdisk
+                0xc3e58ebc                __u_boot_cmd_end = .
+                0xc3e58ebc                . = ALIGN (0x4)
+
+.mmudata        0xc3e5c000     0x4000
+ *(.mmudata)
+ .mmudata       0xc3e5c000     0x4000 board/samsung/x210/lowlevel_init.o
+                0xc3e5c000                mmu_table
+                0xc3e60000                . = ALIGN (0x4)
+                0xc3e60000                __bss_start = .
+
+.bss            0xc3e60000    0x44e18
+ *(.bss)
+ .bss           0xc3e60000        0x0 cpu/s5pc11x/start.o
+ .bss           0xc3e60000        0x0 cpu/s5pc11x/s5pc110/cpu_init.o
+ .bss           0xc3e60000        0x0 board/samsung/x210/lowlevel_init.o
+ .bss           0xc3e60000        0x0 cpu/s5pc11x/onenand_cp.o
+ .bss           0xc3e60000        0x0 cpu/s5pc11x/nand_cp.o
+ .bss           0xc3e60000        0x0 cpu/s5pc11x/movi.o
+ .bss           0xc3e60000        0x0 common/secure_boot.o
+ .bss           0xc3e60000        0x0 common/ace_sha1.o
+ .bss           0xc3e60000        0x0 cpu/s5pc11x/pmic.o
+ .bss           0xc3e60000        0xc cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+                0xc3e60008                timer_load_val
+ .bss           0xc3e6000c        0x0 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .bss           0xc3e6000c        0x0 cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .bss           0xc3e6000c        0x0 cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .bss           0xc3e6000c        0x0 cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .bss           0xc3e6000c        0x0 lib_arm/libarm.a(_divsi3.o)
+ .bss           0xc3e6000c        0x0 lib_arm/libarm.a(_udivsi3.o)
+ .bss           0xc3e6000c       0x10 lib_arm/libarm.a(board.o)
+                0xc3e60018                monitor_flash_len
+ .bss           0xc3e6001c        0x0 lib_arm/libarm.a(div0.o)
+ .bss           0xc3e6001c        0x0 lib_arm/libarm.a(_modsi3.o)
+ .bss           0xc3e6001c     0x25d0 net/libnet.a(net.o)
+                0xc3e6001c                NetState
+                0xc3e60024                NetIPID
+                0xc3e60028                NetOurIP
+                0xc3e6002c                NetOurEther
+                0xc3e60034                NetPingIP
+                0xc3e60038                NetTxPacket
+                0xc3e6003c                NetArpWaitPacketIP
+                0xc3e60040                NetOurSubnetMask
+                0xc3e60044                NetOurGatewayIP
+                0xc3e60048                NetArpWaitReplyIP
+                0xc3e6004c                NetRxPkt
+                0xc3e60050                NetRxPktLen
+                0xc3e60054                NetArpWaitPacketMAC
+                0xc3e60058                NetArpWaitTxPacket
+                0xc3e6005c                NetArpWaitTxPacketSize
+                0xc3e60060                NetServerIP
+                0xc3e60064                NetServerEther
+                0xc3e60074                NetEtherNullAddr
+                0xc3e6007c                NetArpWaitTry
+                0xc3e60080                NetArpWaitTimerStart
+                0xc3e60090                PktBuf
+                0xc3e61eb0                NetRxPackets
+                0xc3e61ec0                NetArpWaitPacketBuf
+                0xc3e624e0                NetBootFileXferSize
+                0xc3e624e4                NetOurDNSIP
+                0xc3e624e8                NetOurNISDomain
+                0xc3e62508                NetOurHostName
+                0xc3e62528                NetOurRootPath
+                0xc3e62568                NetBootFileSize
+                0xc3e6256c                BootFile
+ .bss           0xc3e625ec       0xb4 net/libnet.a(tftp.o)
+ .bss           0xc3e626a0       0x14 net/libnet.a(bootp.o)
+                0xc3e626a0                dhcp_leasetime
+                0xc3e626a4                NetDHCPServerIP
+                0xc3e626a8                BootpID
+                0xc3e626ac                dhcp_state
+                0xc3e626b0                BootpTry
+ .bss           0xc3e626b4        0x4 net/libnet.a(rarp.o)
+                0xc3e626b4                RarpTry
+ .bss           0xc3e626b8        0x0 net/libnet.a(eth.o)
+ .bss           0xc3e626b8      0x8b0 net/libnet.a(nfs.o)
+ .bss           0xc3e62f68       0x18 drivers/mmc/libmmc.a(mmc.o)
+                0xc3e62f70                mmc_global
+                0xc3e62f7c                mmc_default
+ .bss           0xc3e62f80      0x510 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+                0xc3e62f80                mmc_channel
+                0xc3e633c0                mmc_host
+ .bss           0xc3e63490       0xb0 drivers/net/libnet.a(dm9000x.o)
+ .bss           0xc3e63540     0x1560 common/libcommon.a(main.o)
+                0xc3e6354c                hist_num
+                0xc3e63550                hist_lines
+                0xc3e64950                hist_list
+                0xc3e649a0                console_buffer
+ .bss           0xc3e64aa0        0x0 common/libcommon.a(cmd_autoscript.o)
+ .bss           0xc3e64aa0        0x0 common/libcommon.a(cmd_bdinfo.o)
+ .bss           0xc3e64aa0        0x0 common/libcommon.a(image.o)
+ .bss           0xc3e64aa0        0x0 common/libcommon.a(cmd_boot.o)
+ .bss           0xc3e64aa0       0x50 common/libcommon.a(cmd_bootm.o)
+ .bss           0xc3e64af0        0x0 common/libcommon.a(cmd_cache.o)
+ .bss           0xc3e64af0        0x0 common/libcommon.a(cmd_console.o)
+ .bss           0xc3e64af0        0x0 common/libcommon.a(cmd_elf.o)
+ .bss           0xc3e64af0        0x0 common/libcommon.a(cmd_ext2.o)
+ .bss           0xc3e64af0        0x0 common/libcommon.a(cmd_fat.o)
+ .bss           0xc3e64af0        0x0 common/libcommon.a(cmd_flash.o)
+ .bss           0xc3e64af0        0x0 common/libcommon.a(cmd_itest.o)
+ .bss           0xc3e64af0       0x68 common/libcommon.a(cmd_load.o)
+                0xc3e64af4                os_data_count
+                0xc3e64b04                os_data_init
+                0xc3e64b18                os_data_char
+                0xc3e64b1c                his_quote
+                0xc3e64b20                his_pad_count
+                0xc3e64b24                his_pad_char
+                0xc3e64b25                his_eol
+                0xc3e64b28                send_ptr
+                0xc3e64b2c                send_parms
+ .bss           0xc3e64b58       0x14 common/libcommon.a(cmd_mem.o)
+                0xc3e64b5c                mm_last_addr
+                0xc3e64b60                mm_last_size
+                0xc3e64b64                dp_last_addr
+                0xc3e64b68                dp_last_size
+ .bss           0xc3e64b6c        0x0 common/libcommon.a(cmd_misc.o)
+ .bss           0xc3e64b6c        0x0 common/libcommon.a(cmd_mmc.o)
+ .bss           0xc3e64b6c        0x0 common/libcommon.a(cmd_net.o)
+ .bss           0xc3e64b6c        0x0 common/libcommon.a(cmd_nvedit.o)
+ .bss           0xc3e64b6c        0x0 common/libcommon.a(cmd_reginfo.o)
+ .bss           0xc3e64b6c        0x0 common/libcommon.a(cmd_usbd.o)
+ .bss           0xc3e64b6c        0x0 common/libcommon.a(cmd_ximg.o)
+ .bss           0xc3e64b6c        0x0 common/libcommon.a(command.o)
+ .bss           0xc3e64b6c        0x8 common/libcommon.a(console.o)
+ .bss           0xc3e64b74       0x10 common/libcommon.a(devices.o)
+                0xc3e64b74                devlist
+                0xc3e64b78                stdio_devices
+ .bss           0xc3e64b84       0x38 common/libcommon.a(dlmalloc.o)
+ .bss           0xc3e64bbc        0x0 common/libcommon.a(env_common.o)
+ .bss           0xc3e64bbc        0x0 common/libcommon.a(exports.o)
+ .bss           0xc3e64bbc        0x0 common/libcommon.a(flash.o)
+ .bss           0xc3e64bbc      0x258 common/libcommon.a(hush.o)
+                0xc3e64e08                last_return_code
+                0xc3e64e10                nesting_level
+ .bss           0xc3e64e14        0x0 common/libcommon.a(lists.o)
+ .bss           0xc3e64e14        0x0 common/libcommon.a(s_record.o)
+ .bss           0xc3e64e14     0xc99c common/libcommon.a(usb.o)
+                0xc3e717a0                usb_started
+ .bss           0xc3e717b0      0x43c common/libcommon.a(xyzModem.o)
+ .bss           0xc3e71bec      0x200 common/libcommon.a(cmd_movi.o)
+                0xc3e71bec                raw_area_control
+ .bss           0xc3e71dec      0x1d0 common/libcommon.a(cmd_fastboot.o)
+ .bss           0xc3e71fbc        0x0 common/libcommon.a(cmd_mmc_fdisk.o)
+ .bss           0xc3e71fbc        0x4 common/libcommon.a(env_auto.o)
+                0xc3e71fbc                env_ptr
+ .bss           0xc3e71fc0        0x0 common/libcommon.a(gunzip.o)
+ .bss           0xc3e71fc0        0x0 common/libcommon.a(crc16.o)
+ .bss           0xc3e71fc0        0x0 board/samsung/x210/libx210.a(x210.o)
+ .bss           0xc3e71fc0      0x2e0 board/samsung/x210/libx210.a(flash.o)
+                0xc3e71fc0                flash_info
+ .bss           0xc3e722a0        0x0 lib_generic/libgeneric.a(crc32.o)
+ .bss           0xc3e722a0        0x0 lib_generic/libgeneric.a(ctype.o)
+ .bss           0xc3e722a0        0x0 lib_generic/libgeneric.a(display_options.o)
+ .bss           0xc3e722a0        0x0 lib_generic/libgeneric.a(lmb.o)
+ .bss           0xc3e722a0        0x4 lib_generic/libgeneric.a(string.o)
+                0xc3e722a0                ___strtok
+ .bss           0xc3e722a4        0x0 lib_generic/libgeneric.a(vsprintf.o)
+ .bss           0xc3e722a4     0x10a8 lib_generic/libgeneric.a(zlib.o)
+ *fill*         0xc3e7334c       0xb4 00
+ .bss           0xc3e73400     0x1600 cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+                0xc3e73400                ptd
+                0xc3e73404                urb_priv
+                0xc3e735a0                ohci_dev
+                0xc3e73740                gtd
+                0xc3e74800                ghcca
+                0xc3e74900                phcca
+                0xc3e74904                got_rhsc
+                0xc3e74908                devgone
+ .bss           0xc3e74a00       0xb0 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+                0xc3e74a00                otg
+                0xc3e74a84                remode_wakeup
+                0xc3e74a88                get_status
+                0xc3e74a8e                config_value
+                0xc3e74a90                get_intf
+                0xc3e74a94                s3c_usbd_dn_addr
+                0xc3e74a98                op_mode
+                0xc3e74a9c                s3c_usbd_dn_cnt
+                0xc3e74aa0                s3c_receive_done
+                0xc3e74aa4                speed
+                0xc3e74aa8                s3c_got_header
+                0xc3e74aac                DNW
+ .bss           0xc3e74ab0      0x2f0 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+                0xc3e74ab0                fboot_otg
+                0xc3e74b34                fboot_remode_wakeup
+                0xc3e74b38                fboot_get_status
+                0xc3e74b3e                fboot_config_value
+                0xc3e74b40                fboot_get_intf
+                0xc3e74b44                fboot_usbd_dn_addr
+                0xc3e74b48                fboot_response_flag
+                0xc3e74b4c                reply_msg
+                0xc3e74b50                fboot_op_mode
+                0xc3e74b54                fboot_usbd_dn_cnt
+                0xc3e74b58                fboot_receive_done
+                0xc3e74b5c                fboot_speed
+                0xc3e74d90                transfer_size
+                0xc3e74d94                fboot_got_header
+                0xc3e74d98                tx_msg_buf
+                0xc3e74d9c                total_dn_size
+ .bss           0xc3e74da0        0x0 cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .bss           0xc3e74da0        0x0 lib_arm/libarm.a(_umodsi3.o)
+ .bss           0xc3e74da0        0x4 lib_arm/libarm.a(bootm.o)
+ .bss           0xc3e74da4        0x0 lib_arm/libarm.a(cache.o)
+ .bss           0xc3e74da4    0x30008 fs/fat/libfat.a(fat.o)
+                0xc3e74dac                get_vfatname_block
+                0xc3e84dac                do_fat_read_block
+                0xc3e94dac                get_dentfromdir_block
+ .bss           0xc3ea4dac       0x1c fs/ext2/libext2fs.a(ext2fs.o)
+                0xc3ea4dac                ext2fs_root
+                0xc3ea4db0                ext2fs_file
+                0xc3ea4db4                indir1_block
+                0xc3ea4db8                indir1_size
+                0xc3ea4dbc                indir2_block
+                0xc3ea4dc0                indir2_size
+                0xc3ea4dc4                symlinknest
+ .bss           0xc3ea4dc8       0x50 fs/ext2/libext2fs.a(dev.o)
+ .bss           0xc3ea4e18        0x0 disk/libdisk.a(part.o)
+ .bss           0xc3ea4e18        0x0 disk/libdisk.a(part_dos.o)
+ .bss           0xc3ea4e18        0x0 drivers/rtc/librtc.a(date.o)
+ .bss           0xc3ea4e18        0x0 drivers/video/libvideo.a(mpadfb.o)
+ .bss           0xc3ea4e18        0x0 drivers/video/libvideo.a(fbsoft.o)
+ .bss           0xc3ea4e18        0x0 drivers/video/libvideo.a(bitmap.o)
+ .bss           0xc3ea4e18        0x0 drivers/video/libvideo.a(logo.o)
+ .bss           0xc3ea4e18        0x0 drivers/video/libvideo.a(fbblit.o)
+ .bss           0xc3ea4e18        0x0 drivers/video/libvideo.a(fbfill.o)
+ .bss           0xc3ea4e18        0x0 drivers/video/libvideo.a(rect.o)
+ .bss           0xc3ea4e18        0x0 drivers/video/libvideo.a(graphic.o)
+ .bss           0xc3ea4e18        0x0 drivers/video/libvideo.a(fbcolor.o)
+ .bss           0xc3ea4e18        0x0 drivers/video/libvideo.a(fbpixel.o)
+ .bss           0xc3ea4e18        0x0 drivers/video/libvideo.a(fbviewport.o)
+ .bss           0xc3ea4e18        0x0 lib_generic/libgeneric.a(div64.o)
+                0xc3ea4e18                _end = .
+Address of section .text set to 0xc3e00000
+LOAD cpu/s5pc11x/start.o
+START GROUP
+LOAD lib_generic/libgeneric.a
+LOAD cpu/s5pc11x/libs5pc11x.a
+LOAD cpu/s5pc11x/s5pc110/libs5pc110.a
+LOAD lib_arm/libarm.a
+LOAD fs/cramfs/libcramfs.a
+LOAD fs/fat/libfat.a
+LOAD fs/fdos/libfdos.a
+LOAD fs/jffs2/libjffs2.a
+LOAD fs/reiserfs/libreiserfs.a
+LOAD fs/ext2/libext2fs.a
+LOAD net/libnet.a
+LOAD disk/libdisk.a
+LOAD drivers/bios_emulator/libatibiosemu.a
+LOAD drivers/block/libblock.a
+LOAD drivers/dma/libdma.a
+LOAD drivers/hwmon/libhwmon.a
+LOAD drivers/i2c/libi2c.a
+LOAD drivers/input/libinput.a
+LOAD drivers/misc/libmisc.a
+LOAD drivers/mmc/libmmc.a
+LOAD drivers/mtd/libmtd.a
+LOAD drivers/mtd/nand/libnand.a
+LOAD drivers/mtd/nand_legacy/libnand_legacy.a
+LOAD drivers/mtd/onenand/libonenand.a
+LOAD drivers/mtd/ubi/libubi.a
+LOAD drivers/mtd/spi/libspi_flash.a
+LOAD drivers/net/libnet.a
+LOAD drivers/net/sk98lin/libsk98lin.a
+LOAD drivers/pci/libpci.a
+LOAD drivers/pcmcia/libpcmcia.a
+LOAD drivers/spi/libspi.a
+LOAD drivers/rtc/librtc.a
+LOAD drivers/serial/libserial.a
+LOAD drivers/usb/libusb.a
+LOAD drivers/video/libvideo.a
+LOAD common/libcommon.a
+LOAD libfdt/libfdt.a
+LOAD api/libapi.a
+LOAD post/libpost.a
+LOAD board/samsung/x210/libx210.a
+END GROUP
+LOAD /arm/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/libgcc.a
+OUTPUT(u-boot elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x10
+ .ARM.attributes
+                0x00000000       0x10 cpu/s5pc11x/start.o
+ .ARM.attributes
+                0x00000010       0x10 cpu/s5pc11x/s5pc110/cpu_init.o
+ .ARM.attributes
+                0x00000020       0x10 board/samsung/x210/lowlevel_init.o
+ .ARM.attributes
+                0x00000030       0x10 cpu/s5pc11x/onenand_cp.o
+ .ARM.attributes
+                0x00000040       0x10 cpu/s5pc11x/nand_cp.o
+ .ARM.attributes
+                0x00000050       0x10 cpu/s5pc11x/movi.o
+ .ARM.attributes
+                0x00000060       0x10 common/secure_boot.o
+ .ARM.attributes
+                0x00000070       0x10 common/ace_sha1.o
+ .ARM.attributes
+                0x00000080       0x10 cpu/s5pc11x/pmic.o
+ .ARM.attributes
+                0x00000090       0x10 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .ARM.attributes
+                0x000000a0       0x10 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .ARM.attributes
+                0x000000b0       0x10 cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .ARM.attributes
+                0x000000c0       0x10 cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .ARM.attributes
+                0x000000d0       0x10 cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .ARM.attributes
+                0x000000e0       0x10 lib_arm/libarm.a(_divsi3.o)
+ .ARM.attributes
+                0x000000f0       0x10 lib_arm/libarm.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000100       0x10 lib_arm/libarm.a(board.o)
+ .ARM.attributes
+                0x00000110       0x10 lib_arm/libarm.a(div0.o)
+ .ARM.attributes
+                0x00000120       0x10 lib_arm/libarm.a(_modsi3.o)
+ .ARM.attributes
+                0x00000130       0x10 net/libnet.a(net.o)
+ .ARM.attributes
+                0x00000140       0x10 net/libnet.a(tftp.o)
+ .ARM.attributes
+                0x00000150       0x10 net/libnet.a(bootp.o)
+ .ARM.attributes
+                0x00000160       0x10 net/libnet.a(rarp.o)
+ .ARM.attributes
+                0x00000170       0x10 net/libnet.a(eth.o)
+ .ARM.attributes
+                0x00000180       0x10 net/libnet.a(nfs.o)
+ .ARM.attributes
+                0x00000190       0x10 drivers/mmc/libmmc.a(mmc.o)
+ .ARM.attributes
+                0x000001a0       0x10 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .ARM.attributes
+                0x000001b0       0x10 drivers/net/libnet.a(dm9000x.o)
+ .ARM.attributes
+                0x000001c0       0x10 common/libcommon.a(main.o)
+ .ARM.attributes
+                0x000001d0       0x10 common/libcommon.a(cmd_autoscript.o)
+ .ARM.attributes
+                0x000001e0       0x10 common/libcommon.a(cmd_bdinfo.o)
+ .ARM.attributes
+                0x000001f0       0x10 common/libcommon.a(image.o)
+ .ARM.attributes
+                0x00000200       0x10 common/libcommon.a(cmd_boot.o)
+ .ARM.attributes
+                0x00000210       0x10 common/libcommon.a(cmd_bootm.o)
+ .ARM.attributes
+                0x00000220       0x10 common/libcommon.a(cmd_cache.o)
+ .ARM.attributes
+                0x00000230       0x10 common/libcommon.a(cmd_console.o)
+ .ARM.attributes
+                0x00000240       0x10 common/libcommon.a(cmd_elf.o)
+ .ARM.attributes
+                0x00000250       0x10 common/libcommon.a(cmd_ext2.o)
+ .ARM.attributes
+                0x00000260       0x10 common/libcommon.a(cmd_fat.o)
+ .ARM.attributes
+                0x00000270       0x10 common/libcommon.a(cmd_flash.o)
+ .ARM.attributes
+                0x00000280       0x10 common/libcommon.a(cmd_itest.o)
+ .ARM.attributes
+                0x00000290       0x10 common/libcommon.a(cmd_load.o)
+ .ARM.attributes
+                0x000002a0       0x10 common/libcommon.a(cmd_mem.o)
+ .ARM.attributes
+                0x000002b0       0x10 common/libcommon.a(cmd_misc.o)
+ .ARM.attributes
+                0x000002c0       0x10 common/libcommon.a(cmd_mmc.o)
+ .ARM.attributes
+                0x000002d0       0x10 common/libcommon.a(cmd_net.o)
+ .ARM.attributes
+                0x000002e0       0x10 common/libcommon.a(cmd_nvedit.o)
+ .ARM.attributes
+                0x000002f0       0x10 common/libcommon.a(cmd_reginfo.o)
+ .ARM.attributes
+                0x00000300       0x10 common/libcommon.a(cmd_usbd.o)
+ .ARM.attributes
+                0x00000310       0x10 common/libcommon.a(cmd_ximg.o)
+ .ARM.attributes
+                0x00000320       0x10 common/libcommon.a(command.o)
+ .ARM.attributes
+                0x00000330       0x10 common/libcommon.a(console.o)
+ .ARM.attributes
+                0x00000340       0x10 common/libcommon.a(devices.o)
+ .ARM.attributes
+                0x00000350       0x10 common/libcommon.a(dlmalloc.o)
+ .ARM.attributes
+                0x00000360       0x10 common/libcommon.a(env_common.o)
+ .ARM.attributes
+                0x00000370       0x10 common/libcommon.a(exports.o)
+ .ARM.attributes
+                0x00000380       0x10 common/libcommon.a(flash.o)
+ .ARM.attributes
+                0x00000390       0x10 common/libcommon.a(hush.o)
+ .ARM.attributes
+                0x000003a0       0x10 common/libcommon.a(lists.o)
+ .ARM.attributes
+                0x000003b0       0x10 common/libcommon.a(s_record.o)
+ .ARM.attributes
+                0x000003c0       0x10 common/libcommon.a(usb.o)
+ .ARM.attributes
+                0x000003d0       0x10 common/libcommon.a(xyzModem.o)
+ .ARM.attributes
+                0x000003e0       0x10 common/libcommon.a(cmd_movi.o)
+ .ARM.attributes
+                0x000003f0       0x10 common/libcommon.a(cmd_fastboot.o)
+ .ARM.attributes
+                0x00000400       0x10 common/libcommon.a(cmd_mmc_fdisk.o)
+ .ARM.attributes
+                0x00000410       0x10 common/libcommon.a(env_auto.o)
+ .ARM.attributes
+                0x00000420       0x10 common/libcommon.a(gunzip.o)
+ .ARM.attributes
+                0x00000430       0x10 common/libcommon.a(crc16.o)
+ .ARM.attributes
+                0x00000440       0x10 board/samsung/x210/libx210.a(x210.o)
+ .ARM.attributes
+                0x00000450       0x10 board/samsung/x210/libx210.a(flash.o)
+ .ARM.attributes
+                0x00000460       0x10 lib_generic/libgeneric.a(crc32.o)
+ .ARM.attributes
+                0x00000470       0x10 lib_generic/libgeneric.a(ctype.o)
+ .ARM.attributes
+                0x00000480       0x10 lib_generic/libgeneric.a(display_options.o)
+ .ARM.attributes
+                0x00000490       0x10 lib_generic/libgeneric.a(lmb.o)
+ .ARM.attributes
+                0x000004a0       0x10 lib_generic/libgeneric.a(string.o)
+ .ARM.attributes
+                0x000004b0       0x10 lib_generic/libgeneric.a(vsprintf.o)
+ .ARM.attributes
+                0x000004c0       0x10 lib_generic/libgeneric.a(zlib.o)
+ .ARM.attributes
+                0x000004d0       0x10 cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .ARM.attributes
+                0x000004e0       0x10 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+ .ARM.attributes
+                0x000004f0       0x10 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+ .ARM.attributes
+                0x00000500       0x10 cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .ARM.attributes
+                0x00000510       0x10 lib_arm/libarm.a(_umodsi3.o)
+ .ARM.attributes
+                0x00000520       0x10 lib_arm/libarm.a(bootm.o)
+ .ARM.attributes
+                0x00000530       0x10 lib_arm/libarm.a(cache.o)
+ .ARM.attributes
+                0x00000540       0x10 fs/fat/libfat.a(fat.o)
+ .ARM.attributes
+                0x00000550       0x10 fs/ext2/libext2fs.a(ext2fs.o)
+ .ARM.attributes
+                0x00000560       0x10 fs/ext2/libext2fs.a(dev.o)
+ .ARM.attributes
+                0x00000570       0x10 disk/libdisk.a(part.o)
+ .ARM.attributes
+                0x00000580       0x10 disk/libdisk.a(part_dos.o)
+ .ARM.attributes
+                0x00000590       0x10 drivers/rtc/librtc.a(date.o)
+ .ARM.attributes
+                0x000005a0       0x10 drivers/video/libvideo.a(mpadfb.o)
+ .ARM.attributes
+                0x000005b0       0x10 drivers/video/libvideo.a(fbsoft.o)
+ .ARM.attributes
+                0x000005c0       0x10 drivers/video/libvideo.a(bitmap.o)
+ .ARM.attributes
+                0x000005d0       0x10 drivers/video/libvideo.a(logo.o)
+ .ARM.attributes
+                0x000005e0       0x10 drivers/video/libvideo.a(fbblit.o)
+ .ARM.attributes
+                0x000005f0       0x10 drivers/video/libvideo.a(fbfill.o)
+ .ARM.attributes
+                0x00000600       0x10 drivers/video/libvideo.a(rect.o)
+ .ARM.attributes
+                0x00000610       0x10 drivers/video/libvideo.a(graphic.o)
+ .ARM.attributes
+                0x00000620       0x10 drivers/video/libvideo.a(fbcolor.o)
+ .ARM.attributes
+                0x00000630       0x10 drivers/video/libvideo.a(fbpixel.o)
+ .ARM.attributes
+                0x00000640       0x10 drivers/video/libvideo.a(fbviewport.o)
+ .ARM.attributes
+                0x00000650       0x10 lib_generic/libgeneric.a(div64.o)
+
+.comment        0x00000000      0xf96
+ .comment       0x00000000       0x2a cpu/s5pc11x/onenand_cp.o
+ .comment       0x0000002a       0x2a cpu/s5pc11x/nand_cp.o
+ .comment       0x00000054       0x2a cpu/s5pc11x/movi.o
+ .comment       0x0000007e       0x2a common/secure_boot.o
+ .comment       0x000000a8       0x2a common/ace_sha1.o
+ .comment       0x000000d2       0x2a cpu/s5pc11x/pmic.o
+ .comment       0x000000fc       0x2a cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .comment       0x00000126       0x2a cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .comment       0x00000150       0x2a cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .comment       0x0000017a       0x2a cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .comment       0x000001a4       0x2a cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .comment       0x000001ce       0x2a lib_arm/libarm.a(board.o)
+ .comment       0x000001f8       0x2a lib_arm/libarm.a(div0.o)
+ .comment       0x00000222       0x2a net/libnet.a(net.o)
+ .comment       0x0000024c       0x2a net/libnet.a(tftp.o)
+ .comment       0x00000276       0x2a net/libnet.a(bootp.o)
+ .comment       0x000002a0       0x2a net/libnet.a(rarp.o)
+ .comment       0x000002ca       0x2a net/libnet.a(eth.o)
+ .comment       0x000002f4       0x2a net/libnet.a(nfs.o)
+ .comment       0x0000031e       0x2a drivers/mmc/libmmc.a(mmc.o)
+ .comment       0x00000348       0x2a drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .comment       0x00000372       0x2a drivers/net/libnet.a(dm9000x.o)
+ .comment       0x0000039c       0x2a common/libcommon.a(main.o)
+ .comment       0x000003c6       0x2a common/libcommon.a(cmd_autoscript.o)
+ .comment       0x000003f0       0x2a common/libcommon.a(cmd_bdinfo.o)
+ .comment       0x0000041a       0x2a common/libcommon.a(image.o)
+ .comment       0x00000444       0x2a common/libcommon.a(cmd_boot.o)
+ .comment       0x0000046e       0x2a common/libcommon.a(cmd_bootm.o)
+ .comment       0x00000498       0x2a common/libcommon.a(cmd_cache.o)
+ .comment       0x000004c2       0x2a common/libcommon.a(cmd_console.o)
+ .comment       0x000004ec       0x2a common/libcommon.a(cmd_elf.o)
+ .comment       0x00000516       0x2a common/libcommon.a(cmd_ext2.o)
+ .comment       0x00000540       0x2a common/libcommon.a(cmd_fat.o)
+ .comment       0x0000056a       0x2a common/libcommon.a(cmd_flash.o)
+ .comment       0x00000594       0x2a common/libcommon.a(cmd_itest.o)
+ .comment       0x000005be       0x2a common/libcommon.a(cmd_load.o)
+ .comment       0x000005e8       0x2a common/libcommon.a(cmd_mem.o)
+ .comment       0x00000612       0x2a common/libcommon.a(cmd_misc.o)
+ .comment       0x0000063c       0x2a common/libcommon.a(cmd_mmc.o)
+ .comment       0x00000666       0x2a common/libcommon.a(cmd_net.o)
+ .comment       0x00000690       0x2a common/libcommon.a(cmd_nvedit.o)
+ .comment       0x000006ba       0x2a common/libcommon.a(cmd_reginfo.o)
+ .comment       0x000006e4       0x2a common/libcommon.a(cmd_usbd.o)
+ .comment       0x0000070e       0x2a common/libcommon.a(cmd_ximg.o)
+ .comment       0x00000738       0x2a common/libcommon.a(command.o)
+ .comment       0x00000762       0x2a common/libcommon.a(console.o)
+ .comment       0x0000078c       0x2a common/libcommon.a(devices.o)
+ .comment       0x000007b6       0x2a common/libcommon.a(dlmalloc.o)
+ .comment       0x000007e0       0x2a common/libcommon.a(env_common.o)
+ .comment       0x0000080a       0x2a common/libcommon.a(exports.o)
+ .comment       0x00000834       0x2a common/libcommon.a(flash.o)
+ .comment       0x0000085e       0x2a common/libcommon.a(hush.o)
+ .comment       0x00000888       0x2a common/libcommon.a(lists.o)
+ .comment       0x000008b2       0x2a common/libcommon.a(s_record.o)
+ .comment       0x000008dc       0x2a common/libcommon.a(usb.o)
+ .comment       0x00000906       0x2a common/libcommon.a(xyzModem.o)
+ .comment       0x00000930       0x2a common/libcommon.a(cmd_movi.o)
+ .comment       0x0000095a       0x2a common/libcommon.a(cmd_fastboot.o)
+ .comment       0x00000984       0x2a common/libcommon.a(cmd_mmc_fdisk.o)
+ .comment       0x000009ae       0x2a common/libcommon.a(env_auto.o)
+ .comment       0x000009d8       0x2a common/libcommon.a(gunzip.o)
+ .comment       0x00000a02       0x2a common/libcommon.a(crc16.o)
+ .comment       0x00000a2c       0x2a board/samsung/x210/libx210.a(x210.o)
+ .comment       0x00000a56       0x2a board/samsung/x210/libx210.a(flash.o)
+ .comment       0x00000a80       0x2a lib_generic/libgeneric.a(crc32.o)
+ .comment       0x00000aaa       0x2a lib_generic/libgeneric.a(ctype.o)
+ .comment       0x00000ad4       0x2a lib_generic/libgeneric.a(display_options.o)
+ .comment       0x00000afe       0x2a lib_generic/libgeneric.a(lmb.o)
+ .comment       0x00000b28       0x2a lib_generic/libgeneric.a(string.o)
+ .comment       0x00000b52       0x2a lib_generic/libgeneric.a(vsprintf.o)
+ .comment       0x00000b7c       0x2a lib_generic/libgeneric.a(zlib.o)
+ .comment       0x00000ba6       0x2a cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .comment       0x00000bd0       0x2a cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+ .comment       0x00000bfa       0x2a cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+ .comment       0x00000c24       0x2a cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .comment       0x00000c4e       0x2a lib_arm/libarm.a(bootm.o)
+ .comment       0x00000c78       0x2a lib_arm/libarm.a(cache.o)
+ .comment       0x00000ca2       0x2a fs/fat/libfat.a(fat.o)
+ .comment       0x00000ccc       0x2a fs/ext2/libext2fs.a(ext2fs.o)
+ .comment       0x00000cf6       0x2a fs/ext2/libext2fs.a(dev.o)
+ .comment       0x00000d20       0x2a disk/libdisk.a(part.o)
+ .comment       0x00000d4a       0x2a disk/libdisk.a(part_dos.o)
+ .comment       0x00000d74       0x2a drivers/rtc/librtc.a(date.o)
+ .comment       0x00000d9e       0x2a drivers/video/libvideo.a(mpadfb.o)
+ .comment       0x00000dc8       0x2a drivers/video/libvideo.a(fbsoft.o)
+ .comment       0x00000df2       0x2a drivers/video/libvideo.a(bitmap.o)
+ .comment       0x00000e1c       0x2a drivers/video/libvideo.a(logo.o)
+ .comment       0x00000e46       0x2a drivers/video/libvideo.a(fbblit.o)
+ .comment       0x00000e70       0x2a drivers/video/libvideo.a(fbfill.o)
+ .comment       0x00000e9a       0x2a drivers/video/libvideo.a(rect.o)
+ .comment       0x00000ec4       0x2a drivers/video/libvideo.a(graphic.o)
+ .comment       0x00000eee       0x2a drivers/video/libvideo.a(fbcolor.o)
+ .comment       0x00000f18       0x2a drivers/video/libvideo.a(fbpixel.o)
+ .comment       0x00000f42       0x2a drivers/video/libvideo.a(fbviewport.o)
+ .comment       0x00000f6c       0x2a lib_generic/libgeneric.a(div64.o)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/onenand_cp.o
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/nand_cp.o
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/movi.o
+ .note.GNU-stack
+                0x00000000        0x0 common/secure_boot.o
+ .note.GNU-stack
+                0x00000000        0x0 common/ace_sha1.o
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/pmic.o
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_arm/libarm.a(board.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_arm/libarm.a(div0.o)
+ .note.GNU-stack
+                0x00000000        0x0 net/libnet.a(net.o)
+ .note.GNU-stack
+                0x00000000        0x0 net/libnet.a(tftp.o)
+ .note.GNU-stack
+                0x00000000        0x0 net/libnet.a(bootp.o)
+ .note.GNU-stack
+                0x00000000        0x0 net/libnet.a(rarp.o)
+ .note.GNU-stack
+                0x00000000        0x0 net/libnet.a(eth.o)
+ .note.GNU-stack
+                0x00000000        0x0 net/libnet.a(nfs.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/mmc/libmmc.a(mmc.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/net/libnet.a(dm9000x.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(main.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_autoscript.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_bdinfo.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(image.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_boot.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_bootm.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_cache.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_console.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_elf.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_ext2.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_fat.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_flash.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_itest.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_load.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_mem.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_misc.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_mmc.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_net.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_nvedit.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_reginfo.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_usbd.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_ximg.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(command.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(console.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(devices.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(dlmalloc.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(env_common.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(exports.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(flash.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(hush.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(lists.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(s_record.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(usb.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(xyzModem.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_movi.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_fastboot.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(cmd_mmc_fdisk.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(env_auto.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(gunzip.o)
+ .note.GNU-stack
+                0x00000000        0x0 common/libcommon.a(crc16.o)
+ .note.GNU-stack
+                0x00000000        0x0 board/samsung/x210/libx210.a(x210.o)
+ .note.GNU-stack
+                0x00000000        0x0 board/samsung/x210/libx210.a(flash.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_generic/libgeneric.a(crc32.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_generic/libgeneric.a(ctype.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_generic/libgeneric.a(display_options.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_generic/libgeneric.a(lmb.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_generic/libgeneric.a(string.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_generic/libgeneric.a(vsprintf.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_generic/libgeneric.a(zlib.o)
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+ .note.GNU-stack
+                0x00000000        0x0 cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_arm/libarm.a(bootm.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_arm/libarm.a(cache.o)
+ .note.GNU-stack
+                0x00000000        0x0 fs/fat/libfat.a(fat.o)
+ .note.GNU-stack
+                0x00000000        0x0 fs/ext2/libext2fs.a(ext2fs.o)
+ .note.GNU-stack
+                0x00000000        0x0 fs/ext2/libext2fs.a(dev.o)
+ .note.GNU-stack
+                0x00000000        0x0 disk/libdisk.a(part.o)
+ .note.GNU-stack
+                0x00000000        0x0 disk/libdisk.a(part_dos.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/rtc/librtc.a(date.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video/libvideo.a(mpadfb.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video/libvideo.a(fbsoft.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video/libvideo.a(bitmap.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video/libvideo.a(logo.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video/libvideo.a(fbblit.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video/libvideo.a(fbfill.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video/libvideo.a(rect.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video/libvideo.a(graphic.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video/libvideo.a(fbcolor.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video/libvideo.a(fbpixel.o)
+ .note.GNU-stack
+                0x00000000        0x0 drivers/video/libvideo.a(fbviewport.o)
+ .note.GNU-stack
+                0x00000000        0x0 lib_generic/libgeneric.a(div64.o)
+
+.debug_line     0x00000000     0xc399
+ .debug_line    0x00000000      0x137 cpu/s5pc11x/start.o
+ .debug_line    0x00000137      0x124 cpu/s5pc11x/s5pc110/cpu_init.o
+ .debug_line    0x0000025b      0x158 board/samsung/x210/lowlevel_init.o
+ .debug_line    0x000003b3       0x71 cpu/s5pc11x/onenand_cp.o
+ .debug_line    0x00000424      0x110 cpu/s5pc11x/nand_cp.o
+ .debug_line    0x00000534      0x142 cpu/s5pc11x/movi.o
+ .debug_line    0x00000676       0xb0 common/secure_boot.o
+ .debug_line    0x00000726       0x59 common/ace_sha1.o
+ .debug_line    0x0000077f       0xa6 cpu/s5pc11x/pmic.o
+ .debug_line    0x00000825      0x1f0 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .debug_line    0x00000a15      0x161 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .debug_line    0x00000b76      0x17f cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .debug_line    0x00000cf5      0x158 cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .debug_line    0x00000e4d      0x14b cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .debug_line    0x00000f98       0x66 lib_arm/libarm.a(_divsi3.o)
+ .debug_line    0x00000ffe       0x5f lib_arm/libarm.a(_udivsi3.o)
+ .debug_line    0x0000105d      0x217 lib_arm/libarm.a(board.o)
+ .debug_line    0x00001274       0x38 lib_arm/libarm.a(div0.o)
+ .debug_line    0x000012ac       0x53 lib_arm/libarm.a(_modsi3.o)
+ .debug_line    0x000012ff      0x4d7 net/libnet.a(net.o)
+ .debug_line    0x000017d6      0x27b net/libnet.a(tftp.o)
+ .debug_line    0x00001a51      0x32c net/libnet.a(bootp.o)
+ .debug_line    0x00001d7d      0x106 net/libnet.a(rarp.o)
+ .debug_line    0x00001e83       0xc6 net/libnet.a(eth.o)
+ .debug_line    0x00001f49      0x367 net/libnet.a(nfs.o)
+ .debug_line    0x000022b0      0x4ec drivers/mmc/libmmc.a(mmc.o)
+ .debug_line    0x0000279c      0x289 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .debug_line    0x00002a25      0x2b7 drivers/net/libnet.a(dm9000x.o)
+ .debug_line    0x00002cdc      0x303 common/libcommon.a(main.o)
+ .debug_line    0x00002fdf      0x1c9 common/libcommon.a(cmd_autoscript.o)
+ .debug_line    0x000031a8      0x13a common/libcommon.a(cmd_bdinfo.o)
+ .debug_line    0x000032e2      0x393 common/libcommon.a(image.o)
+ .debug_line    0x00003675       0xd6 common/libcommon.a(cmd_boot.o)
+ .debug_line    0x0000374b      0x3dd common/libcommon.a(cmd_bootm.o)
+ .debug_line    0x00003b28       0xa2 common/libcommon.a(cmd_cache.o)
+ .debug_line    0x00003bca       0xae common/libcommon.a(cmd_console.o)
+ .debug_line    0x00003c78      0x1bf common/libcommon.a(cmd_elf.o)
+ .debug_line    0x00003e37      0x18a common/libcommon.a(cmd_ext2.o)
+ .debug_line    0x00003fc1      0x16a common/libcommon.a(cmd_fat.o)
+ .debug_line    0x0000412b      0x233 common/libcommon.a(cmd_flash.o)
+ .debug_line    0x0000435e      0x117 common/libcommon.a(cmd_itest.o)
+ .debug_line    0x00004475      0x395 common/libcommon.a(cmd_load.o)
+ .debug_line    0x0000480a      0x260 common/libcommon.a(cmd_mem.o)
+ .debug_line    0x00004a6a       0xd5 common/libcommon.a(cmd_misc.o)
+ .debug_line    0x00004b3f      0x1a2 common/libcommon.a(cmd_mmc.o)
+ .debug_line    0x00004ce1      0x161 common/libcommon.a(cmd_net.o)
+ .debug_line    0x00004e42      0x2b4 common/libcommon.a(cmd_nvedit.o)
+ .debug_line    0x000050f6       0x84 common/libcommon.a(cmd_reginfo.o)
+ .debug_line    0x0000517a       0xb8 common/libcommon.a(cmd_usbd.o)
+ .debug_line    0x00005232      0x1ce common/libcommon.a(cmd_ximg.o)
+ .debug_line    0x00005400      0x14c common/libcommon.a(command.o)
+ .debug_line    0x0000554c      0x282 common/libcommon.a(console.o)
+ .debug_line    0x000057ce      0x159 common/libcommon.a(devices.o)
+ .debug_line    0x00005927      0x37b common/libcommon.a(dlmalloc.o)
+ .debug_line    0x00005ca2      0x178 common/libcommon.a(env_common.o)
+ .debug_line    0x00005e1a      0x12c common/libcommon.a(exports.o)
+ .debug_line    0x00005f46      0x143 common/libcommon.a(flash.o)
+ .debug_line    0x00006089      0x5b3 common/libcommon.a(hush.o)
+ .debug_line    0x0000663c      0x11f common/libcommon.a(lists.o)
+ .debug_line    0x0000675b       0xe3 common/libcommon.a(s_record.o)
+ .debug_line    0x0000683e      0x40d common/libcommon.a(usb.o)
+ .debug_line    0x00006c4b      0x205 common/libcommon.a(xyzModem.o)
+ .debug_line    0x00006e50      0x20f common/libcommon.a(cmd_movi.o)
+ .debug_line    0x0000705f      0x4e1 common/libcommon.a(cmd_fastboot.o)
+ .debug_line    0x00007540      0x2a7 common/libcommon.a(cmd_mmc_fdisk.o)
+ .debug_line    0x000077e7      0x20b common/libcommon.a(env_auto.o)
+ .debug_line    0x000079f2       0xbd common/libcommon.a(gunzip.o)
+ .debug_line    0x00007aaf       0xcb common/libcommon.a(crc16.o)
+ .debug_line    0x00007b7a      0x110 board/samsung/x210/libx210.a(x210.o)
+ .debug_line    0x00007c8a      0x25a board/samsung/x210/libx210.a(flash.o)
+ .debug_line    0x00007ee4      0x11c lib_generic/libgeneric.a(crc32.o)
+ .debug_line    0x00008000       0x28 lib_generic/libgeneric.a(ctype.o)
+ .debug_line    0x00008028      0x137 lib_generic/libgeneric.a(display_options.o)
+ .debug_line    0x0000815f      0x222 lib_generic/libgeneric.a(lmb.o)
+ .debug_line    0x00008381      0x1cb lib_generic/libgeneric.a(string.o)
+ .debug_line    0x0000854c      0x1df lib_generic/libgeneric.a(vsprintf.o)
+ .debug_line    0x0000872b      0x64c lib_generic/libgeneric.a(zlib.o)
+ .debug_line    0x00008d77      0x1dd cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .debug_line    0x00008f54      0x564 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+ .debug_line    0x000094b8      0x63d cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+ .debug_line    0x00009af5       0xae cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .debug_line    0x00009ba3       0x66 lib_arm/libarm.a(_umodsi3.o)
+ .debug_line    0x00009c09      0x231 lib_arm/libarm.a(bootm.o)
+ .debug_line    0x00009e3a       0x38 lib_arm/libarm.a(cache.o)
+ .debug_line    0x00009e72      0x4ea fs/fat/libfat.a(fat.o)
+ .debug_line    0x0000a35c      0x8e6 fs/ext2/libext2fs.a(ext2fs.o)
+ .debug_line    0x0000ac42      0x15b fs/ext2/libext2fs.a(dev.o)
+ .debug_line    0x0000ad9d      0x1a5 disk/libdisk.a(part.o)
+ .debug_line    0x0000af42      0x17b disk/libdisk.a(part_dos.o)
+ .debug_line    0x0000b0bd       0xc1 drivers/rtc/librtc.a(date.o)
+ .debug_line    0x0000b17e      0x32c drivers/video/libvideo.a(mpadfb.o)
+ .debug_line    0x0000b4aa      0x11e drivers/video/libvideo.a(fbsoft.o)
+ .debug_line    0x0000b5c8      0x1be drivers/video/libvideo.a(bitmap.o)
+ .debug_line    0x0000b786      0x100 drivers/video/libvideo.a(logo.o)
+ .debug_line    0x0000b886      0x358 drivers/video/libvideo.a(fbblit.o)
+ .debug_line    0x0000bbde      0x120 drivers/video/libvideo.a(fbfill.o)
+ .debug_line    0x0000bcfe      0x178 drivers/video/libvideo.a(rect.o)
+ .debug_line    0x0000be76      0x139 drivers/video/libvideo.a(graphic.o)
+ .debug_line    0x0000bfaf      0x10d drivers/video/libvideo.a(fbcolor.o)
+ .debug_line    0x0000c0bc       0xf3 drivers/video/libvideo.a(fbpixel.o)
+ .debug_line    0x0000c1af       0xec drivers/video/libvideo.a(fbviewport.o)
+ .debug_line    0x0000c29b       0xfe lib_generic/libgeneric.a(div64.o)
+
+.debug_info     0x00000000    0x2e015
+ .debug_info    0x00000000       0x6b cpu/s5pc11x/start.o
+ .debug_info    0x0000006b       0x76 cpu/s5pc11x/s5pc110/cpu_init.o
+ .debug_info    0x000000e1       0x7a board/samsung/x210/lowlevel_init.o
+ .debug_info    0x0000015b      0x22c cpu/s5pc11x/onenand_cp.o
+ .debug_info    0x00000387      0x29f cpu/s5pc11x/nand_cp.o
+ .debug_info    0x00000626      0x2ff cpu/s5pc11x/movi.o
+ .debug_info    0x00000925      0x29e common/secure_boot.o
+ .debug_info    0x00000bc3       0xaa common/ace_sha1.o
+ .debug_info    0x00000c6d      0x196 cpu/s5pc11x/pmic.o
+ .debug_info    0x00000e03      0x580 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .debug_info    0x00001383      0x495 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .debug_info    0x00001818      0x700 cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .debug_info    0x00001f18      0x455 cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .debug_info    0x0000236d      0x3d2 cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .debug_info    0x0000273f       0x69 lib_arm/libarm.a(_divsi3.o)
+ .debug_info    0x000027a8       0x6a lib_arm/libarm.a(_udivsi3.o)
+ .debug_info    0x00002812      0x69d lib_arm/libarm.a(board.o)
+ .debug_info    0x00002eaf       0x39 lib_arm/libarm.a(div0.o)
+ .debug_info    0x00002ee8       0x69 lib_arm/libarm.a(_modsi3.o)
+ .debug_info    0x00002f51     0x1344 net/libnet.a(net.o)
+ .debug_info    0x00004295      0x44e net/libnet.a(tftp.o)
+ .debug_info    0x000046e3      0x9c2 net/libnet.a(bootp.o)
+ .debug_info    0x000050a5      0x251 net/libnet.a(rarp.o)
+ .debug_info    0x000052f6      0x17b net/libnet.a(eth.o)
+ .debug_info    0x00005471      0xb50 net/libnet.a(nfs.o)
+ .debug_info    0x00005fc1     0x186f drivers/mmc/libmmc.a(mmc.o)
+ .debug_info    0x00007830      0xb95 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .debug_info    0x000083c5      0xaaf drivers/net/libnet.a(dm9000x.o)
+ .debug_info    0x00008e74      0xbd9 common/libcommon.a(main.o)
+ .debug_info    0x00009a4d      0x469 common/libcommon.a(cmd_autoscript.o)
+ .debug_info    0x00009eb6      0x37d common/libcommon.a(cmd_bdinfo.o)
+ .debug_info    0x0000a233     0x11c5 common/libcommon.a(image.o)
+ .debug_info    0x0000b3f8      0x24c common/libcommon.a(cmd_boot.o)
+ .debug_info    0x0000b644     0x14b3 common/libcommon.a(cmd_bootm.o)
+ .debug_info    0x0000caf7      0x22c common/libcommon.a(cmd_cache.o)
+ .debug_info    0x0000cd23      0x37f common/libcommon.a(cmd_console.o)
+ .debug_info    0x0000d0a2      0x5f4 common/libcommon.a(cmd_elf.o)
+ .debug_info    0x0000d696      0x695 common/libcommon.a(cmd_ext2.o)
+ .debug_info    0x0000dd2b      0x5b7 common/libcommon.a(cmd_fat.o)
+ .debug_info    0x0000e2e2      0x959 common/libcommon.a(cmd_flash.o)
+ .debug_info    0x0000ec3b      0x45a common/libcommon.a(cmd_itest.o)
+ .debug_info    0x0000f095      0xcfe common/libcommon.a(cmd_load.o)
+ .debug_info    0x0000fd93      0xa3b common/libcommon.a(cmd_mem.o)
+ .debug_info    0x000107ce      0x1b0 common/libcommon.a(cmd_misc.o)
+ .debug_info    0x0001097e      0x894 common/libcommon.a(cmd_mmc.o)
+ .debug_info    0x00011212      0x5cc common/libcommon.a(cmd_net.o)
+ .debug_info    0x000117de      0x855 common/libcommon.a(cmd_nvedit.o)
+ .debug_info    0x00012033      0x184 common/libcommon.a(cmd_reginfo.o)
+ .debug_info    0x000121b7      0x1e7 common/libcommon.a(cmd_usbd.o)
+ .debug_info    0x0001239e      0x423 common/libcommon.a(cmd_ximg.o)
+ .debug_info    0x000127c1      0x54c common/libcommon.a(command.o)
+ .debug_info    0x00012d0d      0x903 common/libcommon.a(console.o)
+ .debug_info    0x00013610      0x488 common/libcommon.a(devices.o)
+ .debug_info    0x00013a98      0xbdb common/libcommon.a(dlmalloc.o)
+ .debug_info    0x00014673      0x3c2 common/libcommon.a(env_common.o)
+ .debug_info    0x00014a35      0x2d3 common/libcommon.a(exports.o)
+ .debug_info    0x00014d08      0x43b common/libcommon.a(flash.o)
+ .debug_info    0x00015143     0x17e5 common/libcommon.a(hush.o)
+ .debug_info    0x00016928      0x51e common/libcommon.a(lists.o)
+ .debug_info    0x00016e46      0x18d common/libcommon.a(s_record.o)
+ .debug_info    0x00016fd3     0x1675 common/libcommon.a(usb.o)
+ .debug_info    0x00018648      0x66e common/libcommon.a(xyzModem.o)
+ .debug_info    0x00018cb6      0x8cd common/libcommon.a(cmd_movi.o)
+ .debug_info    0x00019583     0x135a common/libcommon.a(cmd_fastboot.o)
+ .debug_info    0x0001a8dd      0xd26 common/libcommon.a(cmd_mmc_fdisk.o)
+ .debug_info    0x0001b603      0x6f1 common/libcommon.a(env_auto.o)
+ .debug_info    0x0001bcf4      0x350 common/libcommon.a(gunzip.o)
+ .debug_info    0x0001c044      0x10c common/libcommon.a(crc16.o)
+ .debug_info    0x0001c150      0x2f5 board/samsung/x210/libx210.a(x210.o)
+ .debug_info    0x0001c445      0x622 board/samsung/x210/libx210.a(flash.o)
+ .debug_info    0x0001ca67      0x18a lib_generic/libgeneric.a(crc32.o)
+ .debug_info    0x0001cbf1       0x52 lib_generic/libgeneric.a(ctype.o)
+ .debug_info    0x0001cc43      0x259 lib_generic/libgeneric.a(display_options.o)
+ .debug_info    0x0001ce9c      0x7eb lib_generic/libgeneric.a(lmb.o)
+ .debug_info    0x0001d687      0x860 lib_generic/libgeneric.a(string.o)
+ .debug_info    0x0001dee7      0x42a lib_generic/libgeneric.a(vsprintf.o)
+ .debug_info    0x0001e311     0x172d lib_generic/libgeneric.a(zlib.o)
+ .debug_info    0x0001fa3e     0x12de cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .debug_info    0x00020d1c     0x1395 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+ .debug_info    0x000220b1     0x180c cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+ .debug_info    0x000238bd      0x199 cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .debug_info    0x00023a56       0x6a lib_arm/libarm.a(_umodsi3.o)
+ .debug_info    0x00023ac0      0xbde lib_arm/libarm.a(bootm.o)
+ .debug_info    0x0002469e       0xa4 lib_arm/libarm.a(cache.o)
+ .debug_info    0x00024742     0x17a2 fs/fat/libfat.a(fat.o)
+ .debug_info    0x00025ee4     0x1b92 fs/ext2/libext2fs.a(ext2fs.o)
+ .debug_info    0x00027a76      0x3b9 fs/ext2/libext2fs.a(dev.o)
+ .debug_info    0x00027e2f      0x65a disk/libdisk.a(part.o)
+ .debug_info    0x00028489      0x64d disk/libdisk.a(part_dos.o)
+ .debug_info    0x00028ad6      0x25c drivers/rtc/librtc.a(date.o)
+ .debug_info    0x00028d32      0xd01 drivers/video/libvideo.a(mpadfb.o)
+ .debug_info    0x00029a33      0x6e9 drivers/video/libvideo.a(fbsoft.o)
+ .debug_info    0x0002a11c      0x412 drivers/video/libvideo.a(bitmap.o)
+ .debug_info    0x0002a52e      0x64c drivers/video/libvideo.a(logo.o)
+ .debug_info    0x0002ab7a     0x14d2 drivers/video/libvideo.a(fbblit.o)
+ .debug_info    0x0002c04c      0x7da drivers/video/libvideo.a(fbfill.o)
+ .debug_info    0x0002c826      0x274 drivers/video/libvideo.a(rect.o)
+ .debug_info    0x0002ca9a      0x855 drivers/video/libvideo.a(graphic.o)
+ .debug_info    0x0002d2ef      0x3af drivers/video/libvideo.a(fbcolor.o)
+ .debug_info    0x0002d69e      0x3d2 drivers/video/libvideo.a(fbpixel.o)
+ .debug_info    0x0002da70      0x37b drivers/video/libvideo.a(fbviewport.o)
+ .debug_info    0x0002ddeb      0x22a lib_generic/libgeneric.a(div64.o)
+
+.debug_abbrev   0x00000000     0xb19a
+ .debug_abbrev  0x00000000       0x14 cpu/s5pc11x/start.o
+ .debug_abbrev  0x00000014       0x14 cpu/s5pc11x/s5pc110/cpu_init.o
+ .debug_abbrev  0x00000028       0x14 board/samsung/x210/lowlevel_init.o
+ .debug_abbrev  0x0000003c      0x145 cpu/s5pc11x/onenand_cp.o
+ .debug_abbrev  0x00000181      0x140 cpu/s5pc11x/nand_cp.o
+ .debug_abbrev  0x000002c1      0x151 cpu/s5pc11x/movi.o
+ .debug_abbrev  0x00000412       0xe4 common/secure_boot.o
+ .debug_abbrev  0x000004f6       0x86 common/ace_sha1.o
+ .debug_abbrev  0x0000057c       0xdd cpu/s5pc11x/pmic.o
+ .debug_abbrev  0x00000659      0x2a1 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .debug_abbrev  0x000008fa      0x1b6 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .debug_abbrev  0x00000ab0      0x1bb cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .debug_abbrev  0x00000c6b      0x1ae cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .debug_abbrev  0x00000e19      0x103 cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .debug_abbrev  0x00000f1c       0x14 lib_arm/libarm.a(_divsi3.o)
+ .debug_abbrev  0x00000f30       0x14 lib_arm/libarm.a(_udivsi3.o)
+ .debug_abbrev  0x00000f44      0x305 lib_arm/libarm.a(board.o)
+ .debug_abbrev  0x00001249       0x29 lib_arm/libarm.a(div0.o)
+ .debug_abbrev  0x00001272       0x14 lib_arm/libarm.a(_modsi3.o)
+ .debug_abbrev  0x00001286      0x3cb net/libnet.a(net.o)
+ .debug_abbrev  0x00001651      0x1c7 net/libnet.a(tftp.o)
+ .debug_abbrev  0x00001818      0x346 net/libnet.a(bootp.o)
+ .debug_abbrev  0x00001b5e      0x11e net/libnet.a(rarp.o)
+ .debug_abbrev  0x00001c7c       0xb5 net/libnet.a(eth.o)
+ .debug_abbrev  0x00001d31      0x2cd net/libnet.a(nfs.o)
+ .debug_abbrev  0x00001ffe      0x42e drivers/mmc/libmmc.a(mmc.o)
+ .debug_abbrev  0x0000242c      0x349 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .debug_abbrev  0x00002775      0x33a drivers/net/libnet.a(dm9000x.o)
+ .debug_abbrev  0x00002aaf      0x314 common/libcommon.a(main.o)
+ .debug_abbrev  0x00002dc3      0x1af common/libcommon.a(cmd_autoscript.o)
+ .debug_abbrev  0x00002f72      0x133 common/libcommon.a(cmd_bdinfo.o)
+ .debug_abbrev  0x000030a5      0x3db common/libcommon.a(image.o)
+ .debug_abbrev  0x00003480       0xdf common/libcommon.a(cmd_boot.o)
+ .debug_abbrev  0x0000355f      0x3b3 common/libcommon.a(cmd_bootm.o)
+ .debug_abbrev  0x00003912       0xee common/libcommon.a(cmd_cache.o)
+ .debug_abbrev  0x00003a00      0x157 common/libcommon.a(cmd_console.o)
+ .debug_abbrev  0x00003b57      0x1be common/libcommon.a(cmd_elf.o)
+ .debug_abbrev  0x00003d15      0x1cc common/libcommon.a(cmd_ext2.o)
+ .debug_abbrev  0x00003ee1      0x13e common/libcommon.a(cmd_fat.o)
+ .debug_abbrev  0x0000401f      0x1e9 common/libcommon.a(cmd_flash.o)
+ .debug_abbrev  0x00004208      0x1a0 common/libcommon.a(cmd_itest.o)
+ .debug_abbrev  0x000043a8      0x3d2 common/libcommon.a(cmd_load.o)
+ .debug_abbrev  0x0000477a      0x1f1 common/libcommon.a(cmd_mem.o)
+ .debug_abbrev  0x0000496b       0xd0 common/libcommon.a(cmd_misc.o)
+ .debug_abbrev  0x00004a3b      0x200 common/libcommon.a(cmd_mmc.o)
+ .debug_abbrev  0x00004c3b      0x1c1 common/libcommon.a(cmd_net.o)
+ .debug_abbrev  0x00004dfc      0x269 common/libcommon.a(cmd_nvedit.o)
+ .debug_abbrev  0x00005065       0xd0 common/libcommon.a(cmd_reginfo.o)
+ .debug_abbrev  0x00005135      0x10b common/libcommon.a(cmd_usbd.o)
+ .debug_abbrev  0x00005240      0x1a2 common/libcommon.a(cmd_ximg.o)
+ .debug_abbrev  0x000053e2      0x1c5 common/libcommon.a(command.o)
+ .debug_abbrev  0x000055a7      0x2d8 common/libcommon.a(console.o)
+ .debug_abbrev  0x0000587f      0x16c common/libcommon.a(devices.o)
+ .debug_abbrev  0x000059eb      0x25c common/libcommon.a(dlmalloc.o)
+ .debug_abbrev  0x00005c47      0x191 common/libcommon.a(env_common.o)
+ .debug_abbrev  0x00005dd8      0x121 common/libcommon.a(exports.o)
+ .debug_abbrev  0x00005ef9      0x194 common/libcommon.a(flash.o)
+ .debug_abbrev  0x0000608d      0x38f common/libcommon.a(hush.o)
+ .debug_abbrev  0x0000641c      0x202 common/libcommon.a(lists.o)
+ .debug_abbrev  0x0000661e       0xea common/libcommon.a(s_record.o)
+ .debug_abbrev  0x00006708      0x392 common/libcommon.a(usb.o)
+ .debug_abbrev  0x00006a9a      0x28b common/libcommon.a(xyzModem.o)
+ .debug_abbrev  0x00006d25      0x1d2 common/libcommon.a(cmd_movi.o)
+ .debug_abbrev  0x00006ef7      0x36a common/libcommon.a(cmd_fastboot.o)
+ .debug_abbrev  0x00007261      0x2a5 common/libcommon.a(cmd_mmc_fdisk.o)
+ .debug_abbrev  0x00007506      0x21a common/libcommon.a(env_auto.o)
+ .debug_abbrev  0x00007720      0x144 common/libcommon.a(gunzip.o)
+ .debug_abbrev  0x00007864       0xc6 common/libcommon.a(crc16.o)
+ .debug_abbrev  0x0000792a      0x14e board/samsung/x210/libx210.a(x210.o)
+ .debug_abbrev  0x00007a78      0x225 board/samsung/x210/libx210.a(flash.o)
+ .debug_abbrev  0x00007c9d       0xd0 lib_generic/libgeneric.a(crc32.o)
+ .debug_abbrev  0x00007d6d       0x4b lib_generic/libgeneric.a(ctype.o)
+ .debug_abbrev  0x00007db8      0x11e lib_generic/libgeneric.a(display_options.o)
+ .debug_abbrev  0x00007ed6      0x322 lib_generic/libgeneric.a(lmb.o)
+ .debug_abbrev  0x000081f8      0x1f4 lib_generic/libgeneric.a(string.o)
+ .debug_abbrev  0x000083ec      0x1e8 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_abbrev  0x000085d4      0x327 lib_generic/libgeneric.a(zlib.o)
+ .debug_abbrev  0x000088fb      0x340 cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .debug_abbrev  0x00008c3b      0x23b cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+ .debug_abbrev  0x00008e76      0x2bf cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+ .debug_abbrev  0x00009135       0xf1 cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .debug_abbrev  0x00009226       0x14 lib_arm/libarm.a(_umodsi3.o)
+ .debug_abbrev  0x0000923a      0x28c lib_arm/libarm.a(bootm.o)
+ .debug_abbrev  0x000094c6       0x57 lib_arm/libarm.a(cache.o)
+ .debug_abbrev  0x0000951d      0x370 fs/fat/libfat.a(fat.o)
+ .debug_abbrev  0x0000988d      0x33a fs/ext2/libext2fs.a(ext2fs.o)
+ .debug_abbrev  0x00009bc7      0x132 fs/ext2/libext2fs.a(dev.o)
+ .debug_abbrev  0x00009cf9      0x1dc disk/libdisk.a(part.o)
+ .debug_abbrev  0x00009ed5      0x1e5 disk/libdisk.a(part_dos.o)
+ .debug_abbrev  0x0000a0ba      0x110 drivers/rtc/librtc.a(date.o)
+ .debug_abbrev  0x0000a1ca      0x1fa drivers/video/libvideo.a(mpadfb.o)
+ .debug_abbrev  0x0000a3c4      0x163 drivers/video/libvideo.a(fbsoft.o)
+ .debug_abbrev  0x0000a527      0x13e drivers/video/libvideo.a(bitmap.o)
+ .debug_abbrev  0x0000a665      0x14d drivers/video/libvideo.a(logo.o)
+ .debug_abbrev  0x0000a7b2      0x1d0 drivers/video/libvideo.a(fbblit.o)
+ .debug_abbrev  0x0000a982      0x163 drivers/video/libvideo.a(fbfill.o)
+ .debug_abbrev  0x0000aae5      0x111 drivers/video/libvideo.a(rect.o)
+ .debug_abbrev  0x0000abf6      0x16f drivers/video/libvideo.a(graphic.o)
+ .debug_abbrev  0x0000ad65      0x119 drivers/video/libvideo.a(fbcolor.o)
+ .debug_abbrev  0x0000ae7e      0x10a drivers/video/libvideo.a(fbpixel.o)
+ .debug_abbrev  0x0000af88       0xff drivers/video/libvideo.a(fbviewport.o)
+ .debug_abbrev  0x0000b087      0x113 lib_generic/libgeneric.a(div64.o)
+
+.debug_aranges  0x00000000      0xca0
+ .debug_aranges
+                0x00000000       0x20 cpu/s5pc11x/start.o
+ .debug_aranges
+                0x00000020       0x20 cpu/s5pc11x/s5pc110/cpu_init.o
+ .debug_aranges
+                0x00000040       0x20 board/samsung/x210/lowlevel_init.o
+ .debug_aranges
+                0x00000060       0x20 cpu/s5pc11x/onenand_cp.o
+ .debug_aranges
+                0x00000080       0x20 cpu/s5pc11x/nand_cp.o
+ .debug_aranges
+                0x000000a0       0x20 cpu/s5pc11x/movi.o
+ .debug_aranges
+                0x000000c0       0x20 common/secure_boot.o
+ .debug_aranges
+                0x000000e0       0x20 common/ace_sha1.o
+ .debug_aranges
+                0x00000100       0x20 cpu/s5pc11x/pmic.o
+ .debug_aranges
+                0x00000120       0x20 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .debug_aranges
+                0x00000140       0x20 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .debug_aranges
+                0x00000160       0x20 cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .debug_aranges
+                0x00000180       0x20 cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .debug_aranges
+                0x000001a0       0x20 cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .debug_aranges
+                0x000001c0       0x20 lib_arm/libarm.a(_divsi3.o)
+ .debug_aranges
+                0x000001e0       0x20 lib_arm/libarm.a(_udivsi3.o)
+ .debug_aranges
+                0x00000200       0x20 lib_arm/libarm.a(board.o)
+ .debug_aranges
+                0x00000220       0x20 lib_arm/libarm.a(div0.o)
+ .debug_aranges
+                0x00000240       0x20 lib_arm/libarm.a(_modsi3.o)
+ .debug_aranges
+                0x00000260       0x20 net/libnet.a(net.o)
+ .debug_aranges
+                0x00000280       0x20 net/libnet.a(tftp.o)
+ .debug_aranges
+                0x000002a0       0x20 net/libnet.a(bootp.o)
+ .debug_aranges
+                0x000002c0       0x20 net/libnet.a(rarp.o)
+ .debug_aranges
+                0x000002e0       0x20 net/libnet.a(eth.o)
+ .debug_aranges
+                0x00000300       0x20 net/libnet.a(nfs.o)
+ .debug_aranges
+                0x00000320       0x20 drivers/mmc/libmmc.a(mmc.o)
+ .debug_aranges
+                0x00000340       0x20 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .debug_aranges
+                0x00000360       0x20 drivers/net/libnet.a(dm9000x.o)
+ .debug_aranges
+                0x00000380       0x20 common/libcommon.a(main.o)
+ .debug_aranges
+                0x000003a0       0x20 common/libcommon.a(cmd_autoscript.o)
+ .debug_aranges
+                0x000003c0       0x20 common/libcommon.a(cmd_bdinfo.o)
+ .debug_aranges
+                0x000003e0       0x20 common/libcommon.a(image.o)
+ .debug_aranges
+                0x00000400       0x20 common/libcommon.a(cmd_boot.o)
+ .debug_aranges
+                0x00000420       0x20 common/libcommon.a(cmd_bootm.o)
+ .debug_aranges
+                0x00000440       0x20 common/libcommon.a(cmd_cache.o)
+ .debug_aranges
+                0x00000460       0x20 common/libcommon.a(cmd_console.o)
+ .debug_aranges
+                0x00000480       0x20 common/libcommon.a(cmd_elf.o)
+ .debug_aranges
+                0x000004a0       0x20 common/libcommon.a(cmd_ext2.o)
+ .debug_aranges
+                0x000004c0       0x20 common/libcommon.a(cmd_fat.o)
+ .debug_aranges
+                0x000004e0       0x20 common/libcommon.a(cmd_flash.o)
+ .debug_aranges
+                0x00000500       0x20 common/libcommon.a(cmd_itest.o)
+ .debug_aranges
+                0x00000520       0x20 common/libcommon.a(cmd_load.o)
+ .debug_aranges
+                0x00000540       0x20 common/libcommon.a(cmd_mem.o)
+ .debug_aranges
+                0x00000560       0x20 common/libcommon.a(cmd_misc.o)
+ .debug_aranges
+                0x00000580       0x20 common/libcommon.a(cmd_mmc.o)
+ .debug_aranges
+                0x000005a0       0x20 common/libcommon.a(cmd_net.o)
+ .debug_aranges
+                0x000005c0       0x20 common/libcommon.a(cmd_nvedit.o)
+ .debug_aranges
+                0x000005e0       0x20 common/libcommon.a(cmd_reginfo.o)
+ .debug_aranges
+                0x00000600       0x20 common/libcommon.a(cmd_usbd.o)
+ .debug_aranges
+                0x00000620       0x20 common/libcommon.a(cmd_ximg.o)
+ .debug_aranges
+                0x00000640       0x20 common/libcommon.a(command.o)
+ .debug_aranges
+                0x00000660       0x20 common/libcommon.a(console.o)
+ .debug_aranges
+                0x00000680       0x20 common/libcommon.a(devices.o)
+ .debug_aranges
+                0x000006a0       0x20 common/libcommon.a(dlmalloc.o)
+ .debug_aranges
+                0x000006c0       0x20 common/libcommon.a(env_common.o)
+ .debug_aranges
+                0x000006e0       0x20 common/libcommon.a(exports.o)
+ .debug_aranges
+                0x00000700       0x20 common/libcommon.a(flash.o)
+ .debug_aranges
+                0x00000720       0x20 common/libcommon.a(hush.o)
+ .debug_aranges
+                0x00000740       0x20 common/libcommon.a(lists.o)
+ .debug_aranges
+                0x00000760       0x20 common/libcommon.a(s_record.o)
+ .debug_aranges
+                0x00000780       0x20 common/libcommon.a(usb.o)
+ .debug_aranges
+                0x000007a0       0x20 common/libcommon.a(xyzModem.o)
+ .debug_aranges
+                0x000007c0       0x20 common/libcommon.a(cmd_movi.o)
+ .debug_aranges
+                0x000007e0       0x20 common/libcommon.a(cmd_fastboot.o)
+ .debug_aranges
+                0x00000800       0x20 common/libcommon.a(cmd_mmc_fdisk.o)
+ .debug_aranges
+                0x00000820       0x20 common/libcommon.a(env_auto.o)
+ .debug_aranges
+                0x00000840       0x20 common/libcommon.a(gunzip.o)
+ .debug_aranges
+                0x00000860       0x20 common/libcommon.a(crc16.o)
+ .debug_aranges
+                0x00000880       0x20 board/samsung/x210/libx210.a(x210.o)
+ .debug_aranges
+                0x000008a0       0x20 board/samsung/x210/libx210.a(flash.o)
+ .debug_aranges
+                0x000008c0       0x20 lib_generic/libgeneric.a(crc32.o)
+ .debug_aranges
+                0x000008e0       0x20 lib_generic/libgeneric.a(display_options.o)
+ .debug_aranges
+                0x00000900       0x20 lib_generic/libgeneric.a(lmb.o)
+ .debug_aranges
+                0x00000920       0x20 lib_generic/libgeneric.a(string.o)
+ .debug_aranges
+                0x00000940       0x20 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_aranges
+                0x00000960       0x20 lib_generic/libgeneric.a(zlib.o)
+ .debug_aranges
+                0x00000980       0x20 cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .debug_aranges
+                0x000009a0       0x20 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+ .debug_aranges
+                0x000009c0       0x20 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+ .debug_aranges
+                0x000009e0       0x20 cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .debug_aranges
+                0x00000a00       0x20 lib_arm/libarm.a(_umodsi3.o)
+ .debug_aranges
+                0x00000a20       0x20 lib_arm/libarm.a(bootm.o)
+ .debug_aranges
+                0x00000a40       0x20 lib_arm/libarm.a(cache.o)
+ .debug_aranges
+                0x00000a60       0x20 fs/fat/libfat.a(fat.o)
+ .debug_aranges
+                0x00000a80       0x20 fs/ext2/libext2fs.a(ext2fs.o)
+ .debug_aranges
+                0x00000aa0       0x20 fs/ext2/libext2fs.a(dev.o)
+ .debug_aranges
+                0x00000ac0       0x20 disk/libdisk.a(part.o)
+ .debug_aranges
+                0x00000ae0       0x20 disk/libdisk.a(part_dos.o)
+ .debug_aranges
+                0x00000b00       0x20 drivers/rtc/librtc.a(date.o)
+ .debug_aranges
+                0x00000b20       0x20 drivers/video/libvideo.a(mpadfb.o)
+ .debug_aranges
+                0x00000b40       0x20 drivers/video/libvideo.a(fbsoft.o)
+ .debug_aranges
+                0x00000b60       0x20 drivers/video/libvideo.a(bitmap.o)
+ .debug_aranges
+                0x00000b80       0x20 drivers/video/libvideo.a(logo.o)
+ .debug_aranges
+                0x00000ba0       0x20 drivers/video/libvideo.a(fbblit.o)
+ .debug_aranges
+                0x00000bc0       0x20 drivers/video/libvideo.a(fbfill.o)
+ .debug_aranges
+                0x00000be0       0x20 drivers/video/libvideo.a(rect.o)
+ .debug_aranges
+                0x00000c00       0x20 drivers/video/libvideo.a(graphic.o)
+ .debug_aranges
+                0x00000c20       0x20 drivers/video/libvideo.a(fbcolor.o)
+ .debug_aranges
+                0x00000c40       0x20 drivers/video/libvideo.a(fbpixel.o)
+ .debug_aranges
+                0x00000c60       0x20 drivers/video/libvideo.a(fbviewport.o)
+ .debug_aranges
+                0x00000c80       0x20 lib_generic/libgeneric.a(div64.o)
+
+.debug_frame    0x00000000     0x63b0
+ .debug_frame   0x00000000       0xa0 cpu/s5pc11x/onenand_cp.o
+ .debug_frame   0x000000a0       0x5c cpu/s5pc11x/nand_cp.o
+ .debug_frame   0x000000fc       0x94 cpu/s5pc11x/movi.o
+ .debug_frame   0x00000190       0x3c common/secure_boot.o
+ .debug_frame   0x000001cc       0x30 common/ace_sha1.o
+ .debug_frame   0x000001fc      0x128 cpu/s5pc11x/pmic.o
+ .debug_frame   0x00000324      0x204 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .debug_frame   0x00000528      0x1a4 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .debug_frame   0x000006cc       0x60 cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .debug_frame   0x0000072c       0xb0 cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .debug_frame   0x000007dc      0x15c cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .debug_frame   0x00000938      0x13c lib_arm/libarm.a(board.o)
+ .debug_frame   0x00000a74       0x20 lib_arm/libarm.a(div0.o)
+ .debug_frame   0x00000a94      0x398 net/libnet.a(net.o)
+ .debug_frame   0x00000e2c       0xac net/libnet.a(tftp.o)
+ .debug_frame   0x00000ed8      0x188 net/libnet.a(bootp.o)
+ .debug_frame   0x00001060       0x68 net/libnet.a(rarp.o)
+ .debug_frame   0x000010c8       0x20 net/libnet.a(eth.o)
+ .debug_frame   0x000010e8      0x2cc net/libnet.a(nfs.o)
+ .debug_frame   0x000013b4      0x368 drivers/mmc/libmmc.a(mmc.o)
+ .debug_frame   0x0000171c       0xe4 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .debug_frame   0x00001800      0x1d4 drivers/net/libnet.a(dm9000x.o)
+ .debug_frame   0x000019d4      0x140 common/libcommon.a(main.o)
+ .debug_frame   0x00001b14       0x60 common/libcommon.a(cmd_autoscript.o)
+ .debug_frame   0x00001b74       0x40 common/libcommon.a(cmd_bdinfo.o)
+ .debug_frame   0x00001bb4      0x2b0 common/libcommon.a(image.o)
+ .debug_frame   0x00001e64       0x48 common/libcommon.a(cmd_boot.o)
+ .debug_frame   0x00001eac      0x134 common/libcommon.a(cmd_bootm.o)
+ .debug_frame   0x00001fe0       0x5c common/libcommon.a(cmd_cache.o)
+ .debug_frame   0x0000203c       0x34 common/libcommon.a(cmd_console.o)
+ .debug_frame   0x00002070       0xb4 common/libcommon.a(cmd_elf.o)
+ .debug_frame   0x00002124       0xb0 common/libcommon.a(cmd_ext2.o)
+ .debug_frame   0x000021d4       0xb0 common/libcommon.a(cmd_fat.o)
+ .debug_frame   0x00002284      0x150 common/libcommon.a(cmd_flash.o)
+ .debug_frame   0x000023d4       0x84 common/libcommon.a(cmd_itest.o)
+ .debug_frame   0x00002458      0x1f4 common/libcommon.a(cmd_load.o)
+ .debug_frame   0x0000264c      0x1c0 common/libcommon.a(cmd_mem.o)
+ .debug_frame   0x0000280c       0x34 common/libcommon.a(cmd_misc.o)
+ .debug_frame   0x00002840       0x68 common/libcommon.a(cmd_mmc.o)
+ .debug_frame   0x000028a8       0xa4 common/libcommon.a(cmd_net.o)
+ .debug_frame   0x0000294c      0x134 common/libcommon.a(cmd_nvedit.o)
+ .debug_frame   0x00002a80       0x20 common/libcommon.a(cmd_reginfo.o)
+ .debug_frame   0x00002aa0       0x2c common/libcommon.a(cmd_usbd.o)
+ .debug_frame   0x00002acc       0x40 common/libcommon.a(cmd_ximg.o)
+ .debug_frame   0x00002b0c       0xec common/libcommon.a(command.o)
+ .debug_frame   0x00002bf8      0x23c common/libcommon.a(console.o)
+ .debug_frame   0x00002e34       0x5c common/libcommon.a(devices.o)
+ .debug_frame   0x00002e90      0x14c common/libcommon.a(dlmalloc.o)
+ .debug_frame   0x00002fdc       0x84 common/libcommon.a(env_common.o)
+ .debug_frame   0x00003060       0x4c common/libcommon.a(exports.o)
+ .debug_frame   0x000030ac       0x90 common/libcommon.a(flash.o)
+ .debug_frame   0x0000313c      0x394 common/libcommon.a(hush.o)
+ .debug_frame   0x000034d0      0x158 common/libcommon.a(lists.o)
+ .debug_frame   0x00003628       0x6c common/libcommon.a(s_record.o)
+ .debug_frame   0x00003694      0x4fc common/libcommon.a(usb.o)
+ .debug_frame   0x00003b90      0x144 common/libcommon.a(xyzModem.o)
+ .debug_frame   0x00003cd4       0x60 common/libcommon.a(cmd_movi.o)
+ .debug_frame   0x00003d34      0x1f0 common/libcommon.a(cmd_fastboot.o)
+ .debug_frame   0x00003f24      0x1f0 common/libcommon.a(cmd_mmc_fdisk.o)
+ .debug_frame   0x00004114      0x144 common/libcommon.a(env_auto.o)
+ .debug_frame   0x00004258       0x60 common/libcommon.a(gunzip.o)
+ .debug_frame   0x000042b8       0x2c common/libcommon.a(crc16.o)
+ .debug_frame   0x000042e4       0x80 board/samsung/x210/libx210.a(x210.o)
+ .debug_frame   0x00004364       0xf4 board/samsung/x210/libx210.a(flash.o)
+ .debug_frame   0x00004458       0x44 lib_generic/libgeneric.a(crc32.o)
+ .debug_frame   0x0000449c       0x80 lib_generic/libgeneric.a(display_options.o)
+ .debug_frame   0x0000451c      0x188 lib_generic/libgeneric.a(lmb.o)
+ .debug_frame   0x000046a4      0x21c lib_generic/libgeneric.a(string.o)
+ .debug_frame   0x000048c0      0x108 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_frame   0x000049c8      0x24c lib_generic/libgeneric.a(zlib.o)
+ .debug_frame   0x00004c14       0xf4 cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .debug_frame   0x00004d08      0x498 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+ .debug_frame   0x000051a0      0x544 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+ .debug_frame   0x000056e4       0x6c cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .debug_frame   0x00005750       0x60 lib_arm/libarm.a(bootm.o)
+ .debug_frame   0x000057b0       0x20 lib_arm/libarm.a(cache.o)
+ .debug_frame   0x000057d0      0x23c fs/fat/libfat.a(fat.o)
+ .debug_frame   0x00005a0c      0x1c4 fs/ext2/libext2fs.a(ext2fs.o)
+ .debug_frame   0x00005bd0       0x54 fs/ext2/libext2fs.a(dev.o)
+ .debug_frame   0x00005c24       0xbc disk/libdisk.a(part.o)
+ .debug_frame   0x00005ce0       0xe4 disk/libdisk.a(part_dos.o)
+ .debug_frame   0x00005dc4       0x80 drivers/rtc/librtc.a(date.o)
+ .debug_frame   0x00005e44       0xa4 drivers/video/libvideo.a(mpadfb.o)
+ .debug_frame   0x00005ee8       0x78 drivers/video/libvideo.a(fbsoft.o)
+ .debug_frame   0x00005f60       0x84 drivers/video/libvideo.a(bitmap.o)
+ .debug_frame   0x00005fe4       0x40 drivers/video/libvideo.a(logo.o)
+ .debug_frame   0x00006024       0x6c drivers/video/libvideo.a(fbblit.o)
+ .debug_frame   0x00006090       0x3c drivers/video/libvideo.a(fbfill.o)
+ .debug_frame   0x000060cc       0x74 drivers/video/libvideo.a(rect.o)
+ .debug_frame   0x00006140       0xf4 drivers/video/libvideo.a(graphic.o)
+ .debug_frame   0x00006234       0x58 drivers/video/libvideo.a(fbcolor.o)
+ .debug_frame   0x0000628c       0x4c drivers/video/libvideo.a(fbpixel.o)
+ .debug_frame   0x000062d8       0x3c drivers/video/libvideo.a(fbviewport.o)
+ .debug_frame   0x00006314       0x9c lib_generic/libgeneric.a(div64.o)
+
+.debug_loc      0x00000000    0x1ac7a
+ .debug_loc     0x00000000      0x135 cpu/s5pc11x/onenand_cp.o
+ .debug_loc     0x00000135       0xe7 cpu/s5pc11x/nand_cp.o
+ .debug_loc     0x0000021c       0xf3 cpu/s5pc11x/movi.o
+ .debug_loc     0x0000030f       0xa4 common/secure_boot.o
+ .debug_loc     0x000003b3       0x63 common/ace_sha1.o
+ .debug_loc     0x00000416      0x133 cpu/s5pc11x/pmic.o
+ .debug_loc     0x00000549      0x381 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .debug_loc     0x000008ca      0x275 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .debug_loc     0x00000b3f       0xa3 cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .debug_loc     0x00000be2       0xfd cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .debug_loc     0x00000cdf      0x282 cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .debug_loc     0x00000f61      0x1de lib_arm/libarm.a(board.o)
+ .debug_loc     0x0000113f      0xa4f net/libnet.a(net.o)
+ .debug_loc     0x00001b8e      0x23f net/libnet.a(tftp.o)
+ .debug_loc     0x00001dcd      0x55e net/libnet.a(bootp.o)
+ .debug_loc     0x0000232b       0xe5 net/libnet.a(rarp.o)
+ .debug_loc     0x00002410       0x13 net/libnet.a(eth.o)
+ .debug_loc     0x00002423      0x87d net/libnet.a(nfs.o)
+ .debug_loc     0x00002ca0      0xb3b drivers/mmc/libmmc.a(mmc.o)
+ .debug_loc     0x000037db      0x3aa drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .debug_loc     0x00003b85      0x4b2 drivers/net/libnet.a(dm9000x.o)
+ .debug_loc     0x00004037      0xc81 common/libcommon.a(main.o)
+ .debug_loc     0x00004cb8      0x1a9 common/libcommon.a(cmd_autoscript.o)
+ .debug_loc     0x00004e61       0x9c common/libcommon.a(cmd_bdinfo.o)
+ .debug_loc     0x00004efd      0x78f common/libcommon.a(image.o)
+ .debug_loc     0x0000568c      0x149 common/libcommon.a(cmd_boot.o)
+ .debug_loc     0x000057d5      0x6c4 common/libcommon.a(cmd_bootm.o)
+ .debug_loc     0x00005e99      0x1c3 common/libcommon.a(cmd_cache.o)
+ .debug_loc     0x0000605c       0x7e common/libcommon.a(cmd_console.o)
+ .debug_loc     0x000060da      0x2e3 common/libcommon.a(cmd_elf.o)
+ .debug_loc     0x000063bd      0x4e5 common/libcommon.a(cmd_ext2.o)
+ .debug_loc     0x000068a2      0x435 common/libcommon.a(cmd_fat.o)
+ .debug_loc     0x00006cd7      0xb15 common/libcommon.a(cmd_flash.o)
+ .debug_loc     0x000077ec      0x341 common/libcommon.a(cmd_itest.o)
+ .debug_loc     0x00007b2d      0x71c common/libcommon.a(cmd_load.o)
+ .debug_loc     0x00008249      0xc5e common/libcommon.a(cmd_mem.o)
+ .debug_loc     0x00008ea7       0x8c common/libcommon.a(cmd_misc.o)
+ .debug_loc     0x00008f33      0x40b common/libcommon.a(cmd_mmc.o)
+ .debug_loc     0x0000933e      0x38c common/libcommon.a(cmd_net.o)
+ .debug_loc     0x000096ca      0x74d common/libcommon.a(cmd_nvedit.o)
+ .debug_loc     0x00009e17       0x13 common/libcommon.a(cmd_reginfo.o)
+ .debug_loc     0x00009e2a       0xad common/libcommon.a(cmd_usbd.o)
+ .debug_loc     0x00009ed7      0x11d common/libcommon.a(cmd_ximg.o)
+ .debug_loc     0x00009ff4      0x64b common/libcommon.a(command.o)
+ .debug_loc     0x0000a63f      0x41d common/libcommon.a(console.o)
+ .debug_loc     0x0000aa5c       0x87 common/libcommon.a(devices.o)
+ .debug_loc     0x0000aae3     0x1223 common/libcommon.a(dlmalloc.o)
+ .debug_loc     0x0000bd06       0xa3 common/libcommon.a(env_common.o)
+ .debug_loc     0x0000bda9       0x1f common/libcommon.a(exports.o)
+ .debug_loc     0x0000bdc8      0x303 common/libcommon.a(flash.o)
+ .debug_loc     0x0000c0cb      0xf90 common/libcommon.a(hush.o)
+ .debug_loc     0x0000d05b      0x3ad common/libcommon.a(lists.o)
+ .debug_loc     0x0000d408      0x21a common/libcommon.a(s_record.o)
+ .debug_loc     0x0000d622     0x11fc common/libcommon.a(usb.o)
+ .debug_loc     0x0000e81e      0x4f3 common/libcommon.a(xyzModem.o)
+ .debug_loc     0x0000ed11      0x368 common/libcommon.a(cmd_movi.o)
+ .debug_loc     0x0000f079      0xbb1 common/libcommon.a(cmd_fastboot.o)
+ .debug_loc     0x0000fc2a      0x654 common/libcommon.a(cmd_mmc_fdisk.o)
+ .debug_loc     0x0001027e       0xff common/libcommon.a(env_auto.o)
+ .debug_loc     0x0001037d      0x1aa common/libcommon.a(gunzip.o)
+ .debug_loc     0x00010527       0x50 common/libcommon.a(crc16.o)
+ .debug_loc     0x00010577       0x64 board/samsung/x210/libx210.a(x210.o)
+ .debug_loc     0x000105db      0x4ad board/samsung/x210/libx210.a(flash.o)
+ .debug_loc     0x00010a88       0xa7 lib_generic/libgeneric.a(crc32.o)
+ .debug_loc     0x00010b2f      0x187 lib_generic/libgeneric.a(display_options.o)
+ .debug_loc     0x00010cb6      0x6ab lib_generic/libgeneric.a(lmb.o)
+ .debug_loc     0x00011361      0x540 lib_generic/libgeneric.a(string.o)
+ .debug_loc     0x000118a1      0x5d2 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_loc     0x00011e73     0x2015 lib_generic/libgeneric.a(zlib.o)
+ .debug_loc     0x00013e88      0x39c cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .debug_loc     0x00014224      0x729 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+ .debug_loc     0x0001494d      0x916 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+ .debug_loc     0x00015263       0x8f cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .debug_loc     0x000152f2      0x1ce lib_arm/libarm.a(bootm.o)
+ .debug_loc     0x000154c0      0xe41 fs/fat/libfat.a(fat.o)
+ .debug_loc     0x00016301      0xeac fs/ext2/libext2fs.a(ext2fs.o)
+ .debug_loc     0x000171ad      0x1a4 fs/ext2/libext2fs.a(dev.o)
+ .debug_loc     0x00017351      0x1e5 disk/libdisk.a(part.o)
+ .debug_loc     0x00017536      0x339 disk/libdisk.a(part_dos.o)
+ .debug_loc     0x0001786f      0x19e drivers/rtc/librtc.a(date.o)
+ .debug_loc     0x00017a0d      0x221 drivers/video/libvideo.a(mpadfb.o)
+ .debug_loc     0x00017c2e      0x268 drivers/video/libvideo.a(fbsoft.o)
+ .debug_loc     0x00017e96      0x1dc drivers/video/libvideo.a(bitmap.o)
+ .debug_loc     0x00018072       0x82 drivers/video/libvideo.a(logo.o)
+ .debug_loc     0x000180f4     0x16ec drivers/video/libvideo.a(fbblit.o)
+ .debug_loc     0x000197e0      0x51d drivers/video/libvideo.a(fbfill.o)
+ .debug_loc     0x00019cfd      0x2e8 drivers/video/libvideo.a(rect.o)
+ .debug_loc     0x00019fe5      0x4f5 drivers/video/libvideo.a(graphic.o)
+ .debug_loc     0x0001a4da      0x240 drivers/video/libvideo.a(fbcolor.o)
+ .debug_loc     0x0001a71a      0x2de drivers/video/libvideo.a(fbpixel.o)
+ .debug_loc     0x0001a9f8       0x90 drivers/video/libvideo.a(fbviewport.o)
+ .debug_loc     0x0001aa88      0x1f2 lib_generic/libgeneric.a(div64.o)
+
+.debug_pubnames
+                0x00000000     0x4962
+ .debug_pubnames
+                0x00000000       0x88 cpu/s5pc11x/onenand_cp.o
+ .debug_pubnames
+                0x00000088       0x28 cpu/s5pc11x/nand_cp.o
+ .debug_pubnames
+                0x000000b0       0x89 cpu/s5pc11x/movi.o
+ .debug_pubnames
+                0x00000139       0x26 common/secure_boot.o
+ .debug_pubnames
+                0x0000015f       0x22 common/ace_sha1.o
+ .debug_pubnames
+                0x00000181       0xc8 cpu/s5pc11x/pmic.o
+ .debug_pubnames
+                0x00000249      0x196 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .debug_pubnames
+                0x000003df      0x109 cpu/s5pc11x/libs5pc11x.a(cpu.o)
+ .debug_pubnames
+                0x000004e8       0x5b cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+ .debug_pubnames
+                0x00000543       0x74 cpu/s5pc11x/libs5pc11x.a(serial.o)
+ .debug_pubnames
+                0x000005b7       0xc0 cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+ .debug_pubnames
+                0x00000677      0x123 lib_arm/libarm.a(board.o)
+ .debug_pubnames
+                0x0000079a       0x1d lib_arm/libarm.a(div0.o)
+ .debug_pubnames
+                0x000007b7      0x3f9 net/libnet.a(net.o)
+ .debug_pubnames
+                0x00000bb0       0x20 net/libnet.a(tftp.o)
+ .debug_pubnames
+                0x00000bd0       0x82 net/libnet.a(bootp.o)
+ .debug_pubnames
+                0x00000c52       0x2e net/libnet.a(rarp.o)
+ .debug_pubnames
+                0x00000c80       0x25 net/libnet.a(eth.o)
+ .debug_pubnames
+                0x00000ca5       0x1f net/libnet.a(nfs.o)
+ .debug_pubnames
+                0x00000cc4      0x1ed drivers/mmc/libmmc.a(mmc.o)
+ .debug_pubnames
+                0x00000eb1       0x4e drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .debug_pubnames
+                0x00000eff       0x6b drivers/net/libnet.a(dm9000x.o)
+ .debug_pubnames
+                0x00000f6a       0xcd common/libcommon.a(main.o)
+ .debug_pubnames
+                0x00001037       0x4c common/libcommon.a(cmd_autoscript.o)
+ .debug_pubnames
+                0x00001083       0x3f common/libcommon.a(cmd_bdinfo.o)
+ .debug_pubnames
+                0x000010c2      0x1e6 common/libcommon.a(image.o)
+ .debug_pubnames
+                0x000012a8       0x6a common/libcommon.a(cmd_boot.o)
+ .debug_pubnames
+                0x00001312       0xed common/libcommon.a(cmd_bootm.o)
+ .debug_pubnames
+                0x000013ff       0x5e common/libcommon.a(cmd_cache.o)
+ .debug_pubnames
+                0x0000145d       0x3a common/libcommon.a(cmd_console.o)
+ .debug_pubnames
+                0x00001497       0x9b common/libcommon.a(cmd_elf.o)
+ .debug_pubnames
+                0x00001532       0xcf common/libcommon.a(cmd_ext2.o)
+ .debug_pubnames
+                0x00001601       0xba common/libcommon.a(cmd_fat.o)
+ .debug_pubnames
+                0x000016bb       0xb2 common/libcommon.a(cmd_flash.o)
+ .debug_pubnames
+                0x0000176d       0x53 common/libcommon.a(cmd_itest.o)
+ .debug_pubnames
+                0x000017c0      0x1bd common/libcommon.a(cmd_load.o)
+ .debug_pubnames
+                0x0000197d      0x1e7 common/libcommon.a(cmd_mem.o)
+ .debug_pubnames
+                0x00001b64       0x36 common/libcommon.a(cmd_misc.o)
+ .debug_pubnames
+                0x00001b9a       0x5d common/libcommon.a(cmd_mmc.o)
+ .debug_pubnames
+                0x00001bf7       0xe8 common/libcommon.a(cmd_net.o)
+ .debug_pubnames
+                0x00001cdf       0xe5 common/libcommon.a(cmd_nvedit.o)
+ .debug_pubnames
+                0x00001dc4       0x3a common/libcommon.a(cmd_reginfo.o)
+ .debug_pubnames
+                0x00001dfe       0x37 common/libcommon.a(cmd_usbd.o)
+ .debug_pubnames
+                0x00001e35       0x3e common/libcommon.a(cmd_ximg.o)
+ .debug_pubnames
+                0x00001e73       0xee common/libcommon.a(command.o)
+ .debug_pubnames
+                0x00001f61      0x115 common/libcommon.a(console.o)
+ .debug_pubnames
+                0x00002076       0x7d common/libcommon.a(devices.o)
+ .debug_pubnames
+                0x000020f3       0xba common/libcommon.a(dlmalloc.o)
+ .debug_pubnames
+                0x000021ad       0xc0 common/libcommon.a(env_common.o)
+ .debug_pubnames
+                0x0000226d       0x3c common/libcommon.a(exports.o)
+ .debug_pubnames
+                0x000022a9       0x53 common/libcommon.a(flash.o)
+ .debug_pubnames
+                0x000022fc       0xcf common/libcommon.a(hush.o)
+ .debug_pubnames
+                0x000023cb      0x116 common/libcommon.a(lists.o)
+ .debug_pubnames
+                0x000024e1       0x22 common/libcommon.a(s_record.o)
+ .debug_pubnames
+                0x00002503      0x339 common/libcommon.a(usb.o)
+ .debug_pubnames
+                0x0000283c       0xd5 common/libcommon.a(xyzModem.o)
+ .debug_pubnames
+                0x00002911       0x61 common/libcommon.a(cmd_movi.o)
+ .debug_pubnames
+                0x00002972      0x100 common/libcommon.a(cmd_fastboot.o)
+ .debug_pubnames
+                0x00002a72      0x13d common/libcommon.a(cmd_mmc_fdisk.o)
+ .debug_pubnames
+                0x00002baf      0x14d common/libcommon.a(env_auto.o)
+ .debug_pubnames
+                0x00002cfc       0x32 common/libcommon.a(gunzip.o)
+ .debug_pubnames
+                0x00002d2e       0x20 common/libcommon.a(crc16.o)
+ .debug_pubnames
+                0x00002d4e       0x81 board/samsung/x210/libx210.a(x210.o)
+ .debug_pubnames
+                0x00002dcf       0x87 board/samsung/x210/libx210.a(flash.o)
+ .debug_pubnames
+                0x00002e56       0x29 lib_generic/libgeneric.a(crc32.o)
+ .debug_pubnames
+                0x00002e7f       0x1d lib_generic/libgeneric.a(ctype.o)
+ .debug_pubnames
+                0x00002e9c       0x46 lib_generic/libgeneric.a(display_options.o)
+ .debug_pubnames
+                0x00002ee2       0xbb lib_generic/libgeneric.a(lmb.o)
+ .debug_pubnames
+                0x00002f9d      0x130 lib_generic/libgeneric.a(string.o)
+ .debug_pubnames
+                0x000030cd       0x5a lib_generic/libgeneric.a(vsprintf.o)
+ .debug_pubnames
+                0x00003127       0xab lib_generic/libgeneric.a(zlib.o)
+ .debug_pubnames
+                0x000031d2      0x117 cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .debug_pubnames
+                0x000032e9      0x638 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+ .debug_pubnames
+                0x00003921      0x81e cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+ .debug_pubnames
+                0x0000413f       0x78 cpu/s5pc11x/libs5pc11x.a(fimd.o)
+ .debug_pubnames
+                0x000041b7       0x47 lib_arm/libarm.a(bootm.o)
+ .debug_pubnames
+                0x000041fe       0x22 lib_arm/libarm.a(cache.o)
+ .debug_pubnames
+                0x00004220       0xdd fs/fat/libfat.a(fat.o)
+ .debug_pubnames
+                0x000042fd      0x189 fs/ext2/libext2fs.a(ext2fs.o)
+ .debug_pubnames
+                0x00004486       0x3c fs/ext2/libext2fs.a(dev.o)
+ .debug_pubnames
+                0x000044c2       0x67 disk/libdisk.a(part.o)
+ .debug_pubnames
+                0x00004529       0x52 disk/libdisk.a(part_dos.o)
+ .debug_pubnames
+                0x0000457b       0x38 drivers/rtc/librtc.a(date.o)
+ .debug_pubnames
+                0x000045b3       0x6d drivers/video/libvideo.a(mpadfb.o)
+ .debug_pubnames
+                0x00004620       0x6e drivers/video/libvideo.a(fbsoft.o)
+ .debug_pubnames
+                0x0000468e       0x6a drivers/video/libvideo.a(bitmap.o)
+ .debug_pubnames
+                0x000046f8       0x23 drivers/video/libvideo.a(logo.o)
+ .debug_pubnames
+                0x0000471b       0x29 drivers/video/libvideo.a(fbblit.o)
+ .debug_pubnames
+                0x00004744       0x2e drivers/video/libvideo.a(fbfill.o)
+ .debug_pubnames
+                0x00004772       0x41 drivers/video/libvideo.a(rect.o)
+ .debug_pubnames
+                0x000047b3       0xa7 drivers/video/libvideo.a(graphic.o)
+ .debug_pubnames
+                0x0000485a       0x3e drivers/video/libvideo.a(fbcolor.o)
+ .debug_pubnames
+                0x00004898       0x53 drivers/video/libvideo.a(fbpixel.o)
+ .debug_pubnames
+                0x000048eb       0x42 drivers/video/libvideo.a(fbviewport.o)
+ .debug_pubnames
+                0x0000492d       0x35 lib_generic/libgeneric.a(div64.o)
+
+.debug_str      0x00000000     0x9f05
+ .debug_str     0x00000000      0x10f cpu/s5pc11x/onenand_cp.o
+                                0x168 (size before relaxing)
+ .debug_str     0x0000010f       0x7e cpu/s5pc11x/nand_cp.o
+                                0x17a (size before relaxing)
+ .debug_str     0x0000018d       0xf8 cpu/s5pc11x/movi.o
+                                0x204 (size before relaxing)
+ .debug_str     0x00000285      0x172 common/secure_boot.o
+                                0x19e (size before relaxing)
+ .debug_str     0x000003f7       0x30 common/ace_sha1.o
+                                 0x8c (size before relaxing)
+ .debug_str     0x00000427       0xa0 cpu/s5pc11x/pmic.o
+                                0x106 (size before relaxing)
+ .debug_str     0x000004c7      0x1cf cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+                                0x2d7 (size before relaxing)
+ .debug_str     0x00000696      0x18e cpu/s5pc11x/libs5pc11x.a(cpu.o)
+                                0x28c (size before relaxing)
+ .debug_str     0x00000824      0x1c2 cpu/s5pc11x/libs5pc11x.a(setup_hsmmc.o)
+                                0x33e (size before relaxing)
+ .debug_str     0x000009e6      0x14e cpu/s5pc11x/libs5pc11x.a(serial.o)
+                                0x2b0 (size before relaxing)
+ .debug_str     0x00000b34      0x177 cpu/s5pc11x/s5pc110/libs5pc110.a(speed.o)
+                                0x21d (size before relaxing)
+ .debug_str     0x00000cab      0x238 lib_arm/libarm.a(board.o)
+                                0x3a5 (size before relaxing)
+ .debug_str     0x00000ee3        0xe lib_arm/libarm.a(div0.o)
+                                 0x50 (size before relaxing)
+ .debug_str     0x00000ef1      0x5e7 net/libnet.a(net.o)
+                                0x7db (size before relaxing)
+ .debug_str     0x000014d8      0x117 net/libnet.a(tftp.o)
+                                0x2ad (size before relaxing)
+ .debug_str     0x000015ef      0x24d net/libnet.a(bootp.o)
+                                0x490 (size before relaxing)
+ .debug_str     0x0000183c       0x4c net/libnet.a(rarp.o)
+                                0x19e (size before relaxing)
+ .debug_str     0x00001888       0x15 net/libnet.a(eth.o)
+                                0x158 (size before relaxing)
+ .debug_str     0x0000189d      0x25d net/libnet.a(nfs.o)
+                                0x467 (size before relaxing)
+ .debug_str     0x00001afa      0x34f drivers/mmc/libmmc.a(mmc.o)
+                                0x6b6 (size before relaxing)
+ .debug_str     0x00001e49       0xd0 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+                                0x4b2 (size before relaxing)
+ .debug_str     0x00001f19      0x3e0 drivers/net/libnet.a(dm9000x.o)
+                                0x53a (size before relaxing)
+ .debug_str     0x000022f9      0x1e5 common/libcommon.a(main.o)
+                                0x405 (size before relaxing)
+ .debug_str     0x000024de      0x12b common/libcommon.a(cmd_autoscript.o)
+                                0x287 (size before relaxing)
+ .debug_str     0x00002609       0x35 common/libcommon.a(cmd_bdinfo.o)
+                                0x21f (size before relaxing)
+ .debug_str     0x0000263e      0x45d common/libcommon.a(image.o)
+                                0x79f (size before relaxing)
+ .debug_str     0x00002a9b       0x4f common/libcommon.a(cmd_boot.o)
+                                0x17c (size before relaxing)
+ .debug_str     0x00002aea      0x2e9 common/libcommon.a(cmd_bootm.o)
+                                0x81d (size before relaxing)
+ .debug_str     0x00002dd3       0x4f common/libcommon.a(cmd_cache.o)
+                                0x165 (size before relaxing)
+ .debug_str     0x00002e22       0xc0 common/libcommon.a(cmd_console.o)
+                                0x1fa (size before relaxing)
+ .debug_str     0x00002ee2      0x1b5 common/libcommon.a(cmd_elf.o)
+                                0x34c (size before relaxing)
+ .debug_str     0x00003097       0xf0 common/libcommon.a(cmd_ext2.o)
+                                0x2e0 (size before relaxing)
+ .debug_str     0x00003187       0x92 common/libcommon.a(cmd_fat.o)
+                                0x262 (size before relaxing)
+ .debug_str     0x00003219      0x142 common/libcommon.a(cmd_flash.o)
+                                0x3ac (size before relaxing)
+ .debug_str     0x0000335b       0x79 common/libcommon.a(cmd_itest.o)
+                                0x1b6 (size before relaxing)
+ .debug_str     0x000033d4      0x3e6 common/libcommon.a(cmd_load.o)
+                                0x666 (size before relaxing)
+ .debug_str     0x000037ba      0x1fd common/libcommon.a(cmd_mem.o)
+                                0x37d (size before relaxing)
+ .debug_str     0x000039b7       0x27 common/libcommon.a(cmd_misc.o)
+                                0x14f (size before relaxing)
+ .debug_str     0x000039de       0x9c common/libcommon.a(cmd_mmc.o)
+                                0x380 (size before relaxing)
+ .debug_str     0x00003a7a       0xd2 common/libcommon.a(cmd_net.o)
+                                0x2cf (size before relaxing)
+ .debug_str     0x00003b4c       0xcf common/libcommon.a(cmd_nvedit.o)
+                                0x315 (size before relaxing)
+ .debug_str     0x00003c1b       0x2e common/libcommon.a(cmd_reginfo.o)
+                                0x144 (size before relaxing)
+ .debug_str     0x00003c49       0x66 common/libcommon.a(cmd_usbd.o)
+                                0x17c (size before relaxing)
+ .debug_str     0x00003caf       0x2f common/libcommon.a(cmd_ximg.o)
+                                0x270 (size before relaxing)
+ .debug_str     0x00003cde      0x118 common/libcommon.a(command.o)
+                                0x255 (size before relaxing)
+ .debug_str     0x00003df6       0xf8 common/libcommon.a(console.o)
+                                0x46b (size before relaxing)
+ .debug_str     0x00003eee       0x44 common/libcommon.a(devices.o)
+                                0x291 (size before relaxing)
+ .debug_str     0x00003f32      0x29d common/libcommon.a(dlmalloc.o)
+                                0x4ac (size before relaxing)
+ .debug_str     0x000041cf       0xb4 common/libcommon.a(env_common.o)
+                                0x26c (size before relaxing)
+ .debug_str     0x00004283       0x1f common/libcommon.a(exports.o)
+                                0x2a1 (size before relaxing)
+ .debug_str     0x000042a2       0x46 common/libcommon.a(flash.o)
+                                0x26c (size before relaxing)
+ .debug_str     0x000042e8      0x4bf common/libcommon.a(hush.o)
+                                0x794 (size before relaxing)
+ .debug_str     0x000047a7      0x1d5 common/libcommon.a(lists.o)
+                                0x31e (size before relaxing)
+ .debug_str     0x0000497c       0x3a common/libcommon.a(s_record.o)
+                                0x120 (size before relaxing)
+ .debug_str     0x000049b6      0x7dd common/libcommon.a(usb.o)
+                                0x9b9 (size before relaxing)
+ .debug_str     0x00005193      0x1a3 common/libcommon.a(xyzModem.o)
+                                0x2e1 (size before relaxing)
+ .debug_str     0x00005336       0x4a common/libcommon.a(cmd_movi.o)
+                                0x3cc (size before relaxing)
+ .debug_str     0x00005380      0x398 common/libcommon.a(cmd_fastboot.o)
+                                0x7e5 (size before relaxing)
+ .debug_str     0x00005718      0x1f8 common/libcommon.a(cmd_mmc_fdisk.o)
+                                0x508 (size before relaxing)
+ .debug_str     0x00005910      0x128 common/libcommon.a(env_auto.o)
+                                0x488 (size before relaxing)
+ .debug_str     0x00005a38       0xda common/libcommon.a(gunzip.o)
+                                0x1c6 (size before relaxing)
+ .debug_str     0x00005b12       0x1c common/libcommon.a(crc16.o)
+                                 0xfb (size before relaxing)
+ .debug_str     0x00005b2e       0xaf board/samsung/x210/libx210.a(x210.o)
+                                0x217 (size before relaxing)
+ .debug_str     0x00005bdd       0x8f board/samsung/x210/libx210.a(flash.o)
+                                0x2ef (size before relaxing)
+ .debug_str     0x00005c6c       0x5e lib_generic/libgeneric.a(crc32.o)
+                                0x118 (size before relaxing)
+ .debug_str     0x00005cca        0x8 lib_generic/libgeneric.a(ctype.o)
+                                 0x63 (size before relaxing)
+ .debug_str     0x00005cd2       0x3f lib_generic/libgeneric.a(display_options.o)
+                                0x18c (size before relaxing)
+ .debug_str     0x00005d11      0x161 lib_generic/libgeneric.a(lmb.o)
+                                0x2c2 (size before relaxing)
+ .debug_str     0x00005e72       0xc3 lib_generic/libgeneric.a(string.o)
+                                0x1de (size before relaxing)
+ .debug_str     0x00005f35       0x55 lib_generic/libgeneric.a(vsprintf.o)
+                                0x1be (size before relaxing)
+ .debug_str     0x00005f8a      0x3b6 lib_generic/libgeneric.a(zlib.o)
+                                0x5be (size before relaxing)
+ .debug_str     0x00006340      0x353 cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+                                0x85a (size before relaxing)
+ .debug_str     0x00006693      0xdd0 cpu/s5pc11x/libs5pc11x.a(usbd-otg-hs.o)
+                               0x1189 (size before relaxing)
+ .debug_str     0x00007463      0x768 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+                               0x14dc (size before relaxing)
+ .debug_str     0x00007bcb       0x88 cpu/s5pc11x/libs5pc11x.a(fimd.o)
+                                0x15d (size before relaxing)
+ .debug_str     0x00007c53      0x287 lib_arm/libarm.a(bootm.o)
+                                0x63d (size before relaxing)
+ .debug_str     0x00007eda       0x1a lib_arm/libarm.a(cache.o)
+                                 0xed (size before relaxing)
+ .debug_str     0x00007ef4      0x537 fs/fat/libfat.a(fat.o)
+                                0x786 (size before relaxing)
+ .debug_str     0x0000842b      0xab6 fs/ext2/libext2fs.a(ext2fs.o)
+                                0xdab (size before relaxing)
+ .debug_str     0x00008ee1       0x6a fs/ext2/libext2fs.a(dev.o)
+                                0x212 (size before relaxing)
+ .debug_str     0x00008f4b       0xc3 disk/libdisk.a(part.o)
+                                0x2fc (size before relaxing)
+ .debug_str     0x0000900e      0x13f disk/libdisk.a(part_dos.o)
+                                0x2fd (size before relaxing)
+ .debug_str     0x0000914d       0x87 drivers/rtc/librtc.a(date.o)
+                                0x175 (size before relaxing)
+ .debug_str     0x000091d4      0x76d drivers/video/libvideo.a(mpadfb.o)
+                                0x8cb (size before relaxing)
+ .debug_str     0x00009941       0x55 drivers/video/libvideo.a(fbsoft.o)
+                                0x395 (size before relaxing)
+ .debug_str     0x00009996       0x51 drivers/video/libvideo.a(bitmap.o)
+                                0x31a (size before relaxing)
+ .debug_str     0x000099e7      0x11e drivers/video/libvideo.a(logo.o)
+                                0x47d (size before relaxing)
+ .debug_str     0x00009b05      0x1e0 drivers/video/libvideo.a(fbblit.o)
+                                0x4d2 (size before relaxing)
+ .debug_str     0x00009ce5       0xb3 drivers/video/libvideo.a(fbfill.o)
+                                0x379 (size before relaxing)
+ .debug_str     0x00009d98       0x34 drivers/video/libvideo.a(rect.o)
+                                0x21e (size before relaxing)
+ .debug_str     0x00009dcc       0x62 drivers/video/libvideo.a(graphic.o)
+                                0x3bf (size before relaxing)
+ .debug_str     0x00009e2e       0x2e drivers/video/libvideo.a(fbcolor.o)
+                                0x2f0 (size before relaxing)
+ .debug_str     0x00009e5c       0x3f drivers/video/libvideo.a(fbpixel.o)
+                                0x2fb (size before relaxing)
+ .debug_str     0x00009e9b       0x35 drivers/video/libvideo.a(fbviewport.o)
+                                0x2f6 (size before relaxing)
+ .debug_str     0x00009ed0       0x35 lib_generic/libgeneric.a(div64.o)
+                                0x131 (size before relaxing)
+
+.debug_ranges   0x00000000     0x15d0
+ .debug_ranges  0x00000000       0x90 cpu/s5pc11x/nand_cp.o
+ .debug_ranges  0x00000090       0x60 cpu/s5pc11x/libs5pc11x.a(interrupts.o)
+ .debug_ranges  0x000000f0       0x80 lib_arm/libarm.a(board.o)
+ .debug_ranges  0x00000170       0x60 net/libnet.a(net.o)
+ .debug_ranges  0x000001d0       0x30 net/libnet.a(tftp.o)
+ .debug_ranges  0x00000200       0x78 net/libnet.a(bootp.o)
+ .debug_ranges  0x00000278       0x40 net/libnet.a(nfs.o)
+ .debug_ranges  0x000002b8       0x50 drivers/mmc/libmmc.a(mmc.o)
+ .debug_ranges  0x00000308       0x40 drivers/mmc/libmmc.a(s3c_hsmmc.o)
+ .debug_ranges  0x00000348       0x60 drivers/net/libnet.a(dm9000x.o)
+ .debug_ranges  0x000003a8       0xb0 common/libcommon.a(main.o)
+ .debug_ranges  0x00000458       0xc0 common/libcommon.a(image.o)
+ .debug_ranges  0x00000518       0xc0 common/libcommon.a(cmd_bootm.o)
+ .debug_ranges  0x000005d8       0x18 common/libcommon.a(cmd_console.o)
+ .debug_ranges  0x000005f0       0xf0 common/libcommon.a(cmd_load.o)
+ .debug_ranges  0x000006e0       0x18 common/libcommon.a(cmd_mem.o)
+ .debug_ranges  0x000006f8       0x18 common/libcommon.a(cmd_mmc.o)
+ .debug_ranges  0x00000710       0x60 common/libcommon.a(cmd_nvedit.o)
+ .debug_ranges  0x00000770       0x48 common/libcommon.a(command.o)
+ .debug_ranges  0x000007b8       0x38 common/libcommon.a(console.o)
+ .debug_ranges  0x000007f0       0x30 common/libcommon.a(dlmalloc.o)
+ .debug_ranges  0x00000820       0x30 common/libcommon.a(env_common.o)
+ .debug_ranges  0x00000850       0x48 common/libcommon.a(flash.o)
+ .debug_ranges  0x00000898      0x170 common/libcommon.a(hush.o)
+ .debug_ranges  0x00000a08       0x30 common/libcommon.a(usb.o)
+ .debug_ranges  0x00000a38       0x18 common/libcommon.a(cmd_movi.o)
+ .debug_ranges  0x00000a50       0x30 common/libcommon.a(cmd_fastboot.o)
+ .debug_ranges  0x00000a80       0x30 board/samsung/x210/libx210.a(x210.o)
+ .debug_ranges  0x00000ab0       0x38 board/samsung/x210/libx210.a(flash.o)
+ .debug_ranges  0x00000ae8       0x78 lib_generic/libgeneric.a(lmb.o)
+ .debug_ranges  0x00000b60       0x18 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_ranges  0x00000b78      0x150 lib_generic/libgeneric.a(zlib.o)
+ .debug_ranges  0x00000cc8       0x60 cpu/s5pc11x/libs5pc11x.a(usb_ohci.o)
+ .debug_ranges  0x00000d28       0x30 cpu/s5pc11x/libs5pc11x.a(fastboot.o)
+ .debug_ranges  0x00000d58       0xb8 lib_arm/libarm.a(bootm.o)
+ .debug_ranges  0x00000e10      0x108 fs/fat/libfat.a(fat.o)
+ .debug_ranges  0x00000f18      0x118 fs/ext2/libext2fs.a(ext2fs.o)
+ .debug_ranges  0x00001030      0x5a0 drivers/video/libvideo.a(mpadfb.o)

@@ -12,7 +12,7 @@
 #include <asm/arch/cpu.h>
 #include <asm/arch/clock.h>
 #include <asm/arch/power.h>
-
+#include <s5pc110.h>  //jimmy add
 /*
  * Register usages:
  *
@@ -166,6 +166,12 @@ skip_check_didle:
 	ldreq	r0, =S5PC100_WATCHDOG_BASE		@ 0xEA200000
 	ldrne	r0, =S5PC110_WATCHDOG_BASE		@ 0xE2700000
 	str	r5, [r0]
+//jimmy add
+// 我们添加的开发板供电制锁的代码
+	ldr r0, =0xE010E81C
+	ldr r1, =0x301
+	str r1, [r0]
+
 
 	/* setting SRAM */
 	ldreq	r0, =S5PC100_SROMC_BASE
@@ -198,7 +204,21 @@ skip_check_didle:
 	/* for UART */
 	bl	uart_asm_init
 
-	bl	internal_ram_init
+//jimmy add
+       // DDR init
+	bl	mem_ctrl_asm_init
+
+	// 打印字符'K'
+	
+	ldr r1, =0x4b4b4b4b
+	ldr r2, =0xE2900820
+	str r1, [r2]		@'K'
+
+	mov	lr, r11
+	mov	pc, lr
+//	bl	internal_ram_init
+
+
 
 	cmp	r7, r8
 	/* Clear wakeup status register */

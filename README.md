@@ -1,4 +1,5 @@
 uboot_x210vb3s/jiuding   ->九鼎x210 uboot移植,
+uboot_2013.10   ->自己按照朱老师的aston_uboot-2013.10重新移植一遍
 
  x210ii_kernel            ->内核代码  
  

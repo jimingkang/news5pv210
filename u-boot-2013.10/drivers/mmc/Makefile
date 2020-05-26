@@ -9,7 +9,7 @@ include $(TOPDIR)/config.mk
 
 LIB	:= $(obj)libmmc.o
 
-
+COBJS-$(CONFIG_S3C_HSMMC) += s3c_hsmmc.o
 COBJS-$(CONFIG_BFIN_SDH) += bfin_sdh.o
 COBJS-$(CONFIG_DAVINCI_MMC) += davinci_mmc.o
 COBJS-$(CONFIG_FSL_ESDHC) += fsl_esdhc.o
@@ -35,7 +35,7 @@ COBJS-$(CONFIG_ZYNQ_SDHCI) += zynq_sdhci.o
 ifdef CONFIG_SPL_BUILD
 COBJS-$(CONFIG_SPL_MMC_BOOT) += fsl_esdhc_spl.o
 else
-COBJS-$(CONFIG_GENERIC_MMC) += mmc_write.o
+#COBJS-$(CONFIG_GENERIC_MMC) += mmc_write.o
 endif
 
 COBJS	:= $(COBJS-y)

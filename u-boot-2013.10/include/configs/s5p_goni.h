@@ -163,12 +163,17 @@
 /* MMC */
 #define CONFIG_GENERIC_MMC
 #define CONFIG_MMC
-#define CONFIG_SDHCI
-#define CONFIG_S5P_SDHCI
-//jimmy add
+//#define CONFIG_SDHCI
+//#define CONFIG_S5P_SDHCI
+//jimmy add for mmc
+#define CONFIG_S3C_HSMMC	// 添加这一行添加上新的移植过来的驱动文件
 /* IROM specific data */
 #define SDMMC_BLK_SIZE        (0xD003A500)
 #define COPY_SDMMC_TO_MEM     (0xD003E008)
+/* The macro for MMC channel 0 is defined by default and can't be undefined */
+#define USE_MMC0
+#define USE_MMC2
+#define MMC_MAX_CHANNEL		4
 
 
 /* PWM */
@@ -187,8 +192,9 @@
 #undef CONFIG_CMD_XIMG
 #define CONFIG_CMD_CACHE
 #define CONFIG_CMD_REGINFO
-//#define CONFIG_CMD_ONENAND 
+
 //jimmy comment
+//#define CONFIG_CMD_ONENAND 
 
 #define CONFIG_CMD_MTDPARTS
 #define CONFIG_CMD_MMC

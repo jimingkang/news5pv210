@@ -12,7 +12,7 @@ include $(TOPDIR)/config.mk
 
 LIB	= $(obj)lib$(BOARD).o
 
-COBJS-y	:= goni.o 
+COBJS-y	:= goni.o setup_hsmmc.o
 #SOBJS	:= lowlevel_init.o
 LOW	:= lowlevel_init.o cpu_init.o movi.o
 SRCS    := $(SOBJS:.o=.S) $(COBJS-y:.o=.c)

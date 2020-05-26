@@ -74,6 +74,14 @@ int checkboard(void)
 #ifdef CONFIG_GENERIC_MMC
 int board_mmc_init(bd_t *bis)
 {
+#ifdef CONFIG_S3C_HSMMC
+	setup_hsmmc_clock();
+	setup_hsmmc_cfg_gpio();
+	return smdk_s3c_hsmmc_init();
+#else
+	return 0;
+#endif
+#if 0
 	int i, ret, ret_sd = 0;
 
 	/* MASSMEMORY_EN: XMSMDATA7: GPJ2[7] output high */
@@ -127,6 +135,8 @@ int board_mmc_init(bd_t *bis)
 	}
 
 	return ret & ret_sd;
+
+#endif
 }
 #endif
 

@@ -232,6 +232,8 @@ COBJS-$(CONFIG_FIT) += image-fit.o
 COBJS-$(CONFIG_FIT_SIGNATURE) += image-sig.o
 COBJS-y += memsize.o
 COBJS-y += stdio.o
+#jimmy add 
+#COBJS-y += cmd_movi.o
 
 
 COBJS	:= $(sort $(COBJS-y))

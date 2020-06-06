@@ -1,6 +1,7 @@
 all:
-	arm-linux-gcc appfb.c -o appfb
+	arm-none-linux-gnueabi-gcc appfb.c -o appfb
 cp:
-	cp appfb /root/porting_x210/rootfs/rootfs/driver_test/ -f
+	sudo cp -f  appfb /tftpboot/nfs/driver_test/ 
 clean:
 	rm appfb *.o
+	rm -fr /tftpboot/nfs/driver_test/appfb 

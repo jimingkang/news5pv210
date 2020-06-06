@@ -4,17 +4,18 @@
 
 		
 # 开发板的linux内核的源码树目录
-KERN_DIR = /root/driver/kernel
+#KERN_DIR = /root/driver/kernel
+KERN_DIR = /home/jimmy/news5pv210/x210ii_kernel
 
 obj-m	+= leds-s5pv210.o
 
 all:
 	make -C $(KERN_DIR) M=`pwd` modules 
-	arm-linux-gcc app.c -o app
+	arm-none-linux-gnueabi-gcc app.c -o app
 
 cp:
-	cp *.ko /root/porting_x210/rootfs/rootfs/driver_test
-	cp app /root/porting_x210/rootfs/rootfs/driver_test
+	sudo cp *.ko /tftpboot/nfs/driver_test
+	sudo cp app /tftpboot/nfs/driver_test
 	
 
 .PHONY: clean	

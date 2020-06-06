@@ -196,6 +196,10 @@
 //jimmy comment
 //#define CONFIG_CMD_ONENAND 
 
+//jimmy add for fatload
+#define CONFIG_CMD_FAT
+#define  CONFIG_CMD_EXT2
+
 #define CONFIG_CMD_MTDPARTS
 #define CONFIG_CMD_MMC
 

@@ -1,0 +1,1 @@
+cmd_/home/jimmy/news5pv210/study/zhulaoshi/code/linux_driver/4.LEDDriver/5.4.16/built-in.o :=  rm -f /home/jimmy/news5pv210/study/zhulaoshi/code/linux_driver/4.LEDDriver/5.4.16/built-in.o; /arm/arm-2009q3/bin/arm-none-linux-gnueabi-ar rcs /home/jimmy/news5pv210/study/zhulaoshi/code/linux_driver/4.LEDDriver/5.4.16/built-in.o

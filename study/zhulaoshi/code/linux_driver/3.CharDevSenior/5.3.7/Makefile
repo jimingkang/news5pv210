@@ -4,7 +4,7 @@
 
 		
 # 开发板的linux内核的源码树目录
-KERN_DIR = /root/driver/kernel
+KERN_DIR = /home/jimmy/news5pv210/x210ii_kernel
 
 obj-m	+= module_test.o
 
@@ -13,8 +13,8 @@ all:
 	arm-linux-gcc app.c -o app
 
 cp:
-	cp *.ko /root/porting_x210/rootfs/rootfs/driver_test
-	cp app /root/porting_x210/rootfs/rootfs/driver_test
+	cp *.ko /tftpboot/nfs/driver_test/
+	cp app /tftpboot/nfs/driver_test/app-chrdevsenior
 	
 
 .PHONY: clean	

@@ -8,3 +8,10 @@
 #
 /release
 /release/*
+x210ii_kernel/*.ko
+x210ii_kernel/*.o
+x210ii_kernel/arch/arm/boot/*
+x210ii_kernel/vmlinux*
+x210ii_kernel/.tmp*
+x210ii_kernel/initrd.img.cpio
+

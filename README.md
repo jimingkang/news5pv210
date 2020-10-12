@@ -2,7 +2,9 @@
 aston_uboot_2013.10         ->这里实验用到的
 
 uboot_x210vb3s/jiuding      ->九鼎x210 uboot移植,备用
+
 uboot_2013.10               ->自己按照朱老师的aston_uboot-2013.10重新移植一遍，不完善
+
 samsung-dev-uboot           -->三星公司的官方版本，我修改过，有些错误没找到，烧写可能有问题
 
  x210ii_kernel              ->内核代码  

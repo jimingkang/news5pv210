@@ -11,4 +11,4 @@ busybox dd if=/dev/zero of=/dev/block/mmcblk0 bs=512 seek=1 count=1 conv=sync
 > make x210_sd_config ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi-
 >make  ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- 
 >cd sd_fusing
->./sd_fusing.sh /dev/sda
+>sudo ./sd_fusing.sh /dev/sda

@@ -8,7 +8,7 @@ busybox dd if=/dev/zero of=/dev/block/mmcblk0 bs=512 seek=1 count=1 conv=sync
 3.格式化sd卡
 
 4.编译uboot
-> make x210_sd_config ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi-
+> make  s5p_goni_config ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi-
 >make  ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- 
 >cd sd_fusing
 >sudo ./sd_fusing.sh /dev/sda

@@ -32,8 +32,11 @@ B 盘：
 ------------------------------------
 
 
-有问题请按照文档顺序
+有问题请按照doc
 
  doc/1.环境相关问题.txt
  
  doc/1.x210烧写.txt
+ 
+ 讲稿参见：
+ https://blog.csdn.net/conjimmy/article/details/106030952

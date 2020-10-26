@@ -1,0 +1,30 @@
+crt0.o: crt0.S /home/jimmy/news5pv210/u-boot-2013.10/include/config.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/config_cmd_defaults.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/config_defaults.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/configs/s5p_goni.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm/arch/cpu.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm/io.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/types.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/config.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/posix_types.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/stddef.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm/posix_types.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm/types.h \
+ /arm/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stdbool.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm/byteorder.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/byteorder/little_endian.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/compiler.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/compiler-gcc.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/compiler-gcc4.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/byteorder/swab.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/byteorder/generic.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm/memory.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/config_cmd_default.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm/arch/gpio.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm/config.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/config_fallbacks.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/config_uncmd_spl.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm-offsets.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/generated/generic-asm-offsets.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/linkage.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm/linkage.h

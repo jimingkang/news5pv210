@@ -1,0 +1,8 @@
+crc16.o: crc16.c /home/jimmy/news5pv210/u-boot-2013.10/include/crc.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/types.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/config.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/posix_types.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/linux/stddef.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm/posix_types.h \
+ /home/jimmy/news5pv210/u-boot-2013.10/include/asm/types.h \
+ /arm/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stdbool.h

@@ -7,7 +7,7 @@
 # published by the Free Software Foundation.
 #
 ####################################
-reader_type1="/dev/sda"
+reader_type1="/dev/sdb"
 reader_type2="/dev/mmcblk0"
 
 if [ -z $1 ]

@@ -15,7 +15,7 @@
 #define CONFIG_SAMSUNG		1	/* in a SAMSUNG core */
 #define CONFIG_S5P		1	/* which is in a S5P Family */
 #define CONFIG_S5PC110		1	/* which is in a S5PC110 */
-#define CONFIG_MACH_GONI	1	/* working with Goni */
+//#define CONFIG_MACH_GONI	1	/* working with Goni */
 
 #include <asm/arch/cpu.h>		/* get chip and board defs */
 
@@ -101,7 +101,7 @@
 #define CLK_DIV2_VAL	(1<<0)
 
 // 机器码
-//#define CONFIG_MACH_TYPE	2456
+#define CONFIG_MACH_TYPE	2456
 
 // 设置环境变量分区的起始扇区
 #define CONFIG_ENV_OFFSET 		17*512	// 17个扇区开始的位置
@@ -198,6 +198,8 @@
 
 #define CONFIG_MTD_DEVICE
 #define CONFIG_MTD_PARTITIONS
+
+#define CONFIG_ZIMAGE_BOOT
 
 
 #if 0
@@ -332,7 +334,8 @@
 
 #define CONFIG_ENV_SIZE			CFG_ENV_SIZE		// 0x4000
 #define CONFIG_ENV_IS_IN_MMC	1
-#define CONFIG_SYS_MMC_ENV_DEV	0					// 0表示iNand，1表示SD卡
+//#define CONFIG_SYS_MMC_ENV_DEV 0						// 0表示iNand，1表示SD卡
+#define CONFIG_SYS_MMC_ENV_DEV	1					// 0表示iNand，1表示SD卡
 
 
 #define CONFIG_DOS_PARTITION		1

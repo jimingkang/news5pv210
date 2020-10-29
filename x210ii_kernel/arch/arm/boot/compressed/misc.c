@@ -205,10 +205,10 @@ decompress_kernel(unsigned long output_start, unsigned long free_mem_ptr_p,
 	tmp = (unsigned char *) (((unsigned long)input_data_end) - 4);
 	output_ptr = get_unaligned_le32(tmp);
 
-	putstr("Uncompressing Linux...");
+//	putstr("Uncompressing Linux...");
 	do_decompress(input_data, input_data_end - input_data,
 			output_data, error);
-	putstr(" done, booting the kernel.\n");
+//	putstr(" done, booting the kernel.\n");
 	return output_ptr;
 }
 #else

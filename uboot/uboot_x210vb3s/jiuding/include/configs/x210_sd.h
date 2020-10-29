@@ -264,7 +264,7 @@
  */
 #define CFG_LONGHELP				/* undef to save memory		*/
 
-#define CFG_PROMPT              "x210 # "   /* Monitor Command Prompt       */
+#define CFG_PROMPT              "myx210 # "   /* Monitor Command Prompt       */
 
 #define CFG_CBSIZE		256		/* Console I/O Buffer Size	*/
 #define CFG_PBSIZE		384		/* Print Buffer Size */
@@ -594,7 +594,7 @@
 #define USE_MMC2
 //#define USE_MMC2_8BIT
 #define MMC_MAX_CHANNEL		4
-
+#define CONFIG_MMC_DEFAULT_DEV	1
 /*
  * SD/MMC detection takes a little long time
  * So, you can ignore detection process for SD/MMC card

@@ -4,7 +4,7 @@
 
 		
 # 开发板的linux内核的源码树目录
-KERN_DIR = /arm/x210ii_kernel
+KERN_DIR = ~/news5pv210/x210ii_kernel
 
 obj-m	+= module_test.o
 

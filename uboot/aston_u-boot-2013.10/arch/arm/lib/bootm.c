@@ -263,6 +263,7 @@ static void boot_jump_linux(bootm_headers_t *images, int flag)
 		r2 = (unsigned long)images->ft_addr;
 	else
 		r2 = gd->bd->bi_boot_params;
+	printf("machid：0x%x\n",machid);kernel_entry(0, machid, r2);
 
 	if (!fake)
 		kernel_entry(0, machid, r2);

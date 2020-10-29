@@ -1,0 +1,12 @@
+bootcmd=movi read kernel 30008000; movi read rootfs 30B00000 300000; bootm 30008000 30B00000
+mtdpart=80000 400000 3000000
+bootdelay=3
+baudrate=115200
+ethaddr=00:40:5c:26:0a:5b
+ipaddr=131.128.52.97
+gatewayip=131.128.52.1
+netmask=255.255.255.0
+serverip=131.128.52.51
+bootargs=root=/dev/nfs rw nfsroot=131.128.52.51:/tftpboot/nfs,proto=tcp,nfsvers=3,nolock  ip=131.128.52.97:131.128.52.51:131.128.52.1:255.255.255.0::eth0:off console=ttySAC2,115200 init=/linuxrc
+
+csdn文档：https://blog.csdn.net/conjimmy/article/details/106046142

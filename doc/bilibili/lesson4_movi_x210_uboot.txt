@@ -1,0 +1,20 @@
+1）虽然我们用的时从mmc2卡启动uboot,但是启动后3秒不动，默认从inand（mmc0）下载启动linux：
+#setenv bootcmd "movi read kernel 30008000; movi read rootfs 30B00000 300000; bootm 30008000 30B00000"
+-----------------------------------------------------------------------------------------
+2）我们可以改为nfs 启动：
+setenv bootargs "root=/dev/nfs rw nfsroot=192.168.254.33:/tftpboot/nfs,proto=tcp,nfsvers=3,nolock  ip=192.168.254.39:192.168.254.33:192.168.254.254:255.255.255.0::eth0:off console=ttySAC0,115200 init=/linuxrc"
+
+setenv bootargs "root=/dev/nfs rw nfsroot=192.168.254.33:/tftpboot/nfs,proto=tcp,nfsvers=3,nolock  ip=192.168.254.39:192.168.254.33:192.168.254.254:255.255.255.0::eth0:off mem=512M console=ttySAC2,115200 init=/linuxrc"
+
+或者linux的.config文件 CMD_LINE:noinitrd mem=512M console=ttySAC2,115200 root=/dev/nfs nfsroot=172.16.96.215:/arm-nfs ip=192.168.254.39:192.168.254.33:192.168.254.33:255.255.255.0::eth0:off
+
+并且保存linux到inand,也即mmc0（如果有movi的话，还是可以操作inand）
+movi write kernel 30008000
+并且设置uboot环境变量
+setenv bootcmd "movi read kernel 30008000; bootm 30008000"
+----------------------------------------------------------------------
+
+
+
+
+grep -rn "abc" *

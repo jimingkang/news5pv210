@@ -1,0 +1,38 @@
+1）给goni_uboot编译uImage:
+mkimage -A arm -O linux -T kernel -C none -a 30008000 -e 30008040 -n linux-2.6.35 -d arch/arm/boot/zImage /tftpboot/uImage-goni
+goni>tftp 30008000 uImage-goni
+goni>bootm 30008000
+
+2)解决输出不了uncompressing linux..问题：
+参考：https://www.cnblogs.com/embedded-linux/p/4824816.html
+解决方式：
+    //putstr("Uncompressing Linux...");
+     do_decompress(input_data, input_data_end - input_data,
+             output_data, error);
+    //putstr(" done, booting the kernel.\n");
+
+
+3）如果想用mmc保存linux到mmc2卡，可以先移植mmc命令：
+uboot大小：161332 bytes (161 kB, 158 KiB) copied, 2.17452 s, 74.2 kB/s
+linux： 3633388 (3770ec hex)=400000*2/1K (1个扇区512字节 0.5k)=8k
+规划
+mbr 0-1 扇区
+bl0 1-49 扇区
+uboot  49 500扇区
+linux    1073-8192(十进制)扇区
+rootfs    9265-6144(十进制)扇区
+
+
+
+linux :
+mmc write 1 30008000 1073# 8192
+mmc read  1 30008000 1073# 8192
+MMC read: dev # 0, block # 1073, count 8192 ...8192 blocks read: OK
+completed
+
+
+setenv bootcmd“mmc read  1 30008000 1073# 8192； bootm 0x30008000”
+
+rootfs：
+reading RFS.. 9265, 6144
+MMC read: dev # 0, block # 9265, count 6144 ...6144 blocks read: OK

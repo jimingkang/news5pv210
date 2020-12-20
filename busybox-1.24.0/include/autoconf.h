@@ -2,7 +2,7 @@
  * Automatically generated C config: don't edit
  * Busybox version: 1.24.0
  */
-#define AUTOCONF_TIMESTAMP "2020-06-06 09:38:04 PDT"
+#define AUTOCONF_TIMESTAMP "2020-12-18 12:16:06 PST"
 
 #define CONFIG_HAVE_DOT_CONFIG 1
 #define ENABLE_HAVE_DOT_CONFIG 1
@@ -324,7 +324,7 @@
 # define IF_LFS(...) __VA_ARGS__
 #endif
 #define IF_NOT_LFS(...)
-#define CONFIG_CROSS_COMPILER_PREFIX "arm-none-linux-gnueabi-"
+#define CONFIG_CROSS_COMPILER_PREFIX "/arm/arm-2009q3/bin/arm-none-linux-gnueabi-"
 #define ENABLE_CROSS_COMPILER_PREFIX 1
 #ifdef MAKE_SUID
 # define IF_CROSS_COMPILER_PREFIX(...) __VA_ARGS__ "CONFIG_CROSS_COMPILER_PREFIX"
@@ -436,7 +436,7 @@
 #define ENABLE_INSTALL_SH_APPLET_SCRIPT_WRAPPER 0
 #define IF_INSTALL_SH_APPLET_SCRIPT_WRAPPER(...)
 #define IF_NOT_INSTALL_SH_APPLET_SCRIPT_WRAPPER(...) __VA_ARGS__
-#define CONFIG_PREFIX "/tftpboot/nfs"
+#define CONFIG_PREFIX "/tftpboot/ramdiskfs"
 #define ENABLE_PREFIX 1
 #ifdef MAKE_SUID
 # define IF_PREFIX(...) __VA_ARGS__ "CONFIG_PREFIX"
@@ -828,14 +828,6 @@
 #define ENABLE_LZOP_COMPR_HIGH 0
 #define IF_LZOP_COMPR_HIGH(...)
 #define IF_NOT_LZOP_COMPR_HIGH(...) __VA_ARGS__
-#define CONFIG_RPM 1
-#define ENABLE_RPM 1
-#ifdef MAKE_SUID
-# define IF_RPM(...) __VA_ARGS__ "CONFIG_RPM"
-#else
-# define IF_RPM(...) __VA_ARGS__
-#endif
-#define IF_NOT_RPM(...)
 #define CONFIG_RPM2CPIO 1
 #define ENABLE_RPM2CPIO 1
 #ifdef MAKE_SUID
@@ -844,6 +836,14 @@
 # define IF_RPM2CPIO(...) __VA_ARGS__
 #endif
 #define IF_NOT_RPM2CPIO(...)
+#define CONFIG_RPM 1
+#define ENABLE_RPM 1
+#ifdef MAKE_SUID
+# define IF_RPM(...) __VA_ARGS__ "CONFIG_RPM"
+#else
+# define IF_RPM(...) __VA_ARGS__
+#endif
+#define IF_NOT_RPM(...)
 #define CONFIG_TAR 1
 #define ENABLE_TAR 1
 #ifdef MAKE_SUID

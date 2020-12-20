@@ -10,7 +10,9 @@
 
 #ifndef __CONFIG_H
 #define __CONFIG_H
-
+//jimmy add for movi
+#define CONFIG_CMD_MOVINAND
+#define CONFIG_CMD_MOVI
 /* High Level Configuration Options */
 #define CONFIG_SAMSUNG		1	/* in a SAMSUNG core */
 #define CONFIG_S5P		1	/* which is in a S5P Family */
@@ -201,6 +203,14 @@
 
 #define CONFIG_ZIMAGE_BOOT
 
+//jimmy add for nand
+//#define CONFIG_CMD_MTDPARTS
+//#define CONFIG_MTD_DEVICE
+//#define MTDIDS_DEFAULT           "nand0=goni-0"  
+//#define MTDPARTS_DEFAULT       "mtdparts=goni-0:256k(u-boot),"      \ 
+                                          "128k(params),"            \         
+                                          "2m(kernel),"  \      
+                                          "-(rootfs)"        \
 
 #if 0
 /* Actual modem binary size is 16MiB. Add 2MiB for bad block handling */

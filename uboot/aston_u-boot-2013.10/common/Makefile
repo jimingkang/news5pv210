@@ -214,6 +214,9 @@ endif
 COBJS-y += cmd_nvedit.o
 #environment
 COBJS-y += env_common.o
+#jimmy add for movi
+COBJS-y += cmd_movi.o
+COBJS-y += env_movi.o
 #others
 ifdef CONFIG_DDR_SPD
 SPD := y

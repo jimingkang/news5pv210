@@ -260,16 +260,16 @@ config LZOP_COMPR_HIGH
 	  High levels (7,8,9) of lzop compression. These levels
 	  are actually slower than gzip at equivalent compression ratios
 	  and take up 3.2K of code.
-config RPM
-	bool "rpm"
-	default y
-	help
-	  Mini RPM applet - queries and extracts RPM packages.
 config RPM2CPIO
 	bool "rpm2cpio"
 	default y
 	help
 	  Converts a RPM file into a CPIO archive.
+config RPM
+	bool "rpm"
+	default y
+	help
+	  Mini RPM applet - queries and extracts RPM packages.
 config TAR
 	bool "tar"
 	default y

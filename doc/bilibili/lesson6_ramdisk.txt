@@ -1,0 +1,134 @@
+参考：https://blog.csdn.net/yuntongsf/article/details/78207464
+说明：inand为内置的mmc0
+         sd卡插在外置的卡槽mmc2上 ，（我自己有两张卡一张老的烧写九鼎的x210,一张烧写朱老师的aston goni）
+
+一:配置内核：
+a）：General setup-->选择 Initial RAM filesystem and RAM disk...... 项
+b）：Device Drivers-->Block devices-->选择 RAM block device support 项
+
+c)  :选上Default RAM disk size kbytes选项为（4096）Default RAM disk size kbytes，
+因为制作的ramdisk是4096KB大小的。如果这个大小和你做的ramdisk不匹配
+，则启动时仍然会出现kernel panic内核恐慌，提示ramdisk格式不正确，
+挂载不上ramdisk。然后特别要注意的一点是，ramdisk是一种内存虚拟磁盘技术，
+实质上并不是一种文件系统，它使用的文件系统时ext2文件系统。
+所以一定要在make menuconfig ARCH=arm的时候进入File systems菜单，选上<*> Second extended fs support。
+以提供内核对ext2文件系统的支持。我以前添加过了ext2文件系统了，然后保存配置退出。
+这样就为内核添加好了ramdisk启动功能和ramdisk的驱动支持了
+
+d)修改内核启动参数
+方法有二：
+1）：修改.config,修改CONFIG_CMDLINE=""的定义
+修改为CONFIG_CMDLINE="initrd=0x30B00000,0x300000 root=/dev/ram rw init=/linuxrc console=ttySAC2 mem=512M"    (0x30B00000,0x300000-ramdisk镜像在内存的加载地址。0x300000:大小)保存。
+意思为从ramdisk启动，ramdisk压缩文件起始地址在内存地址0x53000000处，文件大小为0x200000。
+此参数也可以在make menuconfig ARCH=arm时进入Boot options菜单，然后在Default kernel command string里修改。效果是一样的。
+2）：或者不修改.config,而是用u-boot的bootargs环境变量来传递启动参数。
+同样也是修改该环境变量为bootargs=initrd=0x53000000,0x200000 root=/dev/ram rw init=/linuxrc console=ttySAC0 mem=64M
+并saveenv保存u-boot环境变量
+以上1），2）的效果是一样的。
+
+e)编译内核zImage：
+f) 制作uImage ：
+mkimage -A arm -O linux -T kernel -C none -a 30008000 -e 30008040 -n linux-2.6.35 -d arch/arm/boot/zImage /tftpboot/uImage-ramdisk
+
+二：
+a):建立目录
+#sudo mkdir ramdiskfs
+#cd ramdiskfs
+#sudo mkdir mnt tmp var usr sys proc etc lib dev bin sbin root home
+#sudo mkdir usr/bin usr/sbin usr/lib lib/modules
+b):添加设备文件
+#sudo cd dev
+#sudo mknod -m 666 console c 5 1 (备注：创建控制台设备文件)
+#sudo mknod -m 666 null c 1 3     (备注：创建一个空的设备文件)
+c)：添加配置文件
+可以复制busybox中的/examples/bootfloppy/etc的文件
+d):编译busybox
+e）制作ramdisk根文件系统镜像
+#genext2fs -b 4096 -d ramdsikfs ramdisk
+#gzip -v9 -f ramdisk
+
+三：测试ramdisk.gz：
+a)在uboot的bootargs 配置内核时需要的参数，setenv bootargs "initrd=0x30B00000,0x300000 root=/dev/ram rw ramdisk=4096 rootfstype=ext2 init=/linuxrc console=ttySAC2,115200 mem=512M"
+（原来是：setenv bootargs "root=/dev/nfs rw nfsroot=192.168.254.33:/tftpboot/nfs,proto=tcp,nfsvers=3,nolock  ip=192.168.254.39:192.168.254.33:192.168.254.254:255.255.255.0::eth0:off console=ttySAC2,115200 init=/linuxrc"）
+b)烧写
+tftp 30008000 uImage-ramdisk;
+tftp 30B00000 ramdiskfs.gz;
+movi write kernel 30008000; (mmc write 0 30008000 1073# 8192)
+movi write rootfs 30B00000 300000;(mmc write 0 30B00000 9265# 6144)
+c)启动
+movi read kernel 30008000;(mmc read 0 30008000 1073# 8192)
+ movi read rootfs 30B00000 300000;(mmc read 0 30B00000 9265# 6144)
+ movi read kernel 30008000;movi read rootfs 30B00000 300000; bootm 30008000 30B00000
+如果出现：
+Wrong Ramdisk Image Format  Ramdisk image is corrupt or invalid 
+解决方式 
+ mkimage -n 'uboot ext2 ramdisk rootfs' -A arm -O linux -T ramdisk -C gzip  -a 30B008000 -e 30B008000 -d ramdisk.gz  ramdiskfs.gz
+ 
+ 
+遗留问题：
+1) 若为ramdisk启动 则是这样setenv bootargs "console=ttySAC2,115200 root=/dev/ram init=/init"，不过这里没成功
+
+2) 若为sd卡上rootfs启动,则是这样设置：
+setenv bootargs "console=ttySAC2,115200 root=/dev/mmcblk0p2 rw init=/linuxrc rootfstype=ext2"
+ bootcmd=movi read kernel 30008000; movi read rootfs 30B00000 300000; bootm 30008000 30B00000
+问题是：/dev/mmcblk0p2 代表哪个分区
+分析过程如下(大家想一想，问题在哪)：
+a）myx210 # fdisk -p 0
+partion #    size(MB)     block start #    block count    partition_Id
+   1           258            22671          528990          0x83
+   2           121           551661          249381          0x83
+   3           103           801042          211596          0x83
+   4          3269          1012638         6695502          0x83
+
+b) myx210 #fastboot  
+ptn 0 name='bootloader' start=0x0 len=N/A (use hard-coded info. (cmd: movi))
+ptn 1 name='kernel' start=N/A len=N/A (use hard-coded info. (cmd: movi))
+ptn 2 name='ramdisk' start=N/A len=0x300000(~3072KB) (use hard-coded info. (cmd: movi))
+ptn 3 name='config' start=0xB11E00 len=0x1024BC00(~264495KB)
+ptn 4 name='system' start=0x10D5DA00 len=0x79C4A00(~124690KB)
+ptn 5 name='cache' start=0x18722400 len=0x6751800(~105798KB)
+ptn 6 name='userdata' start=0x1EE73C00 len=0xCC549C00(~3347751KB)
+
+c)
+fastboot flash kernel zImage-qt
+fastboot flash system rootfs.ext3
+ 
+d）启动信息：
+myx210 # 
+U-Boot 1.3.4 (Oct 29 2020 - 13:03:34) for x210
+CPU:  S5PV210@1000MHz(OK)
+        APLL = 1000MHz, HclkMsys = 200MHz, PclkMsys = 100MHz
+        MPLL = 667MHz, EPLL = 96MHz
+                       HclkDsys = 166MHz, PclkDsys = 83MHz
+                       HclkPsys = 133MHz, PclkPsys = 66MHz
+                       SCLKA2M  = 200MHz
+Serial = CLKUART
+Board:   X210
+DRAM:    512 MB
+Flash:   8 MB
+SD/MMC:  3776MB
+In:      serial
+Out:     serial
+Err:     serial
+[LEFT UP] boot mode
+Hit any key to stop autoboot:  0
+reading kernel.. 1073, 8192
+MMC read: dev # 0, block # 1073, count 8192 ...8192 blocks read: OK
+completed
+reading RFS.. 9265, 6144
+MMC read: dev # 0, block # 9265, count 6144 ...6144 blocks read: OK
+completed
+Boot with zImage
+get_format
+-------- 1 --------
+## Loading init Ramdisk from Legacy Image at 30b00000 ...
+   Image Name:   uboot ext2 ramdisk rootfs
+   Created:      2020-12-19  18:01:49 UTC
+   Image Type:   ARM Linux RAMDisk Image (gzip compressed)
+   Data Size:    1153380 Bytes =  1.1 MB
+   Load Address: 30b00000
+   Entry Point:  30b00000
+   Verifying Checksum ... OK
+Starting kernel ...
+
+

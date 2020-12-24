@@ -26,11 +26,13 @@ m=container_of(node->i_cdev,struct mydev_st,dev);
 memset(m->buf,0 ,256);
 //m->count++;
 spin_lock(&m->lock);
-if(m->count<3){  //nomore than 3 time to be opened
+/*if(m->count<3){  //nomore than 3 time to be opened
 spin_unlock(&m->lock);
 return -ENODEV;
 }
 m->count +=1;
+*/
+m->count++;
 spin_unlock(&m->lock);
 
 fp->private_data=m;
@@ -52,6 +54,7 @@ while(m->flag==NO_DATA){
 }
 count=min((int)count,256);
 ret=copy_to_user(buf,m->buf,count);
+printk("read %s\n",buf);
 m->flag=NO_DATA;
 wake_up(&m->wq);
 return ret;
@@ -77,6 +80,7 @@ ret= -EFAULT;
 goto copy_error;
 
 }
+printk("write %s\n",m->buf);
 m->flag=HAVE_DATA;
 wake_up(&m->rq);
 return count;
@@ -88,11 +92,13 @@ ssize_t chrdev_close(struct inode *node,struct file *fp){
 struct mydev_st *m;
 m=container_of(node->i_cdev,struct mydev_st,dev);
 spin_lock(&m->lock);
-if(!m->count){  //if lock==0 ,then can not close any more
+/*if(!m->count){  //if lock==0 ,then can not close any more
 spin_unlock(&m->lock);
 return -ENODEV;
 }
 m->count -=1;
+*/
+m->count --;
 spin_unlock(&m->lock);
 return 0;
 }

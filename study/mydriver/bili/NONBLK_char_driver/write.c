@@ -8,7 +8,14 @@ int main(){
 int fd=0;
 int ret;
 char *s="hello";
-fd=open("/dev/test/mydev",O_RDWR);
+//fd=open("/dev/test/mydev",O_RDWR);
+fd=open("/dev/mydev",O_RDWR);
+if(fd<0){
+        perror("open");
+        exit(1);
+
+}
+
 ret=write(fd,s,strlen(s));
 
 close(fd);

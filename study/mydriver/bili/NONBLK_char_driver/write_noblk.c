@@ -8,7 +8,7 @@ int main(){
 int fd=0;
 int ret;
 char *s="hello";
-fd=open("/dev/test/mydev",O_RDWR|O_NONBLOCK);
+fd=open("/dev/mydev",O_RDWR|O_NONBLOCK);
 ret=write(fd,s,strlen(s));
 
 close(fd);

@@ -10,12 +10,16 @@ obj-m	+= char_drv.o
 
 all:
 	make -C $(KERN_DIR) M=`pwd` modules 
-	/arm/arm-2009q3/bin/arm-none-linux-gnueabi-gcc -o app app.c
+	arm-none-linux-gnueabi-gcc  -static -o read read.c
+	arm-none-linux-gnueabi-gcc  -static -o write write.c
+	arm-none-linux-gnueabi-gcc  -static -o read_noblk read_noblk.c
+	arm-none-linux-gnueabi-gcc  -static -o write_noblk write_noblk.c
 cp:
-	cp *.ko /tftpboot/nfs/mydriver_test
+	cp *.ko read write read_noblk write_noblk /tftpboot/nfs/mydriver_test
 
 .PHONY: clean	
 clean:
 	make -C $(KERN_DIR) M=`pwd` modules clean
+	rm read write read_noblk write_noblk
 	
 

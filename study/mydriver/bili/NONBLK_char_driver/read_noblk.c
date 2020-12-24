@@ -9,7 +9,7 @@ int fd=0;
 int ret;
 char buf[256];
 char *s="hello";
-fd=open("/dev/test/mydev",O_RDWR|O_NONBLOCK);
+fd=open("/dev/mydev",O_RDWR|O_NONBLOCK);
 ret=read(fd,buf,sizeof(buf));
 //write(fd,s,strlen(s));
 close(fd);

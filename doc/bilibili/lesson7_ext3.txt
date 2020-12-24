@@ -1,0 +1,15 @@
+制作ext3 rootfs:
+
+
+1）dd if=/dev/zero of=rootfs.ext3 bs=1k count=4096
+sudo losetup /dev/loop21 rootfs.ext3
+sudo mkfs.ext3 /dev/loop21
+sudo mount -t ext3 /dev/loop21 /mnt/loop2
+ls  /mnt/loop2
+sudo cp -fr /tftpboot/nfs/* /mnt/loop2/
+
+sudo umount /mnt/loop2
+sudo losetup -d /dev/loop21
+
+2）烧录
+fastboot flash system rootfs.ext3

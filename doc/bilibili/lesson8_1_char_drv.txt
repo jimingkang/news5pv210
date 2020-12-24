@@ -1,0 +1,110 @@
+一.挂载远端的文件系统：
+>ifconfig eth0 192.168.254.34
+>mount -t nfs -o nolock,vers=3  192.168.254.33:/tftpboot/nfs /mnt
+>mount -t nfs -o nolock  192.168.254.33:/tftpboot/nfs /mnt
+
+二.非阻塞的处理
+1)非阻塞的读：
+ssize_t chrdev_read(struct file *fp,char __user * buf,size_t count,loff_t * off){
+struct mydev_st *m;
+int ret;
+m=fp->private_data;
+while(m->flag==NO_DATA){
+        if(fp->f_flags & O_NONBLOCK){
+         return -EAGAIN;
+        }else
+        {
+                wait_event(m->rq,m->flag==HAVE_DATA);    //无数据就等待，直到有数据
+        }
+
+}
+count=min((int)count,256);
+ret=copy_to_user(buf,m->buf,count);
+printk("read %s\n",buf);
+m->flag=NO_DATA;
+wake_up(&m->wq);   //读完了，通知写队列，可以写了
+return ret;
+
+}
+2)非阻塞的写：
+ssize_t chrdev_write(struct file *fp,const char __user  * buf,size_t count,loff_t * off){
+struct mydev_st *m;
+int ret;
+m=fp->private_data;
+while(m->flag==HAVE_DATA){
+        if(fp->f_flags & O_NONBLOCK){
+         return -EAGAIN;
+        }else
+        {
+                wait_event(m->wq,m->flag==NO_DATA);  //有数据就等待，直到无数据
+        }
+
+}
+count=min((int)count,256);
+ret=copy_from_user(m->buf,buf,count);
+if(ret<0){
+ret= -EFAULT;
+goto copy_error;
+}
+printk("write %s\n",m->buf);
+m->flag=HAVE_DATA;
+wake_up(&m->rq); // //写完了，通知读队列，可以读了
+return count;
+copy_error:
+
+return ret;
+}
+3)对设备的打开关闭的多线程的处理：
+通过锁机制，可以控制，多线程打开关闭设备的顺序。这里我只对打开设备次数简单记录。
+A)打开：
+int chrdev_open(struct inode *node,struct file *fp){
+struct mydev_st *m;
+m=container_of(node->i_cdev,struct mydev_st,dev);
+memset(m->buf,0 ,256);
+spin_lock(&m->lock);
+m->count++;
+spin_unlock(&m->lock);
+fp->private_data=m;
+return 0;
+}
+B)关闭：
+ssize_t chrdev_close(struct inode *node,struct file *fp){
+struct mydev_st *m;
+m=container_of(node->i_cdev,struct mydev_st,dev);
+spin_lock(&m->lock);
+m->count --;
+spin_unlock(&m->lock);
+return 0;
+}
+
+如果只允许同时只能一个线程打开，可设置m->count最大值为1：
+A)打开：
+int chrdev_open(struct inode *node,struct file *fp){
+struct mydev_st *m;
+m=container_of(node->i_cdev,struct mydev_st,dev);
+memset(m->buf,0 ,256);
+spin_lock(&m->lock);
+if(m->count){  // 如果非零，说明已打开， 则返回
+spin_unlock(&m->lock);
+return -ENODEV;
+}
+m->count +=1;
+spin_unlock(&m->lock);
+fp->private_data=m;
+return 0;
+}
+B)关闭：
+ssize_t chrdev_close(struct inode *node,struct file *fp){
+struct mydev_st *m;
+m=container_of(node->i_cdev,struct mydev_st,dev);
+spin_lock(&m->lock);
+if(!m->count){  // 如果零，说明已关闭， 则返回
+spin_unlock(&m->lock);
+return -ENODEV;
+}
+m->count -=1;
+spin_unlock(&m->lock);
+return 0;
+}
+
+

@@ -1,110 +1,180 @@
-一.挂载远端的文件系统：
->ifconfig eth0 192.168.254.34
->mount -t nfs -o nolock,vers=3  192.168.254.33:/tftpboot/nfs /mnt
->mount -t nfs -o nolock  192.168.254.33:/tftpboot/nfs /mnt
 
-二.非阻塞的处理
-1)非阻塞的读：
+参考：https://blog.csdn.net/conjimmy/article/details/106632619
+采用新接口：
+alloc_chrdev_region(&mydev->no,1,1,"mydev");
+cdev_init(&mydev->dev,&my_fops);
+cdev_add(&mydev->dev,mydev->no,1);
+
+附录源代码：
+#include <linux/module.h>		// module_init  module_exit
+#include <linux/init.h>			// __init   __exit
+#include <linux/sched.h>
+#include <linux/cdev.h>
+#include <linux/kdev_t.h>
+#include <linux/slab.h>
+
+#include <asm/uaccess.h>
+#include <linux/fs.h>
+#include <linux/spinlock.h>
+struct mydev_st{
+	char buf[256];  //缓冲区
+	dev_t  no;
+	struct cdev dev;   //字符设备
+	int count;         //打开计数，可以控制多线程并发打开设备同步互斥问题
+	spinlock_t lock;    //给count加锁
+	#define NO_DATA 0
+	#define HAVE_DATA 1
+	int flag;            //设备是否有数据
+	wait_queue_head_t rq,wq;  //与flag配合使用，处理阻塞问题
+};
+struct mydev_st *mydev;
+int chrdev_open(struct inode *node,struct file *fp){
+	struct mydev_st *m;
+	m=container_of(node->i_cdev,struct mydev_st,dev);
+	memset(m->buf,0 ,256);
+	//m->count++;
+	spin_lock(&m->lock);
+	/*if(m->count<3){  //nomore than 3 time to be opened
+	spin_unlock(&m->lock);
+	return -ENODEV;
+	}
+	m->count +=1;
+	*/
+	m->count++;
+	spin_unlock(&m->lock);
+
+	fp->private_data=m;
+	return 0;
+
+}
 ssize_t chrdev_read(struct file *fp,char __user * buf,size_t count,loff_t * off){
 struct mydev_st *m;
-int ret;
-m=fp->private_data;
-while(m->flag==NO_DATA){
-        if(fp->f_flags & O_NONBLOCK){
-         return -EAGAIN;
-        }else
-        {
-                wait_event(m->rq,m->flag==HAVE_DATA);    //无数据就等待，直到有数据
-        }
+	int ret;
+	m=fp->private_data;
+	while(m->flag==NO_DATA){
+		if(fp->f_flags & O_NONBLOCK){
+		 return -EAGAIN;
+		}else
+		{
+			wait_event(m->rq,m->flag==HAVE_DATA);
+		}
 
+	}
+	count=min((int)count,256);
+	ret=copy_to_user(buf,m->buf,count);
+	printk("read %s\n",buf);
+	m->flag=NO_DATA;
+	wake_up(&m->wq);
+	return ret;
 }
-count=min((int)count,256);
-ret=copy_to_user(buf,m->buf,count);
-printk("read %s\n",buf);
-m->flag=NO_DATA;
-wake_up(&m->wq);   //读完了，通知写队列，可以写了
-return ret;
 
-}
-2)非阻塞的写：
 ssize_t chrdev_write(struct file *fp,const char __user  * buf,size_t count,loff_t * off){
-struct mydev_st *m;
-int ret;
-m=fp->private_data;
-while(m->flag==HAVE_DATA){
-        if(fp->f_flags & O_NONBLOCK){
-         return -EAGAIN;
-        }else
-        {
-                wait_event(m->wq,m->flag==NO_DATA);  //有数据就等待，直到无数据
-        }
+	struct mydev_st *m;
+	int ret;
+	m=fp->private_data;
+	while(m->flag==HAVE_DATA){
+		if(fp->f_flags & O_NONBLOCK){
+		 return -EAGAIN;
+		}else
+		{
+			wait_event(m->wq,m->flag==NO_DATA);
+		}
 
-}
-count=min((int)count,256);
-ret=copy_from_user(m->buf,buf,count);
-if(ret<0){
-ret= -EFAULT;
-goto copy_error;
-}
-printk("write %s\n",m->buf);
-m->flag=HAVE_DATA;
-wake_up(&m->rq); // //写完了，通知读队列，可以读了
-return count;
-copy_error:
+	}
+	count=min((int)count,256);
+	ret=copy_from_user(m->buf,buf,count);
+	if(ret<0){
+	ret= -EFAULT;
+	goto copy_error;
 
-return ret;
+	}
+	printk("write %s\n",m->buf);
+	m->flag=HAVE_DATA;
+	wake_up(&m->rq);
+	return count;
+	copy_error:
+
+	return ret;
 }
-3)对设备的打开关闭的多线程的处理：
-通过锁机制，可以控制，多线程打开关闭设备的顺序。这里我只对打开设备次数简单记录。
-A)打开：
-int chrdev_open(struct inode *node,struct file *fp){
-struct mydev_st *m;
-m=container_of(node->i_cdev,struct mydev_st,dev);
-memset(m->buf,0 ,256);
-spin_lock(&m->lock);
-m->count++;
-spin_unlock(&m->lock);
-fp->private_data=m;
-return 0;
-}
-B)关闭：
 ssize_t chrdev_close(struct inode *node,struct file *fp){
-struct mydev_st *m;
-m=container_of(node->i_cdev,struct mydev_st,dev);
-spin_lock(&m->lock);
-m->count --;
-spin_unlock(&m->lock);
-return 0;
+	struct mydev_st *m;
+	m=container_of(node->i_cdev,struct mydev_st,dev);
+	spin_lock(&m->lock);
+	/*if(!m->count){  //if lock==0 ,then can not close any more
+	spin_unlock(&m->lock);
+	return -ENODEV;
+	}
+	m->count -=1;
+	*/
+	m->count --;
+	spin_unlock(&m->lock);
+	return 0;
+}
+static const struct file_operations my_fops = {
+    .owner        = THIS_MODULE,           // 惯例，直接写即可
+    .open        = chrdev_open,          // 将来应用open打开这个设备时实际调用的
+    .release    = chrdev_close,        // 就是这个.open对应的函数
+    .write       = chrdev_write,
+    .read        =chrdev_read,
+};
+// 模块安装函数
+static int __init chrdev_init(void)
+{	int ret;
+	mydev=kzalloc(sizeof(*mydev),GFP_KERNEL);
+	
+	if(!mydev){
+	ret=-ENOMEM;
+	goto alloc_dev_error;
+	}
+	ret=alloc_chrdev_region(&mydev->no,1,1,"mydev");
+	if(ret<0){
+	goto alloc_no_error;
+	}
+	cdev_init(&mydev->dev,&my_fops);
+	ret=cdev_add(&mydev->dev,mydev->no,1);
+	if(ret<0)
+	{
+		goto cdev_add_error;
+	}
+	spin_lock_init(&mydev->lock);
+	// init wait queue
+		mydev->flag=NO_DATA;
+		init_waitqueue_head(&mydev->rq);
+		init_waitqueue_head(&mydev->wq);
+	printk(KERN_INFO "chrdev_init major=%d minor=%d\n",MAJOR(mydev->no),MINOR(mydev->no));
+	return 0;
+cdev_add_error:
+	unregister_chrdev_region(mydev->no,1);
+alloc_no_error:
+	kfree(mydev);
+alloc_dev_error:
+         	
+	return ret;
 }
 
-如果只允许同时只能一个线程打开，可设置m->count最大值为1：
-A)打开：
-int chrdev_open(struct inode *node,struct file *fp){
-struct mydev_st *m;
-m=container_of(node->i_cdev,struct mydev_st,dev);
-memset(m->buf,0 ,256);
-spin_lock(&m->lock);
-if(m->count){  // 如果非零，说明已打开， 则返回
-spin_unlock(&m->lock);
-return -ENODEV;
+// 模块下载函数
+static void __exit chrdev_exit(void)
+{
+	printk(KERN_INFO "chrdev_exit \n");
+	cdev_del(&mydev->dev);
+	unregister_chrdev_region(mydev->no,1);
+	kfree(mydev);
 }
-m->count +=1;
-spin_unlock(&m->lock);
-fp->private_data=m;
-return 0;
-}
-B)关闭：
-ssize_t chrdev_close(struct inode *node,struct file *fp){
-struct mydev_st *m;
-m=container_of(node->i_cdev,struct mydev_st,dev);
-spin_lock(&m->lock);
-if(!m->count){  // 如果零，说明已关闭， 则返回
-spin_unlock(&m->lock);
-return -ENODEV;
-}
-m->count -=1;
-spin_unlock(&m->lock);
-return 0;
-}
+
+
+module_init(chrdev_init);
+module_exit(chrdev_exit);
+
+// MODULE_xxx这种宏作用是用来添加模块描述信息
+MODULE_LICENSE("GPL");				// 描述模块的许可证
+MODULE_AUTHOR("jimmy");				// 描述模块的作者
+MODULE_DESCRIPTION("module test");	// 描述模块的介绍信息
+MODULE_ALIAS("alias xxx");			// 描述模块的别名信息
+
+
+
+
+
+
 
 

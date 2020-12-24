@@ -14,93 +14,93 @@ struct mydev_st{
 	struct cdev dev;
 	int count;
 	spinlock_t lock;
-#define NO_DATA 0
-#define HAVE_DATA 1
+	#define NO_DATA 0
+	#define HAVE_DATA 1
 	int flag;
 	wait_queue_head_t rq,wq;
 };
 struct mydev_st *mydev;
 int chrdev_open(struct inode *node,struct file *fp){
-struct mydev_st *m;
-m=container_of(node->i_cdev,struct mydev_st,dev);
-memset(m->buf,0 ,256);
-//m->count++;
-spin_lock(&m->lock);
-/*if(m->count<3){  //nomore than 3 time to be opened
-spin_unlock(&m->lock);
-return -ENODEV;
-}
-m->count +=1;
-*/
-m->count++;
-spin_unlock(&m->lock);
+	struct mydev_st *m;
+	m=container_of(node->i_cdev,struct mydev_st,dev);
+	memset(m->buf,0 ,256);
+	//m->count++;
+	spin_lock(&m->lock);
+	/*if(m->count<3){  //nomore than 3 time to be opened
+	spin_unlock(&m->lock);
+	return -ENODEV;
+	}
+	m->count +=1;
+	*/
+	m->count++;
+	spin_unlock(&m->lock);
 
-fp->private_data=m;
-return 0;
+	fp->private_data=m;
+	return 0;
 
 }
 ssize_t chrdev_read(struct file *fp,char __user * buf,size_t count,loff_t * off){
 struct mydev_st *m;
-int ret;
-m=fp->private_data;
-while(m->flag==NO_DATA){
-	if(fp->f_flags & O_NONBLOCK){
-	 return -EAGAIN;
-	}else
-	{
-		wait_event(m->rq,m->flag==HAVE_DATA);
-	}
+	int ret;
+	m=fp->private_data;
+	while(m->flag==NO_DATA){
+		if(fp->f_flags & O_NONBLOCK){
+		 return -EAGAIN;
+		}else
+		{
+			wait_event(m->rq,m->flag==HAVE_DATA);
+		}
 
-}
-count=min((int)count,256);
-ret=copy_to_user(buf,m->buf,count);
-printk("read %s\n",buf);
-m->flag=NO_DATA;
-wake_up(&m->wq);
-return ret;
+	}
+	count=min((int)count,256);
+	ret=copy_to_user(buf,m->buf,count);
+	printk("read %s\n",buf);
+	m->flag=NO_DATA;
+	wake_up(&m->wq);
+	return ret;
 }
 
 ssize_t chrdev_write(struct file *fp,const char __user  * buf,size_t count,loff_t * off){
-struct mydev_st *m;
-int ret;
-m=fp->private_data;
-while(m->flag==HAVE_DATA){
-	if(fp->f_flags & O_NONBLOCK){
-	 return -EAGAIN;
-	}else
-	{
-		wait_event(m->wq,m->flag==NO_DATA);
+	struct mydev_st *m;
+	int ret;
+	m=fp->private_data;
+	while(m->flag==HAVE_DATA){
+		if(fp->f_flags & O_NONBLOCK){
+		 return -EAGAIN;
+		}else
+		{
+			wait_event(m->wq,m->flag==NO_DATA);
+		}
+
 	}
+	count=min((int)count,256);
+	ret=copy_from_user(m->buf,buf,count);
+	if(ret<0){
+	ret= -EFAULT;
+	goto copy_error;
 
-}
-count=min((int)count,256);
-ret=copy_from_user(m->buf,buf,count);
-if(ret<0){
-ret= -EFAULT;
-goto copy_error;
+	}
+	printk("write %s\n",m->buf);
+	m->flag=HAVE_DATA;
+	wake_up(&m->rq);
+	return count;
+	copy_error:
 
-}
-printk("write %s\n",m->buf);
-m->flag=HAVE_DATA;
-wake_up(&m->rq);
-return count;
-copy_error:
-
-return ret;
+	return ret;
 }
 ssize_t chrdev_close(struct inode *node,struct file *fp){
-struct mydev_st *m;
-m=container_of(node->i_cdev,struct mydev_st,dev);
-spin_lock(&m->lock);
-/*if(!m->count){  //if lock==0 ,then can not close any more
-spin_unlock(&m->lock);
-return -ENODEV;
-}
-m->count -=1;
-*/
-m->count --;
-spin_unlock(&m->lock);
-return 0;
+	struct mydev_st *m;
+	m=container_of(node->i_cdev,struct mydev_st,dev);
+	spin_lock(&m->lock);
+	/*if(!m->count){  //if lock==0 ,then can not close any more
+	spin_unlock(&m->lock);
+	return -ENODEV;
+	}
+	m->count -=1;
+	*/
+	m->count --;
+	spin_unlock(&m->lock);
+	return 0;
 }
 static const struct file_operations my_fops = {
     .owner        = THIS_MODULE,           // 惯例，直接写即可

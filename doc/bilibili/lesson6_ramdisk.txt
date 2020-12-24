@@ -18,11 +18,11 @@ c)  :选上Default RAM disk size kbytes选项为（4096）Default RAM disk size 
 d)修改内核启动参数
 方法有二：
 1）：修改.config,修改CONFIG_CMDLINE=""的定义
-修改为CONFIG_CMDLINE="initrd=0x30B00000,0x300000 root=/dev/ram rw init=/linuxrc console=ttySAC2 mem=512M"    (0x30B00000,0x300000-ramdisk镜像在内存的加载地址。0x300000:大小)保存。
+修改为CONFIG_CMDLINE="initrd=0x30B00000,0x300000 root=/dev/ram rw init=/linuxrc console=ttySAC2,115200 mem=512M"    (0x30B00000,0x300000-ramdisk镜像在内存的加载地址。0x300000:大小)保存。
 意思为从ramdisk启动，ramdisk压缩文件起始地址在内存地址0x53000000处，文件大小为0x200000。
 此参数也可以在make menuconfig ARCH=arm时进入Boot options菜单，然后在Default kernel command string里修改。效果是一样的。
 2）：或者不修改.config,而是用u-boot的bootargs环境变量来传递启动参数。
-同样也是修改该环境变量为bootargs=initrd=0x53000000,0x200000 root=/dev/ram rw init=/linuxrc console=ttySAC0 mem=64M
+同样也是修改该环境变量为bootargs=initrd=0x30B00000,0x300000 root=/dev/ram rw init=/linuxrc console=ttySAC2,115200 mem=64M
 并saveenv保存u-boot环境变量
 以上1），2）的效果是一样的。
 

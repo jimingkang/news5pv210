@@ -7,7 +7,6 @@
 KERN_DIR = ~/news5pv210/x210ii_kernel
 
 obj-m	+= char_drv.o
-
 all:
 	make -C $(KERN_DIR) M=`pwd` modules 
 	arm-none-linux-gnueabi-gcc  -static -o read read.c

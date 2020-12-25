@@ -12,6 +12,6 @@ fd=open("/dev/mydev",O_RDWR|O_NONBLOCK);
 ret=write(fd,s,strlen(s));
 
 close(fd);
-printf("%s\n",s);
+printf("app write noblk %s\n",s);
 return 0;
 }

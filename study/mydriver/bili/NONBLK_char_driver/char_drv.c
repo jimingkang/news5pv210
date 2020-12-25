@@ -23,7 +23,6 @@ struct mydev_st *mydev;
 int chrdev_open(struct inode *node,struct file *fp){
 	struct mydev_st *m;
 	m=container_of(node->i_cdev,struct mydev_st,dev);
-	memset(m->buf,0 ,256);
 	//m->count++;
 	spin_lock(&m->lock);
 	/*if(m->count<3){  //nomore than 3 time to be opened
@@ -54,7 +53,7 @@ struct mydev_st *m;
 	}
 	count=min((int)count,256);
 	ret=copy_to_user(buf,m->buf,count);
-	printk("read %s\n",buf);
+	printk("chrdev driver read :count =%d ,%s\n",count,buf);
 	m->flag=NO_DATA;
 	wake_up(&m->wq);
 	return ret;
@@ -66,7 +65,8 @@ ssize_t chrdev_write(struct file *fp,const char __user  * buf,size_t count,loff_
 	m=fp->private_data;
 	while(m->flag==HAVE_DATA){
 		if(fp->f_flags & O_NONBLOCK){
-		 return -EAGAIN;
+	 printk("error in driver write,because of no one read data");
+	       		return -EAGAIN;
 		}else
 		{
 			wait_event(m->wq,m->flag==NO_DATA);
@@ -80,7 +80,7 @@ ssize_t chrdev_write(struct file *fp,const char __user  * buf,size_t count,loff_
 	goto copy_error;
 
 	}
-	printk("write %s\n",m->buf);
+	printk("chrdev_driver write %s\n",m->buf);
 	m->flag=HAVE_DATA;
 	wake_up(&m->rq);
 	return count;
@@ -98,7 +98,7 @@ ssize_t chrdev_close(struct inode *node,struct file *fp){
 	}
 	m->count -=1;
 	*/
-	m->count --;
+	m->count--;
 	spin_unlock(&m->lock);
 	return 0;
 }
@@ -113,7 +113,7 @@ static const struct file_operations my_fops = {
 static int __init chrdev_init(void)
 {	int ret;
 	mydev=kzalloc(sizeof(*mydev),GFP_KERNEL);
-	
+	memset(mydev->buf,0 ,256);
 	if(!mydev){
 	ret=-ENOMEM;
 	goto alloc_dev_error;
@@ -130,10 +130,10 @@ static int __init chrdev_init(void)
 	}
 	spin_lock_init(&mydev->lock);
 	// init wait queue
-		mydev->flag=NO_DATA;
-		init_waitqueue_head(&mydev->rq);
-		init_waitqueue_head(&mydev->wq);
-	printk(KERN_INFO "chrdev_init major=%d minor=%d\n",MAJOR(mydev->no),MINOR(mydev->no));
+	mydev->flag=NO_DATA;
+	init_waitqueue_head(&mydev->rq);
+	init_waitqueue_head(&mydev->wq);
+	printk(KERN_INFO "chrdev_init major=%d minor=%d flag=%d\n",MAJOR(mydev->no),MINOR(mydev->no),mydev->flag);
 	return 0;
 cdev_add_error:
 	unregister_chrdev_region(mydev->no,1);

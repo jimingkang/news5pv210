@@ -7,7 +7,7 @@
 int main(){
 int fd=0;
 int ret;
-char *s="hello";
+char *s="world";
 //fd=open("/dev/test/mydev",O_RDWR);
 fd=open("/dev/mydev",O_RDWR);
 if(fd<0){
@@ -19,6 +19,6 @@ if(fd<0){
 ret=write(fd,s,strlen(s));
 
 close(fd);
-printf("%s\n",s);
+printf("app write %s\n",s);
 return 0;
 }

@@ -13,6 +13,6 @@ fd=open("/dev/mydev",O_RDWR|O_NONBLOCK);
 ret=read(fd,buf,sizeof(buf));
 //write(fd,s,strlen(s));
 close(fd);
-printf("%s\n",buf);
+printf("app read noblk %s\n",buf);
 return 0;
 }

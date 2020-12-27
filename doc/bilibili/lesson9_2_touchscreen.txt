@@ -1,0 +1,58 @@
+一.配置
+
+1)etc/inittab
+::sysinit:/etc/init.d/rcS
+::respawn:-/bin/sh
+# Put a getty on the serial port
+#ttySAC2::respawn:/sbin/getty -L ttySAC2 115200 vt100 # GENERIC_SERIAL
+
+#ttySAC2::askfirst:-/bin/sh
+#tty2::askfirst:-/bin/sh
+::ctrlaltdel:/bin/umount -a -r
+
+2)
+#//调用/etc/fstab
+mount -a  
+#对热插拔处理
+/bin/echo /sbin/mdev > /proc/sys/kernel/hotplug 
+
+# Start all init scripts in /etc/init.d
+# executing them in numerical order.
+#下面其实就做了一件事 mdev -s ,只不过写在S10mdev文件里
+
+for i in /etc/init.d/S??* ;do
+
+     # Ignore dangling symlinks (if any).
+     [ ! -f "$i" ] && continue
+
+     case "$i" in
+        *.sh)
+            # Source shell script for speed.
+            (
+                trap - INT QUIT TSTP
+                set start
+                . $i
+            )
+            ;;
+        *)
+            # No sh extension, so fork subprocess.
+            $i start
+            ;;
+    esac
+done
+
+3)/etc/fstab
+# /etc/fstab: static file system information.
+#
+# <file system> <mount pt>     <type>   <options>         <dump> <pass>
+/dev/root       /              ext2     rw,noauto         0      1
+proc            /proc          proc     defaults          0      0
+devpts          /dev/pts       devpts   defaults,gid=5,mode=620   0      0
+tmpfs           /dev/shm       tmpfs    mode=0777         0      0
+tmpfs           /tmp           tmpfs    defaults          0      0
+sysfs           /sys           sysfs    defaults          0      0
+
+二nfs方式运行
+x210>setenv bootargs "root=/dev/nfs rw nfsroot=192.168.254.33:/tftpboot/nfs,proto=tcp,nfsvers=3,nolock  ip=192.168.254.39:192.168.254.33:192.168.254.254:255.255.255.0::eth0:off console=ttySAC2,115200 init=/linuxrc"
+（原来：setenv bootargs "console=ttySAC2,115200 root=/dev/mmcblk0p2 rw init=/linuxrc rootfstype=ext3"）
+x210>tftp 30008000 newUimage-touchsrceen 

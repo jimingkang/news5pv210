@@ -594,7 +594,6 @@ unsigned int flags;
 
 }
 */
-
 static void gslX680_ts_worker(struct work_struct *work)
 {
 	int rc, i;
@@ -643,8 +642,7 @@ static void gslX680_ts_worker(struct work_struct *work)
 		|(ts->touch_data[1]<<8)|(ts->touch_data[0]);
 	gsl_alg_id_main(&cinfo);
 	tmp1=gsl_mask_tiaoping();
-	printk("[tp-gsl] tmp1=%x\n",tmp1);
-	//print_info("[tp-gsl] tmp1=%x\n",tmp1);
+	print_info("[tp-gsl] tmp1=%x\n",tmp1);
 	if(tmp1>0&&tmp1<0xffffffff)
 	{
 		buf[0]=0xa;buf[1]=0;buf[2]=0;buf[3]=0;
@@ -653,8 +651,8 @@ static void gslX680_ts_worker(struct work_struct *work)
 		buf[1]=(u8)((tmp1>>8) & 0xff);
 		buf[2]=(u8)((tmp1>>16) & 0xff);
 		buf[3]=(u8)((tmp1>>24) & 0xff);
-		//print_info("tmp1=%08x,buf[0]=%02x,buf[1]=%02x,buf[2]=%02x,buf[3]=%02x\n",tmp1,buf[0],buf[1],buf[2],buf[3]);
-		printk("tmp1=%08x,buf[0]=%02x,buf[1]=%02x,buf[2]=%02x,buf[3]=%02x\n",tmp1,buf[0],buf[1],buf[2],buf[3]);
+		print_info("tmp1=%08x,buf[0]=%02x,buf[1]=%02x,buf[2]=%02x,buf[3]=%02x\n",
+			tmp1,buf[0],buf[1],buf[2],buf[3]);
 		gsl_ts_write(ts->client,0x8,buf,4);
 	}
 	touches = cinfo.finger_num;
@@ -722,6 +720,7 @@ i2c_lock_schedule:
 	enable_irq(ts->irq);
 		
 }
+
 #ifdef GSL_MONITOR
 static void gsl_monitor_worker(void)
 {

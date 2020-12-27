@@ -1,1 +1,1 @@
-#define CONFIG_PREFIX "/tftpboot/ramdiskfs"
+#define CONFIG_PREFIX "/tftpboot/nfs"

@@ -2,7 +2,7 @@
  * Automatically generated C config: don't edit
  * Busybox version: 1.24.0
  */
-#define AUTOCONF_TIMESTAMP "2020-12-18 12:16:06 PST"
+#define AUTOCONF_TIMESTAMP "2020-12-26 16:37:39 PST"
 
 #define CONFIG_HAVE_DOT_CONFIG 1
 #define ENABLE_HAVE_DOT_CONFIG 1
@@ -436,7 +436,7 @@
 #define ENABLE_INSTALL_SH_APPLET_SCRIPT_WRAPPER 0
 #define IF_INSTALL_SH_APPLET_SCRIPT_WRAPPER(...)
 #define IF_NOT_INSTALL_SH_APPLET_SCRIPT_WRAPPER(...) __VA_ARGS__
-#define CONFIG_PREFIX "/tftpboot/ramdiskfs"
+#define CONFIG_PREFIX "/tftpboot/nfs"
 #define ENABLE_PREFIX 1
 #ifdef MAKE_SUID
 # define IF_PREFIX(...) __VA_ARGS__ "CONFIG_PREFIX"

@@ -9,6 +9,7 @@ sudo umount /mnt
 sudo losetup -d /dev/loop20
 
 B)安装andriod usb otg driver
+https://jingyan.baidu.com/article/624e74594dbc8d34e8ba5aa6.html
 https://blog.csdn.net/weixin_38201679/article/details/80347359
 
 C)烧录

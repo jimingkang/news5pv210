@@ -1,0 +1,30 @@
+创建ext3文件系统：
+dd if=/dev/zero  of=nfs.ext3 bs=1024 count=10240
+sudo losetup /dev/loop20 nfs.ext3
+mkfs -t ext3 -m 0 /dev/loop20 10240
+sudo mount -t ext3 /dev/loop20 /mnt
+sudo cp nfs/* /mnt -rdf
+
+sudo umount /mnt
+sudo losetup -d /dev/loop20
+
+烧录
+fastboot flash system rootfs.ext3
+---------------------------------------------------
+设置uboot启动方式：
+
+1）fastboot+ext3(写入inand中，也就是内部mm0中;movi默认也是从inand也就是mm0中读取):
+setenv bootargs "root=/dev/mmcblk0p2 rw  rootfstype=ext3 init=/linuxrc console=ttySAC2,115200 mem=512M"
+setenv bootcmd "movi read kernel 30008000;movi rootfs 30B00000 300000; bootm 30008000 30B00000;"
+
+2）nfs（从远程中读取内核）:
+setenv bootargs "noinitrd console=ttySAC2,115200 root=/dev/nfs nfsroot=192.168.0.21:/home/jimmy/news5pv210/nfs,proto=tcp,nfsvers=3,nolock ip=192.168.0.20:192.168.0.21:192.168.0.21:255.255.255.0::eth0:off mem=512M"
+setenv bootcmd "tftp 30008000 zImage-nfs;bootm 30008000"
+tftp 30008000 zImage_mpu6050
+
+3）ramdisk:
+setenv bootargs "initrd=0x30B00000,0x300000 root=/dev/ram rw ramdisk=4096 rootfstype=ext2 init=/linuxrc console=ttySAC2,115200 mem=512M"
+
+---------------------------------------------------------------------------------------
+mmc cmd(可以控制写入到那个mmc中,可以是内部mm0,也可以是外部mm2):
+setenv bootcmd "mmc read  1 30008000 1073# 8192; bootm 30008000"

@@ -1,4 +1,4 @@
-创建ext3文件系统：
+A)创建ext3文件系统：
 dd if=/dev/zero  of=nfs.ext3 bs=1024 count=10240
 sudo losetup /dev/loop20 nfs.ext3
 mkfs -t ext3 -m 0 /dev/loop20 10240
@@ -8,10 +8,13 @@ sudo cp nfs/* /mnt -rdf
 sudo umount /mnt
 sudo losetup -d /dev/loop20
 
-烧录
+B)安装andriod usb otg driver
+https://blog.csdn.net/weixin_38201679/article/details/80347359
+
+C)烧录
 fastboot flash system rootfs.ext3
 ---------------------------------------------------
-设置uboot启动方式：
+D)设置uboot启动方式：
 
 1）fastboot+ext3(写入inand中，也就是内部mm0中;movi默认也是从inand也就是mm0中读取):
 setenv bootargs "root=/dev/mmcblk0p2 rw  rootfstype=ext3 init=/linuxrc console=ttySAC2,115200 mem=512M"

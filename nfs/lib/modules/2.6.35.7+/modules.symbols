@@ -1,0 +1,5 @@
+# Aliases for symbols, used by symbol_request().
+alias symbol:led_classdev_suspend led_class
+alias symbol:led_classdev_resume led_class
+alias symbol:led_classdev_register led_class
+alias symbol:led_classdev_unregister led_class

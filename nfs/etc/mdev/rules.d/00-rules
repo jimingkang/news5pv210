@@ -1,0 +1,2 @@
+SUBSYSTEMS=="usb", ATTRS{serial}=="557373136313510D97B4", KERNEL=="ttyACM*", NAME="arduino-0"
+SUBSYSTEMS=="tty", ATTRS{idProduct}=="0043",ATTRS{idVendor}=="2341", GROUP="users", MODE="0777"

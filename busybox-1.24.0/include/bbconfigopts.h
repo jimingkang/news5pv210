@@ -77,7 +77,7 @@ static const char bbconfig_config[] ALIGN1 =
 "# CONFIG_INSTALL_SH_APPLET_SYMLINK is not set\n"
 "# CONFIG_INSTALL_SH_APPLET_HARDLINK is not set\n"
 "# CONFIG_INSTALL_SH_APPLET_SCRIPT_WRAPPER is not set\n"
-"CONFIG_PREFIX=\"/tftpboot/nfs\"\n"
+"CONFIG_PREFIX=\"/tftpboot/ramdiskfs/\"\n"
 "CONFIG_FEATURE_SYSTEMD=y\n"
 "CONFIG_FEATURE_RTMINMAX=y\n"
 "CONFIG_PASSWORD_MINLEN=6\n"

@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Busybox version: 1.24.0
-# Sat Dec 26 16:36:44 2020
+# Fri Jun  4 17:02:42 2021
 #
 CONFIG_HAVE_DOT_CONFIG=y
 
@@ -91,7 +91,7 @@ CONFIG_INSTALL_APPLET_SYMLINKS=y
 # CONFIG_INSTALL_SH_APPLET_SYMLINK is not set
 # CONFIG_INSTALL_SH_APPLET_HARDLINK is not set
 # CONFIG_INSTALL_SH_APPLET_SCRIPT_WRAPPER is not set
-CONFIG_PREFIX="/tftpboot/nfs"
+CONFIG_PREFIX="/tftpboot/ramdiskfs/"
 
 #
 # Busybox Library Tuning

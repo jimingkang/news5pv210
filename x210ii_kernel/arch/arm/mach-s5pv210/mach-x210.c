@@ -1166,7 +1166,6 @@ static struct s3c64xx_spi_csinfo smdk_spi1_csi[] = {
 		.fb_delay = 0x0,
 	},
 };
-
 static struct spi_board_info s3c_spi_devs[] __initdata = {
 	[0] = {
 		.modalias        = "spidev",	/* device node name */
@@ -1645,6 +1644,12 @@ static struct s3c_platform_jpeg jpeg_plat __initdata = {
 
 /* I2C0 */
 static struct i2c_board_info i2c_devs0[] __initdata = {
+
+
+	//jimmy add
+	{
+        I2C_BOARD_INFO("mpu6050", 0x68),//构建i2c_board_info结构体，0x2b为从设备的地址
+    },
 #ifdef CONFIG_SND_SOC_WM8580
 	{
 		I2C_BOARD_INFO("wm8580", 0x1b),
@@ -1669,6 +1674,10 @@ static struct i2c_board_info i2c_devs1[] __initdata = {
 		I2C_BOARD_INFO("gslX680", 0x40),
 	},
 #endif
+	//jimmy add
+//	{
+ //       I2C_BOARD_INFO("mpu6050", 0x68),//构建i2c_board_info结构体，0x2b为从设备的地址
+  //  },
 };
 
 /* I2C2 */
@@ -1895,7 +1904,7 @@ static struct platform_device *smdkc110_devices[] __initdata = {
 #endif
 
 //	&timed_gpio_device,
-
+//&mpu6050_i2c_devs0,
 	&headset_switch_device,
 };
 
@@ -2102,7 +2111,7 @@ static void __init smdkc110_machine_init(void)
 	i2c_register_board_info(0, i2c_devs0, ARRAY_SIZE(i2c_devs0));
 	i2c_register_board_info(1, i2c_devs1, ARRAY_SIZE(i2c_devs1));
 	i2c_register_board_info(2, i2c_devs2, ARRAY_SIZE(i2c_devs2));
-
+	//jimmy add
 #ifdef CONFIG_DM9000
 	smdkc110_dm9000_set();
 #endif

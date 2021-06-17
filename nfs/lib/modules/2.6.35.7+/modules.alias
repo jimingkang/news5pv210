@@ -1,0 +1,3 @@
+# Aliases extracted from modules themselves.
+alias stdrng ansi_cprng
+alias platform:leds-gpio leds_gpio

@@ -1,0 +1,54 @@
+ts_read.lo: ts_read.c ../config.h tslib-private.h tslib.h \
+ /arm/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stdarg.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/time.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h \
+ tslib-filter.h tslib.h
+
+../config.h:
+
+tslib-private.h:
+
+tslib.h:
+
+/arm/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stdarg.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/time.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h:
+
+tslib-filter.h:
+
+tslib.h:

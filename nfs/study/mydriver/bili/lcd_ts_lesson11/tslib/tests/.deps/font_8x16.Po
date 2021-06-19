@@ -1,0 +1,21 @@
+font_8x16.o: font_8x16.c font.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/types.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/types.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/int-ll64.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/posix_types.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/stddef.h \
+ /arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/posix_types.h
+
+font.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/types.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/types.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/int-ll64.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/posix_types.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/stddef.h:
+
+/arm/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/posix_types.h:

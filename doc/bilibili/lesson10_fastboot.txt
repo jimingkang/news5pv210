@@ -22,9 +22,10 @@ setenv bootargs "root=/dev/mmcblk0p2 rw  rootfstype=ext3 init=/linuxrc console=t
 setenv bootcmd "movi read kernel 30008000;movi rootfs 30B00000 300000; bootm 30008000 30B00000;"
 
 2）nfs（从远程中读取内核）:
-setenv bootargs "noinitrd console=ttySAC2,115200 root=/dev/nfs nfsroot=192.168.0.21:/home/jimmy/news5pv210/nfs,proto=tcp,nfsvers=3,nolock ip=192.168.0.20:192.168.0.21:192.168.0.21:255.255.255.0::eth0:off mem=512M"
+setenv bootargs "noinitrd console=ttySAC2,115200 root=/dev/nfs nfsroot=192.168.0.25:/home/jimmy/news5pv210/nfs,proto=tcp,nfsvers=3,nolock ip=192.168.0.20:192.168.0.25:192.168.0.25:255.255.255.0::eth0:off mem=512M"
 setenv bootcmd "tftp 30008000 zImage-nfs;bootm 30008000"
-tftp 30008000 zImage_mpu6050
+tftp 30008000 zImage-mpu6050
+tftp 30008000 zImage-pca9685
 
 3）ramdisk:
 setenv bootargs "initrd=0x30B00000,0x300000 root=/dev/ram rw ramdisk=4096 rootfstype=ext2 init=/linuxrc console=ttySAC2,115200 mem=512M"

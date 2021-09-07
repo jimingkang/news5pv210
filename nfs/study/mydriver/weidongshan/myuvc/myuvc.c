@@ -12,7 +12,7 @@
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/videobuf-core.h>
-
+ #include <linux/slab.h>
 #include "uvcvideo.h"
 
 /* ²Î¿¼ drivers/media/video/uvc */
@@ -539,7 +539,7 @@ static void myuvc_uninit_urbs(void)
     for (i = 0; i < MYUVC_URBS; ++i) {
         if (myuvc_queue.urb_buffer[i])
         {
-            usb_buffer_free(myuvc_udev, myuvc_queue.urb_size, myuvc_queue.urb_buffer[i], myuvc_queue.urb_dma[i]);
+            usb_free_coherent(myuvc_udev, myuvc_queue.urb_size, myuvc_queue.urb_buffer[i], myuvc_queue.urb_dma[i]);
             myuvc_queue.urb_buffer[i] = NULL;
         }
 
@@ -791,7 +791,7 @@ static int myuvc_alloc_init_urbs(void)
     for (i = 0; i < MYUVC_URBS; ++i) {
         /* 1. ·ÖÅäusb_buffers */
         
-        myuvc_queue.urb_buffer[i] = usb_buffer_alloc(
+        myuvc_queue.urb_buffer[i] = usb_alloc_coherent(
             myuvc_udev, size,
             GFP_KERNEL | __GFP_NOWARN, &myuvc_queue.urb_dma[i]);
 

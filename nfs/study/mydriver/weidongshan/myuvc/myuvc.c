@@ -85,22 +85,29 @@ static struct myuvc_queue myuvc_queue;
 
 static struct video_device *myuvc_vdev;
 static struct usb_device *myuvc_udev;
-static int myuvc_bEndpointAddress = 0x82;
+//static int myuvc_bEndpointAddress = 0x82;
+//jimmy add 
+static int myuvc_bEndpointAddress = 0x81;
 static int myuvc_streaming_intf;
 static int myuvc_control_intf;
 static struct v4l2_format myuvc_format;
 
 static struct frame_desc frames[] = {{640, 480}, {320, 240}, {160, 120}};
-static int frame_idx = 1;
+//static int frame_idx = 1;
+//jimmy add 
+static int frame_idx = 4;
 static int bBitsPerPixel = 0; /* lsusb -v -d 0x1e4e:  "bBitsPerPixel" */
 static int uvc_version = 0x0100; /* lsusb -v -d 0x1b3b: bcdUVC */
 
-static int ProcessingUnitID = 3;  /* lsusb -v -d 0x1b3b: PROCESSING_UNIT */
+//static int ProcessingUnitID = 3;  /* lsusb -v -d 0x1b3b: PROCESSING_UNIT */
+//jimmy add 
+static int ProcessingUnitID = 5;  /* lsusb -v -d 0x1b3b: PROCESSING_UNIT */
 
 /* 以后再设置 */
 static int wMaxPacketSize = 800;
 static int myuvc_streaming_bAlternateSetting = 5;
-static int dwMaxVideoFrameSize = 77312;
+//static int dwMaxVideoFrameSize = 77312;
+static int dwMaxVideoFrameSize = 614989/8;
 
 static struct myuvc_streaming_control myuvc_params;
 

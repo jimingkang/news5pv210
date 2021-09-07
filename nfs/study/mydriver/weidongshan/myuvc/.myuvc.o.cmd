@@ -565,10 +565,7 @@ deps_/home/jimmy/news5pv210/nfs/study/mydriver/weidongshan/myuvc/myuvc.o := \
   /home/jimmy/news5pv210/x210ii_kernel/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
   include/linux/cdev.h \
-  include/media/v4l2-ioctl.h \
-    $(wildcard include/config/video/v4l1/compat.h) \
-  include/linux/videodev.h \
-  include/media/videobuf-core.h \
+  include/linux/spi/spi.h \
   include/linux/slab.h \
     $(wildcard include/config/slab/debug.h) \
     $(wildcard include/config/failslab.h) \
@@ -583,6 +580,10 @@ deps_/home/jimmy/news5pv210/nfs/study/mydriver/weidongshan/myuvc/myuvc.o := \
   include/trace/events/kmem.h \
   include/linux/kmemleak.h \
     $(wildcard include/config/debug/kmemleak.h) \
+  include/media/v4l2-ioctl.h \
+    $(wildcard include/config/video/v4l1/compat.h) \
+  include/linux/videodev.h \
+  include/media/videobuf-core.h \
   /home/jimmy/news5pv210/nfs/study/mydriver/weidongshan/myuvc/uvcvideo.h \
 
 /home/jimmy/news5pv210/nfs/study/mydriver/weidongshan/myuvc/myuvc.o: $(deps_/home/jimmy/news5pv210/nfs/study/mydriver/weidongshan/myuvc/myuvc.o)

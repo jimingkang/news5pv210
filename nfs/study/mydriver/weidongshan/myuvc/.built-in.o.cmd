@@ -1,1 +1,0 @@
-cmd_/home/jimmy/news5pv210/nfs/study/mydriver/weidongshan/myuvc/built-in.o :=  rm -f /home/jimmy/news5pv210/nfs/study/mydriver/weidongshan/myuvc/built-in.o; /arm/arm-2009q3/bin/arm-none-linux-gnueabi-ar rcs /home/jimmy/news5pv210/nfs/study/mydriver/weidongshan/myuvc/built-in.o

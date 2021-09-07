@@ -1,5 +1,5 @@
 kernel/crypto/ansi_cprng.ko
 kernel/drivers/scsi/scsi_wait_scan.ko
-kernel/drivers/input/touchscreen/ft5x06_touch.ko
-kernel/drivers/leds/led-class.ko
-kernel/drivers/leds/leds-pca955x.ko
+kernel/drivers/media/video/ov2655_2m.ko
+kernel/drivers/media/video/gspca/gspca_main.ko
+kernel/drivers/media/video/uvc/uvcvideo.ko

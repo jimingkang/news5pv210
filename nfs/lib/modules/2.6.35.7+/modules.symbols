@@ -1,5 +1,9 @@
 # Aliases for symbols, used by symbol_request().
-alias symbol:led_classdev_suspend led_class
-alias symbol:led_classdev_resume led_class
-alias symbol:led_classdev_register led_class
-alias symbol:led_classdev_unregister led_class
+alias symbol:gspca_disconnect gspca_main
+alias symbol:gspca_dev_probe gspca_main
+alias symbol:gspca_get_i_frame gspca_main
+alias symbol:gspca_resume gspca_main
+alias symbol:gspca_suspend gspca_main
+alias symbol:gspca_debug gspca_main
+alias symbol:gspca_frame_add gspca_main
+alias symbol:gspca_auto_gain_n_exposure gspca_main

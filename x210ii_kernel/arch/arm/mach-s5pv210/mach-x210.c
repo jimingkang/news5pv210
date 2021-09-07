@@ -1646,6 +1646,9 @@ static struct s3c_platform_jpeg jpeg_plat __initdata = {
 static struct i2c_board_info i2c_devs0[] __initdata = {
 
 
+	{
+        I2C_BOARD_INFO("PCA9685", 0x40),//构建i2c_board_info结构体，0x2b为从设备的地址
+    },
 	//jimmy add
 	{
         I2C_BOARD_INFO("mpu6050", 0x68),//构建i2c_board_info结构体，0x2b为从设备的地址

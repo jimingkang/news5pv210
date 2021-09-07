@@ -28,4 +28,5 @@ int pwm_enable(struct pwm_device *pwm);
  */
 void pwm_disable(struct pwm_device *pwm);
 
-#endif /* __LINUX_PWM_H */
+//jimmy add
+#endif

@@ -234,7 +234,7 @@ static int gsl_ts_read(struct i2c_client *client, u8 addr, u8 *pdata, unsigned i
 
 	if (datalen > 126)
 	{
-		print_info("%s too big datalen = %d!\n", __func__, datalen);
+		printk("%s too big datalen = %d!\n", __func__, datalen);
 		return -1;
 	}
 
@@ -322,7 +322,7 @@ static int test_i2c(struct i2c_client *client)
 	if(ret <  0 )
 		rc --;
 	else
-		print_info("I read reg 0xf0 is 0x%x\n", read_buf);
+		printk("I read reg 0xf0 is 0x%x\n", read_buf);
 
 	return rc;
 }
@@ -549,7 +549,7 @@ static void report_data(struct gsl_ts *ts, u16 x, u16 y, u8 pressure, u8 id)
 {
 	swap(x, y);
 
-	print_info("#####id=%d,x=%d,y=%d######\n",id,x,y);
+	printk("#####id=%d,x=%d,y=%d######\n",id,x,y);
 
 	if(x > SCREEN_MAX_X || y > SCREEN_MAX_Y)
 	{
@@ -626,7 +626,7 @@ static void gslX680_ts_worker(struct work_struct *work)
 	}
 		
 	touches = ts->touch_data[ts->dd->touch_index];
-	print_info("-----touches: %d -----\n", touches);		
+	printk("-----touches: %d -----\n", touches);		
 #ifdef GSL_NOID_VERSION
 	cinfo.finger_num = touches;
 	print_info("tp-gsl  finger_num = %d\n",cinfo.finger_num);

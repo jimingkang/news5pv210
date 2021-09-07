@@ -1,3 +1,6 @@
 # Aliases extracted from modules themselves.
 alias stdrng ansi_cprng
-alias platform:leds-gpio leds_gpio
+alias i2c:pca9553 leds_pca955x
+alias i2c:pca9552 leds_pca955x
+alias i2c:pca9551 leds_pca955x
+alias i2c:pca9550 leds_pca955x

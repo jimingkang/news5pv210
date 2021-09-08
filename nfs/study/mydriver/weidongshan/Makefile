@@ -1,11 +1,6 @@
-KERN_DIR = /work/jz2440/linux-3.4.2
-
-all:
-	make -C $(KERN_DIR) M=`pwd` modules 
-
+test_camera:main.c
+	arm-linux-gcc -static -o test_camera main.c
+	
 clean:
-	make -C $(KERN_DIR) M=`pwd` modules clean
-	rm -rf modules.order
+	rm -rf test_camera
 
-obj-m	+= cmos_ov7740_dev.o
-obj-m	+= cmos_ov7740_drv.o

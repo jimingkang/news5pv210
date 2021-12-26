@@ -92,11 +92,13 @@ static int myuvc_streaming_intf;
 static int myuvc_control_intf;
 static struct v4l2_format myuvc_format;
 
-static struct frame_desc frames[] = {{640, 480}, {320, 240}, {160, 120}};
+static struct frame_desc frames[] = {{1920,1080},{1280,720},{1024,768},{640, 480},{800,600}, {320, 240}, {160, 120}};
 //static int frame_idx = 1;
 //jimmy add 
-static int frame_idx = 4;
-static int bBitsPerPixel = 0; /* lsusb -v -d 0x1e4e:  "bBitsPerPixel" */
+static int frame_idx = 7;
+//static int bBitsPerPixel = 0; /* lsusb -v -d 0x1e4e:  "bBitsPerPixel" */
+//jimmy add 
+static int bBitsPerPixel = 16; /* lsusb -v -d 0x1e4e:  "bBitsPerPixel" */
 static int uvc_version = 0x0100; /* lsusb -v -d 0x1b3b: bcdUVC */
 
 //static int ProcessingUnitID = 3;  /* lsusb -v -d 0x1b3b: PROCESSING_UNIT */
@@ -104,10 +106,12 @@ static int uvc_version = 0x0100; /* lsusb -v -d 0x1b3b: bcdUVC */
 static int ProcessingUnitID = 5;  /* lsusb -v -d 0x1b3b: PROCESSING_UNIT */
 
 /* 以后再设置 */
-static int wMaxPacketSize = 800;
-static int myuvc_streaming_bAlternateSetting = 5;
+//static int wMaxPacketSize = 800;
+static int wMaxPacketSize = 3072;
+//static int myuvc_streaming_bAlternateSetting = 5;
+static int myuvc_streaming_bAlternateSetting = 6;
 //static int dwMaxVideoFrameSize = 77312;
-static int dwMaxVideoFrameSize = 614989/8;
+static int dwMaxVideoFrameSize = 155648;
 
 static struct myuvc_streaming_control myuvc_params;
 
@@ -173,9 +177,11 @@ static int myuvc_vidioc_try_fmt_vid_cap(struct file *file, void *priv,
      */
 
     /* 人工查看描述符, 确定支持哪几种分辨率 */
-    f->fmt.pix.width  = frames[frame_idx].width;
-    f->fmt.pix.height = frames[frame_idx].height;
-    
+    f->fmt.pix.width  =320;
+    f->fmt.pix.height = 240;
+   printk("width=%d,height=%d,\n",f->fmt.pix.width,f->fmt.pix.height); 
+    //f->fmt.pix.width  = frames[frame_idx].width;
+    //f->fmt.pix.height = frames[frame_idx].height;
 	f->fmt.pix.bytesperline =
 		(f->fmt.pix.width * bBitsPerPixel) >> 3;
 	f->fmt.pix.sizeimage = dwMaxVideoFrameSize;
@@ -219,6 +225,7 @@ static int myuvc_vidioc_reqbufs(struct file *file, void *priv,
 {
     int nbuffers = p->count;
     int bufsize  = PAGE_ALIGN(myuvc_format.fmt.pix.sizeimage);
+    printk("sizimage=%d",bufsize);
     unsigned int i;
     void *mem = NULL;
     int ret;
@@ -237,11 +244,13 @@ static int myuvc_vidioc_reqbufs(struct file *file, void *priv,
             break;
     }
 
+    printk("mem=%d",mem);
     if (mem == NULL) {
         ret = -ENOMEM;
         goto done;
     }
 
+    printk("after mem=%d",mem);
     /* 这些缓存是一次性作为一个整体来分配的 */
     memset(&myuvc_queue, 0, sizeof(myuvc_queue));
 
@@ -448,8 +457,10 @@ static int myuvc_try_streaming_params(struct myuvc_streaming_control *ctrl)
     
 	ctrl->bmHint = 1;	/* dwFrameInterval */
 	ctrl->bFormatIndex = 1;
-	ctrl->bFrameIndex  = frame_idx + 1;
+	ctrl->bFrameIndex  = frame_idx ;
+	//ctrl->bFrameIndex  = frame_idx + 1;
 	ctrl->dwFrameInterval = 333333;
+	//ctrl->dwFrameInterval = 166666;
 
 
     size = uvc_version >= 0x0110 ? 34 : 26;

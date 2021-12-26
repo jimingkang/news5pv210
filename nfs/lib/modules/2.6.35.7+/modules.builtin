@@ -133,6 +133,7 @@ kernel/drivers/staging/android/logger.ko
 kernel/drivers/staging/android/timed_gpio.ko
 kernel/drivers/switch/switch_class.ko
 kernel/drivers/switch/switch_gpio.ko
+kernel/drivers/usb/class/cdc-wdm.ko
 kernel/drivers/usb/core/usbcore.ko
 kernel/drivers/usb/host/ehci-hcd.ko
 kernel/drivers/usb/storage/usb-storage.ko
@@ -143,6 +144,10 @@ kernel/drivers/video/cfbimgblt.ko
 kernel/drivers/video/backlight/lcd.ko
 kernel/drivers/video/backlight/backlight.ko
 kernel/drivers/video/backlight/pwm_bl.ko
+kernel/drivers/video/console/fbcon.ko
+kernel/drivers/video/console/bitblit.ko
+kernel/drivers/video/console/font.ko
+kernel/drivers/video/console/softcursor.ko
 kernel/sound/soundcore.ko
 kernel/sound/core/snd.ko
 kernel/sound/core/snd-timer.ko

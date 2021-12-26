@@ -1,5 +1,9 @@
 kernel/crypto/ansi_cprng.ko:
 kernel/drivers/scsi/scsi_wait_scan.ko:
 kernel/drivers/media/video/ov2655_2m.ko:
+kernel/drivers/media/video/ov772x.ko: kernel/drivers/media/video/soc_camera.ko kernel/drivers/media/video/soc_mediabus.ko kernel/drivers/media/video/videobuf-core.ko
+kernel/drivers/media/video/videobuf-core.ko:
 kernel/drivers/media/video/gspca/gspca_main.ko:
+kernel/drivers/media/video/soc_camera.ko: kernel/drivers/media/video/soc_mediabus.ko kernel/drivers/media/video/videobuf-core.ko
+kernel/drivers/media/video/soc_mediabus.ko:
 kernel/drivers/media/video/uvc/uvcvideo.ko:

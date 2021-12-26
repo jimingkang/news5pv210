@@ -1,6 +1,8 @@
 # Aliases extracted from modules themselves.
 alias stdrng ansi_cprng
 alias i2c:ov2655 ov2655_2m
+alias i2c:ov772x ov772x
+alias platform:soc-camera-pdrv soc_camera
 alias usb:v*p*d*dc*dsc*dp*ic0Eisc01ip00* uvcvideo
 alias usb:v1C4Fp3000d*dc*dsc*dp*ic0Eisc01ip00* uvcvideo
 alias usb:v1B3Bp2951d*dc*dsc*dp*ic0Eisc01ip00* uvcvideo

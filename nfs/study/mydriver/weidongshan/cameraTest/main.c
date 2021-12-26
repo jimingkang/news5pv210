@@ -12,7 +12,7 @@
 #include "videodev2.h"
 
 #define FONTDATAMAX 4096
-#define V4L2_DEV_NODE "/dev/video0"
+#define V4L2_DEV_NODE "/dev/video1"
 
 static const unsigned char fontdata_8x16[FONTDATAMAX] = {
 

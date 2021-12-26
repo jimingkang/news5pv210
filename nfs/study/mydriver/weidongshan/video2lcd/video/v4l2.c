@@ -140,10 +140,11 @@ static int V4l2InitDevice(char *strDevName, PT_VideoDevice ptVideoDevice)
 
     /* request buffers */
     memset(&tV4l2ReqBuffs, 0, sizeof(struct v4l2_requestbuffers));
-    tV4l2ReqBuffs.count = NB_BUFFER;
+    tV4l2ReqBuffs.count = NB_BUFFER-2;
     tV4l2ReqBuffs.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
     tV4l2ReqBuffs.memory = V4L2_MEMORY_MMAP;
 
+    	printf("NB_BUFFFER=%d.\n",NB_BUFFER);
     iError = ioctl(iFd, VIDIOC_REQBUFS, &tV4l2ReqBuffs);
     if (iError) 
     {

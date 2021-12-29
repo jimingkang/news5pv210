@@ -1,2 +1,0 @@
-ctype.o: ctype.c \
- /home/jimmy/news5pv210/u-boot-2013.10/include/linux/ctype.h

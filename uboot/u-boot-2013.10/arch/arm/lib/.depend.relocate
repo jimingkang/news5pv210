@@ -1,4 +1,0 @@
-relocate.o: relocate.S \
- /home/jimmy/news5pv210/u-boot-2013.10/include/linux/linkage.h \
- /home/jimmy/news5pv210/u-boot-2013.10/include/asm/linkage.h \
- /home/jimmy/news5pv210/u-boot-2013.10/include/linux/config.h

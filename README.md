@@ -1,11 +1,18 @@
 
 aston_uboot_2013.10          ->这里实验用到的
+     make s5p_goni_config
 
-uboot_x210vb3s/jiuding       ->九鼎x210 uboot移植,备用
+my_aston_u-boot-2013.1        ->自己按照朱老师的aston_uboot-2013.10重新移植一遍，不完善
+    cg
 
-uboot_2013.10                ->自己按照朱老师的aston_uboot-2013.10重新移植一遍，不完善
+jiuding_x210                  ->九鼎x210 uboot移植,备用
+     make x210_sd_config
 
-samsung-dev-uboot            -->三星公司的官方版本，我修改过，有些错误没找到，烧写可能有问题
+back/samsung_s5pv210          -->网上下载的三星公司uboot版本
+
+back/samsung-dev-uboot       -->三星公司的官方版本，我修改过，有些错误没找到，烧写可能有问题
+    make smdkv210single_config 
+
 
  x210ii_kernel               ->内核代码  
  

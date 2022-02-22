@@ -25,7 +25,7 @@ _start:
 	mcr p15,0,r0,c1,c0,0;
 
 	// 第4步：初始化ddr
-	bl sdram_asm_init
+	//bl sdram_asm_init
 	
 	// 第5步：重定位
 	// adr指令用于加载_start当前运行地址

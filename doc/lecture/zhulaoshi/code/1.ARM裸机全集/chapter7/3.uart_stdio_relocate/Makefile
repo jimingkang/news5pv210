@@ -1,8 +1,8 @@
-CC		= arm-linux-gcc
-LD 		= arm-linux-ld
-OBJCOPY	= arm-linux-objcopy
-OBJDUMP	= arm-linux-objdump
-AR		= arm-linux-ar
+CC		= arm-none-linux-gnueabi-gcc
+LD 		= arm-none-linux-gnueabi-ld
+OBJCOPY	=arm-none-linux-gnueabi-objcopy
+OBJDUMP	=arm-none-linux-gnueabi-objdump
+AR		= arm-none-linux-gnueabi-ar
 
 INCDIR	:= $(shell pwd)
 # C预处理器的flag，flag就是编译器可选的选项

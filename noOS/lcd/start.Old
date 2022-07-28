@@ -1,0 +1,122 @@
+/*
+ * ÎÄ¼şÃû£º	start.S
+ * ×÷Õß£º	ÖìÀÏÊ¦
+ * ÃèÊö£º	ÑİÊ¾´®¿ÚÍ¨ĞÅ
+ */
+
+#define WTCON		0xE2700000
+
+#define SVC_STACK	0xd0037d80
+#define IRQ_STACK	0xd0037f80
+.global IRQ_handle
+.global _start	
+				// °Ñ_startÁ´½ÓÊôĞÔ¸ÄÎªÍâ²¿£¬ÕâÑùÆäËûÎÄ¼ş¾Í¿ÉÒÔ¿´¼û_startÁË
+
+_start:
+	// µÚ1²½£º¹Ø¿´ÃÅ¹·£¨ÏòWTCONµÄbit5Ğ´Èë0¼´¿É£©
+	ldr r0, =WTCON
+	ldr r1, =0x0
+	str r1, [r0]
+	
+	// µÚ2²½£º³õÊ¼»¯Ê±ÖÓ
+	bl clock_init
+	
+	// µÚ3²½£ºÉèÖÃSVCÕ»
+	ldr sp, =SVC_STACK
+	
+	// µÚ4²½£º¿ª/¹Øicache
+	mrc p15,0,r0,c1,c0,0;			// ¶Á³öcp15µÄc1µ½r0ÖĞ
+	//bic r0, r0, #(1<<12)			// bit12 ÖÃ0  ¹Øicache
+	orr r0, r0, #(1<<12)			// bit12 ÖÃ1  ¿ªicache
+	mcr p15,0,r0,c1,c0,0;
+
+        // bl uart_init
+    
+         bl sdram_asm_init
+	
+
+
+	
+	// µÚ5²½£ºÖØ¶¨Î»
+	// adrÖ¸ÁîÓÃÓÚ¼ÓÔØ_startµ±Ç°ÔËĞĞµØÖ·
+       
+         adr r0, _start	
+	// ldrÖ¸ÁîÓÃÓÚ¼ÓÔØ_startµÄÁ´½ÓµØÖ·:0xd0024000
+	ldr r1, =_start // ldr¼ÓÔØÊ±Èç¹ûÄ¿±ê¼Ä´æÆ÷ÊÇpc¾Í½Ğ³¤Ìø×ª£¬Èç¹ûÄ¿±ê¼Ä´æÆ÷ÊÇr1µÈ¾Í½Ğ³¤¼ÓÔØ	
+	// bss¶ÎµÄÆğÊ¼µØÖ·
+	ldr r2, =bss_start	// ¾ÍÊÇÎÒÃÇÖØ¶¨Î»´úÂëµÄ½áÊøµØÖ·£¬ÖØ¶¨Î»Ö»ĞèÖØ¶¨Î»´úÂë¶ÎºÍÊı¾İ¶Î¼´¿É
+	cmp r0, r1			// ±È½Ï_startµÄÔËĞĞÊ±µØÖ·ºÍÁ´½ÓµØÖ·ÊÇ·ñÏàµÈ
+	beq clean_bss		// Èç¹ûÏàµÈËµÃ÷²»ĞèÒªÖØ¶¨Î»£¬ËùÒÔÌø¹ıcopy_loop£¬Ö±½Óµ½clean_bss
+						// Èç¹û²»ÏàµÈËµÃ÷ĞèÒªÖØ¶¨Î»£¬ÄÇÃ´Ö±½ÓÖ´ĞĞÏÂÃæµÄcopy_loop½øĞĞÖØ¶¨Î»
+						// ÖØ¶¨Î»Íê³Éºó¼ÌĞøÖ´ĞĞclean_bss¡£
+     
+// ÓÃ»ã±àÀ´ÊµÏÖµÄÒ»¸öwhileÑ­»·
+copy_loop:
+	ldr r3, [r0], #4    // Ô´
+
+	str r3, [r1], #4	// Ä¿µÄ   ÕâÁ½¾ä´úÂë¾ÍÍê³ÉÁË4¸ö×Ö½ÚÄÚÈİµÄ¿½±´
+        
+	cmp r1, r2			// r1ºÍr2¶¼ÊÇÓÃldr¼ÓÔØµÄ£¬¶¼ÊÇÁ´½ÓµØÖ·£¬ËùÒÔr1²»¶Ï+4×ÜÄÜµÈÓÚr2
+	bne copy_loop
+
+	// Çåbss¶Î£¬ÆäÊµ¾ÍÊÇÔÚÁ´½ÓµØÖ·´¦°Ñbss¶ÎÈ«²¿ÇåÁã
+clean_bss:
+	ldr r0, =bss_start					
+	ldr r1, =bss_end
+	cmp r0, r1				// Èç¹ûr0µÈÓÚr1£¬ËµÃ÷bss¶ÎÎª¿Õ£¬Ö±½ÓÏÂÈ¥
+	beq run_on_dram			// Çå³ıbssÍêÖ®ºóµÄµØÖ·
+	mov r2, #0
+clear_loop:
+	str r2, [r0], #4		// ÏÈ½«r2ÖĞµÄÖµ·ÅÈër0ËùÖ¸ÏòµÄÄÚ´æµØÖ·£¨r0ÖĞµÄÖµ×÷ÎªÄÚ´æµØÖ·£©£¬
+	cmp r0, r1				// È»ºór0 = r0 + 4
+	bne clear_loop
+
+run_on_dram:
+        //ldr r0,=fmt
+        //mov  r1, #8	
+	//bl printf	
+	// ³¤Ìø×ªµ½led_blink¿ªÊ¼µÚ¶ş½×¶Î
+	//ldr sp, =0x30400000
+       //bl led_blink
+	ldr pc, =main				// ldrÖ¸ÁîÊµÏÖ³¤Ìø×ª
+
+        
+	//bl main
+	
+	// ´ÓÕâÀïÖ®ºó¾Í¿ÉÒÔ¿ªÊ¼µ÷ÓÃC³ÌĞòÁË
+	//bl led_blink					// led_blinkÊÇCÓïÑÔÊµÏÖµÄÒ»¸öº¯Êı
+	
+// »ã±à×îºóµÄÕâ¸öËÀÑ­»·²»ÄÜ¶ª
+	b .
+
+IRQ_handle:
+	// ¿¿IRQ¿¿¿¿¿
+	ldr sp, =IRQ_STACK
+	// ¿¿LR
+	// ¿¿ARM¿¿¿¿¿¿¿PC¿¿¿¿¿¿¿¿¿¿¿+8¿
+	sub lr, lr, #4
+	// ¿¿r0-r12¿lr¿irq¿¿¿¿¿¿¿
+	stmfd sp!, {r0-r12, lr}
+	// ¿¿¿¿¿¿¿isr¿¿¿¿¿
+        bl irq_handler
+	// ¿¿¿¿¿¿¿¿¿¿,¿¿¿¿¿¿¿¿¿¿¿¿¿¿r0-r12¿pc¿cpsr¿¿¿¿
+	ldmfd sp!, {r0-r12, pc}^
+
+//.data
+//fmt:
+//   .asciz "in asm _adr_start=%d\n" 
+	
+
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	

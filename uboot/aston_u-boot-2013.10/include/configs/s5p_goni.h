@@ -171,6 +171,7 @@
 /* The macro for MMC channel 0 is defined by default and can't be undefined */
 #define USE_MMC0
 #define USE_MMC2
+#define USE_MMC3
 #define MMC_MAX_CHANNEL		4
 
 

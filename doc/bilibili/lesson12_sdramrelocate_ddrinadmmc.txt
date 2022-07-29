@@ -34,8 +34,9 @@ C）跳转：
 
 
 2.后半部分为拷贝mynoos.bin从SD卡到ddr（没用分散加载，而是模拟uboot方式)
+代码在/home/jimmy/news5pv210/noOS/ddrinandmmc
+注意：
 A） 链接地址0x20000000
-B）代码/home/jimmy/news5pv210/noOS/ddrinandmmc
 C)sd_relocate.c中 SD_BLOCK_CNT=50（因为我的mynoos.bin大于16k,32块）
 #define SD_START_BLOCK 	45
 #define SD_BLOCK_CNT	50

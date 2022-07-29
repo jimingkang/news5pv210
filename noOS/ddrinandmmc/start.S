@@ -2,21 +2,22 @@
  * 文件名：	start.S
  * 作者：	朱老师
  * 描述：	演示串口通信
- */
+ 
 .word 0x2000
 .word 0x0
 .word 0x0
 .word 0x0
-
-
+*/
 
 #define WTCON		0xE2700000
+
 #define SVC_STACK	0xd0037d80
 #define IRQ_STACK	0xd0037f80
 #define CR_V (1<<13)
 .global IRQ_handle
 .global _start	
 
+	
 // 把_start链接属性改为外部，这样其他文件就可以看见_start了
    /* */
 _start:                                 @ 程序入口标志  
@@ -39,7 +40,6 @@ reset:
 	msr cpsr,r0
 
 /**/
-
 	mrc p15,0,r0,c1,c0,0
 	bic r0,#CR_V
 	mcr p15,0,r0,c1,c0,0
@@ -55,8 +55,10 @@ reset:
 	
         // 第2步：初始化时钟
 	bl clock_init
+       
         bl uart_init
-
+        bl buzzer_init
+	
 	// 第3步：设置SVC栈
 	ldr sp, =SVC_STACK
 	
@@ -66,48 +68,30 @@ reset:
 	orr r0, r0, #(1<<12)			// bit12 置1  开icache
 	mcr p15,0,r0,c1,c0,0;
 
-     // 第5步：初始化DDR
-        bl buzzer_init 
+   
 	bl sdram_asm_init
-       
-       // bl stack_init
-        //ldr r0,=fmt
-        //mov  r1, #8
-       // bl printf
-
-
-       
-
+        bl stack_init
+        bl copy_bl2_2_ddr
+        
 	//mov  r0, #1                  // 根据ATPCS规则，r0存放第一个参数
         //swi   1  
-
-    
-
        
-
-       //朱老师裸机程序方法， 拷贝uboot到ddr
-       bl copy_bl2_2_ddr
-       
-
-     //朱老师uboot视频中方法， 拷贝uboot到ddr
-	
-
-
 run_on_dram:
-        mov lr,pc
-        ldr pc, =main 
-        mov lr,pc
-	ldr pc, =led1
+        //ldr r0,=fmt
+        //mov  r1, #8
+        //bl printf
+       //bl led_blink
+	//mov lr,pc
+      
 	mov lr,pc
-	ldr pc,=mydelay
-	
-
-        //bl buzzer_on  
+       ldr pc, =main
+	mov lr,pc
+       ldr pc, =buzzer_on
 	//bl main           // 从这里之后就可以开始调用C程序了
+    
 		
 // 汇编最后的这个死循环不能丢
 	b .
-
 
 disable_mmu:
 	mcr p15,0,r0,c7,c5,0
@@ -150,18 +134,19 @@ undefined_instruction:                              @ undefined_instruction 地址
         nop  
 
 software_interrupt:                                 @ software_interrupt 地址存放要执行的内容  
-        ldr sp, =0x20004000
-	 STMFD     SP!, {R0-R12,  LR}           // ; 保存程序执行现场
+       ldr sp, =0x20004000
+       //bl led_blink
+	STMFD     SP!, {R0-R12,  LR}           // ; 保存程序执行现场
          LDR R4, [LR, #-4]                          //         ; LR - 4 为指令" swi xxx" 的地址，低24位是软件中断号
          BIC   R4, R4, #0xFF000000                  //  ; 取得ARM指令24位立即数
          
          CMP          R4, #1                          //          ; 判断24位立即数，如果为1，调用do_led_on系统调用
          LDREQ     LR, =swi_return                  //  ; 软中断处理返回地址
    
-       //LDREQ     PC, = do_led_on                  //  ; 软中断号1对应系统调用处理
-      // CMP          R4, #2                          //          ; 判断24位立即数，如果为2，调用do_led_off系统调用
-      // LDREQ     LR, =swi_return                  //  ; 软中断处理返回地址
-      // LDREQ     PC, = do_led_off                   //         ; 软中断号2对应系统调用处理
+ // LDREQ     PC, = do_led_on                  //  ; 软中断号1对应系统调用处理
+      //   CMP          R4, #2                          //          ; 判断24位立即数，如果为2，调用do_led_off系统调用
+      //   LDREQ     LR, =swi_return                  //  ; 软中断处理返回地址
+      //   LDREQ     PC, = do_led_off                   //         ; 软中断号2对应系统调用处理
            
  
          MOVNE    R0, #-1                              //     ; 没有该软中断号对应函数，出错返回-1
@@ -196,12 +181,6 @@ IRQ_handle:
 	ldmfd sp!, {r0-r12, pc}^
 	
 irq: b irq
-
-fmt:
- .asciz "hello\n"
-
-
-
 	
 	
 

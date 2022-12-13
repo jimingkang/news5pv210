@@ -56,10 +56,6 @@ int main(void)
         char a='a';
 
         putc('d');   
-//while(1){
-//a=getc();
-//putc(a); 
-//}
     
  
  printf("jump to main\n");	

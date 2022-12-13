@@ -1,0 +1,60 @@
+代码目录：/home/jimmy/news5pv210/noOS/key
+注意:
+1。key_init_interrupt中记得上拉电阻及使能irq中断(cpsr设置)和设置2为下降沿触发
+
+                    // 1. 外部中断对应的GPIO模式设置
+	rGPH0CON |= 0xFF<<8;		// GPH0_2 GPH0_3设置为外部中断模式
+	rGPH2CON |= 0xFFFF<<0;		// GPH2_0123共4个引脚设置为外部中断模式
+
+	rGPH0UP &=~(0x3<<4);              //上拉电阻
+	rGPH0UP  |= (0x2<<4);
+	// 2. 中断触发模式设置
+	rEXT_INT_0_CON &= ~(0xFF<<8);	// bit8~bit15全部清零
+	rEXT_INT_0_CON |= ((2<<8)|(2<<12));	// EXT_INT2和EXT_INT3设置2为下降沿触发,1为高水平触发
+	rEXT_INT_2_CON &= ~(0xFFFF<<0);
+	rEXT_INT_2_CON |= ((2<<0)|(2<<4)|(2<<8)|(2<<12));	
+	
+	// 3. 中断允许
+	//rEXT_INT_0_MASK &= ~(3<<2);			// 外部中断允许
+	//rEXT_INT_2_MASK &= ~(0x0f<<0);
+                rEXT_INT_0_MASK &= 0x0;			       // 外部中断允许
+	rEXT_INT_2_MASK &= 0;
+	// 4. 清挂起，清除是写1，不是写0
+	rEXT_INT_0_PEND |= (3<<2);
+	rEXT_INT_2_PEND |= (0x0F<<0);
+
+	/*使能irq中断(cpsr设置)*/
+	__asm__(
+		"mrs r0,cpsr\n"
+		"bic r0,r0,#0x80\n"
+		"msr cpsr_c,r0\n"
+		:
+		:
+	);
+
+2.main中：
+ key_init_interrupt();
+	
+	// 如果程序中要使用中断，就要调用中断初始化来初步初始化中断控制器
+	system_init_exception();
+	
+	printf("-------------key interrypt test--------------");
+	
+	// 绑定isr到中断控制器硬件
+	intc_setvectaddr(KEY_EINT2, isr_eint2);
+	intc_setvectaddr(KEY_EINT3, isr_eint3);
+	intc_setvectaddr(KEY_EINT16_19, isr_eint16171819);
+	
+	// 使能中断
+	intc_enable(KEY_EINT2);
+	intc_enable(KEY_EINT3);
+	intc_enable(KEY_EINT16_19);
+	// 在这里加个心跳
+	//while (1)
+	//{
+	//	printf("A");
+	//	delay(100);
+	//}
+3.烧写
+sudo  ./sd_fusion.sh /dev/sdb
+

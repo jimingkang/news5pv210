@@ -53,13 +53,8 @@ Hsmmc_Init();
 
 int main(void)
 {
-        char a='a';
-
-        putc('d');   
-//while(1){
-//a=getc();
-//putc(a); 
-//}
+        char a='b';
+ 
     
  
  printf("jump to main\n");	

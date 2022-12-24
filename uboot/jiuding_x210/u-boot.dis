@@ -1403,7 +1403,7 @@ c3e01340:	e3a02b01 	mov	r2, #1024	; 0x400
 c3e01344:	e3a03020 	mov	r3, #32
 c3e01348:	e59f0000 	ldr	r0, [pc, #0]	; c3e01350 <print_movi_bl2_info+0x14>
 c3e0134c:	ea00398e 	b	c3e0f98c <printf>
-c3e01350:	c3e4cbdc 	.word	0xc3e4cbdc
+c3e01350:	c3e4cbd4 	.word	0xc3e4cbd4
 
 c3e01354 <movi_write_bl1>:
 c3e01354:	e92d4030 	push	{r4, r5, lr}
@@ -1425,7 +1425,7 @@ c3e01390:	e5931044 	ldr	r1, [r3, #68]	; 0x44
 c3e01394:	e5930040 	ldr	r0, [r3, #64]	; 0x40
 c3e01398:	e8bd4030 	pop	{r4, r5, lr}
 c3e0139c:	ea001460 	b	c3e06524 <movi_write>
-c3e013a0:	c3e4cbe8 	.word	0xc3e4cbe8
+c3e013a0:	c3e4cbe0 	.word	0xc3e4cbe0
 c3e013a4:	c3e71bec 	.word	0xc3e71bec
 
 c3e013a8 <movi_write_env>:
@@ -1998,15 +1998,15 @@ c3e01b94:	eb00377c 	bl	c3e0f98c <printf>
 c3e01b98:	e28dd088 	add	sp, sp, #136	; 0x88
 c3e01b9c:	e8bd8030 	pop	{r4, r5, pc}
 c3e01ba0:	c3e2a0b0 	.word	0xc3e2a0b0
-c3e01ba4:	c3e4cbf9 	.word	0xc3e4cbf9
-c3e01ba8:	c3e4cc3e 	.word	0xc3e4cc3e
-c3e01bac:	c3e4cc62 	.word	0xc3e4cc62
-c3e01bb0:	c3e4cc92 	.word	0xc3e4cc92
-c3e01bb4:	c3e4ccc2 	.word	0xc3e4ccc2
-c3e01bb8:	c3e4ccd2 	.word	0xc3e4ccd2
-c3e01bbc:	c3e532f8 	.word	0xc3e532f8
-c3e01bc0:	c3e501b6 	.word	0xc3e501b6
-c3e01bc4:	c3e4ccd6 	.word	0xc3e4ccd6
+c3e01ba4:	c3e4cbf1 	.word	0xc3e4cbf1
+c3e01ba8:	c3e4cc36 	.word	0xc3e4cc36
+c3e01bac:	c3e4cc5a 	.word	0xc3e4cc5a
+c3e01bb0:	c3e4cc8a 	.word	0xc3e4cc8a
+c3e01bb4:	c3e4ccba 	.word	0xc3e4ccba
+c3e01bb8:	c3e4ccca 	.word	0xc3e4ccca
+c3e01bbc:	c3e532f0 	.word	0xc3e532f0
+c3e01bc0:	c3e501ae 	.word	0xc3e501ae
+c3e01bc4:	c3e4ccce 	.word	0xc3e4ccce
 
 c3e01bc8 <bad_mode>:
 c3e01bc8:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -2015,7 +2015,7 @@ c3e01bd0:	eb006065 	bl	c3e19d6c <panic>
 c3e01bd4:	e3a00000 	mov	r0, #0
 c3e01bd8:	e49de004 	pop	{lr}		; (ldr lr, [sp], #4)
 c3e01bdc:	ea00008e 	b	c3e01e1c <reset_cpu>
-c3e01be0:	c3e4ccf5 	.word	0xc3e4ccf5
+c3e01be0:	c3e4cced 	.word	0xc3e4cced
 
 c3e01be4 <do_irq>:
 c3e01be4:	e92d4010 	push	{r4, lr}
@@ -2026,7 +2026,7 @@ c3e01bf4:	e1a00004 	mov	r0, r4
 c3e01bf8:	ebffffa2 	bl	c3e01a88 <show_regs>
 c3e01bfc:	e8bd4010 	pop	{r4, lr}
 c3e01c00:	eafffff0 	b	c3e01bc8 <bad_mode>
-c3e01c04:	c3e4cd0d 	.word	0xc3e4cd0d
+c3e01c04:	c3e4cd05 	.word	0xc3e4cd05
 
 c3e01c08 <do_fiq>:
 c3e01c08:	e92d4010 	push	{r4, lr}
@@ -2037,7 +2037,7 @@ c3e01c18:	e1a00004 	mov	r0, r4
 c3e01c1c:	ebffff99 	bl	c3e01a88 <show_regs>
 c3e01c20:	e8bd4010 	pop	{r4, lr}
 c3e01c24:	eaffffe7 	b	c3e01bc8 <bad_mode>
-c3e01c28:	c3e4cd08 	.word	0xc3e4cd08
+c3e01c28:	c3e4cd00 	.word	0xc3e4cd00
 
 c3e01c2c <do_not_used>:
 c3e01c2c:	e92d4010 	push	{r4, lr}
@@ -2048,7 +2048,7 @@ c3e01c3c:	e1a00004 	mov	r0, r4
 c3e01c40:	ebffff90 	bl	c3e01a88 <show_regs>
 c3e01c44:	e8bd4010 	pop	{r4, lr}
 c3e01c48:	eaffffde 	b	c3e01bc8 <bad_mode>
-c3e01c4c:	c3e4cd20 	.word	0xc3e4cd20
+c3e01c4c:	c3e4cd18 	.word	0xc3e4cd18
 
 c3e01c50 <do_data_abort>:
 c3e01c50:	e92d4010 	push	{r4, lr}
@@ -2059,7 +2059,7 @@ c3e01c60:	e1a00004 	mov	r0, r4
 c3e01c64:	ebffff87 	bl	c3e01a88 <show_regs>
 c3e01c68:	e8bd4010 	pop	{r4, lr}
 c3e01c6c:	eaffffd5 	b	c3e01bc8 <bad_mode>
-c3e01c70:	c3e4cd2a 	.word	0xc3e4cd2a
+c3e01c70:	c3e4cd22 	.word	0xc3e4cd22
 
 c3e01c74 <do_prefetch_abort>:
 c3e01c74:	e92d4010 	push	{r4, lr}
@@ -2070,7 +2070,7 @@ c3e01c84:	e1a00004 	mov	r0, r4
 c3e01c88:	ebffff7e 	bl	c3e01a88 <show_regs>
 c3e01c8c:	e8bd4010 	pop	{r4, lr}
 c3e01c90:	eaffffcc 	b	c3e01bc8 <bad_mode>
-c3e01c94:	c3e4cd36 	.word	0xc3e4cd36
+c3e01c94:	c3e4cd2e 	.word	0xc3e4cd2e
 
 c3e01c98 <do_software_interrupt>:
 c3e01c98:	e92d4010 	push	{r4, lr}
@@ -2081,7 +2081,7 @@ c3e01ca8:	e1a00004 	mov	r0, r4
 c3e01cac:	ebffff75 	bl	c3e01a88 <show_regs>
 c3e01cb0:	e8bd4010 	pop	{r4, lr}
 c3e01cb4:	eaffffc3 	b	c3e01bc8 <bad_mode>
-c3e01cb8:	c3e4cd46 	.word	0xc3e4cd46
+c3e01cb8:	c3e4cd3e 	.word	0xc3e4cd3e
 
 c3e01cbc <do_undefined_instruction>:
 c3e01cbc:	e92d4010 	push	{r4, lr}
@@ -2092,7 +2092,7 @@ c3e01ccc:	e1a00004 	mov	r0, r4
 c3e01cd0:	ebffff6c 	bl	c3e01a88 <show_regs>
 c3e01cd4:	e8bd4010 	pop	{r4, lr}
 c3e01cd8:	eaffffba 	b	c3e01bc8 <bad_mode>
-c3e01cdc:	c3e4cd5a 	.word	0xc3e4cd5a
+c3e01cdc:	c3e4cd52 	.word	0xc3e4cd52
 
 c3e01ce0 <read_p15_c1>:
 c3e01ce0:	ee110f10 	mrc	15, 0, r0, cr1, cr0, {0}
@@ -2213,7 +2213,7 @@ c3e01e38:	e3500000 	cmp	r0, #0
 c3e01e3c:	0afffffc 	beq	c3e01e34 <reset_cpu+0x18>
 c3e01e40:	e49de004 	pop	{lr}		; (ldr lr, [sp], #4)
 c3e01e44:	ea000097 	b	c3e020a8 <serial_getc>
-c3e01e48:	c3e4ce5d 	.word	0xc3e4ce5d
+c3e01e48:	c3e4ce55 	.word	0xc3e4ce55
 c3e01e4c:	e0102000 	.word	0xe0102000
 
 c3e01e50 <do_reset>:
@@ -2684,15 +2684,15 @@ c3e024cc:	e3a00000 	mov	r0, #0
 c3e024d0:	e8bd8070 	pop	{r4, r5, r6, pc}
 c3e024d4:	000f4240 	.word	0x000f4240
 c3e024d8:	000186a0 	.word	0x000186a0
-c3e024dc:	c3e4ce6a 	.word	0xc3e4ce6a
-c3e024e0:	c3e4ce6f 	.word	0xc3e4ce6f
-c3e024e4:	c3e4ce72 	.word	0xc3e4ce72
-c3e024e8:	c3e4ce8d 	.word	0xc3e4ce8d
-c3e024ec:	c3e4ceca 	.word	0xc3e4ceca
-c3e024f0:	c3e4cee9 	.word	0xc3e4cee9
-c3e024f4:	c3e4cf18 	.word	0xc3e4cf18
-c3e024f8:	c3e4cf47 	.word	0xc3e4cf47
-c3e024fc:	c3e4cf63 	.word	0xc3e4cf63
+c3e024dc:	c3e4ce62 	.word	0xc3e4ce62
+c3e024e0:	c3e4ce67 	.word	0xc3e4ce67
+c3e024e4:	c3e4ce6a 	.word	0xc3e4ce6a
+c3e024e8:	c3e4ce85 	.word	0xc3e4ce85
+c3e024ec:	c3e4cec2 	.word	0xc3e4cec2
+c3e024f0:	c3e4cee1 	.word	0xc3e4cee1
+c3e024f4:	c3e4cf10 	.word	0xc3e4cf10
+c3e024f8:	c3e4cf3f 	.word	0xc3e4cf3f
+c3e024fc:	c3e4cf5b 	.word	0xc3e4cf5b
 
 c3e02500 <__divsi3>:
 c3e02500:	e3510000 	cmp	r1, #0
@@ -2869,7 +2869,7 @@ c3e0272c <hang>:
 c3e0272c:	e59f0004 	ldr	r0, [pc, #4]	; c3e02738 <hang+0xc>
 c3e02730:	eb003483 	bl	c3e0f944 <puts>
 c3e02734:	eafffffe 	b	c3e02734 <hang+0x8>
-c3e02738:	c3e4cf75 	.word	0xc3e4cf75
+c3e02738:	c3e4cf6d 	.word	0xc3e4cf6d
 
 c3e0273c <display_dram_config>:
 c3e0273c:	e92d4010 	push	{r4, lr}
@@ -2885,8 +2885,8 @@ c3e02760:	e59f100c 	ldr	r1, [pc, #12]	; c3e02774 <display_dram_config+0x38>
 c3e02764:	eb005968 	bl	c3e18d0c <print_size>
 c3e02768:	e3a00000 	mov	r0, #0
 c3e0276c:	e8bd8010 	pop	{r4, pc}
-c3e02770:	c3e4cf9f 	.word	0xc3e4cf9f
-c3e02774:	c3e515f2 	.word	0xc3e515f2
+c3e02770:	c3e4cf97 	.word	0xc3e4cf97
+c3e02774:	c3e515ea 	.word	0xc3e515ea
 
 c3e02778 <display_banner>:
 c3e02778:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -2907,7 +2907,7 @@ c3e027b0:	e5932184 	ldr	r2, [r3, #388]	; 0x184
 c3e027b4:	e3822020 	orr	r2, r2, #32
 c3e027b8:	e5832184 	str	r2, [r3, #388]	; 0x184
 c3e027bc:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e027c0:	c3e4cfa9 	.word	0xc3e4cfa9
+c3e027c0:	c3e4cfa1 	.word	0xc3e4cfa1
 c3e027c4:	c3e2a130 	.word	0xc3e2a130
 c3e027c8:	e0200000 	.word	0xe0200000
 
@@ -2934,7 +2934,7 @@ c3e02814:	e5863000 	str	r3, [r6]
 c3e02818:	e3a00000 	mov	r0, #0
 c3e0281c:	e28dd040 	add	sp, sp, #64	; 0x40
 c3e02820:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e02824:	c3e4cfb0 	.word	0xc3e4cfb0
+c3e02824:	c3e4cfa8 	.word	0xc3e4cfa8
 c3e02828:	0001c200 	.word	0x0001c200
 
 c3e0282c <strmhz>:
@@ -2962,8 +2962,8 @@ c3e0287c:	eb005e57 	bl	c3e1a1e0 <sprintf>
 c3e02880:	e1a00004 	mov	r0, r4
 c3e02884:	e8bd8070 	pop	{r4, r5, r6, pc}
 c3e02888:	000f4240 	.word	0x000f4240
-c3e0288c:	c3e52a9b 	.word	0xc3e52a9b
-c3e02890:	c3e4cfb9 	.word	0xc3e4cfb9
+c3e0288c:	c3e52a93 	.word	0xc3e52a93
+c3e02890:	c3e4cfb1 	.word	0xc3e4cfb1
 
 c3e02894 <start_armboot>:
 c3e02894:	e92d4070 	push	{r4, r5, r6, lr}
@@ -3108,23 +3108,23 @@ c3e02abc:	c3e9bfdc 	.word	0xc3e9bfdc
 c3e02ac0:	c3e0005c 	.word	0xc3e0005c
 c3e02ac4:	c3e00058 	.word	0xc3e00058
 c3e02ac8:	c3e6000c 	.word	0xc3e6000c
-c3e02acc:	c3e53b64 	.word	0xc3e53b64
-c3e02ad0:	c3e4cfc0 	.word	0xc3e4cfc0
-c3e02ad4:	c3e515f2 	.word	0xc3e515f2
+c3e02acc:	c3e53b5c 	.word	0xc3e53b5c
+c3e02ad0:	c3e4cfb8 	.word	0xc3e4cfb8
+c3e02ad4:	c3e515ea 	.word	0xc3e515ea
 c3e02ad8:	c3e9c000 	.word	0xc3e9c000
 c3e02adc:	c3f80000 	.word	0xc3f80000
-c3e02ae0:	c3e4cfc9 	.word	0xc3e4cfc9
-c3e02ae4:	c3e4cfd3 	.word	0xc3e4cfd3
-c3e02ae8:	c3e4cfd9 	.word	0xc3e4cfd9
-c3e02aec:	c3e4cfe0 	.word	0xc3e4cfe0
-c3e02af0:	c3e4cfe8 	.word	0xc3e4cfe8
-c3e02af4:	c3e53db0 	.word	0xc3e53db0
-c3e02af8:	c3e4cff1 	.word	0xc3e4cff1
+c3e02ae0:	c3e4cfc1 	.word	0xc3e4cfc1
+c3e02ae4:	c3e4cfcb 	.word	0xc3e4cfcb
+c3e02ae8:	c3e4cfd1 	.word	0xc3e4cfd1
+c3e02aec:	c3e4cfd8 	.word	0xc3e4cfd8
+c3e02af0:	c3e4cfe0 	.word	0xc3e4cfe0
+c3e02af4:	c3e53da8 	.word	0xc3e53da8
+c3e02af8:	c3e4cfe9 	.word	0xc3e4cfe9
 c3e02afc:	c3e6256c 	.word	0xc3e6256c
 c3e02b00:	e0200000 	.word	0xe0200000
-c3e02b04:	c3e4cffa 	.word	0xc3e4cffa
-c3e02b08:	c3e4d00f 	.word	0xc3e4d00f
-c3e02b0c:	c3e4d028 	.word	0xc3e4d028
+c3e02b04:	c3e4cff2 	.word	0xc3e4cff2
+c3e02b08:	c3e4d007 	.word	0xc3e4d007
+c3e02b0c:	c3e4d020 	.word	0xc3e4d020
 
 c3e02b10 <__div0>:
 c3e02b10:	eaffff05 	b	c3e0272c <hang>
@@ -3362,7 +3362,7 @@ c3e02e3c:	e1500003 	cmp	r0, r3
 c3e02e40:	03a0000e 	moveq	r0, #14
 c3e02e44:	13a00012 	movne	r0, #18
 c3e02e48:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e02e4c:	c3e53b9c 	.word	0xc3e53b9c
+c3e02e4c:	c3e53b94 	.word	0xc3e53b94
 c3e02e50:	0000ffff 	.word	0x0000ffff
 c3e02e54:	00000fff 	.word	0x00000fff
 
@@ -3389,8 +3389,8 @@ c3e02ea0:	e59f100c 	ldr	r1, [pc, #12]	; c3e02eb4 <VLAN_to_string+0x5c>
 c3e02ea4:	e8bd4010 	pop	{r4, lr}
 c3e02ea8:	ea005ccc 	b	c3e1a1e0 <sprintf>
 c3e02eac:	0000ffff 	.word	0x0000ffff
-c3e02eb0:	c3e4d033 	.word	0xc3e4d033
-c3e02eb4:	c3e51e14 	.word	0xc3e51e14
+c3e02eb0:	c3e4d02b 	.word	0xc3e4d02b
+c3e02eb4:	c3e51e0c 	.word	0xc3e51e0c
 
 c3e02eb8 <ip_to_string>:
 c3e02eb8:	e92d4013 	push	{r0, r1, r4, lr}
@@ -3409,7 +3409,7 @@ c3e02ee8:	e58de000 	str	lr, [sp]
 c3e02eec:	e58dc004 	str	ip, [sp, #4]
 c3e02ef0:	eb005cba 	bl	c3e1a1e0 <sprintf>
 c3e02ef4:	e8bd801c 	pop	{r2, r3, r4, pc}
-c3e02ef8:	c3e4d038 	.word	0xc3e4d038
+c3e02ef8:	c3e4d030 	.word	0xc3e4d030
 
 c3e02efc <print_IPaddr>:
 c3e02efc:	e92d401f 	push	{r0, r1, r2, r3, r4, lr}
@@ -3531,7 +3531,7 @@ c3e030b0:	e3a03012 	mov	r3, #18
 c3e030b4:	e1c401b0 	strh	r0, [r4, #16]
 c3e030b8:	e1a00003 	mov	r0, r3
 c3e030bc:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e030c0:	c3e53b9c 	.word	0xc3e53b9c
+c3e030c0:	c3e53b94 	.word	0xc3e53b94
 c3e030c4:	0000ffff 	.word	0x0000ffff
 c3e030c8:	00000fff 	.word	0x00000fff
 c3e030cc:	c3e6002c 	.word	0xc3e6002c
@@ -3626,9 +3626,9 @@ c3e03204:	e0811004 	add	r1, r1, r4
 c3e03208:	e8bd40f0 	pop	{r4, r5, r6, r7, lr}
 c3e0320c:	ea0012b6 	b	c3e07cec <eth_send>
 c3e03210:	c3e6001c 	.word	0xc3e6001c
-c3e03214:	c3e53ba0 	.word	0xc3e53ba0
+c3e03214:	c3e53b98 	.word	0xc3e53b98
 c3e03218:	00000806 	.word	0x00000806
-c3e0321c:	c3e4d044 	.word	0xc3e4d044
+c3e0321c:	c3e4d03c 	.word	0xc3e4d03c
 
 c3e03220 <NetReceive>:
 c3e03220:	e59f3520 	ldr	r3, [pc, #1312]	; c3e03748 <NetReceive+0x528>
@@ -3962,19 +3962,19 @@ c3e0373c:	e59cf004 	ldr	pc, [ip, #4]
 c3e03740:	e28dd004 	add	sp, sp, #4
 c3e03744:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
 c3e03748:	c3e6001c 	.word	0xc3e6001c
-c3e0374c:	c3e53b9c 	.word	0xc3e53b9c
+c3e0374c:	c3e53b94 	.word	0xc3e53b94
 c3e03750:	0000ffff 	.word	0x0000ffff
 c3e03754:	00000fff 	.word	0x00000fff
 c3e03758:	000005e9 	.word	0x000005e9
 c3e0375c:	00000806 	.word	0x00000806
 c3e03760:	00008035 	.word	0x00008035
-c3e03764:	c3e4d06e 	.word	0xc3e4d06e
+c3e03764:	c3e4d066 	.word	0xc3e4d066
 c3e03768:	00000406 	.word	0x00000406
-c3e0376c:	c3e4d082 	.word	0xc3e4d082
-c3e03770:	c3e4d097 	.word	0xc3e4d097
+c3e0376c:	c3e4d07a 	.word	0xc3e4d07a
+c3e03770:	c3e4d08f 	.word	0xc3e4d08f
 c3e03774:	0000ff1f 	.word	0x0000ff1f
-c3e03778:	c3e4d0a8 	.word	0xc3e4d0a8
-c3e0377c:	c3e4d0b6 	.word	0xc3e4d0b6
+c3e03778:	c3e4d0a0 	.word	0xc3e4d0a0
+c3e0377c:	c3e4d0ae 	.word	0xc3e4d0ae
 c3e03780:	c3e6002c 	.word	0xc3e6002c
 c3e03784:	c3e60028 	.word	0xc3e60028
 
@@ -4152,7 +4152,7 @@ c3e03a1c:	eb0010b2 	bl	c3e07cec <eth_send>
 c3e03a20:	e3a00000 	mov	r0, #0
 c3e03a24:	e28dd010 	add	sp, sp, #16
 c3e03a28:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e03a2c:	c3e53ba0 	.word	0xc3e53ba0
+c3e03a2c:	c3e53b98 	.word	0xc3e53b98
 c3e03a30:	c3e6001c 	.word	0xc3e6001c
 
 c3e03a34 <NetStartAgain>:
@@ -4180,9 +4180,9 @@ c3e03a84:	ebffff8e 	bl	c3e038c4 <NetSetTimeout>
 c3e03a88:	e59f001c 	ldr	r0, [pc, #28]	; c3e03aac <NetStartAgain+0x78>
 c3e03a8c:	e8bd4030 	pop	{r4, r5, lr}
 c3e03a90:	eafffc75 	b	c3e02c6c <NetSetHandler>
-c3e03a94:	c3e4d0ce 	.word	0xc3e4d0ce
-c3e03a98:	c3e51fab 	.word	0xc3e51fab
-c3e03a9c:	c3e4d0d7 	.word	0xc3e4d0d7
+c3e03a94:	c3e4d0c6 	.word	0xc3e4d0c6
+c3e03a98:	c3e51fa3 	.word	0xc3e51fa3
+c3e03a9c:	c3e4d0cf 	.word	0xc3e4d0cf
 c3e03aa0:	c3e6001c 	.word	0xc3e6001c
 c3e03aa4:	027c19cc 	.word	0x027c19cc
 c3e03aa8:	c3e02c54 	.word	0xc3e02c54
@@ -4217,7 +4217,7 @@ c3e03b10:	e8bd4010 	pop	{r4, lr}
 c3e03b14:	eafffd86 	b	c3e03134 <ArpRequest>
 c3e03b18:	c3e6001c 	.word	0xc3e6001c
 c3e03b1c:	013e0ce6 	.word	0x013e0ce6
-c3e03b20:	c3e4d0dc 	.word	0xc3e4d0dc
+c3e03b20:	c3e4d0d4 	.word	0xc3e4d0d4
 
 c3e03b24 <PingTimeout>:
 c3e03b24:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -4465,30 +4465,30 @@ c3e03ee0:	eafffffa 	b	c3e03ed0 <NetLoop+0x390>
 c3e03ee4:	c3e6001c 	.word	0xc3e6001c
 c3e03ee8:	c3e61edf 	.word	0xc3e61edf
 c3e03eec:	c3e62014 	.word	0xc3e62014
-c3e03ef0:	c3e4d107 	.word	0xc3e4d107
-c3e03ef4:	c3e53b9c 	.word	0xc3e53b9c
-c3e03ef8:	c3e4d111 	.word	0xc3e4d111
-c3e03efc:	c3e4d11a 	.word	0xc3e4d11a
-c3e03f00:	c3e4d119 	.word	0xc3e4d119
-c3e03f04:	c3e4d11f 	.word	0xc3e4d11f
+c3e03ef0:	c3e4d0ff 	.word	0xc3e4d0ff
+c3e03ef4:	c3e53b94 	.word	0xc3e53b94
+c3e03ef8:	c3e4d109 	.word	0xc3e4d109
+c3e03efc:	c3e4d112 	.word	0xc3e4d112
+c3e03f00:	c3e4d111 	.word	0xc3e4d111
+c3e03f04:	c3e4d117 	.word	0xc3e4d117
 c3e03f08:	00000113 	.word	0x00000113
-c3e03f0c:	c3e4d128 	.word	0xc3e4d128
-c3e03f10:	c3e4d14b 	.word	0xc3e4d14b
-c3e03f14:	c3e4d16a 	.word	0xc3e4d16a
+c3e03f0c:	c3e4d120 	.word	0xc3e4d120
+c3e03f10:	c3e4d143 	.word	0xc3e4d143
+c3e03f14:	c3e4d162 	.word	0xc3e4d162
 c3e03f18:	c3e6002c 	.word	0xc3e6002c
-c3e03f1c:	c3e2a168 	.word	0xc3e2a168
-c3e03f20:	c3e4d187 	.word	0xc3e4d187
+c3e03f1c:	c3e2a160 	.word	0xc3e2a160
+c3e03f20:	c3e4d17f 	.word	0xc3e4d17f
 c3e03f24:	c3e626b0 	.word	0xc3e626b0
 c3e03f28:	c3e626b4 	.word	0xc3e626b4
 c3e03f2c:	c3e03b24 	.word	0xc3e03b24
 c3e03f30:	027c19cc 	.word	0x027c19cc
 c3e03f34:	c3e030ec 	.word	0xc3e030ec
-c3e03f38:	c3e4d1a5 	.word	0xc3e4d1a5
-c3e03f3c:	c3e4d1ad 	.word	0xc3e4d1ad
-c3e03f40:	c3e4d1ce 	.word	0xc3e4d1ce
-c3e03f44:	c3e4d1d2 	.word	0xc3e4d1d2
-c3e03f48:	c3e53db0 	.word	0xc3e53db0
-c3e03f4c:	c3e4d1db 	.word	0xc3e4d1db
+c3e03f38:	c3e4d19d 	.word	0xc3e4d19d
+c3e03f3c:	c3e4d1a5 	.word	0xc3e4d1a5
+c3e03f40:	c3e4d1c6 	.word	0xc3e4d1c6
+c3e03f44:	c3e4d1ca 	.word	0xc3e4d1ca
+c3e03f48:	c3e53da8 	.word	0xc3e53da8
+c3e03f4c:	c3e4d1d3 	.word	0xc3e4d1d3
 
 c3e03f50 <__fswab16>:
 c3e03f50:	e1a00800 	lsl	r0, r0, #16
@@ -4587,13 +4587,13 @@ c3e040b8:	e8bd8078 	pop	{r3, r4, r5, r6, pc}
 c3e040bc:	c3e60038 	.word	0xc3e60038
 c3e040c0:	c3e625ec 	.word	0xc3e625ec
 c3e040c4:	c3e625f0 	.word	0xc3e625f0
-c3e040c8:	c3e4d1e4 	.word	0xc3e4d1e4
-c3e040cc:	c3e4d1ea 	.word	0xc3e4d1ea
-c3e040d0:	c3e4d1f2 	.word	0xc3e4d1f2
-c3e040d4:	c3e4d1f6 	.word	0xc3e4d1f6
+c3e040c8:	c3e4d1dc 	.word	0xc3e4d1dc
+c3e040cc:	c3e4d1e2 	.word	0xc3e4d1e2
+c3e040d0:	c3e4d1ea 	.word	0xc3e4d1ea
+c3e040d4:	c3e4d1ee 	.word	0xc3e4d1ee
 c3e040d8:	000005bc 	.word	0x000005bc
-c3e040dc:	c3e4d204 	.word	0xc3e4d204
-c3e040e0:	c3e4d213 	.word	0xc3e4d213
+c3e040dc:	c3e4d1fc 	.word	0xc3e4d1fc
+c3e040e0:	c3e4d20b 	.word	0xc3e4d20b
 c3e040e4:	c3e60064 	.word	0xc3e60064
 
 c3e040e8 <TftpStart>:
@@ -4732,26 +4732,26 @@ c3e042f4:	c3e6256c 	.word	0xc3e6256c
 c3e042f8:	c3e60060 	.word	0xc3e60060
 c3e042fc:	c3e625ec 	.word	0xc3e625ec
 c3e04300:	c3e60028 	.word	0xc3e60028
-c3e04304:	c3e4d496 	.word	0xc3e4d496
-c3e04308:	c3e4d226 	.word	0xc3e4d226
-c3e0430c:	c3e4d252 	.word	0xc3e4d252
+c3e04304:	c3e4d48e 	.word	0xc3e4d48e
+c3e04308:	c3e4d21e 	.word	0xc3e4d21e
+c3e0430c:	c3e4d24a 	.word	0xc3e4d24a
 c3e04310:	c3e60044 	.word	0xc3e60044
-c3e04314:	c3e4d264 	.word	0xc3e4d264
+c3e04314:	c3e4d25c 	.word	0xc3e4d25c
 c3e04318:	c3e60040 	.word	0xc3e60040
-c3e0431c:	c3e4d279 	.word	0xc3e4d279
+c3e0431c:	c3e4d271 	.word	0xc3e4d271
 c3e04320:	c3e62568 	.word	0xc3e62568
 c3e04324:	c3e625f0 	.word	0xc3e625f0
-c3e04328:	c3e4d294 	.word	0xc3e4d294
-c3e0432c:	c3e4d2a3 	.word	0xc3e4d2a3
-c3e04330:	c3e501b6 	.word	0xc3e501b6
-c3e04334:	c3e53db0 	.word	0xc3e53db0
-c3e04338:	c3e4d2ba 	.word	0xc3e4d2ba
-c3e0433c:	c3e4d4fa 	.word	0xc3e4d4fa
+c3e04328:	c3e4d28c 	.word	0xc3e4d28c
+c3e0432c:	c3e4d29b 	.word	0xc3e4d29b
+c3e04330:	c3e501ae 	.word	0xc3e501ae
+c3e04334:	c3e53da8 	.word	0xc3e53da8
+c3e04338:	c3e4d2b2 	.word	0xc3e4d2b2
+c3e0433c:	c3e4d4f2 	.word	0xc3e4d4f2
 c3e04340:	c3e04354 	.word	0xc3e04354
 c3e04344:	013e0ce6 	.word	0x013e0ce6
 c3e04348:	c3e043b0 	.word	0xc3e043b0
 c3e0434c:	c3e60064 	.word	0xc3e60064
-c3e04350:	c3e53ba8 	.word	0xc3e53ba8
+c3e04350:	c3e53ba0 	.word	0xc3e53ba0
 
 c3e04354 <TftpTimeout>:
 c3e04354:	e59f3040 	ldr	r3, [pc, #64]	; c3e0439c <TftpTimeout+0x48>
@@ -4773,8 +4773,8 @@ c3e04390:	ebfffd4b 	bl	c3e038c4 <NetSetTimeout>
 c3e04394:	e49de004 	pop	{lr}		; (ldr lr, [sp], #4)
 c3e04398:	eafffef2 	b	c3e03f68 <TftpSend>
 c3e0439c:	c3e625ec 	.word	0xc3e625ec
-c3e043a0:	c3e4d2cf 	.word	0xc3e4d2cf
-c3e043a4:	c3e4cf72 	.word	0xc3e4cf72
+c3e043a0:	c3e4d2c7 	.word	0xc3e4d2c7
+c3e043a4:	c3e4cf6a 	.word	0xc3e4cf6a
 c3e043a8:	013e0ce6 	.word	0x013e0ce6
 c3e043ac:	c3e04354 	.word	0xc3e04354
 
@@ -4933,20 +4933,20 @@ c3e04608:	eb002ccd 	bl	c3e0f944 <puts>
 c3e0460c:	e8bd44f0 	pop	{r4, r5, r6, r7, sl, lr}
 c3e04610:	eafffd07 	b	c3e03a34 <NetStartAgain>
 c3e04614:	c3e625ec 	.word	0xc3e625ec
-c3e04618:	c3e53ba8 	.word	0xc3e53ba8
-c3e0461c:	c3e4d2f6 	.word	0xc3e4d2f6
-c3e04620:	c3e4d2fe 	.word	0xc3e4d2fe
+c3e04618:	c3e53ba0 	.word	0xc3e53ba0
+c3e0461c:	c3e4d2ee 	.word	0xc3e4d2ee
+c3e04620:	c3e4d2f6 	.word	0xc3e4d2f6
 c3e04624:	0000028a 	.word	0x0000028a
-c3e04628:	c3e4d310 	.word	0xc3e4d310
-c3e0462c:	c3e4d314 	.word	0xc3e4d314
+c3e04628:	c3e4d308 	.word	0xc3e4d308
+c3e0462c:	c3e4d30c 	.word	0xc3e4d30c
 c3e04630:	013e0ce6 	.word	0x013e0ce6
 c3e04634:	c3e04354 	.word	0xc3e04354
-c3e04638:	c3e53db0 	.word	0xc3e53db0
+c3e04638:	c3e53da8 	.word	0xc3e53da8
 c3e0463c:	c3e624e0 	.word	0xc3e624e0
-c3e04640:	c3e4d353 	.word	0xc3e4d353
+c3e04640:	c3e4d34b 	.word	0xc3e4d34b
 c3e04644:	c3e6001c 	.word	0xc3e6001c
-c3e04648:	c3e4d35a 	.word	0xc3e4d35a
-c3e0464c:	c3e4d342 	.word	0xc3e4d342
+c3e04648:	c3e4d352 	.word	0xc3e4d352
+c3e0464c:	c3e4d33a 	.word	0xc3e4d33a
 
 c3e04650 <__fswab16>:
 c3e04650:	e1a00800 	lsl	r0, r0, #16
@@ -4978,7 +4978,7 @@ c3e046a4:	eb002cb8 	bl	c3e0f98c <printf>
 c3e046a8:	e2443001 	sub	r3, r4, #1
 c3e046ac:	e1a00003 	mov	r0, r3
 c3e046b0:	e8bd8010 	pop	{r4, pc}
-c3e046b4:	c3e4d372 	.word	0xc3e4d372
+c3e046b4:	c3e4d36a 	.word	0xc3e4d36a
 
 c3e046b8 <NetCopyLong>:
 c3e046b8:	e3a02004 	mov	r2, #4
@@ -5106,14 +5106,14 @@ c3e04884:	c3e60040 	.word	0xc3e60040
 c3e04888:	c3e60044 	.word	0xc3e60044
 c3e0488c:	c3e624e4 	.word	0xc3e624e4
 c3e04890:	c3e62508 	.word	0xc3e62508
-c3e04894:	c3e4d3aa 	.word	0xc3e4d3aa
+c3e04894:	c3e4d3a2 	.word	0xc3e4d3a2
 c3e04898:	c3e62528 	.word	0xc3e62528
-c3e0489c:	c3e4d3b4 	.word	0xc3e4d3b4
+c3e0489c:	c3e4d3ac 	.word	0xc3e4d3ac
 c3e048a0:	c3e626a0 	.word	0xc3e626a0
 c3e048a4:	c3e626a4 	.word	0xc3e626a4
-c3e048a8:	c3e4d3be 	.word	0xc3e4d3be
-c3e048ac:	c3e4d3cc 	.word	0xc3e4d3cc
-c3e048b0:	c3e4d3fa 	.word	0xc3e4d3fa
+c3e048a8:	c3e4d3b6 	.word	0xc3e4d3b6
+c3e048ac:	c3e4d3c4 	.word	0xc3e4d3c4
+c3e048b0:	c3e4d3f2 	.word	0xc3e4d3f2
 
 c3e048b4 <DhcpExtended>:
 c3e048b4:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -5456,7 +5456,7 @@ c3e04de4:	c3e60038 	.word	0xc3e60038
 c3e04de8:	013e0ce6 	.word	0x013e0ce6
 c3e04dec:	c3e04fe0 	.word	0xc3e04fe0
 c3e04df0:	000005ee 	.word	0x000005ee
-c3e04df4:	c3e53ba0 	.word	0xc3e53ba0
+c3e04df4:	c3e53b98 	.word	0xc3e53b98
 c3e04df8:	003f9c2e 	.word	0x003f9c2e
 c3e04dfc:	c3e6002c 	.word	0xc3e6002c
 c3e04e00:	c3e60028 	.word	0xc3e60028
@@ -5464,12 +5464,12 @@ c3e04e04:	c3e60060 	.word	0xc3e60060
 c3e04e08:	c3e6004c 	.word	0xc3e6004c
 c3e04e0c:	c3e60064 	.word	0xc3e60064
 c3e04e10:	c3e6256c 	.word	0xc3e6256c
-c3e04e14:	c3e4cff1 	.word	0xc3e4cff1
-c3e04e18:	c3e4d426 	.word	0xc3e4d426
-c3e04e1c:	c3e4d444 	.word	0xc3e4d444
+c3e04e14:	c3e4cfe9 	.word	0xc3e4cfe9
+c3e04e18:	c3e4d41e 	.word	0xc3e4d41e
+c3e04e1c:	c3e4d43c 	.word	0xc3e4d43c
 c3e04e20:	c3e6001c 	.word	0xc3e6001c
-c3e04e24:	c3e4d44d 	.word	0xc3e4d44d
-c3e04e28:	c3e4d451 	.word	0xc3e4d451
+c3e04e24:	c3e4d445 	.word	0xc3e4d445
+c3e04e28:	c3e4d449 	.word	0xc3e4d449
 
 c3e04e2c <BootpRequest>:
 c3e04e2c:	e92d4ef1 	push	{r0, r4, r5, r6, r7, r9, sl, fp, lr}
@@ -5570,10 +5570,10 @@ c3e04fa4:	e28dd004 	add	sp, sp, #4
 c3e04fa8:	e8bd4ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, lr}
 c3e04fac:	eafff85f 	b	c3e03130 <NetSendPacket>
 c3e04fb0:	c3e626a0 	.word	0xc3e626a0
-c3e04fb4:	c3e4d466 	.word	0xc3e4d466
+c3e04fb4:	c3e4d45e 	.word	0xc3e4d45e
 c3e04fb8:	c3e60038 	.word	0xc3e60038
 c3e04fbc:	000005ee 	.word	0x000005ee
-c3e04fc0:	c3e53ba0 	.word	0xc3e53ba0
+c3e04fc0:	c3e53b98 	.word	0xc3e53b98
 c3e04fc4:	c3e6002c 	.word	0xc3e6002c
 c3e04fc8:	003f9c2e 	.word	0x003f9c2e
 c3e04fcc:	c3e6256c 	.word	0xc3e6256c
@@ -5600,7 +5600,7 @@ c3e0500c:	ebfffa2c 	bl	c3e038c4 <NetSetTimeout>
 c3e05010:	e49de004 	pop	{lr}		; (ldr lr, [sp], #4)
 c3e05014:	eaffff84 	b	c3e04e2c <BootpRequest>
 c3e05018:	c3e626a0 	.word	0xc3e626a0
-c3e0501c:	c3e4d2cf 	.word	0xc3e4d2cf
+c3e0501c:	c3e4d2c7 	.word	0xc3e4d2c7
 c3e05020:	013e0ce6 	.word	0x013e0ce6
 c3e05024:	c3e04fe0 	.word	0xc3e04fe0
 
@@ -5660,8 +5660,8 @@ c3e050f4:	e8bd46f0 	pop	{r4, r5, r6, r7, r9, sl, lr}
 c3e050f8:	eafff6db 	b	c3e02c6c <NetSetHandler>
 c3e050fc:	c3e626b4 	.word	0xc3e626b4
 c3e05100:	c3e60038 	.word	0xc3e60038
-c3e05104:	c3e4d47a 	.word	0xc3e4d47a
-c3e05108:	c3e53ba0 	.word	0xc3e53ba0
+c3e05104:	c3e4d472 	.word	0xc3e4d472
+c3e05108:	c3e53b98 	.word	0xc3e53b98
 c3e0510c:	00008035 	.word	0x00008035
 c3e05110:	c3e6002c 	.word	0xc3e6002c
 c3e05114:	c3e60028 	.word	0xc3e60028
@@ -5690,9 +5690,9 @@ c3e05164:	e49de004 	pop	{lr}		; (ldr lr, [sp], #4)
 c3e05168:	ea000213 	b	c3e059bc <NfsStart>
 c3e0516c:	e49de004 	pop	{lr}		; (ldr lr, [sp], #4)
 c3e05170:	eafffbdc 	b	c3e040e8 <TftpStart>
-c3e05174:	c3e4d444 	.word	0xc3e4d444
+c3e05174:	c3e4d43c 	.word	0xc3e4d43c
 c3e05178:	c3e6001c 	.word	0xc3e6001c
-c3e0517c:	c3e4d44d 	.word	0xc3e4d44d
+c3e0517c:	c3e4d445 	.word	0xc3e4d445
 
 c3e05180 <RarpTimeout>:
 c3e05180:	e59f3030 	ldr	r3, [pc, #48]	; c3e051b8 <RarpTimeout+0x38>
@@ -5710,7 +5710,7 @@ c3e051ac:	ebfff9c4 	bl	c3e038c4 <NetSetTimeout>
 c3e051b0:	e49de004 	pop	{lr}		; (ldr lr, [sp], #4)
 c3e051b4:	eaffff9b 	b	c3e05028 <RarpRequest>
 c3e051b8:	c3e626b4 	.word	0xc3e626b4
-c3e051bc:	c3e4d2cf 	.word	0xc3e4d2cf
+c3e051bc:	c3e4d2c7 	.word	0xc3e4d2c7
 c3e051c0:	013e0ce6 	.word	0x013e0ce6
 c3e051c4:	c3e05180 	.word	0xc3e05180
 
@@ -5809,7 +5809,7 @@ c3e05310:	e5803004 	str	r3, [r0, #4]
 c3e05314:	e2800008 	add	r0, r0, #8
 c3e05318:	e28ddf41 	add	sp, sp, #260	; 0x104
 c3e0531c:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e05320:	c3e501b6 	.word	0xc3e501b6
+c3e05320:	c3e501ae 	.word	0xc3e501ae
 
 c3e05324 <rpc_lookup_reply>:
 c3e05324:	e92d4070 	push	{r4, r5, r6, lr}
@@ -6255,7 +6255,7 @@ c3e059a8:	e12fff1e 	bx	lr
 c3e059ac:	c3e626b8 	.word	0xc3e626b8
 c3e059b0:	000186a5 	.word	0x000186a5
 c3e059b4:	000186a3 	.word	0x000186a3
-c3e059b8:	c3e53bac 	.word	0xc3e53bac
+c3e059b8:	c3e53ba4 	.word	0xc3e53ba4
 
 c3e059bc <NfsStart>:
 c3e059bc:	e92d4073 	push	{r0, r1, r4, r5, r6, lr}
@@ -6382,20 +6382,20 @@ c3e05b9c:	c3e6256c 	.word	0xc3e6256c
 c3e05ba0:	c3e626b8 	.word	0xc3e626b8
 c3e05ba4:	c3e60060 	.word	0xc3e60060
 c3e05ba8:	c3e60028 	.word	0xc3e60028
-c3e05bac:	c3e4d48d 	.word	0xc3e4d48d
+c3e05bac:	c3e4d485 	.word	0xc3e4d485
 c3e05bb0:	c3e62f24 	.word	0xc3e62f24
-c3e05bb4:	c3e4d226 	.word	0xc3e4d226
+c3e05bb4:	c3e4d21e 	.word	0xc3e4d21e
 c3e05bb8:	c3e60044 	.word	0xc3e60044
-c3e05bbc:	c3e4d4af 	.word	0xc3e4d4af
-c3e05bc0:	c3e4d264 	.word	0xc3e4d264
+c3e05bbc:	c3e4d4a7 	.word	0xc3e4d4a7
+c3e05bc0:	c3e4d25c 	.word	0xc3e4d25c
 c3e05bc4:	c3e60040 	.word	0xc3e60040
-c3e05bc8:	c3e4d279 	.word	0xc3e4d279
+c3e05bc8:	c3e4d271 	.word	0xc3e4d271
 c3e05bcc:	c3e62568 	.word	0xc3e62568
-c3e05bd0:	c3e4d4d2 	.word	0xc3e4d4d2
-c3e05bd4:	c3e4d2a3 	.word	0xc3e4d2a3
-c3e05bd8:	c3e501b6 	.word	0xc3e501b6
-c3e05bdc:	c3e53db0 	.word	0xc3e53db0
-c3e05be0:	c3e4d4e5 	.word	0xc3e4d4e5
+c3e05bd0:	c3e4d4ca 	.word	0xc3e4d4ca
+c3e05bd4:	c3e4d29b 	.word	0xc3e4d29b
+c3e05bd8:	c3e501ae 	.word	0xc3e501ae
+c3e05bdc:	c3e53da8 	.word	0xc3e53da8
+c3e05be0:	c3e4d4dd 	.word	0xc3e4d4dd
 c3e05be4:	c3e05bf4 	.word	0xc3e05bf4
 c3e05be8:	007f385c 	.word	0x007f385c
 c3e05bec:	c3e05e70 	.word	0xc3e05e70
@@ -6418,7 +6418,7 @@ c3e05c24:	e3a02004 	mov	r2, #4
 c3e05c28:	e5832000 	str	r2, [r3]
 c3e05c2c:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
 c3e05c30:	c3e626b8 	.word	0xc3e626b8
-c3e05c34:	c3e4d506 	.word	0xc3e4d506
+c3e05c34:	c3e4d4fe 	.word	0xc3e4d4fe
 c3e05c38:	c3e6001c 	.word	0xc3e6001c
 
 c3e05c3c <nfs_readlink_reply>:
@@ -6483,7 +6483,7 @@ c3e05d20:	e3e00000 	mvn	r0, #0
 c3e05d24:	e28ddb02 	add	sp, sp, #2048	; 0x800
 c3e05d28:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
 c3e05d2c:	c3e626b8 	.word	0xc3e626b8
-c3e05d30:	c3e4d50f 	.word	0xc3e4d50f
+c3e05d30:	c3e4d507 	.word	0xc3e4d507
 
 c3e05d34 <nfs_read_reply>:
 c3e05d34:	e92d4070 	push	{r4, r5, r6, lr}
@@ -6559,10 +6559,10 @@ c3e05e48:	e1a00004 	mov	r0, r4
 c3e05e4c:	e28ddb02 	add	sp, sp, #2048	; 0x800
 c3e05e50:	e8bd8070 	pop	{r4, r5, r6, pc}
 c3e05e54:	c3e626b8 	.word	0xc3e626b8
-c3e05e58:	c3e53bac 	.word	0xc3e53bac
+c3e05e58:	c3e53ba4 	.word	0xc3e53ba4
 c3e05e5c:	00051400 	.word	0x00051400
-c3e05e60:	c3e4d310 	.word	0xc3e4d310
-c3e05e64:	c3e53db0 	.word	0xc3e53db0
+c3e05e60:	c3e4d308 	.word	0xc3e4d308
+c3e05e64:	c3e53da8 	.word	0xc3e53da8
 c3e05e68:	c3e624e0 	.word	0xc3e624e0
 c3e05e6c:	ffffd8f1 	.word	0xffffd8f1
 
@@ -6678,13 +6678,13 @@ c3e0601c:	e8bd8010 	pop	{r4, pc}
 c3e06020:	c3e626b8 	.word	0xc3e626b8
 c3e06024:	000186a5 	.word	0x000186a5
 c3e06028:	000186a3 	.word	0x000186a3
-c3e0602c:	c3e4d511 	.word	0xc3e4d511
+c3e0602c:	c3e4d509 	.word	0xc3e4d509
 c3e06030:	c3e6001c 	.word	0xc3e6001c
-c3e06034:	c3e4d52a 	.word	0xc3e4d52a
-c3e06038:	c3e4d353 	.word	0xc3e4d353
-c3e0603c:	c3e4d544 	.word	0xc3e4d544
-c3e06040:	c3e53bac 	.word	0xc3e53bac
-c3e06044:	c3e4d561 	.word	0xc3e4d561
+c3e06034:	c3e4d522 	.word	0xc3e4d522
+c3e06038:	c3e4d34b 	.word	0xc3e4d34b
+c3e0603c:	c3e4d53c 	.word	0xc3e4d53c
+c3e06040:	c3e53ba4 	.word	0xc3e53ba4
+c3e06044:	c3e4d559 	.word	0xc3e4d559
 c3e06048:	c3e05bf4 	.word	0xc3e05bf4
 c3e0604c:	007f385c 	.word	0x007f385c
 
@@ -6948,9 +6948,9 @@ c3e063e4:	e59f0010 	ldr	r0, [pc, #16]	; c3e063fc <print_mmc_devices+0x70>
 c3e063e8:	e8bd4070 	pop	{r4, r5, r6, lr}
 c3e063ec:	ea002566 	b	c3e0f98c <printf>
 c3e063f0:	c3e62f68 	.word	0xc3e62f68
-c3e063f4:	c3e4d57a 	.word	0xc3e4d57a
-c3e063f8:	c3e4ead5 	.word	0xc3e4ead5
-c3e063fc:	c3e515f2 	.word	0xc3e515f2
+c3e063f4:	c3e4d572 	.word	0xc3e4d572
+c3e063f8:	c3e4eacd 	.word	0xc3e4eacd
+c3e063fc:	c3e515ea 	.word	0xc3e515ea
 
 c3e06400 <find_mmc_device>:
 c3e06400:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -6971,7 +6971,7 @@ c3e06438:	e3a02000 	mov	r2, #0
 c3e0643c:	e1a00002 	mov	r0, r2
 c3e06440:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
 c3e06444:	c3e62f68 	.word	0xc3e62f68
-c3e06448:	c3e4d583 	.word	0xc3e4d583
+c3e06448:	c3e4d57b 	.word	0xc3e4d57b
 
 c3e0644c <mmc_get_dev>:
 c3e0644c:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -7028,8 +7028,8 @@ c3e0650c:	e1a04005 	mov	r4, r5
 c3e06510:	e1a00004 	mov	r0, r4
 c3e06514:	e28dd030 	add	sp, sp, #48	; 0x30
 c3e06518:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
-c3e0651c:	c3e4d59c 	.word	0xc3e4d59c
-c3e06520:	c3e4d5b5 	.word	0xc3e4d5b5
+c3e0651c:	c3e4d594 	.word	0xc3e4d594
+c3e06520:	c3e4d5ad 	.word	0xc3e4d5ad
 
 c3e06524 <movi_write>:
 c3e06524:	e1a0c001 	mov	ip, r1
@@ -7084,7 +7084,7 @@ c3e065dc:	e3a04000 	mov	r4, #0
 c3e065e0:	e1a00004 	mov	r0, r4
 c3e065e4:	e28dd030 	add	sp, sp, #48	; 0x30
 c3e065e8:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e065ec:	c3e4d5c7 	.word	0xc3e4d5c7
+c3e065ec:	c3e4d5bf 	.word	0xc3e4d5bf
 
 c3e065f0 <mmc_bread>:
 c3e065f0:	e92d44f0 	push	{r4, r5, r6, r7, sl, lr}
@@ -7608,7 +7608,7 @@ c3e06dec:	e1a06005 	mov	r6, r5
 c3e06df0:	e1a00006 	mov	r0, r6
 c3e06df4:	e28dd02c 	add	sp, sp, #44	; 0x2c
 c3e06df8:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
-c3e06dfc:	c3e4d5d8 	.word	0xc3e4d5d8
+c3e06dfc:	c3e4d5d0 	.word	0xc3e4d5d0
 c3e06e00:	00010012 	.word	0x00010012
 c3e06e04:	00010014 	.word	0x00010014
 c3e06e08:	00010022 	.word	0x00010022
@@ -7616,17 +7616,17 @@ c3e06e0c:	00010030 	.word	0x00010030
 c3e06e10:	00010040 	.word	0x00010040
 c3e06e14:	01312d00 	.word	0x01312d00
 c3e06e18:	0001003f 	.word	0x0001003f
-c3e06e1c:	c3e4d5ff 	.word	0xc3e4d5ff
-c3e06e20:	c3e4d634 	.word	0xc3e4d634
-c3e06e24:	c3e4d684 	.word	0xc3e4d684
+c3e06e1c:	c3e4d5f7 	.word	0xc3e4d5f7
+c3e06e20:	c3e4d62c 	.word	0xc3e4d62c
+c3e06e24:	c3e4d67c 	.word	0xc3e4d67c
 c3e06e28:	03197500 	.word	0x03197500
 c3e06e2c:	018cba80 	.word	0x018cba80
-c3e06e30:	c3e4d6b7 	.word	0xc3e4d6b7
+c3e06e30:	c3e4d6af 	.word	0xc3e4d6af
 c3e06e34:	02faf080 	.word	0x02faf080
 c3e06e38:	017d7840 	.word	0x017d7840
-c3e06e3c:	c3e4d6f1 	.word	0xc3e4d6f1
-c3e06e40:	c3e4d703 	.word	0xc3e4d703
-c3e06e44:	c3e4d03e 	.word	0xc3e4d03e
+c3e06e3c:	c3e4d6e9 	.word	0xc3e4d6e9
+c3e06e40:	c3e4d6fb 	.word	0xc3e4d6fb
+c3e06e44:	c3e4d036 	.word	0xc3e4d036
 
 c3e06e48 <mmc_send_app_op_cond>:
 c3e06e48:	e92d4070 	push	{r4, r5, r6, lr}
@@ -7821,9 +7821,9 @@ c3e07118:	e3a04000 	mov	r4, #0
 c3e0711c:	e1a00004 	mov	r0, r4
 c3e07120:	e8bd8030 	pop	{r4, r5, pc}
 c3e07124:	c3e62f68 	.word	0xc3e62f68
-c3e07128:	c3e53bb0 	.word	0xc3e53bb0
-c3e0712c:	c3e4d70e 	.word	0xc3e4d70e
-c3e07130:	c3e4d71f 	.word	0xc3e4d71f
+c3e07128:	c3e53ba8 	.word	0xc3e53ba8
+c3e0712c:	c3e4d706 	.word	0xc3e4d706
+c3e07130:	c3e4d717 	.word	0xc3e4d717
 
 c3e07134 <mmc_register>:
 c3e07134:	e59f3050 	ldr	r3, [pc, #80]	; c3e0718c <mmc_register+0x58>
@@ -7848,7 +7848,7 @@ c3e0717c:	e5830000 	str	r0, [r3]
 c3e07180:	e5803004 	str	r3, [r0, #4]
 c3e07184:	e3a00000 	mov	r0, #0
 c3e07188:	e12fff1e 	bx	lr
-c3e0718c:	c3e53bb0 	.word	0xc3e53bb0
+c3e0718c:	c3e53ba8 	.word	0xc3e53ba8
 c3e07190:	c3e62f68 	.word	0xc3e62f68
 c3e07194:	c3e065f0 	.word	0xc3e065f0
 c3e07198:	c3e06460 	.word	0xc3e06460
@@ -7904,7 +7904,7 @@ c3e07254:	e1a00004 	mov	r0, r4
 c3e07258:	e8bd4070 	pop	{r4, r5, r6, lr}
 c3e0725c:	eaffffb4 	b	c3e07134 <mmc_register>
 c3e07260:	c3e62f80 	.word	0xc3e62f80
-c3e07264:	c3e4d726 	.word	0xc3e4d726
+c3e07264:	c3e4d71e 	.word	0xc3e4d71e
 c3e07268:	c3e073d0 	.word	0xc3e073d0
 c3e0726c:	c3e07388 	.word	0xc3e07388
 c3e07270:	c3e07740 	.word	0xc3e07740
@@ -7913,7 +7913,7 @@ c3e07278:	00061a80 	.word	0x00061a80
 c3e0727c:	03197500 	.word	0x03197500
 c3e07280:	eb100000 	.word	0xeb100000
 c3e07284:	eb200000 	.word	0xeb200000
-c3e07288:	c3e4d732 	.word	0xc3e4d732
+c3e07288:	c3e4d72a 	.word	0xc3e4d72a
 
 c3e0728c <smdk_s3c_hsmmc_init>:
 c3e0728c:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -7980,7 +7980,7 @@ c3e07374:	e8bd8070 	pop	{r4, r5, r6, pc}
 c3e07378:	00061a80 	.word	0x00061a80
 c3e0737c:	01312d00 	.word	0x01312d00
 c3e07380:	018cba80 	.word	0x018cba80
-c3e07384:	c3e4d755 	.word	0xc3e4d755
+c3e07384:	c3e4d74d 	.word	0xc3e4d74d
 
 c3e07388 <s3c_hsmmc_set_ios>:
 c3e07388:	e92d4030 	push	{r4, r5, lr}
@@ -8192,13 +8192,13 @@ c3e076b4:	e3e00000 	mvn	r0, #0
 c3e076b8:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
 c3e076bc:	e3e00012 	mvn	r0, #18
 c3e076c0:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
-c3e076c4:	c3e4d777 	.word	0xc3e4d777
-c3e076c8:	c3e4d7ac 	.word	0xc3e4d7ac
-c3e076cc:	c3e4d7d7 	.word	0xc3e4d7d7
-c3e076d0:	c3e4d7f9 	.word	0xc3e4d7f9
+c3e076c4:	c3e4d76f 	.word	0xc3e4d76f
+c3e076c8:	c3e4d7a4 	.word	0xc3e4d7a4
+c3e076cc:	c3e4d7cf 	.word	0xc3e4d7cf
+c3e076d0:	c3e4d7f1 	.word	0xc3e4d7f1
 c3e076d4:	0000800a 	.word	0x0000800a
-c3e076d8:	c3e4d813 	.word	0xc3e4d813
-c3e076dc:	c3e4d832 	.word	0xc3e4d832
+c3e076d8:	c3e4d80b 	.word	0xc3e4d80b
+c3e076dc:	c3e4d82a 	.word	0xc3e4d82a
 
 c3e076e0 <T.36>:
 c3e076e0:	e92d4030 	push	{r4, r5, lr}
@@ -8224,7 +8224,7 @@ c3e0772c:	e5d3302f 	ldrb	r3, [r3, #47]	; 0x2f
 c3e07730:	e3130001 	tst	r3, #1
 c3e07734:	1afffff2 	bne	c3e07704 <T.36+0x24>
 c3e07738:	e8bd8030 	pop	{r4, r5, pc}
-c3e0773c:	c3e4d845 	.word	0xc3e4d845
+c3e0773c:	c3e4d83d 	.word	0xc3e4d83d
 
 c3e07740 <s3c_hsmmc_init>:
 c3e07740:	e92d4010 	push	{r4, lr}
@@ -8541,7 +8541,7 @@ c3e07b90:	08bd8010 	popeq	{r4, pc}
 c3e07b94:	e59f0004 	ldr	r0, [pc, #4]	; c3e07ba0 <dm9000_reset+0x9c>
 c3e07b98:	e8bd4010 	pop	{r4, lr}
 c3e07b9c:	ea001f7a 	b	c3e0f98c <printf>
-c3e07ba0:	c3e4d867 	.word	0xc3e4d867
+c3e07ba0:	c3e4d85f 	.word	0xc3e4d85f
 
 c3e07ba4 <eth_rx>:
 c3e07ba4:	e59f3120 	ldr	r3, [pc, #288]	; c3e07ccc <eth_rx+0x128>
@@ -8620,12 +8620,12 @@ c3e07cc4:	e3a00000 	mov	r0, #0
 c3e07cc8:	e8bd8038 	pop	{r3, r4, r5, pc}
 c3e07ccc:	c3e61eb0 	.word	0xc3e61eb0
 c3e07cd0:	88000300 	.word	0x88000300
-c3e07cd4:	c3e4d892 	.word	0xc3e4d892
+c3e07cd4:	c3e4d88a 	.word	0xc3e4d88a
 c3e07cd8:	c3e63490 	.word	0xc3e63490
-c3e07cdc:	c3e4d8b9 	.word	0xc3e4d8b9
-c3e07ce0:	c3e4d8c8 	.word	0xc3e4d8c8
-c3e07ce4:	c3e4d8d6 	.word	0xc3e4d8d6
-c3e07ce8:	c3e4d8e7 	.word	0xc3e4d8e7
+c3e07cdc:	c3e4d8b1 	.word	0xc3e4d8b1
+c3e07ce0:	c3e4d8c0 	.word	0xc3e4d8c0
+c3e07ce4:	c3e4d8ce 	.word	0xc3e4d8ce
+c3e07ce8:	c3e4d8df 	.word	0xc3e4d8df
 
 c3e07cec <eth_send>:
 c3e07cec:	e92d4030 	push	{r4, r5, lr}
@@ -8680,7 +8680,7 @@ c3e07dac:	e8bd8030 	pop	{r4, r5, pc}
 c3e07db0:	88000300 	.word	0x88000300
 c3e07db4:	c3e63490 	.word	0xc3e63490
 c3e07db8:	013e0ce6 	.word	0x013e0ce6
-c3e07dbc:	c3e4d8fa 	.word	0xc3e4d8fa
+c3e07dbc:	c3e4d8f2 	.word	0xc3e4d8f2
 
 c3e07dc0 <eth_init>:
 c3e07dc0:	e92d44ff 	push	{r0, r1, r2, r3, r4, r5, r6, r7, sl, lr}
@@ -9008,36 +9008,36 @@ c3e082c4:	e28dd010 	add	sp, sp, #16
 c3e082c8:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
 c3e082cc:	90000a46 	.word	0x90000a46
 c3e082d0:	88000300 	.word	0x88000300
-c3e082d4:	c3e4d910 	.word	0xc3e4d910
-c3e082d8:	c3e4d92d 	.word	0xc3e4d92d
+c3e082d4:	c3e4d908 	.word	0xc3e4d908
+c3e082d8:	c3e4d925 	.word	0xc3e4d925
 c3e082dc:	c3e63490 	.word	0xc3e63490
 c3e082e0:	c3e07794 	.word	0xc3e07794
 c3e082e4:	c3e07828 	.word	0xc3e07828
 c3e082e8:	c3e07908 	.word	0xc3e07908
-c3e082ec:	c3e4d954 	.word	0xc3e4d954
+c3e082ec:	c3e4d94c 	.word	0xc3e4d94c
 c3e082f0:	c3e078e4 	.word	0xc3e078e4
 c3e082f4:	c3e077bc 	.word	0xc3e077bc
 c3e082f8:	c3e07850 	.word	0xc3e07850
-c3e082fc:	c3e4d974 	.word	0xc3e4d974
+c3e082fc:	c3e4d96c 	.word	0xc3e4d96c
 c3e08300:	c3e078bc 	.word	0xc3e078bc
 c3e08304:	c3e077f4 	.word	0xc3e077f4
 c3e08308:	c3e07888 	.word	0xc3e07888
-c3e0830c:	c3e4d994 	.word	0xc3e4d994
-c3e08310:	c3e4d9b3 	.word	0xc3e4d9b3
+c3e0830c:	c3e4d98c 	.word	0xc3e4d98c
+c3e08310:	c3e4d9ab 	.word	0xc3e4d9ab
 c3e08314:	0000fff0 	.word	0x0000fff0
 c3e08318:	00004404 	.word	0x00004404
 c3e0831c:	0000b901 	.word	0x0000b901
-c3e08320:	c3e4cfe0 	.word	0xc3e4cfe0
-c3e08324:	c3e4d9d3 	.word	0xc3e4d9d3
+c3e08320:	c3e4cfd8 	.word	0xc3e4cfd8
+c3e08324:	c3e4d9cb 	.word	0xc3e4d9cb
 c3e08328:	00002710 	.word	0x00002710
-c3e0832c:	c3e4d9f7 	.word	0xc3e4d9f7
-c3e08330:	c3e4da11 	.word	0xc3e4da11
-c3e08334:	c3e4da1f 	.word	0xc3e4da1f
-c3e08338:	c3e4da30 	.word	0xc3e4da30
-c3e0833c:	c3e4da41 	.word	0xc3e4da41
-c3e08340:	c3e4da53 	.word	0xc3e4da53
-c3e08344:	c3e4da65 	.word	0xc3e4da65
-c3e08348:	c3e4d022 	.word	0xc3e4d022
+c3e0832c:	c3e4d9ef 	.word	0xc3e4d9ef
+c3e08330:	c3e4da09 	.word	0xc3e4da09
+c3e08334:	c3e4da17 	.word	0xc3e4da17
+c3e08338:	c3e4da28 	.word	0xc3e4da28
+c3e0833c:	c3e4da39 	.word	0xc3e4da39
+c3e08340:	c3e4da4b 	.word	0xc3e4da4b
+c3e08344:	c3e4da5d 	.word	0xc3e4da5d
+c3e08348:	c3e4d01a 	.word	0xc3e4d01a
 
 c3e0834c <__show_boot_progress>:
 c3e0834c:	e12fff1e 	bx	lr
@@ -9077,7 +9077,7 @@ c3e083c8:	e1a01004 	mov	r1, r4
 c3e083cc:	eb001d6e 	bl	c3e0f98c <printf>
 c3e083d0:	e1a00004 	mov	r0, r4
 c3e083d4:	e8bd8010 	pop	{r4, pc}
-c3e083d8:	c3e4da72 	.word	0xc3e4da72
+c3e083d8:	c3e4da6a 	.word	0xc3e4da6a
 
 c3e083dc <do_run>:
 c3e083dc:	e3520001 	cmp	r2, #1
@@ -9107,8 +9107,8 @@ c3e08438:	e8bd8070 	pop	{r4, r5, r6, pc}
 c3e0843c:	e1560004 	cmp	r6, r4
 c3e08440:	baffffed 	blt	c3e083fc <do_run+0x20>
 c3e08444:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e08448:	c3e4da91 	.word	0xc3e4da91
-c3e0844c:	c3e4da9c 	.word	0xc3e4da9c
+c3e08448:	c3e4da89 	.word	0xc3e4da89
+c3e0844c:	c3e4da94 	.word	0xc3e4da94
 
 c3e08450 <run_command>:
 c3e08450:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -9348,11 +9348,11 @@ c3e087f4:	e3e04000 	mvn	r4, #0
 c3e087f8:	e1a00004 	mov	r0, r4
 c3e087fc:	e28ddfd5 	add	sp, sp, #852	; 0x354
 c3e08800:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e08804:	c3e4dab8 	.word	0xc3e4dab8
-c3e08808:	c3e4dace 	.word	0xc3e4dace
-c3e0880c:	c3e4da91 	.word	0xc3e4da91
+c3e08804:	c3e4dab0 	.word	0xc3e4dab0
+c3e08808:	c3e4dac6 	.word	0xc3e4dac6
+c3e0880c:	c3e4da89 	.word	0xc3e4da89
 c3e08810:	c3e0a038 	.word	0xc3e0a038
-c3e08814:	c3e4daf1 	.word	0xc3e4daf1
+c3e08814:	c3e4dae9 	.word	0xc3e4dae9
 
 c3e08818 <cread_add_char>:
 c3e08818:	e92d40f0 	push	{r4, r5, r6, r7, lr}
@@ -9413,7 +9413,7 @@ c3e088f0:	e5943000 	ldr	r3, [r4]
 c3e088f4:	e2833001 	add	r3, r3, #1
 c3e088f8:	e5843000 	str	r3, [r4]
 c3e088fc:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e08900:	c3e4db0d 	.word	0xc3e4db0d
+c3e08900:	c3e4db05 	.word	0xc3e4db05
 
 c3e08904 <cread_add_str>:
 c3e08904:	e92d4ef3 	push	{r0, r1, r4, r5, r6, r7, r9, sl, fp, lr}
@@ -9843,11 +9843,11 @@ c3e08f98:	e5832000 	str	r2, [r3]
 c3e08f9c:	e28dd01c 	add	sp, sp, #28
 c3e08fa0:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
 c3e08fa4:	c3e63540 	.word	0xc3e63540
-c3e08fa8:	c3e53bb4 	.word	0xc3e53bb4
+c3e08fa8:	c3e53bac 	.word	0xc3e53bac
 c3e08fac:	c3e64950 	.word	0xc3e64950
-c3e08fb0:	c3e4db0d 	.word	0xc3e4db0d
+c3e08fb0:	c3e4db05 	.word	0xc3e4db05
 c3e08fb4:	c3e65538 	.word	0xc3e65538
-c3e08fb8:	c3e501b6 	.word	0xc3e501b6
+c3e08fb8:	c3e501ae 	.word	0xc3e501ae
 
 c3e08fbc <readline>:
 c3e08fbc:	e59f1000 	ldr	r1, [pc, #0]	; c3e08fc4 <readline+0x8>
@@ -9924,13 +9924,13 @@ c3e090cc:	e3a01003 	mov	r1, #3
 c3e090d0:	eb002732 	bl	c3e12da0 <parse_string_outer>
 c3e090d4:	eb00271f 	bl	c3e12d58 <parse_file_outer>
 c3e090d8:	eafffffe 	b	c3e090d8 <main_loop+0x110>
-c3e090dc:	c3e4db12 	.word	0xc3e4db12
-c3e090e0:	c3e4db1b 	.word	0xc3e4db1b
-c3e090e4:	c3e4db25 	.word	0xc3e4db25
-c3e090e8:	c3e4db2d 	.word	0xc3e4db2d
-c3e090ec:	c3e4db50 	.word	0xc3e4db50
+c3e090dc:	c3e4db0a 	.word	0xc3e4db0a
+c3e090e0:	c3e4db13 	.word	0xc3e4db13
+c3e090e4:	c3e4db1d 	.word	0xc3e4db1d
+c3e090e8:	c3e4db25 	.word	0xc3e4db25
+c3e090ec:	c3e4db48 	.word	0xc3e4db48
 c3e090f0:	00002710 	.word	0x00002710
-c3e090f4:	c3e4db56 	.word	0xc3e4db56
+c3e090f4:	c3e4db4e 	.word	0xc3e4db4e
 
 c3e090f8 <__fswab32>:
 c3e090f8:	e1a03c00 	lsl	r3, r0, #24
@@ -10009,14 +10009,14 @@ c3e09210:	e1a00004 	mov	r0, r4
 c3e09214:	eb001b28 	bl	c3e0febc <free>
 c3e09218:	e1a00005 	mov	r0, r5
 c3e0921c:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e09220:	c3e4db5e 	.word	0xc3e4db5e
-c3e09224:	c3e4dbb3 	.word	0xc3e4dbb3
+c3e09220:	c3e4db56 	.word	0xc3e4db56
+c3e09224:	c3e4dbab 	.word	0xc3e4dbab
 c3e09228:	27051956 	.word	0x27051956
-c3e0922c:	c3e4db65 	.word	0xc3e4db65
-c3e09230:	c3e4db77 	.word	0xc3e4db77
-c3e09234:	c3e4db87 	.word	0xc3e4db87
-c3e09238:	c3e4db95 	.word	0xc3e4db95
-c3e0923c:	c3e4dba5 	.word	0xc3e4dba5
+c3e0922c:	c3e4db5d 	.word	0xc3e4db5d
+c3e09230:	c3e4db6f 	.word	0xc3e4db6f
+c3e09234:	c3e4db7f 	.word	0xc3e4db7f
+c3e09238:	c3e4db8d 	.word	0xc3e4db8d
+c3e0923c:	c3e4db9d 	.word	0xc3e4db9d
 
 c3e09240 <do_autoscript>:
 c3e09240:	e3520001 	cmp	r2, #1
@@ -10035,14 +10035,14 @@ c3e09270:	e1a00004 	mov	r0, r4
 c3e09274:	e3a01000 	mov	r1, #0
 c3e09278:	e8bd4010 	pop	{r4, lr}
 c3e0927c:	eaffffa4 	b	c3e09114 <autoscript>
-c3e09280:	c3e4dbd6 	.word	0xc3e4dbd6
+c3e09280:	c3e4dbce 	.word	0xc3e4dbce
 
 c3e09284 <print_num>:
 c3e09284:	e1a02001 	mov	r2, r1
 c3e09288:	e1a01000 	mov	r1, r0
 c3e0928c:	e59f0000 	ldr	r0, [pc, #0]	; c3e09294 <print_num+0x10>
 c3e09290:	ea0019bd 	b	c3e0f98c <printf>
-c3e09294:	c3e4dc6d 	.word	0xc3e4dc6d
+c3e09294:	c3e4dc65 	.word	0xc3e4dc65
 
 c3e09298 <do_bdinfo>:
 c3e09298:	e92d4070 	push	{r4, r5, r6, lr}
@@ -10096,16 +10096,16 @@ c3e09354:	e59f002c 	ldr	r0, [pc, #44]	; c3e09388 <do_bdinfo+0xf0>
 c3e09358:	eb00198b 	bl	c3e0f98c <printf>
 c3e0935c:	e3a00000 	mov	r0, #0
 c3e09360:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e09364:	c3e4dc7d 	.word	0xc3e4dc7d
-c3e09368:	c3e4dc89 	.word	0xc3e4dc89
-c3e0936c:	c3e4dc8f 	.word	0xc3e4dc8f
-c3e09370:	c3e4dc9b 	.word	0xc3e4dc9b
-c3e09374:	c3e4dca5 	.word	0xc3e4dca5
-c3e09378:	c3e4dcae 	.word	0xc3e4dcae
-c3e0937c:	c3e4dcb6 	.word	0xc3e4dcb6
-c3e09380:	c3e4dcc4 	.word	0xc3e4dcc4
-c3e09384:	c3e4dccb 	.word	0xc3e4dccb
-c3e09388:	c3e4dcdb 	.word	0xc3e4dcdb
+c3e09364:	c3e4dc75 	.word	0xc3e4dc75
+c3e09368:	c3e4dc81 	.word	0xc3e4dc81
+c3e0936c:	c3e4dc87 	.word	0xc3e4dc87
+c3e09370:	c3e4dc93 	.word	0xc3e4dc93
+c3e09374:	c3e4dc9d 	.word	0xc3e4dc9d
+c3e09378:	c3e4dca6 	.word	0xc3e4dca6
+c3e0937c:	c3e4dcae 	.word	0xc3e4dcae
+c3e09380:	c3e4dcbc 	.word	0xc3e4dcbc
+c3e09384:	c3e4dcc3 	.word	0xc3e4dcc3
+c3e09388:	c3e4dcd3 	.word	0xc3e4dcd3
 
 c3e0938c <__fswab32>:
 c3e0938c:	e1a03c00 	lsl	r3, r0, #24
@@ -10158,32 +10158,32 @@ c3e0941c:	e20020ff 	and	r2, r0, #255	; 0xff
 c3e09420:	e59f1004 	ldr	r1, [pc, #4]	; c3e0942c <genimg_get_os_name+0x10>
 c3e09424:	e59f0004 	ldr	r0, [pc, #4]	; c3e09430 <genimg_get_os_name+0x14>
 c3e09428:	eafffff0 	b	c3e093f0 <get_table_entry_name>
-c3e0942c:	c3e4dd1f 	.word	0xc3e4dd1f
-c3e09430:	c3e53bb8 	.word	0xc3e53bb8
+c3e0942c:	c3e4dd17 	.word	0xc3e4dd17
+c3e09430:	c3e53bb0 	.word	0xc3e53bb0
 
 c3e09434 <genimg_get_arch_name>:
 c3e09434:	e20020ff 	and	r2, r0, #255	; 0xff
 c3e09438:	e59f1004 	ldr	r1, [pc, #4]	; c3e09444 <genimg_get_arch_name+0x10>
 c3e0943c:	e59f0004 	ldr	r0, [pc, #4]	; c3e09448 <genimg_get_arch_name+0x14>
 c3e09440:	eaffffea 	b	c3e093f0 <get_table_entry_name>
-c3e09444:	c3e4dd2a 	.word	0xc3e4dd2a
-c3e09448:	c3e53c18 	.word	0xc3e53c18
+c3e09444:	c3e4dd22 	.word	0xc3e4dd22
+c3e09448:	c3e53c10 	.word	0xc3e53c10
 
 c3e0944c <genimg_get_type_name>:
 c3e0944c:	e20020ff 	and	r2, r0, #255	; 0xff
 c3e09450:	e59f1004 	ldr	r1, [pc, #4]	; c3e0945c <genimg_get_type_name+0x10>
 c3e09454:	e59f0004 	ldr	r0, [pc, #4]	; c3e09460 <genimg_get_type_name+0x14>
 c3e09458:	eaffffe4 	b	c3e093f0 <get_table_entry_name>
-c3e0945c:	c3e4dd3f 	.word	0xc3e4dd3f
-c3e09460:	c3e53d08 	.word	0xc3e53d08
+c3e0945c:	c3e4dd37 	.word	0xc3e4dd37
+c3e09460:	c3e53d00 	.word	0xc3e53d00
 
 c3e09464 <genimg_get_comp_name>:
 c3e09464:	e20020ff 	and	r2, r0, #255	; 0xff
 c3e09468:	e59f1004 	ldr	r1, [pc, #4]	; c3e09474 <genimg_get_comp_name+0x10>
 c3e0946c:	e59f0004 	ldr	r0, [pc, #4]	; c3e09478 <genimg_get_comp_name+0x14>
 c3e09470:	eaffffde 	b	c3e093f0 <get_table_entry_name>
-c3e09474:	c3e4dd4d 	.word	0xc3e4dd4d
-c3e09478:	c3e53d80 	.word	0xc3e53d80
+c3e09474:	c3e4dd45 	.word	0xc3e4dd45
+c3e09478:	c3e53d78 	.word	0xc3e53d78
 
 c3e0947c <genimg_get_image>:
 c3e0947c:	e12fff1e 	bx	lr
@@ -10218,32 +10218,32 @@ c3e094d4:	e1a02000 	mov	r2, r0
 c3e094d8:	e59f1004 	ldr	r1, [pc, #4]	; c3e094e4 <genimg_get_comp_id+0x10>
 c3e094dc:	e59f0004 	ldr	r0, [pc, #4]	; c3e094e8 <genimg_get_comp_id+0x14>
 c3e094e0:	eaffffe8 	b	c3e09488 <get_table_entry_id>
-c3e094e4:	c3e4dd55 	.word	0xc3e4dd55
-c3e094e8:	c3e53d80 	.word	0xc3e53d80
+c3e094e4:	c3e4dd4d 	.word	0xc3e4dd4d
+c3e094e8:	c3e53d78 	.word	0xc3e53d78
 
 c3e094ec <genimg_get_type_id>:
 c3e094ec:	e1a02000 	mov	r2, r0
 c3e094f0:	e59f1004 	ldr	r1, [pc, #4]	; c3e094fc <genimg_get_type_id+0x10>
 c3e094f4:	e59f0004 	ldr	r0, [pc, #4]	; c3e09500 <genimg_get_type_id+0x14>
 c3e094f8:	eaffffe2 	b	c3e09488 <get_table_entry_id>
-c3e094fc:	c3e4df68 	.word	0xc3e4df68
-c3e09500:	c3e53d08 	.word	0xc3e53d08
+c3e094fc:	c3e4df60 	.word	0xc3e4df60
+c3e09500:	c3e53d00 	.word	0xc3e53d00
 
 c3e09504 <genimg_get_arch_id>:
 c3e09504:	e1a02000 	mov	r2, r0
 c3e09508:	e59f1004 	ldr	r1, [pc, #4]	; c3e09514 <genimg_get_arch_id+0x10>
 c3e0950c:	e59f0004 	ldr	r0, [pc, #4]	; c3e09518 <genimg_get_arch_id+0x14>
 c3e09510:	eaffffdc 	b	c3e09488 <get_table_entry_id>
-c3e09514:	c3e4e97a 	.word	0xc3e4e97a
-c3e09518:	c3e53c18 	.word	0xc3e53c18
+c3e09514:	c3e4e972 	.word	0xc3e4e972
+c3e09518:	c3e53c10 	.word	0xc3e53c10
 
 c3e0951c <genimg_get_os_id>:
 c3e0951c:	e1a02000 	mov	r2, r0
 c3e09520:	e59f1004 	ldr	r1, [pc, #4]	; c3e0952c <genimg_get_os_id+0x10>
 c3e09524:	e59f0004 	ldr	r0, [pc, #4]	; c3e09530 <genimg_get_os_id+0x14>
 c3e09528:	eaffffd6 	b	c3e09488 <get_table_entry_id>
-c3e0952c:	c3e4e114 	.word	0xc3e4e114
-c3e09530:	c3e53bb8 	.word	0xc3e53bb8
+c3e0952c:	c3e4e10c 	.word	0xc3e4e10c
+c3e09530:	c3e53bb0 	.word	0xc3e53bb0
 
 c3e09534 <image_check_magic>:
 c3e09534:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -10270,8 +10270,8 @@ c3e0957c:	e59f000c 	ldr	r0, [pc, #12]	; c3e09590 <genimg_get_format+0x38>
 c3e09580:	eb001901 	bl	c3e0f98c <printf>
 c3e09584:	e1a00004 	mov	r0, r4
 c3e09588:	e8bd8010 	pop	{r4, pc}
-c3e0958c:	c3e4dd61 	.word	0xc3e4dd61
-c3e09590:	c3e4dd6d 	.word	0xc3e4dd6d
+c3e0958c:	c3e4dd59 	.word	0xc3e4dd59
+c3e09590:	c3e4dd65 	.word	0xc3e4dd65
 
 c3e09594 <image_get_data_size>:
 c3e09594:	e590000c 	ldr	r0, [r0, #12]
@@ -10333,7 +10333,7 @@ c3e09650:	ea0040f0 	b	c3e19a18 <simple_strtoul>
 c3e09654:	e5983000 	ldr	r3, [r8]
 c3e09658:	e5930020 	ldr	r0, [r3, #32]
 c3e0965c:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e09660:	c3e4dd83 	.word	0xc3e4dd83
+c3e09660:	c3e4dd7b 	.word	0xc3e4dd7b
 
 c3e09664 <getenv_bootm_low>:
 c3e09664:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -10348,7 +10348,7 @@ c3e09684:	ea0040e3 	b	c3e19a18 <simple_strtoul>
 c3e09688:	e5983000 	ldr	r3, [r8]
 c3e0968c:	e593001c 	ldr	r0, [r3, #28]
 c3e09690:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e09694:	c3e4dd8e 	.word	0xc3e4dd8e
+c3e09694:	c3e4dd86 	.word	0xc3e4dd86
 
 c3e09698 <getenv_yesno>:
 c3e09698:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -10371,8 +10371,8 @@ c3e096d0:	e1a00004 	mov	r0, r4
 c3e096d4:	e59f1008 	ldr	r1, [pc, #8]	; c3e096e4 <genimg_print_size+0x28>
 c3e096d8:	e8bd4010 	pop	{r4, lr}
 c3e096dc:	ea003d8a 	b	c3e18d0c <print_size>
-c3e096e0:	c3e4e39e 	.word	0xc3e4e39e
-c3e096e4:	c3e515f2 	.word	0xc3e515f2
+c3e096e0:	c3e4e396 	.word	0xc3e4e396
+c3e096e4:	c3e515ea 	.word	0xc3e515ea
 
 c3e096e8 <image_print_contents>:
 c3e096e8:	e3a02020 	mov	r2, #32
@@ -10484,18 +10484,18 @@ c3e0988c:	e28d2034 	add	r2, sp, #52	; 0x34
 c3e09890:	3affffe6 	bcc	c3e09830 <image_print_contents+0x148>
 c3e09894:	e28dd038 	add	sp, sp, #56	; 0x38
 c3e09898:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e0989c:	c3e52a23 	.word	0xc3e52a23
-c3e098a0:	c3e4dd98 	.word	0xc3e4dd98
-c3e098a4:	c3e4ddae 	.word	0xc3e4ddae
-c3e098a8:	c3e4e336 	.word	0xc3e4e336
-c3e098ac:	c3e4ddbf 	.word	0xc3e4ddbf
-c3e098b0:	c3e4ddd0 	.word	0xc3e4ddd0
-c3e098b4:	c3e4dddf 	.word	0xc3e4dddf
-c3e098b8:	c3e4ddf0 	.word	0xc3e4ddf0
-c3e098bc:	c3e4de06 	.word	0xc3e4de06
-c3e098c0:	c3e4de1c 	.word	0xc3e4de1c
-c3e098c4:	c3e4de29 	.word	0xc3e4de29
-c3e098c8:	c3e4de39 	.word	0xc3e4de39
+c3e0989c:	c3e52a1b 	.word	0xc3e52a1b
+c3e098a0:	c3e4dd90 	.word	0xc3e4dd90
+c3e098a4:	c3e4dda6 	.word	0xc3e4dda6
+c3e098a8:	c3e4e32e 	.word	0xc3e4e32e
+c3e098ac:	c3e4ddb7 	.word	0xc3e4ddb7
+c3e098b0:	c3e4ddc8 	.word	0xc3e4ddc8
+c3e098b4:	c3e4ddd7 	.word	0xc3e4ddd7
+c3e098b8:	c3e4dde8 	.word	0xc3e4dde8
+c3e098bc:	c3e4ddfe 	.word	0xc3e4ddfe
+c3e098c0:	c3e4de14 	.word	0xc3e4de14
+c3e098c4:	c3e4de21 	.word	0xc3e4de21
+c3e098c8:	c3e4de31 	.word	0xc3e4de31
 
 c3e098cc <image_check_dcrc>:
 c3e098cc:	e92d4030 	push	{r4, r5, lr}
@@ -10682,16 +10682,16 @@ c3e09b8c:	e3500001 	cmp	r0, #1
 c3e09b90:	e1a0b000 	mov	fp, r0
 c3e09b94:	1affffd2 	bne	c3e09ae4 <boot_get_ramdisk+0x17c>
 c3e09b98:	eaffff89 	b	c3e099c4 <boot_get_ramdisk+0x5c>
-c3e09b9c:	c3e4f6bf 	.word	0xc3e4f6bf
-c3e09ba0:	c3e4de51 	.word	0xc3e4de51
-c3e09ba4:	c3e4e2bc 	.word	0xc3e4e2bc
-c3e09ba8:	c3e4e2d1 	.word	0xc3e4e2d1
-c3e09bac:	c3e4de89 	.word	0xc3e4de89
-c3e09bb0:	c3e4e2e9 	.word	0xc3e4e2e9
-c3e09bb4:	c3e4dea4 	.word	0xc3e4dea4
-c3e09bb8:	c3e4dea8 	.word	0xc3e4dea8
-c3e09bbc:	c3e4dec3 	.word	0xc3e4dec3
-c3e09bc0:	c3e4dedf 	.word	0xc3e4dedf
+c3e09b9c:	c3e4f6b7 	.word	0xc3e4f6b7
+c3e09ba0:	c3e4de49 	.word	0xc3e4de49
+c3e09ba4:	c3e4e2b4 	.word	0xc3e4e2b4
+c3e09ba8:	c3e4e2c9 	.word	0xc3e4e2c9
+c3e09bac:	c3e4de81 	.word	0xc3e4de81
+c3e09bb0:	c3e4e2e1 	.word	0xc3e4e2e1
+c3e09bb4:	c3e4de9c 	.word	0xc3e4de9c
+c3e09bb8:	c3e4dea0 	.word	0xc3e4dea0
+c3e09bbc:	c3e4debb 	.word	0xc3e4debb
+c3e09bc0:	c3e4ded7 	.word	0xc3e4ded7
 
 c3e09bc4 <do_go_exec>:
 c3e09bc4:	e1a03000 	mov	r3, r0
@@ -10732,9 +10732,9 @@ c3e09c44:	13a04001 	movne	r4, #1
 c3e09c48:	eb00174f 	bl	c3e0f98c <printf>
 c3e09c4c:	e1a00004 	mov	r0, r4
 c3e09c50:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e09c54:	c3e4da91 	.word	0xc3e4da91
-c3e09c58:	c3e4e163 	.word	0xc3e4e163
-c3e09c5c:	c3e4e18b 	.word	0xc3e4e18b
+c3e09c54:	c3e4da89 	.word	0xc3e4da89
+c3e09c58:	c3e4e15b 	.word	0xc3e4e15b
+c3e09c5c:	c3e4e183 	.word	0xc3e4e183
 
 c3e09c60 <__fswab32>:
 c3e09c60:	e1a03c00 	lsl	r3, r0, #24
@@ -10790,10 +10790,10 @@ c3e09d14:	e3a00000 	mov	r0, #0
 c3e09d18:	e8bd8070 	pop	{r4, r5, r6, pc}
 c3e09d1c:	c3e71fc0 	.word	0xc3e71fc0
 c3e09d20:	0000ffff 	.word	0x0000ffff
-c3e09d24:	c3e4e269 	.word	0xc3e4e269
-c3e09d28:	c3e4de89 	.word	0xc3e4de89
-c3e09d2c:	c3e4dea4 	.word	0xc3e4dea4
-c3e09d30:	c3e4e2e9 	.word	0xc3e4e2e9
+c3e09d24:	c3e4e261 	.word	0xc3e4e261
+c3e09d28:	c3e4de81 	.word	0xc3e4de81
+c3e09d2c:	c3e4de9c 	.word	0xc3e4de9c
+c3e09d30:	c3e4e2e1 	.word	0xc3e4e2e1
 
 c3e09d34 <image_check_magic>:
 c3e09d34:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -10849,14 +10849,14 @@ c3e09df0:	eb0016d3 	bl	c3e0f944 <puts>
 c3e09df4:	e3a05001 	mov	r5, #1
 c3e09df8:	e1a00005 	mov	r0, r5
 c3e09dfc:	e8bd8030 	pop	{r4, r5, pc}
-c3e09e00:	c3e4e281 	.word	0xc3e4e281
-c3e09e04:	c3e4e2a2 	.word	0xc3e4e2a2
-c3e09e08:	c3e4e2b9 	.word	0xc3e4e2b9
-c3e09e0c:	c3e4e2ce 	.word	0xc3e4e2ce
-c3e09e10:	c3e4de89 	.word	0xc3e4de89
-c3e09e14:	c3e4e2e6 	.word	0xc3e4e2e6
-c3e09e18:	c3e4dea4 	.word	0xc3e4dea4
-c3e09e1c:	c3e4e2f7 	.word	0xc3e4e2f7
+c3e09e00:	c3e4e279 	.word	0xc3e4e279
+c3e09e04:	c3e4e29a 	.word	0xc3e4e29a
+c3e09e08:	c3e4e2b1 	.word	0xc3e4e2b1
+c3e09e0c:	c3e4e2c6 	.word	0xc3e4e2c6
+c3e09e10:	c3e4de81 	.word	0xc3e4de81
+c3e09e14:	c3e4e2de 	.word	0xc3e4e2de
+c3e09e18:	c3e4de9c 	.word	0xc3e4de9c
+c3e09e1c:	c3e4e2ef 	.word	0xc3e4e2ef
 
 c3e09e20 <image_get_size>:
 c3e09e20:	e590000c 	ldr	r0, [r0, #12]
@@ -10959,20 +10959,20 @@ c3e09f90:	e59f003c 	ldr	r0, [pc, #60]	; c3e09fd4 <print_image_hdr+0x1a4>
 c3e09f94:	1afffff2 	bne	c3e09f64 <print_image_hdr+0x134>
 c3e09f98:	e28dd030 	add	sp, sp, #48	; 0x30
 c3e09f9c:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e09fa0:	c3e4e30e 	.word	0xc3e4e30e
-c3e09fa4:	c3e4e325 	.word	0xc3e4e325
-c3e09fa8:	c3e4e358 	.word	0xc3e4e358
-c3e09fac:	c3e2a170 	.word	0xc3e2a170
-c3e09fb0:	c3e4dd1f 	.word	0xc3e4dd1f
-c3e09fb4:	c3e4dd2a 	.word	0xc3e4dd2a
-c3e09fb8:	c3e4dd3f 	.word	0xc3e4dd3f
-c3e09fbc:	c3e4e36a 	.word	0xc3e4e36a
-c3e09fc0:	c3e4e37e 	.word	0xc3e4e37e
-c3e09fc4:	c3e4e38c 	.word	0xc3e4e38c
-c3e09fc8:	c3e515f2 	.word	0xc3e515f2
-c3e09fcc:	c3e4e3aa 	.word	0xc3e4e3aa
-c3e09fd0:	c3e4e3d7 	.word	0xc3e4e3d7
-c3e09fd4:	c3e4e3e5 	.word	0xc3e4e3e5
+c3e09fa0:	c3e4e306 	.word	0xc3e4e306
+c3e09fa4:	c3e4e31d 	.word	0xc3e4e31d
+c3e09fa8:	c3e4e350 	.word	0xc3e4e350
+c3e09fac:	c3e2a168 	.word	0xc3e2a168
+c3e09fb0:	c3e4dd17 	.word	0xc3e4dd17
+c3e09fb4:	c3e4dd22 	.word	0xc3e4dd22
+c3e09fb8:	c3e4dd37 	.word	0xc3e4dd37
+c3e09fbc:	c3e4e362 	.word	0xc3e4e362
+c3e09fc0:	c3e4e376 	.word	0xc3e4e376
+c3e09fc4:	c3e4e384 	.word	0xc3e4e384
+c3e09fc8:	c3e515ea 	.word	0xc3e515ea
+c3e09fcc:	c3e4e3a2 	.word	0xc3e4e3a2
+c3e09fd0:	c3e4e3cf 	.word	0xc3e4e3cf
+c3e09fd4:	c3e4e3dd 	.word	0xc3e4e3dd
 
 c3e09fd8 <do_iminfo>:
 c3e09fd8:	e3520001 	cmp	r2, #1
@@ -10998,7 +10998,7 @@ c3e0a024:	e1550004 	cmp	r5, r4
 c3e0a028:	bafffff5 	blt	c3e0a004 <do_iminfo+0x2c>
 c3e0a02c:	e1a00006 	mov	r0, r6
 c3e0a030:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e0a034:	c3e53db0 	.word	0xc3e53db0
+c3e0a034:	c3e53da8 	.word	0xc3e53da8
 
 c3e0a038 <do_bootd>:
 c3e0a038:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -11009,7 +11009,7 @@ c3e0a048:	eb002354 	bl	c3e12da0 <parse_string_outer>
 c3e0a04c:	e2500000 	subs	r0, r0, #0
 c3e0a050:	13a00001 	movne	r0, #1
 c3e0a054:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e0a058:	c3e4db25 	.word	0xc3e4db25
+c3e0a058:	c3e4db1d 	.word	0xc3e4db1d
 
 c3e0a05c <do_bootm>:
 c3e0a05c:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -11441,35 +11441,35 @@ c3e0a700:	e3a00001 	mov	r0, #1
 c3e0a704:	e28ddf47 	add	sp, sp, #284	; 0x11c
 c3e0a708:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
 c3e0a70c:	c3e64aa0 	.word	0xc3e64aa0
-c3e0a710:	c3e4db5e 	.word	0xc3e4db5e
-c3e0a714:	c3e53db0 	.word	0xc3e53db0
+c3e0a710:	c3e4db56 	.word	0xc3e4db56
+c3e0a714:	c3e53da8 	.word	0xc3e53da8
 c3e0a718:	016f2818 	.word	0x016f2818
-c3e0a71c:	c3e4e400 	.word	0xc3e4e400
-c3e0a720:	c3e4e412 	.word	0xc3e4e412
-c3e0a724:	c3e4e2bc 	.word	0xc3e4e2bc
-c3e0a728:	c3e4e2d1 	.word	0xc3e4e2d1
-c3e0a72c:	c3e4de89 	.word	0xc3e4de89
-c3e0a730:	c3e4e2e9 	.word	0xc3e4e2e9
-c3e0a734:	c3e4dea4 	.word	0xc3e4dea4
-c3e0a738:	c3e4e444 	.word	0xc3e4e444
-c3e0a73c:	c3e4e463 	.word	0xc3e4e463
-c3e0a740:	c3e4e484 	.word	0xc3e4e484
-c3e0a744:	c3e4e4a7 	.word	0xc3e4e4a7
-c3e0a748:	c3e4e4c7 	.word	0xc3e4e4c7
-c3e0a74c:	c3e4e4ea 	.word	0xc3e4e4ea
-c3e0a750:	c3e4e4f9 	.word	0xc3e4e4f9
-c3e0a754:	c3e4e50c 	.word	0xc3e4e50c
-c3e0a758:	c3e4e525 	.word	0xc3e4e525
-c3e0a75c:	c3e4e56a 	.word	0xc3e4e56a
-c3e0a760:	c3e4e58d 	.word	0xc3e4e58d
-c3e0a764:	c3e4e5c7 	.word	0xc3e4e5c7
-c3e0a768:	c3e4e60e 	.word	0xc3e4e60e
-c3e0a76c:	c3e501b6 	.word	0xc3e501b6
-c3e0a770:	c3e4e617 	.word	0xc3e4e617
+c3e0a71c:	c3e4e3f8 	.word	0xc3e4e3f8
+c3e0a720:	c3e4e40a 	.word	0xc3e4e40a
+c3e0a724:	c3e4e2b4 	.word	0xc3e4e2b4
+c3e0a728:	c3e4e2c9 	.word	0xc3e4e2c9
+c3e0a72c:	c3e4de81 	.word	0xc3e4de81
+c3e0a730:	c3e4e2e1 	.word	0xc3e4e2e1
+c3e0a734:	c3e4de9c 	.word	0xc3e4de9c
+c3e0a738:	c3e4e43c 	.word	0xc3e4e43c
+c3e0a73c:	c3e4e45b 	.word	0xc3e4e45b
+c3e0a740:	c3e4e47c 	.word	0xc3e4e47c
+c3e0a744:	c3e4e49f 	.word	0xc3e4e49f
+c3e0a748:	c3e4e4bf 	.word	0xc3e4e4bf
+c3e0a74c:	c3e4e4e2 	.word	0xc3e4e4e2
+c3e0a750:	c3e4e4f1 	.word	0xc3e4e4f1
+c3e0a754:	c3e4e504 	.word	0xc3e4e504
+c3e0a758:	c3e4e51d 	.word	0xc3e4e51d
+c3e0a75c:	c3e4e562 	.word	0xc3e4e562
+c3e0a760:	c3e4e585 	.word	0xc3e4e585
+c3e0a764:	c3e4e5bf 	.word	0xc3e4e5bf
+c3e0a768:	c3e4e606 	.word	0xc3e4e606
+c3e0a76c:	c3e501ae 	.word	0xc3e501ae
+c3e0a770:	c3e4e60f 	.word	0xc3e4e60f
 c3e0a774:	c3e64aa4 	.word	0xc3e64aa4
-c3e0a778:	c3e4e660 	.word	0xc3e4e660
-c3e0a77c:	c3e5359e 	.word	0xc3e5359e
-c3e0a780:	c3e4cfe8 	.word	0xc3e4cfe8
+c3e0a778:	c3e4e658 	.word	0xc3e4e658
+c3e0a77c:	c3e53596 	.word	0xc3e53596
+c3e0a780:	c3e4cfe0 	.word	0xc3e4cfe0
 
 c3e0a784 <on_off>:
 c3e0a784:	e92d4010 	push	{r4, lr}
@@ -11485,8 +11485,8 @@ c3e0a7a8:	eb003b78 	bl	c3e19590 <strcmp>
 c3e0a7ac:	e3500000 	cmp	r0, #0
 c3e0a7b0:	13e00000 	mvnne	r0, #0
 c3e0a7b4:	e8bd8010 	pop	{r4, pc}
-c3e0a7b8:	c3e532f8 	.word	0xc3e532f8
-c3e0a7bc:	c3e4ccd2 	.word	0xc3e4ccd2
+c3e0a7b8:	c3e532f0 	.word	0xc3e532f0
+c3e0a7bc:	c3e4ccca 	.word	0xc3e4ccca
 
 c3e0a7c0 <do_dcache>:
 c3e0a7c0:	e3520001 	cmp	r2, #1
@@ -11518,10 +11518,10 @@ c3e0a824:	e59f0014 	ldr	r0, [pc, #20]	; c3e0a840 <do_dcache+0x80>
 c3e0a828:	eb001457 	bl	c3e0f98c <printf>
 c3e0a82c:	e3a00001 	mov	r0, #1
 c3e0a830:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e0a834:	c3e4e996 	.word	0xc3e4e996
-c3e0a838:	c3e515ab 	.word	0xc3e515ab
-c3e0a83c:	c3e4e99a 	.word	0xc3e4e99a
-c3e0a840:	c3e4da91 	.word	0xc3e4da91
+c3e0a834:	c3e4e98e 	.word	0xc3e4e98e
+c3e0a838:	c3e515a3 	.word	0xc3e515a3
+c3e0a83c:	c3e4e992 	.word	0xc3e4e992
+c3e0a840:	c3e4da89 	.word	0xc3e4da89
 
 c3e0a844 <do_icache>:
 c3e0a844:	e3520001 	cmp	r2, #1
@@ -11553,10 +11553,10 @@ c3e0a8a8:	e59f0014 	ldr	r0, [pc, #20]	; c3e0a8c4 <do_icache+0x80>
 c3e0a8ac:	eb001436 	bl	c3e0f98c <printf>
 c3e0a8b0:	e3a00001 	mov	r0, #1
 c3e0a8b4:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e0a8b8:	c3e4e996 	.word	0xc3e4e996
-c3e0a8bc:	c3e515ab 	.word	0xc3e515ab
-c3e0a8c0:	c3e4e9bb 	.word	0xc3e4e9bb
-c3e0a8c4:	c3e4da91 	.word	0xc3e4da91
+c3e0a8b8:	c3e4e98e 	.word	0xc3e4e98e
+c3e0a8bc:	c3e515a3 	.word	0xc3e515a3
+c3e0a8c0:	c3e4e9b3 	.word	0xc3e4e9b3
+c3e0a8c4:	c3e4da89 	.word	0xc3e4da89
 
 c3e0a8c8 <do_coninfo>:
 c3e0a8c8:	e92d4033 	push	{r0, r1, r4, r5, lr}
@@ -11618,11 +11618,11 @@ c3e0a9a4:	e2844001 	add	r4, r4, #1
 c3e0a9a8:	daffffcb 	ble	c3e0a8dc <do_coninfo+0x14>
 c3e0a9ac:	e3a00000 	mov	r0, #0
 c3e0a9b0:	e8bd803c 	pop	{r2, r3, r4, r5, pc}
-c3e0a9b4:	c3e4eaab 	.word	0xc3e4eaab
-c3e0a9b8:	c3e4eac7 	.word	0xc3e4eac7
+c3e0a9b4:	c3e4eaa3 	.word	0xc3e4eaa3
+c3e0a9b8:	c3e4eabf 	.word	0xc3e4eabf
 c3e0a9bc:	c3e64b78 	.word	0xc3e64b78
-c3e0a9c0:	c3e53e24 	.word	0xc3e53e24
-c3e0a9c4:	c3e4ead9 	.word	0xc3e4ead9
+c3e0a9c0:	c3e53e1c 	.word	0xc3e53e1c
+c3e0a9c4:	c3e4ead1 	.word	0xc3e4ead1
 c3e0a9c8:	c3e64b74 	.word	0xc3e64b74
 
 c3e0a9cc <valid_elf_image>:
@@ -11645,8 +11645,8 @@ c3e0aa08:	eb0013df 	bl	c3e0f98c <printf>
 c3e0aa0c:	e3a00000 	mov	r0, #0
 c3e0aa10:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
 c3e0aa14:	464c457f 	.word	0x464c457f
-c3e0aa18:	c3e4eb16 	.word	0xc3e4eb16
-c3e0aa1c:	c3e4eb3a 	.word	0xc3e4eb3a
+c3e0aa18:	c3e4eb0e 	.word	0xc3e4eb0e
+c3e0aa1c:	c3e4eb32 	.word	0xc3e4eb32
 
 c3e0aa20 <load_elf_image>:
 c3e0aa20:	e92d44f1 	push	{r0, r4, r5, r6, r7, sl, lr}
@@ -11710,9 +11710,9 @@ c3e0ab04:	e15a0003 	cmp	sl, r3
 c3e0ab08:	baffffd3 	blt	c3e0aa5c <load_elf_image+0x3c>
 c3e0ab0c:	e5950018 	ldr	r0, [r5, #24]
 c3e0ab10:	e8bd84f8 	pop	{r3, r4, r5, r6, r7, sl, pc}
-c3e0ab14:	c3e4eb68 	.word	0xc3e4eb68
-c3e0ab18:	c3e4eb6d 	.word	0xc3e4eb6d
-c3e0ab1c:	c3e4eb73 	.word	0xc3e4eb73
+c3e0ab14:	c3e4eb60 	.word	0xc3e4eb60
+c3e0ab18:	c3e4eb65 	.word	0xc3e4eb65
+c3e0ab1c:	c3e4eb6b 	.word	0xc3e4eb6b
 
 c3e0ab20 <do_bootvx>:
 c3e0ab20:	e3520001 	cmp	r2, #1
@@ -11799,17 +11799,17 @@ c3e0ac60:	e59f0030 	ldr	r0, [pc, #48]	; c3e0ac98 <do_bootvx+0x178>
 c3e0ac64:	eb001336 	bl	c3e0f944 <puts>
 c3e0ac68:	e3a00001 	mov	r0, #1
 c3e0ac6c:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e0ac70:	c3e53db0 	.word	0xc3e53db0
-c3e0ac74:	c3e4eb93 	.word	0xc3e4eb93
-c3e0ac78:	c3e4eb98 	.word	0xc3e4eb98
-c3e0ac7c:	c3e4ebd1 	.word	0xc3e4ebd1
-c3e0ac80:	c3e4ebff 	.word	0xc3e4ebff
-c3e0ac84:	c3e4e60e 	.word	0xc3e4e60e
-c3e0ac88:	c3e4ec08 	.word	0xc3e4ec08
-c3e0ac8c:	c3e4ec1d 	.word	0xc3e4ec1d
-c3e0ac90:	c3e4ec43 	.word	0xc3e4ec43
-c3e0ac94:	c3e4ec64 	.word	0xc3e4ec64
-c3e0ac98:	c3e4ec88 	.word	0xc3e4ec88
+c3e0ac70:	c3e53da8 	.word	0xc3e53da8
+c3e0ac74:	c3e4eb8b 	.word	0xc3e4eb8b
+c3e0ac78:	c3e4eb90 	.word	0xc3e4eb90
+c3e0ac7c:	c3e4ebc9 	.word	0xc3e4ebc9
+c3e0ac80:	c3e4ebf7 	.word	0xc3e4ebf7
+c3e0ac84:	c3e4e606 	.word	0xc3e4e606
+c3e0ac88:	c3e4ec00 	.word	0xc3e4ec00
+c3e0ac8c:	c3e4ec15 	.word	0xc3e4ec15
+c3e0ac90:	c3e4ec3b 	.word	0xc3e4ec3b
+c3e0ac94:	c3e4ec5c 	.word	0xc3e4ec5c
+c3e0ac98:	c3e4ec80 	.word	0xc3e4ec80
 
 c3e0ac9c <do_bootelf_exec>:
 c3e0ac9c:	e92d40f0 	push	{r4, r5, r6, r7, lr}
@@ -11866,9 +11866,9 @@ c3e0ad5c:	13a04001 	movne	r4, #1
 c3e0ad60:	eb001309 	bl	c3e0f98c <printf>
 c3e0ad64:	e1a00004 	mov	r0, r4
 c3e0ad68:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e0ad6c:	c3e53db0 	.word	0xc3e53db0
-c3e0ad70:	c3e4ec9f 	.word	0xc3e4ec9f
-c3e0ad74:	c3e4ecc7 	.word	0xc3e4ecc7
+c3e0ad6c:	c3e53da8 	.word	0xc3e53da8
+c3e0ad70:	c3e4ec97 	.word	0xc3e4ec97
+c3e0ad74:	c3e4ecbf 	.word	0xc3e4ecbf
 
 c3e0ad78 <ext_format>:
 c3e0ad78:	e3500001 	cmp	r0, #1
@@ -11924,12 +11924,12 @@ c3e0ae3c:	e59f001c 	ldr	r0, [pc, #28]	; c3e0ae60 <ext_format+0xe8>
 c3e0ae40:	eb0012d1 	bl	c3e0f98c <printf>
 c3e0ae44:	e3a00000 	mov	r0, #0
 c3e0ae48:	e8bd80f8 	pop	{r3, r4, r5, r6, r7, pc}
-c3e0ae4c:	c3e4edad 	.word	0xc3e4edad
-c3e0ae50:	c3e4edd8 	.word	0xc3e4edd8
-c3e0ae54:	c3e4edf4 	.word	0xc3e4edf4
-c3e0ae58:	c3e4ee22 	.word	0xc3e4ee22
-c3e0ae5c:	c3e4ee49 	.word	0xc3e4ee49
-c3e0ae60:	c3e4ee6e 	.word	0xc3e4ee6e
+c3e0ae4c:	c3e4eda5 	.word	0xc3e4eda5
+c3e0ae50:	c3e4edd0 	.word	0xc3e4edd0
+c3e0ae54:	c3e4edec 	.word	0xc3e4edec
+c3e0ae58:	c3e4ee1a 	.word	0xc3e4ee1a
+c3e0ae5c:	c3e4ee41 	.word	0xc3e4ee41
+c3e0ae60:	c3e4ee66 	.word	0xc3e4ee66
 
 c3e0ae64 <do_ext3_format>:
 c3e0ae64:	e1a00002 	mov	r0, r2
@@ -12110,22 +12110,22 @@ c3e0b10c:	eb000e50 	bl	c3e0ea54 <setenv>
 c3e0b110:	e1a00007 	mov	r0, r7
 c3e0b114:	e28dd064 	add	sp, sp, #100	; 0x64
 c3e0b118:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e0b11c:	c3e4cfe8 	.word	0xc3e4cfe8
-c3e0b120:	c3e4cff1 	.word	0xc3e4cff1
-c3e0b124:	c3e4da91 	.word	0xc3e4da91
-c3e0b128:	c3e4ee81 	.word	0xc3e4ee81
-c3e0b12c:	c3e4ee9e 	.word	0xc3e4ee9e
-c3e0b130:	c3e4edf4 	.word	0xc3e4edf4
-c3e0b134:	c3e4eec4 	.word	0xc3e4eec4
-c3e0b138:	c3e4e144 	.word	0xc3e4e144
-c3e0b13c:	c3e4eedc 	.word	0xc3e4eedc
-c3e0b140:	c3e4ef12 	.word	0xc3e4ef12
-c3e0b144:	c3e4ef32 	.word	0xc3e4ef32
-c3e0b148:	c3e4ef5f 	.word	0xc3e4ef5f
-c3e0b14c:	c3e53db0 	.word	0xc3e53db0
-c3e0b150:	c3e4ef89 	.word	0xc3e4ef89
-c3e0b154:	c3e4d1ce 	.word	0xc3e4d1ce
-c3e0b158:	c3e4d1d2 	.word	0xc3e4d1d2
+c3e0b11c:	c3e4cfe0 	.word	0xc3e4cfe0
+c3e0b120:	c3e4cfe9 	.word	0xc3e4cfe9
+c3e0b124:	c3e4da89 	.word	0xc3e4da89
+c3e0b128:	c3e4ee79 	.word	0xc3e4ee79
+c3e0b12c:	c3e4ee96 	.word	0xc3e4ee96
+c3e0b130:	c3e4edec 	.word	0xc3e4edec
+c3e0b134:	c3e4eebc 	.word	0xc3e4eebc
+c3e0b138:	c3e4e13c 	.word	0xc3e4e13c
+c3e0b13c:	c3e4eed4 	.word	0xc3e4eed4
+c3e0b140:	c3e4ef0a 	.word	0xc3e4ef0a
+c3e0b144:	c3e4ef2a 	.word	0xc3e4ef2a
+c3e0b148:	c3e4ef57 	.word	0xc3e4ef57
+c3e0b14c:	c3e53da8 	.word	0xc3e53da8
+c3e0b150:	c3e4ef81 	.word	0xc3e4ef81
+c3e0b154:	c3e4d1c6 	.word	0xc3e4d1c6
+c3e0b158:	c3e4d1ca 	.word	0xc3e4d1ca
 
 c3e0b15c <do_ext2ls>:
 c3e0b15c:	e3520002 	cmp	r2, #2
@@ -12202,13 +12202,13 @@ c3e0b274:	eaffffcf 	b	c3e0b1b8 <do_ext2ls+0x5c>
 c3e0b278:	eb0069fd 	bl	c3e25a74 <ext2fs_close>
 c3e0b27c:	e1a00004 	mov	r0, r4
 c3e0b280:	e8bd84f8 	pop	{r3, r4, r5, r6, r7, sl, pc}
-c3e0b284:	c3e4da91 	.word	0xc3e4da91
-c3e0b288:	c3e4ee9e 	.word	0xc3e4ee9e
-c3e0b28c:	c3e4edf4 	.word	0xc3e4edf4
-c3e0b290:	c3e4d50f 	.word	0xc3e4d50f
-c3e0b294:	c3e4ef12 	.word	0xc3e4ef12
-c3e0b298:	c3e4ef32 	.word	0xc3e4ef32
-c3e0b29c:	c3e4ef9a 	.word	0xc3e4ef9a
+c3e0b284:	c3e4da89 	.word	0xc3e4da89
+c3e0b288:	c3e4ee96 	.word	0xc3e4ee96
+c3e0b28c:	c3e4edec 	.word	0xc3e4edec
+c3e0b290:	c3e4d507 	.word	0xc3e4d507
+c3e0b294:	c3e4ef0a 	.word	0xc3e4ef0a
+c3e0b298:	c3e4ef2a 	.word	0xc3e4ef2a
+c3e0b29c:	c3e4ef92 	.word	0xc3e4ef92
 
 c3e0b2a0 <do_fat_format>:
 c3e0b2a0:	e3520001 	cmp	r2, #1
@@ -12263,12 +12263,12 @@ c3e0b360:	e59f001c 	ldr	r0, [pc, #28]	; c3e0b384 <do_fat_format+0xe4>
 c3e0b364:	eb001188 	bl	c3e0f98c <printf>
 c3e0b368:	e3a00000 	mov	r0, #0
 c3e0b36c:	e8bd8078 	pop	{r3, r4, r5, r6, pc}
-c3e0b370:	c3e4f22e 	.word	0xc3e4f22e
-c3e0b374:	c3e4edd8 	.word	0xc3e4edd8
-c3e0b378:	c3e4edf4 	.word	0xc3e4edf4
-c3e0b37c:	c3e4ee22 	.word	0xc3e4ee22
-c3e0b380:	c3e4ee49 	.word	0xc3e4ee49
-c3e0b384:	c3e4ee6e 	.word	0xc3e4ee6e
+c3e0b370:	c3e4f226 	.word	0xc3e4f226
+c3e0b374:	c3e4edd0 	.word	0xc3e4edd0
+c3e0b378:	c3e4edec 	.word	0xc3e4edec
+c3e0b37c:	c3e4ee1a 	.word	0xc3e4ee1a
+c3e0b380:	c3e4ee41 	.word	0xc3e4ee41
+c3e0b384:	c3e4ee66 	.word	0xc3e4ee66
 
 c3e0b388 <do_fat_fsinfo>:
 c3e0b388:	e3520001 	cmp	r2, #1
@@ -12329,12 +12329,12 @@ c3e0b460:	e3540005 	cmp	r4, #5
 c3e0b464:	1affffec 	bne	c3e0b41c <do_fat_fsinfo+0x94>
 c3e0b468:	eb0059f9 	bl	c3e21c54 <file_fat_detectfs>
 c3e0b46c:	e8bd80f8 	pop	{r3, r4, r5, r6, r7, pc}
-c3e0b470:	c3e4f258 	.word	0xc3e4f258
-c3e0b474:	c3e4edd8 	.word	0xc3e4edd8
-c3e0b478:	c3e4edf4 	.word	0xc3e4edf4
-c3e0b47c:	c3e4f281 	.word	0xc3e4f281
-c3e0b480:	c3e4f299 	.word	0xc3e4f299
-c3e0b484:	c3e4f2c5 	.word	0xc3e4f2c5
+c3e0b470:	c3e4f250 	.word	0xc3e4f250
+c3e0b474:	c3e4edd0 	.word	0xc3e4edd0
+c3e0b478:	c3e4edec 	.word	0xc3e4edec
+c3e0b47c:	c3e4f279 	.word	0xc3e4f279
+c3e0b480:	c3e4f291 	.word	0xc3e4f291
+c3e0b484:	c3e4f2bd 	.word	0xc3e4f2bd
 
 c3e0b488 <do_fat_ls>:
 c3e0b488:	e3520002 	cmp	r2, #2
@@ -12397,12 +12397,12 @@ c3e0b568:	e59f001c 	ldr	r0, [pc, #28]	; c3e0b58c <do_fat_ls+0x104>
 c3e0b56c:	eb001106 	bl	c3e0f98c <printf>
 c3e0b570:	e1a00004 	mov	r0, r4
 c3e0b574:	e8bd84f8 	pop	{r3, r4, r5, r6, r7, sl, pc}
-c3e0b578:	c3e4f2dd 	.word	0xc3e4f2dd
-c3e0b57c:	c3e4edd8 	.word	0xc3e4edd8
-c3e0b580:	c3e4edf4 	.word	0xc3e4edf4
-c3e0b584:	c3e4f310 	.word	0xc3e4f310
-c3e0b588:	c3e4d50f 	.word	0xc3e4d50f
-c3e0b58c:	c3e4f339 	.word	0xc3e4f339
+c3e0b578:	c3e4f2d5 	.word	0xc3e4f2d5
+c3e0b57c:	c3e4edd0 	.word	0xc3e4edd0
+c3e0b580:	c3e4edec 	.word	0xc3e4edec
+c3e0b584:	c3e4f308 	.word	0xc3e4f308
+c3e0b588:	c3e4d507 	.word	0xc3e4d507
+c3e0b58c:	c3e4f331 	.word	0xc3e4f331
 
 c3e0b590 <do_fat_fsload>:
 c3e0b590:	e3520004 	cmp	r2, #4
@@ -12499,15 +12499,15 @@ c3e0b6f8:	eb000cd5 	bl	c3e0ea54 <setenv>
 c3e0b6fc:	e3a00000 	mov	r0, #0
 c3e0b700:	e28dd014 	add	sp, sp, #20
 c3e0b704:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
-c3e0b708:	c3e4f34d 	.word	0xc3e4f34d
-c3e0b70c:	c3e4f390 	.word	0xc3e4f390
-c3e0b710:	c3e4edd8 	.word	0xc3e4edd8
-c3e0b714:	c3e4edf4 	.word	0xc3e4edf4
-c3e0b718:	c3e4f3a5 	.word	0xc3e4f3a5
-c3e0b71c:	c3e4ef5f 	.word	0xc3e4ef5f
-c3e0b720:	c3e4ef89 	.word	0xc3e4ef89
-c3e0b724:	c3e4d1ce 	.word	0xc3e4d1ce
-c3e0b728:	c3e4d1d2 	.word	0xc3e4d1d2
+c3e0b708:	c3e4f345 	.word	0xc3e4f345
+c3e0b70c:	c3e4f388 	.word	0xc3e4f388
+c3e0b710:	c3e4edd0 	.word	0xc3e4edd0
+c3e0b714:	c3e4edec 	.word	0xc3e4edec
+c3e0b718:	c3e4f39d 	.word	0xc3e4f39d
+c3e0b71c:	c3e4ef57 	.word	0xc3e4ef57
+c3e0b720:	c3e4ef81 	.word	0xc3e4ef81
+c3e0b724:	c3e4d1c6 	.word	0xc3e4d1c6
+c3e0b728:	c3e4d1ca 	.word	0xc3e4d1ca
 
 c3e0b72c <flash_fill_sect_ranges>:
 c3e0b72c:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -12613,10 +12613,10 @@ c3e0b8b8:	e1a00004 	mov	r0, r4
 c3e0b8bc:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
 c3e0b8c0:	c3e71fc0 	.word	0xc3e71fc0
 c3e0b8c4:	0000ffff 	.word	0x0000ffff
-c3e0b8c8:	c3e4f5f5 	.word	0xc3e4f5f5
-c3e0b8cc:	c3e4f620 	.word	0xc3e4f620
-c3e0b8d0:	c3e4f649 	.word	0xc3e4f649
-c3e0b8d4:	c3e4f676 	.word	0xc3e4f676
+c3e0b8c8:	c3e4f5ed 	.word	0xc3e4f5ed
+c3e0b8cc:	c3e4f618 	.word	0xc3e4f618
+c3e0b8d0:	c3e4f641 	.word	0xc3e4f641
+c3e0b8d4:	c3e4f66e 	.word	0xc3e4f66e
 
 c3e0b8d8 <flash_sect_protect>:
 c3e0b8d8:	e92d401f 	push	{r0, r1, r2, r3, r4, lr}
@@ -12676,10 +12676,10 @@ c3e0b9ac:	e8bd8010 	pop	{r4, pc}
 c3e0b9b0:	c3e71fc0 	.word	0xc3e71fc0
 c3e0b9b4:	0000ffff 	.word	0x0000ffff
 c3e0b9b8:	c3e721e9 	.word	0xc3e721e9
-c3e0b9bc:	c3e4f6bd 	.word	0xc3e4f6bd
-c3e0b9c0:	c3e501b6 	.word	0xc3e501b6
-c3e0b9c4:	c3e4f6c1 	.word	0xc3e4f6c1
-c3e0b9c8:	c3e4f6d9 	.word	0xc3e4f6d9
+c3e0b9bc:	c3e4f6b5 	.word	0xc3e4f6b5
+c3e0b9c0:	c3e501ae 	.word	0xc3e501ae
+c3e0b9c4:	c3e4f6b9 	.word	0xc3e4f6b9
+c3e0b9c8:	c3e4f6d1 	.word	0xc3e4f6d1
 
 c3e0b9cc <addr_spec>:
 c3e0b9cc:	e92d40f1 	push	{r0, r4, r5, r6, r7, lr}
@@ -12769,7 +12769,7 @@ c3e0bb18:	ea000000 	b	c3e0bb20 <addr_spec+0x154>
 c3e0bb1c:	e3a00001 	mov	r0, #1
 c3e0bb20:	e8bd80f8 	pop	{r3, r4, r5, r6, r7, pc}
 c3e0bb24:	c3e71fc0 	.word	0xc3e71fc0
-c3e0bb28:	c3e4f711 	.word	0xc3e4f711
+c3e0bb28:	c3e4f709 	.word	0xc3e4f709
 
 c3e0bb2c <abbrev_spec>:
 c3e0bb2c:	e92d4ef3 	push	{r0, r1, r4, r5, r6, r7, r9, sl, fp, lr}
@@ -13003,22 +13003,22 @@ c3e0beb0:	ea000000 	b	c3e0beb8 <do_protect+0x248>
 c3e0beb4:	e3a00000 	mov	r0, #0
 c3e0beb8:	e28dd018 	add	sp, sp, #24
 c3e0bebc:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
-c3e0bec0:	c3e4ccd2 	.word	0xc3e4ccd2
-c3e0bec4:	c3e532f8 	.word	0xc3e532f8
-c3e0bec8:	c3e523c6 	.word	0xc3e523c6
+c3e0bec0:	c3e4ccca 	.word	0xc3e4ccca
+c3e0bec4:	c3e532f0 	.word	0xc3e532f0
+c3e0bec8:	c3e523be 	.word	0xc3e523be
 c3e0becc:	c3e71fc0 	.word	0xc3e71fc0
 c3e0bed0:	0000ffff 	.word	0x0000ffff
-c3e0bed4:	c3e4f6bd 	.word	0xc3e4f6bd
-c3e0bed8:	c3e501b6 	.word	0xc3e501b6
-c3e0bedc:	c3e4f73d 	.word	0xc3e4f73d
-c3e0bee0:	c3e4f759 	.word	0xc3e4f759
+c3e0bed4:	c3e4f6b5 	.word	0xc3e4f6b5
+c3e0bed8:	c3e501ae 	.word	0xc3e501ae
+c3e0bedc:	c3e4f735 	.word	0xc3e4f735
+c3e0bee0:	c3e4f751 	.word	0xc3e4f751
 c3e0bee4:	e9bd37a7 	.word	0xe9bd37a7
-c3e0bee8:	c3e4f773 	.word	0xc3e4f773
-c3e0beec:	c3e4dca0 	.word	0xc3e4dca0
-c3e0bef0:	c3e4f7a0 	.word	0xc3e4f7a0
-c3e0bef4:	c3e4f7c9 	.word	0xc3e4f7c9
-c3e0bef8:	c3e4f7e8 	.word	0xc3e4f7e8
-c3e0befc:	c3e4da91 	.word	0xc3e4da91
+c3e0bee8:	c3e4f76b 	.word	0xc3e4f76b
+c3e0beec:	c3e4dc98 	.word	0xc3e4dc98
+c3e0bef0:	c3e4f798 	.word	0xc3e4f798
+c3e0bef4:	c3e4f7c1 	.word	0xc3e4f7c1
+c3e0bef8:	c3e4f7e0 	.word	0xc3e4f7e0
+c3e0befc:	c3e4da89 	.word	0xc3e4da89
 
 c3e0bf00 <flash_sect_erase>:
 c3e0bf00:	e92d407f 	push	{r0, r1, r2, r3, r4, r5, r6, lr}
@@ -13073,8 +13073,8 @@ c3e0bfc0:	e1a00006 	mov	r0, r6
 c3e0bfc4:	e28dd010 	add	sp, sp, #16
 c3e0bfc8:	e8bd8070 	pop	{r4, r5, r6, pc}
 c3e0bfcc:	c3e71fc0 	.word	0xc3e71fc0
-c3e0bfd0:	c3e4f7fc 	.word	0xc3e4f7fc
-c3e0bfd4:	c3e4f6d9 	.word	0xc3e4f6d9
+c3e0bfd0:	c3e4f7f4 	.word	0xc3e4f7f4
+c3e0bfd4:	c3e4f6d1 	.word	0xc3e4f6d1
 
 c3e0bfd8 <do_flerase>:
 c3e0bfd8:	e3520001 	cmp	r2, #1
@@ -13169,16 +13169,16 @@ c3e0c138:	eaffffc3 	b	c3e0c04c <do_flerase+0x74>
 c3e0c13c:	ebffff6f 	bl	c3e0bf00 <flash_sect_erase>
 c3e0c140:	e28dd014 	add	sp, sp, #20
 c3e0c144:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e0c148:	c3e523c6 	.word	0xc3e523c6
-c3e0c14c:	c3e4f80f 	.word	0xc3e4f80f
+c3e0c148:	c3e523be 	.word	0xc3e523be
+c3e0c14c:	c3e4f807 	.word	0xc3e4f807
 c3e0c150:	c3e71fc0 	.word	0xc3e71fc0
-c3e0c154:	c3e4f759 	.word	0xc3e4f759
-c3e0c158:	c3e4f828 	.word	0xc3e4f828
+c3e0c154:	c3e4f751 	.word	0xc3e4f751
+c3e0c158:	c3e4f820 	.word	0xc3e4f820
 c3e0c15c:	e9bd37a7 	.word	0xe9bd37a7
-c3e0c160:	c3e4dca0 	.word	0xc3e4dca0
-c3e0c164:	c3e4f7a0 	.word	0xc3e4f7a0
-c3e0c168:	c3e4f7e8 	.word	0xc3e4f7e8
-c3e0c16c:	c3e4da91 	.word	0xc3e4da91
+c3e0c160:	c3e4dc98 	.word	0xc3e4dc98
+c3e0c164:	c3e4f798 	.word	0xc3e4f798
+c3e0c168:	c3e4f7e0 	.word	0xc3e4f7e0
+c3e0c16c:	c3e4da89 	.word	0xc3e4da89
 
 c3e0c170 <do_flinfo>:
 c3e0c170:	e3520001 	cmp	r2, #1
@@ -13209,9 +13209,9 @@ c3e0c1d0:	e59f000c 	ldr	r0, [pc, #12]	; c3e0c1e4 <do_flinfo+0x74>
 c3e0c1d4:	eb003096 	bl	c3e18434 <flash_print_info>
 c3e0c1d8:	e3a00000 	mov	r0, #0
 c3e0c1dc:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e0c1e0:	c3e4f851 	.word	0xc3e4f851
+c3e0c1e0:	c3e4f849 	.word	0xc3e4f849
 c3e0c1e4:	c3e71fc0 	.word	0xc3e71fc0
-c3e0c1e8:	c3e4f7a0 	.word	0xc3e4f7a0
+c3e0c1e8:	c3e4f798 	.word	0xc3e4f798
 
 c3e0c1ec <evalstr>:
 c3e0c1ec:	e5d02000 	ldrb	r2, [r0]
@@ -13360,9 +13360,9 @@ c3e0c414:	e59f0010 	ldr	r0, [pc, #16]	; c3e0c42c <binary_test+0x1dc>
 c3e0c418:	eb000d5b 	bl	c3e0f98c <printf>
 c3e0c41c:	e3a00000 	mov	r0, #0
 c3e0c420:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e0c424:	c3e53e1c 	.word	0xc3e53e1c
-c3e0c428:	c3e53db4 	.word	0xc3e53db4
-c3e0c42c:	c3e4fd39 	.word	0xc3e4fd39
+c3e0c424:	c3e53e14 	.word	0xc3e53e14
+c3e0c428:	c3e53dac 	.word	0xc3e53dac
+c3e0c42c:	c3e4fd31 	.word	0xc3e4fd31
 
 c3e0c430 <do_itest>:
 c3e0c430:	e3520004 	cmp	r2, #4
@@ -13405,8 +13405,8 @@ c3e0c4c0:	e3a00000 	mov	r0, #0
 c3e0c4c4:	e2700001 	rsbs	r0, r0, #1
 c3e0c4c8:	33a00000 	movcc	r0, #0
 c3e0c4cc:	e8bd8010 	pop	{r4, pc}
-c3e0c4d0:	c3e4da91 	.word	0xc3e4da91
-c3e0c4d4:	c3e4fd50 	.word	0xc3e4fd50
+c3e0c4d0:	c3e4da89 	.word	0xc3e4da89
+c3e0c4d4:	c3e4fd48 	.word	0xc3e4fd48
 
 c3e0c4d8 <ktrans>:
 c3e0c4d8:	e2003060 	and	r3, r0, #96	; 0x60
@@ -13780,11 +13780,11 @@ c3e0ca2c:	eb000808 	bl	c3e0ea54 <setenv>
 c3e0ca30:	e1a00005 	mov	r0, r5
 c3e0ca34:	e28dde43 	add	sp, sp, #1072	; 0x430
 c3e0ca38:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
-c3e0ca3c:	c3e4da98 	.word	0xc3e4da98
+c3e0ca3c:	c3e4da90 	.word	0xc3e4da90
 c3e0ca40:	c3e0ca50 	.word	0xc3e0ca50
-c3e0ca44:	c3e4fdf6 	.word	0xc3e4fdf6
-c3e0ca48:	c3e4fe1e 	.word	0xc3e4fe1e
-c3e0ca4c:	c3e4d1d2 	.word	0xc3e4d1d2
+c3e0ca44:	c3e4fdee 	.word	0xc3e4fdee
+c3e0ca48:	c3e4fe16 	.word	0xc3e4fe16
+c3e0ca4c:	c3e4d1ca 	.word	0xc3e4d1ca
 
 c3e0ca50 <getcxmodem>:
 c3e0ca50:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -14061,22 +14061,22 @@ c3e0ce80:	e593200c 	ldr	r2, [r3, #12]
 c3e0ce84:	e5936008 	ldr	r6, [r3, #8]
 c3e0ce88:	e0626006 	rsb	r6, r2, r6
 c3e0ce8c:	eaffffc0 	b	c3e0cd94 <do_load_serial_bin+0x324>
-c3e0ce90:	c3e4cfe8 	.word	0xc3e4cfe8
-c3e0ce94:	c3e4fe21 	.word	0xc3e4fe21
+c3e0ce90:	c3e4cfe0 	.word	0xc3e4cfe0
+c3e0ce94:	c3e4fe19 	.word	0xc3e4fe19
 c3e0ce98:	0000c350 	.word	0x0000c350
-c3e0ce9c:	c3e4fe53 	.word	0xc3e4fe53
-c3e0cea0:	c3e4fe59 	.word	0xc3e4fe59
-c3e0cea4:	c3e4fe98 	.word	0xc3e4fe98
+c3e0ce9c:	c3e4fe4b 	.word	0xc3e4fe4b
+c3e0cea0:	c3e4fe51 	.word	0xc3e4fe51
+c3e0cea4:	c3e4fe90 	.word	0xc3e4fe90
 c3e0cea8:	c3e64af0 	.word	0xc3e64af0
 c3e0ceac:	c3e0c530 	.word	0xc3e0c530
 c3e0ceb0:	c3e0c550 	.word	0xc3e0c550
-c3e0ceb4:	c3e4fdf6 	.word	0xc3e4fdf6
-c3e0ceb8:	c3e4fe1e 	.word	0xc3e4fe1e
-c3e0cebc:	c3e4d1d2 	.word	0xc3e4d1d2
-c3e0cec0:	c3e53db0 	.word	0xc3e53db0
-c3e0cec4:	c3e4fed7 	.word	0xc3e4fed7
-c3e0cec8:	c3e4fefc 	.word	0xc3e4fefc
-c3e0cecc:	c3e4ff1a 	.word	0xc3e4ff1a
+c3e0ceb4:	c3e4fdee 	.word	0xc3e4fdee
+c3e0ceb8:	c3e4fe16 	.word	0xc3e4fe16
+c3e0cebc:	c3e4d1ca 	.word	0xc3e4d1ca
+c3e0cec0:	c3e53da8 	.word	0xc3e53da8
+c3e0cec4:	c3e4fecf 	.word	0xc3e4fecf
+c3e0cec8:	c3e4fef4 	.word	0xc3e4fef4
+c3e0cecc:	c3e4ff12 	.word	0xc3e4ff12
 
 c3e0ced0 <load_serial>:
 c3e0ced0:	e92d46f0 	push	{r4, r5, r6, r7, r9, sl, lr}
@@ -14216,10 +14216,10 @@ c3e0d0e4:	e3e00000 	mvn	r0, #0
 c3e0d0e8:	e28ddfcd 	add	sp, sp, #820	; 0x334
 c3e0d0ec:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
 c3e0d0f0:	00002710 	.word	0x00002710
-c3e0d0f4:	c3e4ff4a 	.word	0xc3e4ff4a
-c3e0d0f8:	c3e4d1ce 	.word	0xc3e4d1ce
-c3e0d0fc:	c3e4d1d2 	.word	0xc3e4d1d2
-c3e0d100:	c3e53e1c 	.word	0xc3e53e1c
+c3e0d0f4:	c3e4ff42 	.word	0xc3e4ff42
+c3e0d0f8:	c3e4d1c6 	.word	0xc3e4d1c6
+c3e0d0fc:	c3e4d1ca 	.word	0xc3e4d1ca
+c3e0d100:	c3e53e14 	.word	0xc3e53e14
 c3e0d104:	c3e0fbac 	.word	0xc3e0fbac
 
 c3e0d108 <do_load_serial>:
@@ -14273,12 +14273,12 @@ c3e0d1c0:	e59f301c 	ldr	r3, [pc, #28]	; c3e0d1e4 <do_load_serial+0xdc>
 c3e0d1c4:	e3a00000 	mov	r0, #0
 c3e0d1c8:	e5834000 	str	r4, [r3]
 c3e0d1cc:	e8bd8030 	pop	{r4, r5, pc}
-c3e0d1d0:	c3e4ffaf 	.word	0xc3e4ffaf
-c3e0d1d4:	c3e53e1c 	.word	0xc3e53e1c
-c3e0d1d8:	c3e4ffba 	.word	0xc3e4ffba
-c3e0d1dc:	c3e4ffde 	.word	0xc3e4ffde
-c3e0d1e0:	c3e4fefc 	.word	0xc3e4fefc
-c3e0d1e4:	c3e53db0 	.word	0xc3e53db0
+c3e0d1d0:	c3e4ffa7 	.word	0xc3e4ffa7
+c3e0d1d4:	c3e53e14 	.word	0xc3e53e14
+c3e0d1d8:	c3e4ffb2 	.word	0xc3e4ffb2
+c3e0d1dc:	c3e4ffd6 	.word	0xc3e4ffd6
+c3e0d1e0:	c3e4fef4 	.word	0xc3e4fef4
+c3e0d1e4:	c3e53da8 	.word	0xc3e53da8
 
 c3e0d1e8 <do_mem_base>:
 c3e0d1e8:	e3520001 	cmp	r2, #1
@@ -14297,7 +14297,7 @@ c3e0d218:	eb0009db 	bl	c3e0f98c <printf>
 c3e0d21c:	e3a00000 	mov	r0, #0
 c3e0d220:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
 c3e0d224:	c3e64b58 	.word	0xc3e64b58
-c3e0d228:	c3e50152 	.word	0xc3e50152
+c3e0d228:	c3e5014a 	.word	0xc3e5014a
 
 c3e0d22c <do_mem_crc>:
 c3e0d22c:	e3520002 	cmp	r2, #2
@@ -14344,9 +14344,9 @@ c3e0d2cc:	e3a03000 	mov	r3, #0
 c3e0d2d0:	e5805000 	str	r5, [r0]
 c3e0d2d4:	e1a00003 	mov	r0, r3
 c3e0d2d8:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
-c3e0d2dc:	c3e4da91 	.word	0xc3e4da91
+c3e0d2dc:	c3e4da89 	.word	0xc3e4da89
 c3e0d2e0:	c3e64b58 	.word	0xc3e64b58
-c3e0d2e4:	c3e50169 	.word	0xc3e50169
+c3e0d2e4:	c3e50161 	.word	0xc3e50161
 
 c3e0d2e8 <do_mem_mtest>:
 c3e0d2e8:	e3520001 	cmp	r2, #1
@@ -14418,10 +14418,10 @@ c3e0d3ec:	e3a0a203 	mov	sl, #805306368	; 0x30000000
 c3e0d3f0:	e59f9014 	ldr	r9, [pc, #20]	; c3e0d40c <do_mem_mtest+0x124>
 c3e0d3f4:	e3a04000 	mov	r4, #0
 c3e0d3f8:	eaffffd2 	b	c3e0d348 <do_mem_mtest+0x60>
-c3e0d3fc:	c3e501b6 	.word	0xc3e501b6
-c3e0d400:	c3e5018e 	.word	0xc3e5018e
-c3e0d404:	c3e501b7 	.word	0xc3e501b7
-c3e0d408:	c3e501c2 	.word	0xc3e501c2
+c3e0d3fc:	c3e501ae 	.word	0xc3e501ae
+c3e0d400:	c3e50186 	.word	0xc3e50186
+c3e0d404:	c3e501af 	.word	0xc3e501af
+c3e0d408:	c3e501ba 	.word	0xc3e501ba
 c3e0d40c:	33e00000 	.word	0x33e00000
 
 c3e0d410 <cmd_get_data_size>:
@@ -14444,7 +14444,7 @@ c3e0d44c:	83e04000 	mvnhi	r4, #0
 c3e0d450:	97924103 	ldrls	r4, [r2, r3, lsl #2]
 c3e0d454:	e1a00004 	mov	r0, r4
 c3e0d458:	e8bd8030 	pop	{r4, r5, pc}
-c3e0d45c:	c3e2a234 	.word	0xc3e2a234
+c3e0d45c:	c3e2a22c 	.word	0xc3e2a22c
 
 c3e0d460 <do_mem_loop>:
 c3e0d460:	e3520002 	cmp	r2, #2
@@ -14511,7 +14511,7 @@ c3e0d550:	0afffff8 	beq	c3e0d538 <do_mem_loop+0xd8>
 c3e0d554:	eafffffa 	b	c3e0d544 <do_mem_loop+0xe4>
 c3e0d558:	e3a00001 	mov	r0, #1
 c3e0d55c:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e0d560:	c3e4da91 	.word	0xc3e4da91
+c3e0d560:	c3e4da89 	.word	0xc3e4da89
 
 c3e0d564 <do_mem_cp>:
 c3e0d564:	e3520004 	cmp	r2, #4
@@ -14584,11 +14584,11 @@ c3e0d66c:	e08aa004 	add	sl, sl, r4
 c3e0d670:	1afffff2 	bne	c3e0d640 <do_mem_cp+0xdc>
 c3e0d674:	e1a00006 	mov	r0, r6
 c3e0d678:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
-c3e0d67c:	c3e4da91 	.word	0xc3e4da91
+c3e0d67c:	c3e4da89 	.word	0xc3e4da89
 c3e0d680:	c3e64b58 	.word	0xc3e64b58
-c3e0d684:	c3e501f4 	.word	0xc3e501f4
-c3e0d688:	c3e50205 	.word	0xc3e50205
-c3e0d68c:	c3e4d354 	.word	0xc3e4d354
+c3e0d684:	c3e501ec 	.word	0xc3e501ec
+c3e0d688:	c3e501fd 	.word	0xc3e501fd
+c3e0d68c:	c3e4d34c 	.word	0xc3e4d34c
 
 c3e0d690 <do_mem_cmp>:
 c3e0d690:	e3520004 	cmp	r2, #4
@@ -14683,17 +14683,17 @@ c3e0d7f0:	e59f0030 	ldr	r0, [pc, #48]	; c3e0d828 <do_mem_cmp+0x198>
 c3e0d7f4:	eb000864 	bl	c3e0f98c <printf>
 c3e0d7f8:	e1a00004 	mov	r0, r4
 c3e0d7fc:	e8bd84f8 	pop	{r3, r4, r5, r6, r7, sl, pc}
-c3e0d800:	c3e4da91 	.word	0xc3e4da91
+c3e0d800:	c3e4da89 	.word	0xc3e4da89
 c3e0d804:	c3e64b58 	.word	0xc3e64b58
-c3e0d808:	c3e50217 	.word	0xc3e50217
-c3e0d80c:	c3e5024f 	.word	0xc3e5024f
-c3e0d810:	c3e5028d 	.word	0xc3e5028d
-c3e0d814:	c3e502cc 	.word	0xc3e502cc
-c3e0d818:	c3e502c3 	.word	0xc3e502c3
-c3e0d81c:	c3e502c8 	.word	0xc3e502c8
-c3e0d820:	c3e501b6 	.word	0xc3e501b6
-c3e0d824:	c3e5229f 	.word	0xc3e5229f
-c3e0d828:	c3e502d1 	.word	0xc3e502d1
+c3e0d808:	c3e5020f 	.word	0xc3e5020f
+c3e0d80c:	c3e50247 	.word	0xc3e50247
+c3e0d810:	c3e50285 	.word	0xc3e50285
+c3e0d814:	c3e502c4 	.word	0xc3e502c4
+c3e0d818:	c3e502bb 	.word	0xc3e502bb
+c3e0d81c:	c3e502c0 	.word	0xc3e502c0
+c3e0d820:	c3e501ae 	.word	0xc3e501ae
+c3e0d824:	c3e52297 	.word	0xc3e52297
+c3e0d828:	c3e502c9 	.word	0xc3e502c9
 
 c3e0d82c <do_mem_mw>:
 c3e0d82c:	e92d46f0 	push	{r4, r5, r6, r7, r9, sl, lr}
@@ -14745,7 +14745,7 @@ c3e0d8e0:	e2400001 	sub	r0, r0, #1
 c3e0d8e4:	e3500000 	cmp	r0, #0
 c3e0d8e8:	1afffff5 	bne	c3e0d8c4 <do_mem_mw+0x98>
 c3e0d8ec:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
-c3e0d8f0:	c3e4da91 	.word	0xc3e4da91
+c3e0d8f0:	c3e4da89 	.word	0xc3e4da89
 c3e0d8f4:	c3e64b58 	.word	0xc3e64b58
 
 c3e0d8f8 <mod_mem>:
@@ -14826,13 +14826,13 @@ c3e0da1c:	e59f300c 	ldr	r3, [pc, #12]	; c3e0da30 <mod_mem+0x138>
 c3e0da20:	e3a00000 	mov	r0, #0
 c3e0da24:	e9830030 	stmib	r3, {r4, r5}
 c3e0da28:	eafffffa 	b	c3e0da18 <mod_mem+0x120>
-c3e0da2c:	c3e4da91 	.word	0xc3e4da91
+c3e0da2c:	c3e4da89 	.word	0xc3e4da89
 c3e0da30:	c3e64b58 	.word	0xc3e64b58
-c3e0da34:	c3e502f2 	.word	0xc3e502f2
-c3e0da38:	c3e4d6fd 	.word	0xc3e4d6fd
-c3e0da3c:	c3e502f9 	.word	0xc3e502f9
-c3e0da40:	c3e502ff 	.word	0xc3e502ff
-c3e0da44:	c3e50305 	.word	0xc3e50305
+c3e0da34:	c3e502ea 	.word	0xc3e502ea
+c3e0da38:	c3e4d6f5 	.word	0xc3e4d6f5
+c3e0da3c:	c3e502f1 	.word	0xc3e502f1
+c3e0da40:	c3e502f7 	.word	0xc3e502f7
+c3e0da44:	c3e502fd 	.word	0xc3e502fd
 c3e0da48:	c3e649a0 	.word	0xc3e649a0
 
 c3e0da4c <do_mem_nm>:
@@ -14910,8 +14910,8 @@ c3e0db54:	e5834010 	str	r4, [r3, #16]
 c3e0db58:	e583600c 	str	r6, [r3, #12]
 c3e0db5c:	e8bd8ef8 	pop	{r3, r4, r5, r6, r7, r9, sl, fp, pc}
 c3e0db60:	c3e64b58 	.word	0xc3e64b58
-c3e0db64:	c3e53e20 	.word	0xc3e53e20
-c3e0db68:	c3e4da91 	.word	0xc3e4da91
+c3e0db64:	c3e53e18 	.word	0xc3e53e18
+c3e0db68:	c3e4da89 	.word	0xc3e4da89
 
 c3e0db6c <do_sleep>:
 c3e0db6c:	e92d40f0 	push	{r4, r5, r6, r7, lr}
@@ -14948,7 +14948,7 @@ c3e0dbe4:	e1500005 	cmp	r0, r5
 c3e0dbe8:	3afffff4 	bcc	c3e0dbc0 <do_sleep+0x54>
 c3e0dbec:	e3a00000 	mov	r0, #0
 c3e0dbf0:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e0dbf4:	c3e4da91 	.word	0xc3e4da91
+c3e0dbf4:	c3e4da89 	.word	0xc3e4da89
 c3e0dbf8:	003f9c2e 	.word	0x003f9c2e
 
 c3e0dbfc <do_mmcinfo>:
@@ -15027,21 +15027,21 @@ c3e0dd18:	e59f0040 	ldr	r0, [pc, #64]	; c3e0dd60 <do_mmcinfo+0x164>
 c3e0dd1c:	eb00071a 	bl	c3e0f98c <printf>
 c3e0dd20:	e1a00005 	mov	r0, r5
 c3e0dd24:	e8bd803c 	pop	{r2, r3, r4, r5, pc}
-c3e0dd28:	c3e50758 	.word	0xc3e50758
-c3e0dd2c:	c3e50764 	.word	0xc3e50764
-c3e0dd30:	c3e50779 	.word	0xc3e50779
-c3e0dd34:	c3e50782 	.word	0xc3e50782
-c3e0dd38:	c3e5078b 	.word	0xc3e5078b
-c3e0dd3c:	c3e5079e 	.word	0xc3e5079e
-c3e0dd40:	c3e507ae 	.word	0xc3e507ae
-c3e0dd44:	c3e4e12e 	.word	0xc3e4e12e
-c3e0dd48:	c3e53049 	.word	0xc3e53049
-c3e0dd4c:	c3e507c0 	.word	0xc3e507c0
-c3e0dd50:	c3e507d2 	.word	0xc3e507d2
-c3e0dd54:	c3e507d5 	.word	0xc3e507d5
-c3e0dd58:	c3e507d9 	.word	0xc3e507d9
-c3e0dd5c:	c3e507ec 	.word	0xc3e507ec
-c3e0dd60:	c3e50804 	.word	0xc3e50804
+c3e0dd28:	c3e50750 	.word	0xc3e50750
+c3e0dd2c:	c3e5075c 	.word	0xc3e5075c
+c3e0dd30:	c3e50771 	.word	0xc3e50771
+c3e0dd34:	c3e5077a 	.word	0xc3e5077a
+c3e0dd38:	c3e50783 	.word	0xc3e50783
+c3e0dd3c:	c3e50796 	.word	0xc3e50796
+c3e0dd40:	c3e507a6 	.word	0xc3e507a6
+c3e0dd44:	c3e4e126 	.word	0xc3e4e126
+c3e0dd48:	c3e53041 	.word	0xc3e53041
+c3e0dd4c:	c3e507b8 	.word	0xc3e507b8
+c3e0dd50:	c3e507ca 	.word	0xc3e507ca
+c3e0dd54:	c3e507cd 	.word	0xc3e507cd
+c3e0dd58:	c3e507d1 	.word	0xc3e507d1
+c3e0dd5c:	c3e507e4 	.word	0xc3e507e4
+c3e0dd60:	c3e507fc 	.word	0xc3e507fc
 
 c3e0dd64 <do_mmcops>:
 c3e0dd64:	e92d4ef3 	push	{r0, r1, r4, r5, r6, r7, r9, sl, fp, lr}
@@ -15224,18 +15224,18 @@ c3e0e024:	e3a04001 	mov	r4, #1
 c3e0e028:	e1a00004 	mov	r0, r4
 c3e0e02c:	e28dd008 	add	sp, sp, #8
 c3e0e030:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e0e034:	c3e50818 	.word	0xc3e50818
-c3e0e038:	c3e5081f 	.word	0xc3e5081f
-c3e0e03c:	c3e50824 	.word	0xc3e50824
-c3e0e040:	c3e50829 	.word	0xc3e50829
+c3e0e034:	c3e50810 	.word	0xc3e50810
+c3e0e038:	c3e50817 	.word	0xc3e50817
+c3e0e03c:	c3e5081c 	.word	0xc3e5081c
+c3e0e040:	c3e50821 	.word	0xc3e50821
 c3e0e044:	0000ffff 	.word	0x0000ffff
-c3e0e048:	c3e50857 	.word	0xc3e50857
-c3e0e04c:	c3e50871 	.word	0xc3e50871
-c3e0e050:	c3e50877 	.word	0xc3e50877
-c3e0e054:	c3e508a7 	.word	0xc3e508a7
-c3e0e058:	c3e5086b 	.word	0xc3e5086b
-c3e0e05c:	c3e4ce6f 	.word	0xc3e4ce6f
-c3e0e060:	c3e4da91 	.word	0xc3e4da91
+c3e0e048:	c3e5084f 	.word	0xc3e5084f
+c3e0e04c:	c3e50869 	.word	0xc3e50869
+c3e0e050:	c3e5086f 	.word	0xc3e5086f
+c3e0e054:	c3e5089f 	.word	0xc3e5089f
+c3e0e058:	c3e50863 	.word	0xc3e50863
+c3e0e05c:	c3e4ce67 	.word	0xc3e4ce67
+c3e0e060:	c3e4da89 	.word	0xc3e4da89
 
 c3e0e064 <do_ping>:
 c3e0e064:	e3520001 	cmp	r2, #1
@@ -15269,9 +15269,9 @@ c3e0e0d0:	eb00062d 	bl	c3e0f98c <printf>
 c3e0e0d4:	e3a00000 	mov	r0, #0
 c3e0e0d8:	e8bd8030 	pop	{r4, r5, pc}
 c3e0e0dc:	c3e60034 	.word	0xc3e60034
-c3e0e0e0:	c3e4da91 	.word	0xc3e4da91
-c3e0e0e4:	c3e5097a 	.word	0xc3e5097a
-c3e0e0e8:	c3e5099d 	.word	0xc3e5099d
+c3e0e0e0:	c3e4da89 	.word	0xc3e4da89
+c3e0e0e4:	c3e50972 	.word	0xc3e50972
+c3e0e0e8:	c3e50995 	.word	0xc3e50995
 
 c3e0e0ec <netboot_common>:
 c3e0e0ec:	e92d40f0 	push	{r4, r5, r6, r7, lr}
@@ -15442,29 +15442,29 @@ c3e0e37c:	e28dd018 	add	sp, sp, #24
 c3e0e380:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
 c3e0e384:	e3a04000 	mov	r4, #0
 c3e0e388:	eafffff8 	b	c3e0e370 <netboot_common+0x284>
-c3e0e38c:	c3e4cfe8 	.word	0xc3e4cfe8
-c3e0e390:	c3e53db0 	.word	0xc3e53db0
+c3e0e38c:	c3e4cfe0 	.word	0xc3e4cfe0
+c3e0e390:	c3e53da8 	.word	0xc3e53da8
 c3e0e394:	c3e6256c 	.word	0xc3e6256c
-c3e0e398:	c3e4da91 	.word	0xc3e4da91
+c3e0e398:	c3e4da89 	.word	0xc3e4da89
 c3e0e39c:	c3e60044 	.word	0xc3e60044
-c3e0e3a0:	c3e4d107 	.word	0xc3e4d107
+c3e0e3a0:	c3e4d0ff 	.word	0xc3e4d0ff
 c3e0e3a4:	c3e60040 	.word	0xc3e60040
-c3e0e3a8:	c3e4d111 	.word	0xc3e4d111
+c3e0e3a8:	c3e4d109 	.word	0xc3e4d109
 c3e0e3ac:	c3e62508 	.word	0xc3e62508
-c3e0e3b0:	c3e509af 	.word	0xc3e509af
+c3e0e3b0:	c3e509a7 	.word	0xc3e509a7
 c3e0e3b4:	c3e62528 	.word	0xc3e62528
-c3e0e3b8:	c3e509b8 	.word	0xc3e509b8
+c3e0e3b8:	c3e509b0 	.word	0xc3e509b0
 c3e0e3bc:	c3e60028 	.word	0xc3e60028
-c3e0e3c0:	c3e4cfd9 	.word	0xc3e4cfd9
+c3e0e3c0:	c3e4cfd1 	.word	0xc3e4cfd1
 c3e0e3c4:	c3e60060 	.word	0xc3e60060
-c3e0e3c8:	c3e4d11f 	.word	0xc3e4d11f
+c3e0e3c8:	c3e4d117 	.word	0xc3e4d117
 c3e0e3cc:	c3e624e4 	.word	0xc3e624e4
-c3e0e3d0:	c3e509c1 	.word	0xc3e509c1
+c3e0e3d0:	c3e509b9 	.word	0xc3e509b9
 c3e0e3d4:	c3e624e8 	.word	0xc3e624e8
-c3e0e3d8:	c3e509c7 	.word	0xc3e509c7
-c3e0e3dc:	c3e509ce 	.word	0xc3e509ce
-c3e0e3e0:	c3e509d8 	.word	0xc3e509d8
-c3e0e3e4:	c3e509dc 	.word	0xc3e509dc
+c3e0e3d8:	c3e509bf 	.word	0xc3e509bf
+c3e0e3dc:	c3e509c6 	.word	0xc3e509c6
+c3e0e3e0:	c3e509d0 	.word	0xc3e509d0
+c3e0e3e4:	c3e509d4 	.word	0xc3e509d4
 
 c3e0e3e8 <do_nfs>:
 c3e0e3e8:	e1a01000 	mov	r1, r0
@@ -15569,8 +15569,8 @@ c3e0e538:	eb0026f9 	bl	c3e18124 <saveenv>
 c3e0e53c:	e2500000 	subs	r0, r0, #0
 c3e0e540:	13a00001 	movne	r0, #1
 c3e0e544:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e0e548:	c3e58310 	.word	0xc3e58310
-c3e0e54c:	c3e50bc4 	.word	0xc3e50bc4
+c3e0e548:	c3e58308 	.word	0xc3e58308
+c3e0e54c:	c3e50bbc 	.word	0xc3e50bbc
 
 c3e0e550 <getenv>:
 c3e0e550:	e92d4070 	push	{r4, r5, r6, lr}
@@ -15865,22 +15865,22 @@ c3e0e9c8:	e8bd8efc 	pop	{r2, r3, r4, r5, r6, r7, r9, sl, fp, pc}
 c3e0e9cc:	eb0003ee 	bl	c3e0f98c <printf>
 c3e0e9d0:	e3a05001 	mov	r5, #1
 c3e0e9d4:	eafffffa 	b	c3e0e9c4 <_do_setenv+0x40c>
-c3e0e9d8:	c3e50be1 	.word	0xc3e50be1
-c3e0e9dc:	c3e50c18 	.word	0xc3e50c18
-c3e0e9e0:	c3e50c1e 	.word	0xc3e50c1e
-c3e0e9e4:	c3e50c25 	.word	0xc3e50c25
-c3e0e9e8:	c3e50c2c 	.word	0xc3e50c2c
-c3e0e9ec:	c3e4cfb0 	.word	0xc3e4cfb0
+c3e0e9d8:	c3e50bd9 	.word	0xc3e50bd9
+c3e0e9dc:	c3e50c10 	.word	0xc3e50c10
+c3e0e9e0:	c3e50c16 	.word	0xc3e50c16
+c3e0e9e4:	c3e50c1d 	.word	0xc3e50c1d
+c3e0e9e8:	c3e50c24 	.word	0xc3e50c24
+c3e0e9ec:	c3e4cfa8 	.word	0xc3e4cfa8
 c3e0e9f0:	0001c200 	.word	0x0001c200
-c3e0e9f4:	c3e50c6d 	.word	0xc3e50c6d
-c3e0e9f8:	c3e4fe21 	.word	0xc3e4fe21
+c3e0e9f4:	c3e50c65 	.word	0xc3e50c65
+c3e0e9f8:	c3e4fe19 	.word	0xc3e4fe19
 c3e0e9fc:	0000c350 	.word	0x0000c350
-c3e0ea00:	c3e50c3f 	.word	0xc3e50c3f
-c3e0ea04:	c3e4cfe0 	.word	0xc3e4cfe0
-c3e0ea08:	c3e4cfd9 	.word	0xc3e4cfd9
-c3e0ea0c:	c3e4cfe8 	.word	0xc3e4cfe8
-c3e0ea10:	c3e53db0 	.word	0xc3e53db0
-c3e0ea14:	c3e4cff1 	.word	0xc3e4cff1
+c3e0ea00:	c3e50c37 	.word	0xc3e50c37
+c3e0ea04:	c3e4cfd8 	.word	0xc3e4cfd8
+c3e0ea08:	c3e4cfd1 	.word	0xc3e4cfd1
+c3e0ea0c:	c3e4cfe0 	.word	0xc3e4cfe0
+c3e0ea10:	c3e53da8 	.word	0xc3e53da8
+c3e0ea14:	c3e4cfe9 	.word	0xc3e4cfe9
 c3e0ea18:	c3e6256c 	.word	0xc3e6256c
 
 c3e0ea1c <do_setenv>:
@@ -15897,7 +15897,7 @@ c3e0ea40:	e1a01002 	mov	r1, r2
 c3e0ea44:	e1a02003 	mov	r2, r3
 c3e0ea48:	e49de004 	pop	{lr}		; (ldr lr, [sp], #4)
 c3e0ea4c:	eafffed9 	b	c3e0e5b8 <_do_setenv>
-c3e0ea50:	c3e4da91 	.word	0xc3e4da91
+c3e0ea50:	c3e4da89 	.word	0xc3e4da89
 
 c3e0ea54 <setenv>:
 c3e0ea54:	e92d400f 	push	{r0, r1, r2, r3, lr}
@@ -15916,7 +15916,7 @@ c3e0ea84:	e58d300c 	str	r3, [sp, #12]
 c3e0ea88:	ebfffeca 	bl	c3e0e5b8 <_do_setenv>
 c3e0ea8c:	e28dd010 	add	sp, sp, #16
 c3e0ea90:	e8bd8000 	pop	{pc}
-c3e0ea94:	c3e50c8f 	.word	0xc3e50c8f
+c3e0ea94:	c3e50c87 	.word	0xc3e50c87
 
 c3e0ea98 <do_printenv>:
 c3e0ea98:	e3520001 	cmp	r2, #1
@@ -16009,10 +16009,10 @@ c3e0ebf0:	e1570004 	cmp	r7, r4
 c3e0ebf4:	baffffd1 	blt	c3e0eb40 <do_printenv+0xa8>
 c3e0ebf8:	e1a00005 	mov	r0, r5
 c3e0ebfc:	e8bd8ef8 	pop	{r3, r4, r5, r6, r7, r9, sl, fp, pc}
-c3e0ec00:	c3e50c96 	.word	0xc3e50c96
-c3e0ec04:	c3e50ca2 	.word	0xc3e50ca2
+c3e0ec00:	c3e50c8e 	.word	0xc3e50c8e
+c3e0ec04:	c3e50c9a 	.word	0xc3e50c9a
 c3e0ec08:	00003ffc 	.word	0x00003ffc
-c3e0ec0c:	c3e4da9c 	.word	0xc3e4da9c
+c3e0ec0c:	c3e4da94 	.word	0xc3e4da94
 
 c3e0ec10 <do_reginfo>:
 c3e0ec10:	e3a00000 	mov	r0, #0
@@ -16081,9 +16081,9 @@ c3e0ed00:	e8bd8010 	pop	{r4, pc}
 c3e0ed04:	c3e74aac 	.word	0xc3e74aac
 c3e0ed08:	c3e74aa8 	.word	0xc3e74aa8
 c3e0ed0c:	c3e74a94 	.word	0xc3e74a94
-c3e0ed10:	c3e4da91 	.word	0xc3e4da91
+c3e0ed10:	c3e4da89 	.word	0xc3e4da89
 c3e0ed14:	c3e74aa0 	.word	0xc3e74aa0
-c3e0ed18:	c3e50ef7 	.word	0xc3e50ef7
+c3e0ed18:	c3e50eef 	.word	0xc3e50eef
 c3e0ed1c:	800c3810 	.word	0x800c3810
 
 c3e0ed20 <do_imgextract>:
@@ -16214,22 +16214,22 @@ c3e0ef0c:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
 c3e0ef10:	e3a0a000 	mov	sl, #0
 c3e0ef14:	e1a0500a 	mov	r5, sl
 c3e0ef18:	eaffffa0 	b	c3e0eda0 <do_imgextract+0x80>
-c3e0ef1c:	c3e53db0 	.word	0xc3e53db0
-c3e0ef20:	c3e4db5e 	.word	0xc3e4db5e
-c3e0ef24:	c3e50f8a 	.word	0xc3e50f8a
+c3e0ef1c:	c3e53da8 	.word	0xc3e53da8
+c3e0ef20:	c3e4db56 	.word	0xc3e4db56
+c3e0ef24:	c3e50f82 	.word	0xc3e50f82
 c3e0ef28:	27051956 	.word	0x27051956
-c3e0ef2c:	c3e4e2bc 	.word	0xc3e4e2bc
-c3e0ef30:	c3e4e2d1 	.word	0xc3e4e2d1
-c3e0ef34:	c3e4e463 	.word	0xc3e4e463
-c3e0ef38:	c3e50fbd 	.word	0xc3e50fbd
-c3e0ef3c:	c3e4de89 	.word	0xc3e4de89
-c3e0ef40:	c3e4e2e9 	.word	0xc3e4e2e9
-c3e0ef44:	c3e4dea4 	.word	0xc3e4dea4
-c3e0ef48:	c3e50fe4 	.word	0xc3e50fe4
-c3e0ef4c:	c3e50ff4 	.word	0xc3e50ff4
-c3e0ef50:	c3e51015 	.word	0xc3e51015
-c3e0ef54:	c3e4d1db 	.word	0xc3e4d1db
-c3e0ef58:	c3e4d1d2 	.word	0xc3e4d1d2
+c3e0ef2c:	c3e4e2b4 	.word	0xc3e4e2b4
+c3e0ef30:	c3e4e2c9 	.word	0xc3e4e2c9
+c3e0ef34:	c3e4e45b 	.word	0xc3e4e45b
+c3e0ef38:	c3e50fb5 	.word	0xc3e50fb5
+c3e0ef3c:	c3e4de81 	.word	0xc3e4de81
+c3e0ef40:	c3e4e2e1 	.word	0xc3e4e2e1
+c3e0ef44:	c3e4de9c 	.word	0xc3e4de9c
+c3e0ef48:	c3e50fdc 	.word	0xc3e50fdc
+c3e0ef4c:	c3e50fec 	.word	0xc3e50fec
+c3e0ef50:	c3e5100d 	.word	0xc3e5100d
+c3e0ef54:	c3e4d1d3 	.word	0xc3e4d1d3
+c3e0ef58:	c3e4d1ca 	.word	0xc3e4d1ca
 
 c3e0ef5c <find_cmd>:
 c3e0ef5c:	e92d44f0 	push	{r4, r5, r6, r7, sl, lr}
@@ -16267,8 +16267,8 @@ c3e0efd8:	01a04005 	moveq	r4, r5
 c3e0efdc:	13a04000 	movne	r4, #0
 c3e0efe0:	e1a00004 	mov	r0, r4
 c3e0efe4:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
-c3e0efe8:	c3e58894 	.word	0xc3e58894
-c3e0efec:	c3e58ec4 	.word	0xc3e58ec4
+c3e0efe8:	c3e5888c 	.word	0xc3e5888c
+c3e0efec:	c3e58ebc 	.word	0xc3e58ebc
 
 c3e0eff0 <do_echo>:
 c3e0eff0:	e92d44f0 	push	{r4, r5, r6, r7, sl, lr}
@@ -16405,11 +16405,11 @@ c3e0f1f0:	baffffe4 	blt	c3e0f188 <do_help+0x118>
 c3e0f1f4:	e1a00007 	mov	r0, r7
 c3e0f1f8:	e24bd01c 	sub	sp, fp, #28
 c3e0f1fc:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e0f200:	c3e58894 	.word	0xc3e58894
-c3e0f204:	c3e58ec4 	.word	0xc3e58ec4
+c3e0f200:	c3e5888c 	.word	0xc3e5888c
+c3e0f204:	c3e58ebc 	.word	0xc3e58ebc
 c3e0f208:	aaaaaaab 	.word	0xaaaaaaab
-c3e0f20c:	c3e510a4 	.word	0xc3e510a4
-c3e0f210:	c3e510ba 	.word	0xc3e510ba
+c3e0f20c:	c3e5109c 	.word	0xc3e5109c
+c3e0f210:	c3e510b2 	.word	0xc3e510b2
 
 c3e0f214 <do_version>:
 c3e0f214:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -16418,7 +16418,7 @@ c3e0f21c:	e59f100c 	ldr	r1, [pc, #12]	; c3e0f230 <do_version+0x1c>
 c3e0f220:	eb0001d9 	bl	c3e0f98c <printf>
 c3e0f224:	e3a00000 	mov	r0, #0
 c3e0f228:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e0f22c:	c3e4da97 	.word	0xc3e4da97
+c3e0f22c:	c3e4da8f 	.word	0xc3e4da8f
 c3e0f230:	c3e2a130 	.word	0xc3e2a130
 
 c3e0f234 <do_exit>:
@@ -16703,21 +16703,21 @@ c3e0f680:	1affff21 	bne	c3e0f30c <do_test+0xa8>
 c3e0f684:	e1a0700a 	mov	r7, sl
 c3e0f688:	e3a09001 	mov	r9, #1
 c3e0f68c:	eaffffea 	b	c3e0f63c <do_test+0x3d8>
-c3e0f690:	c3e5110f 	.word	0xc3e5110f
-c3e0f694:	c3e51111 	.word	0xc3e51111
-c3e0f698:	c3e51114 	.word	0xc3e51114
-c3e0f69c:	c3e51117 	.word	0xc3e51117
-c3e0f6a0:	c3e5111a 	.word	0xc3e5111a
-c3e0f6a4:	c3e4dcc2 	.word	0xc3e4dcc2
-c3e0f6a8:	c3e4fd83 	.word	0xc3e4fd83
-c3e0f6ac:	c3e4fd87 	.word	0xc3e4fd87
-c3e0f6b0:	c3e4fd72 	.word	0xc3e4fd72
-c3e0f6b4:	c3e4fd78 	.word	0xc3e4fd78
-c3e0f6b8:	c3e4fd7f 	.word	0xc3e4fd7f
-c3e0f6bc:	c3e4fd6e 	.word	0xc3e4fd6e
-c3e0f6c0:	c3e4fd90 	.word	0xc3e4fd90
-c3e0f6c4:	c3e4fd74 	.word	0xc3e4fd74
-c3e0f6c8:	c3e4fd89 	.word	0xc3e4fd89
+c3e0f690:	c3e51107 	.word	0xc3e51107
+c3e0f694:	c3e51109 	.word	0xc3e51109
+c3e0f698:	c3e5110c 	.word	0xc3e5110c
+c3e0f69c:	c3e5110f 	.word	0xc3e5110f
+c3e0f6a0:	c3e51112 	.word	0xc3e51112
+c3e0f6a4:	c3e4dcba 	.word	0xc3e4dcba
+c3e0f6a8:	c3e4fd7b 	.word	0xc3e4fd7b
+c3e0f6ac:	c3e4fd7f 	.word	0xc3e4fd7f
+c3e0f6b0:	c3e4fd6a 	.word	0xc3e4fd6a
+c3e0f6b4:	c3e4fd70 	.word	0xc3e4fd70
+c3e0f6b8:	c3e4fd77 	.word	0xc3e4fd77
+c3e0f6bc:	c3e4fd66 	.word	0xc3e4fd66
+c3e0f6c0:	c3e4fd88 	.word	0xc3e4fd88
+c3e0f6c4:	c3e4fd6c 	.word	0xc3e4fd6c
+c3e0f6c8:	c3e4fd81 	.word	0xc3e4fd81
 
 c3e0f6cc <console_setfile>:
 c3e0f6cc:	e92d4030 	push	{r4, r5, lr}
@@ -17024,14 +17024,14 @@ c3e0fb04:	ebffffa0 	bl	c3e0f98c <printf>
 c3e0fb08:	e3a00000 	mov	r0, #0
 c3e0fb0c:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
 c3e0fb10:	c3e64b74 	.word	0xc3e64b74
-c3e0fb14:	c3e5138e 	.word	0xc3e5138e
+c3e0fb14:	c3e51386 	.word	0xc3e51386
 c3e0fb18:	c3e64b78 	.word	0xc3e64b78
-c3e0fb1c:	c3e51398 	.word	0xc3e51398
-c3e0fb20:	c3e4da98 	.word	0xc3e4da98
-c3e0fb24:	c3e513b5 	.word	0xc3e513b5
-c3e0fb28:	c3e513bf 	.word	0xc3e513bf
-c3e0fb2c:	c3e513dd 	.word	0xc3e513dd
-c3e0fb30:	c3e513e7 	.word	0xc3e513e7
+c3e0fb1c:	c3e51390 	.word	0xc3e51390
+c3e0fb20:	c3e4da90 	.word	0xc3e4da90
+c3e0fb24:	c3e513ad 	.word	0xc3e513ad
+c3e0fb28:	c3e513b7 	.word	0xc3e513b7
+c3e0fb2c:	c3e513d5 	.word	0xc3e513d5
+c3e0fb30:	c3e513df 	.word	0xc3e513df
 
 c3e0fb34 <serial_printf>:
 c3e0fb34:	e92d000f 	push	{r0, r1, r2, r3}
@@ -17156,8 +17156,8 @@ c3e0fcd4:	e3a00000 	mov	r0, #0
 c3e0fcd8:	e28dd034 	add	sp, sp, #52	; 0x34
 c3e0fcdc:	e8bd8010 	pop	{r4, pc}
 c3e0fce0:	c3e64b74 	.word	0xc3e64b74
-c3e0fce4:	c3e51404 	.word	0xc3e51404
-c3e0fce8:	c3e5142c 	.word	0xc3e5142c
+c3e0fce4:	c3e513fc 	.word	0xc3e513fc
+c3e0fce8:	c3e51424 	.word	0xc3e51424
 c3e0fcec:	c3e02050 	.word	0xc3e02050
 c3e0fcf0:	c3e02080 	.word	0xc3e02080
 c3e0fcf4:	c3e020a8 	.word	0xc3e020a8
@@ -17176,8 +17176,8 @@ c3e0fd1c:	e2833004 	add	r3, r3, #4
 c3e0fd20:	e1530002 	cmp	r3, r2
 c3e0fd24:	1afffff8 	bne	c3e0fd0c <malloc_bin_reloc+0x10>
 c3e0fd28:	e12fff1e 	bx	lr
-c3e0fd2c:	c3e53e38 	.word	0xc3e53e38
-c3e0fd30:	c3e5423c 	.word	0xc3e5423c
+c3e0fd2c:	c3e53e30 	.word	0xc3e53e30
+c3e0fd30:	c3e54234 	.word	0xc3e54234
 
 c3e0fd34 <malloc_usable_size>:
 c3e0fd34:	e3500000 	cmp	r0, #0
@@ -17227,7 +17227,7 @@ c3e0fdd8:	e5831004 	str	r1, [r3, #4]
 c3e0fddc:	e12fff1e 	bx	lr
 c3e0fde0:	e3a00000 	mov	r0, #0
 c3e0fde4:	e12fff1e 	bx	lr
-c3e0fde8:	c3e53e30 	.word	0xc3e53e30
+c3e0fde8:	c3e53e28 	.word	0xc3e53e28
 c3e0fdec:	c3e64b84 	.word	0xc3e64b84
 
 c3e0fdf0 <malloc_trim>:
@@ -17280,7 +17280,7 @@ c3e0fea4:	e5835008 	str	r5, [r3, #8]
 c3e0fea8:	e8bd8070 	pop	{r4, r5, r6, pc}
 c3e0feac:	e3a00000 	mov	r0, #0
 c3e0feb0:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e0feb4:	c3e53e30 	.word	0xc3e53e30
+c3e0feb4:	c3e53e28 	.word	0xc3e53e28
 c3e0feb8:	c3e64b84 	.word	0xc3e64b84
 
 c3e0febc <free>:
@@ -17417,9 +17417,9 @@ c3e100c0:	e5831008 	str	r1, [r3, #8]
 c3e100c4:	e581300c 	str	r3, [r1, #12]
 c3e100c8:	e5823008 	str	r3, [r2, #8]
 c3e100cc:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e100d0:	c3e53e30 	.word	0xc3e53e30
+c3e100d0:	c3e53e28 	.word	0xc3e53e28
 c3e100d4:	c3e64b84 	.word	0xc3e64b84
-c3e100d8:	c3e53e38 	.word	0xc3e53e38
+c3e100d8:	c3e53e30 	.word	0xc3e53e30
 c3e100dc:	00000554 	.word	0x00000554
 
 c3e100e0 <cfree>:
@@ -17797,7 +17797,7 @@ c3e106a0:	e2800008 	add	r0, r0, #8
 c3e106a4:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
 c3e106a8:	e3a00000 	mov	r0, #0
 c3e106ac:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
-c3e106b0:	c3e53e30 	.word	0xc3e53e30
+c3e106b0:	c3e53e28 	.word	0xc3e53e28
 c3e106b4:	00000554 	.word	0x00000554
 c3e106b8:	c3e64b84 	.word	0xc3e64b84
 
@@ -17940,7 +17940,7 @@ c3e108bc:	e3a01000 	mov	r1, #0
 c3e108c0:	eb0023d8 	bl	c3e19828 <memset>
 c3e108c4:	e1a00004 	mov	r0, r4
 c3e108c8:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e108cc:	c3e53e30 	.word	0xc3e53e30
+c3e108cc:	c3e53e28 	.word	0xc3e53e28
 
 c3e108d0 <realloc>:
 c3e108d0:	e3510000 	cmp	r1, #0
@@ -18222,7 +18222,7 @@ c3e10d1c:	e5832004 	str	r2, [r3, #4]
 c3e10d20:	e2847008 	add	r7, r4, #8
 c3e10d24:	e1a00007 	mov	r0, r7
 c3e10d28:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e10d2c:	c3e53e30 	.word	0xc3e53e30
+c3e10d2c:	c3e53e28 	.word	0xc3e53e28
 
 c3e10d30 <env_get_char_memory>:
 c3e10d30:	e5982018 	ldr	r2, [r8, #24]
@@ -18233,7 +18233,7 @@ c3e10d40:	059f3008 	ldreq	r3, [pc, #8]	; c3e10d50 <env_get_char_memory+0x20>
 c3e10d44:	17d00003 	ldrbne	r0, [r0, r3]
 c3e10d48:	07d30000 	ldrbeq	r0, [r3, r0]
 c3e10d4c:	e12fff1e 	bx	lr
-c3e10d50:	c3e54244 	.word	0xc3e54244
+c3e10d50:	c3e5423c 	.word	0xc3e5423c
 
 c3e10d54 <env_get_addr>:
 c3e10d54:	e5982018 	ldr	r2, [r8, #24]
@@ -18244,12 +18244,12 @@ c3e10d64:	059f3008 	ldreq	r3, [pc, #8]	; c3e10d74 <env_get_addr+0x20>
 c3e10d68:	10800003 	addne	r0, r0, r3
 c3e10d6c:	00830000 	addeq	r0, r3, r0
 c3e10d70:	e12fff1e 	bx	lr
-c3e10d74:	c3e54244 	.word	0xc3e54244
+c3e10d74:	c3e5423c 	.word	0xc3e5423c
 
 c3e10d78 <set_default_env>:
 c3e10d78:	e59f0000 	ldr	r0, [pc, #0]	; c3e10d80 <set_default_env+0x8>
 c3e10d7c:	eafffaf0 	b	c3e0f944 <puts>
-c3e10d80:	c3e51433 	.word	0xc3e51433
+c3e10d80:	c3e5142b 	.word	0xc3e5142b
 
 c3e10d84 <env_relocate>:
 c3e10d84:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -18273,7 +18273,7 @@ c3e10dc8:	e2822004 	add	r2, r2, #4
 c3e10dcc:	e5882014 	str	r2, [r8, #20]
 c3e10dd0:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
 c3e10dd4:	c3e71fbc 	.word	0xc3e71fbc
-c3e10dd8:	c3e51462 	.word	0xc3e51462
+c3e10dd8:	c3e5145a 	.word	0xc3e5145a
 
 c3e10ddc <env_get_char>:
 c3e10ddc:	e5981004 	ldr	r1, [r8, #4]
@@ -18287,7 +18287,7 @@ c3e10df8:	ea001c01 	b	c3e17e04 <env_get_char_spec>
 c3e10dfc:	e59f3004 	ldr	r3, [pc, #4]	; c3e10e08 <env_get_char+0x2c>
 c3e10e00:	e7d30000 	ldrb	r0, [r3, r0]
 c3e10e04:	e12fff1e 	bx	lr
-c3e10e08:	c3e54244 	.word	0xc3e54244
+c3e10e08:	c3e5423c 	.word	0xc3e5423c
 
 c3e10e0c <env_crc_update>:
 c3e10e0c:	e59f301c 	ldr	r3, [pc, #28]	; c3e10e30 <env_crc_update+0x24>
@@ -18488,16 +18488,16 @@ c3e110e4:	e3a020dd 	mov	r2, #221	; 0xdd
 c3e110e8:	e59f0024 	ldr	r0, [pc, #36]	; c3e11114 <flash_perror+0xd8>
 c3e110ec:	e59f1024 	ldr	r1, [pc, #36]	; c3e11118 <flash_perror+0xdc>
 c3e110f0:	eafffa25 	b	c3e0f98c <printf>
-c3e110f4:	c3e51495 	.word	0xc3e51495
-c3e110f8:	c3e514af 	.word	0xc3e514af
-c3e110fc:	c3e514c1 	.word	0xc3e514c1
-c3e11100:	c3e514e9 	.word	0xc3e514e9
-c3e11104:	c3e51502 	.word	0xc3e51502
-c3e11108:	c3e51533 	.word	0xc3e51533
-c3e1110c:	c3e5154c 	.word	0xc3e5154c
-c3e11110:	c3e51563 	.word	0xc3e51563
-c3e11114:	c3e51584 	.word	0xc3e51584
-c3e11118:	c3e51599 	.word	0xc3e51599
+c3e110f4:	c3e5148d 	.word	0xc3e5148d
+c3e110f8:	c3e514a7 	.word	0xc3e514a7
+c3e110fc:	c3e514b9 	.word	0xc3e514b9
+c3e11100:	c3e514e1 	.word	0xc3e514e1
+c3e11104:	c3e514fa 	.word	0xc3e514fa
+c3e11108:	c3e5152b 	.word	0xc3e5152b
+c3e1110c:	c3e51544 	.word	0xc3e51544
+c3e11110:	c3e5155b 	.word	0xc3e5155b
+c3e11114:	c3e5157c 	.word	0xc3e5157c
+c3e11118:	c3e51591 	.word	0xc3e51591
 
 c3e1111c <flash_write>:
 c3e1111c:	e92d4eff 	push	{r0, r1, r2, r3, r4, r5, r6, r7, r9, sl, fp, lr}
@@ -18660,7 +18660,7 @@ c3e11358 <indenter>:
 c3e11358:	e59f3004 	ldr	r3, [pc, #4]	; c3e11364 <indenter+0xc>
 c3e1135c:	e0600003 	rsb	r0, r0, r3
 c3e11360:	e12fff1e 	bx	lr
-c3e11364:	c3e5826c 	.word	0xc3e5826c
+c3e11364:	c3e58264 	.word	0xc3e58264
 
 c3e11368 <is_assignment>:
 c3e11368:	e2503000 	subs	r3, r0, #0
@@ -18684,7 +18684,7 @@ c3e113ac:	03a00001 	moveq	r0, #1
 c3e113b0:	e12fff1e 	bx	lr
 c3e113b4:	e3a00000 	mov	r0, #0
 c3e113b8:	e12fff1e 	bx	lr
-c3e113bc:	c3e58314 	.word	0xc3e58314
+c3e113bc:	c3e5830c 	.word	0xc3e5830c
 
 c3e113c0 <mapset>:
 c3e113c0:	e3a03000 	mov	r3, #0
@@ -18728,9 +18728,9 @@ c3e1144c:	1afffff7 	bne	c3e11430 <u_boot_hush_start+0x44>
 c3e11450:	e3a00000 	mov	r0, #0
 c3e11454:	e8bd8030 	pop	{r4, r5, pc}
 c3e11458:	c3e64bbc 	.word	0xc3e64bbc
-c3e1145c:	c3e515a1 	.word	0xc3e515a1
-c3e11460:	c3e515ae 	.word	0xc3e515ae
-c3e11464:	c3e58270 	.word	0xc3e58270
+c3e1145c:	c3e51599 	.word	0xc3e51599
+c3e11460:	c3e515a6 	.word	0xc3e515a6
+c3e11464:	c3e58268 	.word	0xc3e58268
 
 c3e11468 <file_get>:
 c3e11468:	e92d46f0 	push	{r4, r5, r6, r7, r9, sl, lr}
@@ -18844,15 +18844,15 @@ c3e11614:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
 c3e11618:	e3a00000 	mov	r0, #0
 c3e1161c:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
 c3e11620:	c3e649a0 	.word	0xc3e649a0
-c3e11624:	c3e515b3 	.word	0xc3e515b3
-c3e11628:	c3e53811 	.word	0xc3e53811
+c3e11624:	c3e515ab 	.word	0xc3e515ab
+c3e11628:	c3e53809 	.word	0xc3e53809
 c3e1162c:	c3e64bbc 	.word	0xc3e64bbc
 c3e11630:	c3e64ce0 	.word	0xc3e64ce0
 
 c3e11634 <syntax_err>:
 c3e11634:	e59f0000 	ldr	r0, [pc, #0]	; c3e1163c <syntax_err+0x8>
 c3e11638:	eafff8d3 	b	c3e0f98c <printf>
-c3e1163c:	c3e515bd 	.word	0xc3e515bd
+c3e1163c:	c3e515b5 	.word	0xc3e515b5
 
 c3e11640 <xmalloc>:
 c3e11640:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -18862,7 +18862,7 @@ c3e1164c:	149df004 	popne	{pc}		; (ldrne pc, [sp], #4)
 c3e11650:	e59f0004 	ldr	r0, [pc, #4]	; c3e1165c <xmalloc+0x1c>
 c3e11654:	ebfff8cc 	bl	c3e0f98c <printf>
 c3e11658:	eafffffe 	b	c3e11658 <xmalloc+0x18>
-c3e1165c:	c3e515cb 	.word	0xc3e515cb
+c3e1165c:	c3e515c3 	.word	0xc3e515c3
 
 c3e11660 <new_pipe>:
 c3e11660:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -18957,7 +18957,7 @@ c3e117a8:	149df004 	popne	{pc}		; (ldrne pc, [sp], #4)
 c3e117ac:	e59f0004 	ldr	r0, [pc, #4]	; c3e117b8 <xrealloc+0x1c>
 c3e117b0:	ebfff875 	bl	c3e0f98c <printf>
 c3e117b4:	eafffffe 	b	c3e117b4 <xrealloc+0x18>
-c3e117b8:	c3e515cb 	.word	0xc3e515cb
+c3e117b8:	c3e515c3 	.word	0xc3e515c3
 
 c3e117bc <done_command>:
 c3e117bc:	e92d4070 	push	{r4, r5, r6, lr}
@@ -19110,8 +19110,8 @@ c3e119ec:	e1550007 	cmp	r5, r7
 c3e119f0:	1affffbb 	bne	c3e118e4 <reserved_word+0x18>
 c3e119f4:	e3a00000 	mov	r0, #0
 c3e119f8:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e119fc:	c3e582f4 	.word	0xc3e582f4
-c3e11a00:	c3e58270 	.word	0xc3e58270
+c3e119fc:	c3e582ec 	.word	0xc3e582ec
+c3e11a00:	c3e58268 	.word	0xc3e58268
 
 c3e11a04 <done_word>:
 c3e11a04:	e92d46f0 	push	{r4, r5, r6, r7, r9, sl, lr}
@@ -19316,7 +19316,7 @@ c3e11d14:	11a00004 	movne	r0, r4
 c3e11d18:	01a00007 	moveq	r0, r7
 c3e11d1c:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
 c3e11d20:	c3e64bbc 	.word	0xc3e64bbc
-c3e11d24:	c3e515e9 	.word	0xc3e515e9
+c3e11d24:	c3e515e1 	.word	0xc3e515e1
 
 c3e11d28 <update_ifs_map>:
 c3e11d28:	e92d4010 	push	{r4, lr}
@@ -19342,11 +19342,11 @@ c3e11d74:	e3a01002 	mov	r1, #2
 c3e11d78:	e5940250 	ldr	r0, [r4, #592]	; 0x250
 c3e11d7c:	e8bd4010 	pop	{r4, lr}
 c3e11d80:	eafffd8e 	b	c3e113c0 <mapset>
-c3e11d84:	c3e515ec 	.word	0xc3e515ec
+c3e11d84:	c3e515e4 	.word	0xc3e515e4
 c3e11d88:	c3e64bbc 	.word	0xc3e64bbc
-c3e11d8c:	c3e515f0 	.word	0xc3e515f0
-c3e11d90:	c3e515f4 	.word	0xc3e515f4
-c3e11d94:	c3e515f9 	.word	0xc3e515f9
+c3e11d8c:	c3e515e8 	.word	0xc3e515e8
+c3e11d90:	c3e515ec 	.word	0xc3e515ec
+c3e11d94:	c3e515f1 	.word	0xc3e515f1
 
 c3e11d98 <b_addchr>:
 c3e11d98:	e92d4070 	push	{r4, r5, r6, lr}
@@ -19399,7 +19399,7 @@ c3e11e48:	e1a00004 	mov	r0, r4
 c3e11e4c:	e1a01005 	mov	r1, r5
 c3e11e50:	e8bd4030 	pop	{r4, r5, lr}
 c3e11e54:	eaffffcf 	b	c3e11d98 <b_addchr>
-c3e11e58:	c3e515fe 	.word	0xc3e515fe
+c3e11e58:	c3e515f6 	.word	0xc3e515f6
 
 c3e11e5c <T.120>:
 c3e11e5c:	e92d40f0 	push	{r4, r5, r6, r7, lr}
@@ -19491,10 +19491,10 @@ c3e11fb0:	e2507000 	subs	r7, r0, #0
 c3e11fb4:	1affffe3 	bne	c3e11f48 <T.120+0xec>
 c3e11fb8:	e3e06000 	mvn	r6, #0
 c3e11fbc:	eafffff5 	b	c3e11f98 <T.120+0x13c>
-c3e11fc0:	c3e58314 	.word	0xc3e58314
-c3e11fc4:	c3e51603 	.word	0xc3e51603
+c3e11fc0:	c3e5830c 	.word	0xc3e5830c
+c3e11fc4:	c3e515fb 	.word	0xc3e515fb
 c3e11fc8:	c3e64bbc 	.word	0xc3e64bbc
-c3e11fcc:	c3e51646 	.word	0xc3e51646
+c3e11fcc:	c3e5163e 	.word	0xc3e5163e
 
 c3e11fd0 <run_list_real>:
 c3e11fd0:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -19985,12 +19985,12 @@ c3e12760:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
 c3e12764:	e3e0a000 	mvn	sl, #0
 c3e12768:	eaffffd7 	b	c3e126cc <run_list_real+0x6fc>
 c3e1276c:	c3e64bbc 	.word	0xc3e64bbc
-c3e12770:	c3e4dcc2 	.word	0xc3e4dcc2
-c3e12774:	c3e4d312 	.word	0xc3e4d312
-c3e12778:	c3e5165c 	.word	0xc3e5165c
-c3e1277c:	c3e4dace 	.word	0xc3e4dace
+c3e12770:	c3e4dcba 	.word	0xc3e4dcba
+c3e12774:	c3e4d30a 	.word	0xc3e4d30a
+c3e12778:	c3e51654 	.word	0xc3e51654
+c3e1277c:	c3e4dac6 	.word	0xc3e4dac6
 c3e12780:	c3e0a038 	.word	0xc3e0a038
-c3e12784:	c3e4da91 	.word	0xc3e4da91
+c3e12784:	c3e4da89 	.word	0xc3e4da89
 
 c3e12788 <parse_stream_outer>:
 c3e12788:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -20359,12 +20359,12 @@ c3e12d30:	e59d7010 	ldr	r7, [sp, #16]
 c3e12d34:	e3570000 	cmp	r7, #0
 c3e12d38:	1affffda 	bne	c3e12ca8 <parse_stream_outer+0x520>
 c3e12d3c:	eaffffba 	b	c3e12c2c <parse_stream_outer+0x4a4>
-c3e12d40:	c3e51694 	.word	0xc3e51694
+c3e12d40:	c3e5168c 	.word	0xc3e5168c
 c3e12d44:	c3e64bbc 	.word	0xc3e64bbc
-c3e12d48:	c3e58314 	.word	0xc3e58314
+c3e12d48:	c3e5830c 	.word	0xc3e5830c
 c3e12d4c:	c3e11320 	.word	0xc3e11320
-c3e12d50:	c3e51699 	.word	0xc3e51699
-c3e12d54:	c3e516c2 	.word	0xc3e516c2
+c3e12d50:	c3e51691 	.word	0xc3e51691
+c3e12d54:	c3e516ba 	.word	0xc3e516ba
 
 c3e12d58 <parse_file_outer>:
 c3e12d58:	e92d401f 	push	{r0, r1, r2, r3, r4, lr}
@@ -20436,7 +20436,7 @@ c3e12e54:	e3a04001 	mov	r4, #1
 c3e12e58:	e1a00004 	mov	r0, r4
 c3e12e5c:	e28dd014 	add	sp, sp, #20
 c3e12e60:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e12e64:	c3e515f2 	.word	0xc3e515f2
+c3e12e64:	c3e515ea 	.word	0xc3e515ea
 
 c3e12e68 <GetHandleSize>:
 c3e12e68:	e5900004 	ldr	r0, [r0, #4]
@@ -21033,7 +21033,7 @@ c3e136f0:	e3a00000 	mov	r0, #0
 c3e136f4:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
 c3e136f8:	c3e70de4 	.word	0xc3e70de4
 c3e136fc:	c3e7169c 	.word	0xc3e7169c
-c3e13700:	c3e516f9 	.word	0xc3e516f9
+c3e13700:	c3e516f1 	.word	0xc3e516f1
 
 c3e13704 <usb_alloc_new_device>:
 c3e13704:	e59f3088 	ldr	r3, [pc, #136]	; c3e13794 <usb_alloc_new_device+0x90>
@@ -21073,7 +21073,7 @@ c3e13788:	e0200594 	mla	r0, r4, r5, r0
 c3e1378c:	e58239b8 	str	r3, [r2, #2488]	; 0x9b8
 c3e13790:	e8bd8030 	pop	{r4, r5, pc}
 c3e13794:	c3e70de4 	.word	0xc3e70de4
-c3e13798:	c3e5171a 	.word	0xc3e5171a
+c3e13798:	c3e51712 	.word	0xc3e51712
 c3e1379c:	00000644 	.word	0x00000644
 c3e137a0:	c3e64e14 	.word	0xc3e64e14
 
@@ -21161,7 +21161,7 @@ c3e138e0:	e1520003 	cmp	r2, r3
 c3e138e4:	baffffc6 	blt	c3e13804 <usb_parse_config+0x60>
 c3e138e8:	e3a00001 	mov	r0, #1
 c3e138ec:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e138f0:	c3e5173f 	.word	0xc3e5173f
+c3e138f0:	c3e51737 	.word	0xc3e51737
 
 c3e138f4 <usb_submit_int_msg>:
 c3e138f4:	ea0025a2 	b	c3e1cf84 <submit_int_msg>
@@ -21526,7 +21526,7 @@ c3e13e2c:	e3500001 	cmp	r0, #1
 c3e13e30:	ca000000 	bgt	c3e13e38 <usb_string_sub+0xf8>
 c3e13e34:	e3e00000 	mvn	r0, #0
 c3e13e38:	e8bd80f8 	pop	{r3, r4, r5, r6, r7, pc}
-c3e13e3c:	c3e58314 	.word	0xc3e58314
+c3e13e3c:	c3e5830c 	.word	0xc3e5830c
 
 c3e13e40 <usb_string>:
 c3e13e40:	e3520000 	cmp	r2, #0
@@ -21788,7 +21788,7 @@ c3e1420c:	ebfffde7 	bl	c3e139b0 <usb_control_msg>
 c3e14210:	e0000fc0 	and	r0, r0, r0, asr #31
 c3e14214:	e28dd014 	add	sp, sp, #20
 c3e14218:	e8bd8030 	pop	{r4, r5, pc}
-c3e1421c:	c3e5175f 	.word	0xc3e5175f
+c3e1421c:	c3e51757 	.word	0xc3e51757
 
 c3e14220 <usb_set_address>:
 c3e14220:	e92d401f 	push	{r0, r1, r2, r3, r4, lr}
@@ -21876,8 +21876,8 @@ c3e14354:	e3a01002 	mov	r1, #2
 c3e14358:	e58dc000 	str	ip, [sp]
 c3e1435c:	ebffffc0 	bl	c3e14264 <usb_get_descriptor>
 c3e14360:	e8bd80f8 	pop	{r3, r4, r5, r6, r7, pc}
-c3e14364:	c3e5177e 	.word	0xc3e5177e
-c3e14368:	c3e517a3 	.word	0xc3e517a3
+c3e14364:	c3e51776 	.word	0xc3e51776
+c3e14368:	c3e5179b 	.word	0xc3e5179b
 
 c3e1436c <usb_clear_halt>:
 c3e1436c:	e92d40f0 	push	{r4, r5, r6, r7, lr}
@@ -22020,7 +22020,7 @@ c3e1457c:	e1a01005 	mov	r1, r5
 c3e14580:	e3a02001 	mov	r2, #1
 c3e14584:	ebfffd84 	bl	c3e13b9c <usb_clear_port_feature>
 c3e14588:	e8bd84fc 	pop	{r2, r3, r4, r5, r6, r7, sl, pc}
-c3e1458c:	c3e517d6 	.word	0xc3e517d6
+c3e1458c:	c3e517ce 	.word	0xc3e517ce
 
 c3e14590 <usb_hub_configure>:
 c3e14590:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -22323,11 +22323,11 @@ c3e14a20:	ebffff64 	bl	c3e147b8 <usb_hub_probe>
 c3e14a24:	e3a00000 	mov	r0, #0
 c3e14a28:	e28ddf81 	add	sp, sp, #516	; 0x204
 c3e14a2c:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e14a30:	c3e517ee 	.word	0xc3e517ee
-c3e14a34:	c3e51828 	.word	0xc3e51828
-c3e14a38:	c3e51861 	.word	0xc3e51861
-c3e14a3c:	c3e5188d 	.word	0xc3e5188d
-c3e14a40:	c3e518c5 	.word	0xc3e518c5
+c3e14a30:	c3e517e6 	.word	0xc3e517e6
+c3e14a34:	c3e51820 	.word	0xc3e51820
+c3e14a38:	c3e51859 	.word	0xc3e51859
+c3e14a3c:	c3e51885 	.word	0xc3e51885
+c3e14a40:	c3e518bd 	.word	0xc3e518bd
 
 c3e14a44 <usb_scan_devices>:
 c3e14a44:	e92d4030 	push	{r4, r5, lr}
@@ -22354,7 +22354,7 @@ c3e14a94:	c3e64e18 	.word	0xc3e64e18
 c3e14a98:	c3e71698 	.word	0xc3e71698
 c3e14a9c:	00000644 	.word	0x00000644
 c3e14aa0:	c3e70de4 	.word	0xc3e70de4
-c3e14aa4:	c3e518fd 	.word	0xc3e518fd
+c3e14aa4:	c3e518f5 	.word	0xc3e518f5
 
 c3e14aa8 <usb_init>:
 c3e14aa8:	e59f3060 	ldr	r3, [pc, #96]	; c3e14b10 <usb_init+0x68>
@@ -22385,9 +22385,9 @@ c3e14b08:	e5c459bc 	strb	r5, [r4, #2492]	; 0x9bc
 c3e14b0c:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
 c3e14b10:	c3e64e14 	.word	0xc3e64e14
 c3e14b14:	c3e70de4 	.word	0xc3e70de4
-c3e14b18:	c3e51915 	.word	0xc3e51915
-c3e14b1c:	c3e5191d 	.word	0xc3e5191d
-c3e14b20:	c3e5193a 	.word	0xc3e5193a
+c3e14b18:	c3e5190d 	.word	0xc3e5190d
+c3e14b1c:	c3e51915 	.word	0xc3e51915
+c3e14b20:	c3e51932 	.word	0xc3e51932
 
 c3e14b24 <parse_num>:
 c3e14b24:	e92d44f0 	push	{r4, r5, r6, r7, sl, lr}
@@ -22471,8 +22471,8 @@ c3e14c50:	959f3008 	ldrls	r3, [pc, #8]	; c3e14c60 <xyzModem_error+0x18>
 c3e14c54:	859f0008 	ldrhi	r0, [pc, #8]	; c3e14c64 <xyzModem_error+0x1c>
 c3e14c58:	97930100 	ldrls	r0, [r3, r0, lsl #2]
 c3e14c5c:	e12fff1e 	bx	lr
-c3e14c60:	c3e2a28c 	.word	0xc3e2a28c
-c3e14c64:	c3e5195e 	.word	0xc3e5195e
+c3e14c60:	c3e2a284 	.word	0xc3e2a284
+c3e14c64:	c3e51956 	.word	0xc3e51956
 
 c3e14c68 <xyzModem_stream_close>:
 c3e14c68:	e59f2038 	ldr	r2, [pc, #56]	; c3e14ca8 <xyzModem_stream_close+0x40>
@@ -22492,9 +22492,9 @@ c3e14c9c:	e58dc004 	str	ip, [sp, #4]
 c3e14ca0:	ebffeb39 	bl	c3e0f98c <printf>
 c3e14ca4:	e8bd800c 	pop	{r2, r3, pc}
 c3e14ca8:	c3e717b0 	.word	0xc3e717b0
-c3e14cac:	c3e5196c 	.word	0xc3e5196c
-c3e14cb0:	c3e51972 	.word	0xc3e51972
-c3e14cb4:	c3e51976 	.word	0xc3e51976
+c3e14cac:	c3e51964 	.word	0xc3e51964
+c3e14cb0:	c3e5196a 	.word	0xc3e5196a
+c3e14cb4:	c3e5196e 	.word	0xc3e5196e
 
 c3e14cb8 <CYGACC_COMM_IF_PUTC>:
 c3e14cb8:	e20100ff 	and	r0, r1, #255	; 0xff
@@ -23006,7 +23006,7 @@ c3e1546c:	e3e00000 	mvn	r0, #0
 c3e15470:	e58a4000 	str	r4, [sl]
 c3e15474:	e8bd84f8 	pop	{r3, r4, r5, r6, r7, sl, pc}
 c3e15478:	c3e717b0 	.word	0xc3e717b0
-c3e1547c:	c3e4d312 	.word	0xc3e4d312
+c3e1547c:	c3e4d30a 	.word	0xc3e4d30a
 c3e15480:	c3e71be4 	.word	0xc3e71be4
 c3e15484:	0007a120 	.word	0x0007a120
 
@@ -23214,20 +23214,20 @@ c3e157a4:	e3e00000 	mvn	r0, #0
 c3e157a8:	e28dd06c 	add	sp, sp, #108	; 0x6c
 c3e157ac:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
 c3e157b0:	c3e71bec 	.word	0xc3e71bec
-c3e157b4:	c3e508be 	.word	0xc3e508be
+c3e157b4:	c3e508b6 	.word	0xc3e508b6
 c3e157b8:	c3e71c0c 	.word	0xc3e71c0c
-c3e157bc:	c3e51a51 	.word	0xc3e51a51
-c3e157c0:	c3e51a41 	.word	0xc3e51a41
-c3e157c4:	c3e51a49 	.word	0xc3e51a49
-c3e157c8:	c3e50824 	.word	0xc3e50824
-c3e157cc:	c3e51a67 	.word	0xc3e51a67
-c3e157d0:	c3e50871 	.word	0xc3e50871
-c3e157d4:	c3e527c8 	.word	0xc3e527c8
-c3e157d8:	c3e51a82 	.word	0xc3e51a82
-c3e157dc:	c3e51aad 	.word	0xc3e51aad
-c3e157e0:	c3e51ac7 	.word	0xc3e51ac7
-c3e157e4:	c3e51add 	.word	0xc3e51add
-c3e157e8:	c3e4da91 	.word	0xc3e4da91
+c3e157bc:	c3e51a49 	.word	0xc3e51a49
+c3e157c0:	c3e51a39 	.word	0xc3e51a39
+c3e157c4:	c3e51a41 	.word	0xc3e51a41
+c3e157c8:	c3e5081c 	.word	0xc3e5081c
+c3e157cc:	c3e51a5f 	.word	0xc3e51a5f
+c3e157d0:	c3e50869 	.word	0xc3e50869
+c3e157d4:	c3e527c0 	.word	0xc3e527c0
+c3e157d8:	c3e51a7a 	.word	0xc3e51a7a
+c3e157dc:	c3e51aa5 	.word	0xc3e51aa5
+c3e157e0:	c3e51abf 	.word	0xc3e51abf
+c3e157e4:	c3e51ad5 	.word	0xc3e51ad5
+c3e157e8:	c3e4da89 	.word	0xc3e4da89
 
 c3e157ec <init_raw_area_table>:
 c3e157ec:	e92d40f0 	push	{r4, r5, r6, r7, lr}
@@ -23325,12 +23325,12 @@ c3e15958:	1afffff9 	bne	c3e15944 <init_raw_area_table+0x158>
 c3e1595c:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
 c3e15960:	c3e71bec 	.word	0xc3e71bec
 c3e15964:	24564236 	.word	0x24564236
-c3e15968:	c3e51af0 	.word	0xc3e51af0
-c3e1596c:	c3e51b02 	.word	0xc3e51b02
-c3e15970:	c3e51b10 	.word	0xc3e51b10
-c3e15974:	c3e4e13d 	.word	0xc3e4e13d
-c3e15978:	c3e4df9c 	.word	0xc3e4df9c
-c3e1597c:	c3e51b1c 	.word	0xc3e51b1c
+c3e15968:	c3e51ae8 	.word	0xc3e51ae8
+c3e1596c:	c3e51afa 	.word	0xc3e51afa
+c3e15970:	c3e51b08 	.word	0xc3e51b08
+c3e15974:	c3e4e135 	.word	0xc3e4e135
+c3e15978:	c3e4df94 	.word	0xc3e4df94
+c3e1597c:	c3e51b14 	.word	0xc3e51b14
 
 c3e15980 <reset_handler>:
 c3e15980:	e59f3010 	ldr	r3, [pc, #16]	; c3e15998 <reset_handler+0x18>
@@ -23435,16 +23435,16 @@ c3e15ae8:	e593300c 	ldr	r3, [r3, #12]
 c3e15aec:	e1550003 	cmp	r5, r3
 c3e15af0:	3affffd9 	bcc	c3e15a5c <fastboot_flash_dump_ptn+0x18>
 c3e15af4:	e8bd8030 	pop	{r4, r5, pc}
-c3e15af8:	c3e51d40 	.word	0xc3e51d40
+c3e15af8:	c3e51d38 	.word	0xc3e51d38
 c3e15afc:	c3e71dfc 	.word	0xc3e71dfc
-c3e15b00:	c3e51d5f 	.word	0xc3e51d5f
-c3e15b04:	c3e51d71 	.word	0xc3e51d71
-c3e15b08:	c3e51d7d 	.word	0xc3e51d7d
-c3e15b0c:	c3e51d88 	.word	0xc3e51d88
-c3e15b10:	c3e51d99 	.word	0xc3e51d99
-c3e15b14:	c3e51da2 	.word	0xc3e51da2
-c3e15b18:	c3e51dab 	.word	0xc3e51dab
-c3e15b1c:	c3e515f2 	.word	0xc3e515f2
+c3e15b00:	c3e51d57 	.word	0xc3e51d57
+c3e15b04:	c3e51d69 	.word	0xc3e51d69
+c3e15b08:	c3e51d75 	.word	0xc3e51d75
+c3e15b0c:	c3e51d80 	.word	0xc3e51d80
+c3e15b10:	c3e51d91 	.word	0xc3e51d91
+c3e15b14:	c3e51d9a 	.word	0xc3e51d9a
+c3e15b18:	c3e51da3 	.word	0xc3e51da3
+c3e15b1c:	c3e515ea 	.word	0xc3e515ea
 c3e15b20:	c3e71dec 	.word	0xc3e71dec
 
 c3e15b24 <fastboot_flash_add_ptn>:
@@ -23575,15 +23575,15 @@ c3e15d08:	ebfffdde 	bl	c3e15488 <do_movi>
 c3e15d0c:	e2600001 	rsb	r0, r0, #1
 c3e15d10:	e28dd0b8 	add	sp, sp, #184	; 0xb8
 c3e15d14:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
-c3e15d18:	c3e50871 	.word	0xc3e50871
-c3e15d1c:	c3e51dcf 	.word	0xc3e51dcf
-c3e15d20:	c3e51e01 	.word	0xc3e51e01
-c3e15d24:	c3e51e10 	.word	0xc3e51e10
-c3e15d28:	c3e5359c 	.word	0xc3e5359c
-c3e15d2c:	c3e51f76 	.word	0xc3e51f76
-c3e15d30:	c3e4e13d 	.word	0xc3e4e13d
-c3e15d34:	c3e521bd 	.word	0xc3e521bd
-c3e15d38:	c3e51e17 	.word	0xc3e51e17
+c3e15d18:	c3e50869 	.word	0xc3e50869
+c3e15d1c:	c3e51dc7 	.word	0xc3e51dc7
+c3e15d20:	c3e51df9 	.word	0xc3e51df9
+c3e15d24:	c3e51e08 	.word	0xc3e51e08
+c3e15d28:	c3e53594 	.word	0xc3e53594
+c3e15d2c:	c3e51f6e 	.word	0xc3e51f6e
+c3e15d30:	c3e4e135 	.word	0xc3e4e135
+c3e15d34:	c3e521b5 	.word	0xc3e521b5
+c3e15d38:	c3e51e0f 	.word	0xc3e51e0f
 
 c3e15d3c <set_partition_table>:
 c3e15d3c:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -23757,17 +23757,17 @@ c3e15fd8:	e3e00000 	mvn	r0, #0
 c3e15fdc:	e28dd01c 	add	sp, sp, #28
 c3e15fe0:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
 c3e15fe4:	c3e71dec 	.word	0xc3e71dec
-c3e15fe8:	c3e51f76 	.word	0xc3e51f76
-c3e15fec:	c3e4df9c 	.word	0xc3e4df9c
-c3e15ff0:	c3e521bd 	.word	0xc3e521bd
-c3e15ff4:	c3e4db54 	.word	0xc3e4db54
-c3e15ff8:	c3e51e1e 	.word	0xc3e51e1e
-c3e15ffc:	c3e508f3 	.word	0xc3e508f3
-c3e16000:	c3e4ea40 	.word	0xc3e4ea40
-c3e16004:	c3e51e25 	.word	0xc3e51e25
+c3e15fe8:	c3e51f6e 	.word	0xc3e51f6e
+c3e15fec:	c3e4df94 	.word	0xc3e4df94
+c3e15ff0:	c3e521b5 	.word	0xc3e521b5
+c3e15ff4:	c3e4db4c 	.word	0xc3e4db4c
+c3e15ff8:	c3e51e16 	.word	0xc3e51e16
+c3e15ffc:	c3e508eb 	.word	0xc3e508eb
+c3e16000:	c3e4ea38 	.word	0xc3e4ea38
+c3e16004:	c3e51e1d 	.word	0xc3e51e1d
 c3e16008:	008a2be2 	.word	0x008a2be2
-c3e1600c:	c3e51e2e 	.word	0xc3e51e2e
-c3e16010:	c3e51e51 	.word	0xc3e51e51
+c3e1600c:	c3e51e26 	.word	0xc3e51e26
+c3e16010:	c3e51e49 	.word	0xc3e51e49
 
 c3e16014 <do_fastboot>:
 c3e16014:	e92d4ef7 	push	{r0, r1, r2, r4, r5, r6, r7, r9, sl, fp, lr}
@@ -23874,12 +23874,12 @@ c3e161a4:	e3540000 	cmp	r4, #0
 c3e161a8:	1affffbb 	bne	c3e1609c <do_fastboot+0x88>
 c3e161ac:	e1a0000a 	mov	r0, sl
 c3e161b0:	e8bd8efe 	pop	{r1, r2, r3, r4, r5, r6, r7, r9, sl, fp, pc}
-c3e161b4:	c3e51e7e 	.word	0xc3e51e7e
-c3e161b8:	c3e582f4 	.word	0xc3e582f4
-c3e161bc:	c3e51ea7 	.word	0xc3e51ea7
-c3e161c0:	c3e51ebf 	.word	0xc3e51ebf
-c3e161c4:	c3e51ed0 	.word	0xc3e51ed0
-c3e161c8:	c3e51eee 	.word	0xc3e51eee
+c3e161b4:	c3e51e76 	.word	0xc3e51e76
+c3e161b8:	c3e582ec 	.word	0xc3e582ec
+c3e161bc:	c3e51e9f 	.word	0xc3e51e9f
+c3e161c0:	c3e51eb7 	.word	0xc3e51eb7
+c3e161c4:	c3e51ec8 	.word	0xc3e51ec8
+c3e161c8:	c3e51ee6 	.word	0xc3e51ee6
 
 c3e161cc <T.88>:
 c3e161cc:	e59f3224 	ldr	r3, [pc, #548]	; c3e163f8 <T.88+0x22c>
@@ -24021,9 +24021,9 @@ c3e163e8:	e1a01007 	mov	r1, r7
 c3e163ec:	e1a02004 	mov	r2, r4
 c3e163f0:	e1a0500c 	mov	r5, ip
 c3e163f4:	eaffffe3 	b	c3e16388 <T.88+0x1bc>
-c3e163f8:	c3e582f4 	.word	0xc3e582f4
+c3e163f8:	c3e582ec 	.word	0xc3e582ec
 c3e163fc:	c3e71dec 	.word	0xc3e71dec
-c3e16400:	c3e51f0c 	.word	0xc3e51f0c
+c3e16400:	c3e51f04 	.word	0xc3e51f04
 
 c3e16404 <rx_handler>:
 c3e16404:	e92d46f0 	push	{r4, r5, r6, r7, r9, sl, lr}
@@ -24597,77 +24597,77 @@ c3e16ce0:	e1a00005 	mov	r0, r5
 c3e16ce4:	e28dd0d0 	add	sp, sp, #208	; 0xd0
 c3e16ce8:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
 c3e16cec:	c3e71dec 	.word	0xc3e71dec
-c3e16cf0:	c3e582f4 	.word	0xc3e582f4
-c3e16cf4:	c3e5086b 	.word	0xc3e5086b
-c3e16cf8:	c3e51f1d 	.word	0xc3e51f1d
-c3e16cfc:	c3e51f22 	.word	0xc3e51f22
-c3e16d00:	c3e4fe1f 	.word	0xc3e4fe1f
-c3e16d04:	c3e4d2a1 	.word	0xc3e4d2a1
-c3e16d08:	c3e515f2 	.word	0xc3e515f2
+c3e16cf0:	c3e582ec 	.word	0xc3e582ec
+c3e16cf4:	c3e50863 	.word	0xc3e50863
+c3e16cf8:	c3e51f15 	.word	0xc3e51f15
+c3e16cfc:	c3e51f1a 	.word	0xc3e51f1a
+c3e16d00:	c3e4fe17 	.word	0xc3e4fe17
+c3e16d04:	c3e4d299 	.word	0xc3e4d299
+c3e16d08:	c3e515ea 	.word	0xc3e515ea
 c3e16d0c:	002e8b57 	.word	0x002e8b57
-c3e16d10:	c3e51f45 	.word	0xc3e51f45
-c3e16d14:	c3e51f64 	.word	0xc3e51f64
-c3e16d18:	c3e4ce6a 	.word	0xc3e4ce6a
-c3e16d1c:	c3e51f6e 	.word	0xc3e51f6e
-c3e16d20:	c3e51f75 	.word	0xc3e51f75
-c3e16d24:	c3e51f81 	.word	0xc3e51f81
-c3e16d28:	c3e51f91 	.word	0xc3e51f91
-c3e16d2c:	c3e5111d 	.word	0xc3e5111d
-c3e16d30:	c3e51f99 	.word	0xc3e51f99
-c3e16d34:	c3e51f9d 	.word	0xc3e51f9d
-c3e16d38:	c3e51fa5 	.word	0xc3e51fa5
-c3e16d3c:	c3e51fae 	.word	0xc3e51fae
-c3e16d40:	c3e4d6fe 	.word	0xc3e4d6fe
-c3e16d44:	c3e51fbb 	.word	0xc3e51fbb
-c3e16d48:	c3e51fdf 	.word	0xc3e51fdf
+c3e16d10:	c3e51f3d 	.word	0xc3e51f3d
+c3e16d14:	c3e51f5c 	.word	0xc3e51f5c
+c3e16d18:	c3e4ce62 	.word	0xc3e4ce62
+c3e16d1c:	c3e51f66 	.word	0xc3e51f66
+c3e16d20:	c3e51f6d 	.word	0xc3e51f6d
+c3e16d24:	c3e51f79 	.word	0xc3e51f79
+c3e16d28:	c3e51f89 	.word	0xc3e51f89
+c3e16d2c:	c3e51115 	.word	0xc3e51115
+c3e16d30:	c3e51f91 	.word	0xc3e51f91
+c3e16d34:	c3e51f95 	.word	0xc3e51f95
+c3e16d38:	c3e51f9d 	.word	0xc3e51f9d
+c3e16d3c:	c3e51fa6 	.word	0xc3e51fa6
+c3e16d40:	c3e4d6f6 	.word	0xc3e4d6f6
+c3e16d44:	c3e51fb3 	.word	0xc3e51fb3
+c3e16d48:	c3e51fd7 	.word	0xc3e51fd7
 c3e16d4c:	007fffd4 	.word	0x007fffd4
-c3e16d50:	c3e51e25 	.word	0xc3e51e25
-c3e16d54:	c3e51ff9 	.word	0xc3e51ff9
-c3e16d58:	c3e4ea40 	.word	0xc3e4ea40
-c3e16d5c:	c3e5200c 	.word	0xc3e5200c
-c3e16d60:	c3e5201f 	.word	0xc3e5201f
-c3e16d64:	c3e52023 	.word	0xc3e52023
-c3e16d68:	c3e52053 	.word	0xc3e52053
-c3e16d6c:	c3e52035 	.word	0xc3e52035
-c3e16d70:	c3e5206a 	.word	0xc3e5206a
-c3e16d74:	c3e52074 	.word	0xc3e52074
-c3e16d78:	c3e52093 	.word	0xc3e52093
-c3e16d7c:	c3e520a9 	.word	0xc3e520a9
-c3e16d80:	c3e520bc 	.word	0xc3e520bc
-c3e16d84:	c3e4e13f 	.word	0xc3e4e13f
-c3e16d88:	c3e4e699 	.word	0xc3e4e699
-c3e16d8c:	c3e520c5 	.word	0xc3e520c5
-c3e16d90:	c3e520d8 	.word	0xc3e520d8
-c3e16d94:	c3e5359c 	.word	0xc3e5359c
+c3e16d50:	c3e51e1d 	.word	0xc3e51e1d
+c3e16d54:	c3e51ff1 	.word	0xc3e51ff1
+c3e16d58:	c3e4ea38 	.word	0xc3e4ea38
+c3e16d5c:	c3e52004 	.word	0xc3e52004
+c3e16d60:	c3e52017 	.word	0xc3e52017
+c3e16d64:	c3e5201b 	.word	0xc3e5201b
+c3e16d68:	c3e5204b 	.word	0xc3e5204b
+c3e16d6c:	c3e5202d 	.word	0xc3e5202d
+c3e16d70:	c3e52062 	.word	0xc3e52062
+c3e16d74:	c3e5206c 	.word	0xc3e5206c
+c3e16d78:	c3e5208b 	.word	0xc3e5208b
+c3e16d7c:	c3e520a1 	.word	0xc3e520a1
+c3e16d80:	c3e520b4 	.word	0xc3e520b4
+c3e16d84:	c3e4e137 	.word	0xc3e4e137
+c3e16d88:	c3e4e691 	.word	0xc3e4e691
+c3e16d8c:	c3e520bd 	.word	0xc3e520bd
+c3e16d90:	c3e520d0 	.word	0xc3e520d0
+c3e16d94:	c3e53594 	.word	0xc3e53594
 c3e16d98:	c0008000 	.word	0xc0008000
 c3e16d9c:	30a00000 	.word	0x30a00000
 c3e16da0:	000f4240 	.word	0x000f4240
 c3e16da4:	27051956 	.word	0x27051956
-c3e16da8:	c3e520ec 	.word	0xc3e520ec
-c3e16dac:	c3e50c8f 	.word	0xc3e50c8f
-c3e16db0:	c3e4e60e 	.word	0xc3e4e60e
-c3e16db4:	c3e520fe 	.word	0xc3e520fe
-c3e16db8:	c3e52113 	.word	0xc3e52113
-c3e16dbc:	c3e5212c 	.word	0xc3e5212c
-c3e16dc0:	c3e52148 	.word	0xc3e52148
-c3e16dc4:	c3e5215f 	.word	0xc3e5215f
-c3e16dc8:	c3e52166 	.word	0xc3e52166
+c3e16da8:	c3e520e4 	.word	0xc3e520e4
+c3e16dac:	c3e50c87 	.word	0xc3e50c87
+c3e16db0:	c3e4e606 	.word	0xc3e4e606
+c3e16db4:	c3e520f6 	.word	0xc3e520f6
+c3e16db8:	c3e5210b 	.word	0xc3e5210b
+c3e16dbc:	c3e52124 	.word	0xc3e52124
+c3e16dc0:	c3e52140 	.word	0xc3e52140
+c3e16dc4:	c3e52157 	.word	0xc3e52157
+c3e16dc8:	c3e5215e 	.word	0xc3e5215e
 c3e16dcc:	008b4500 	.word	0x008b4500
-c3e16dd0:	c3e4df9c 	.word	0xc3e4df9c
-c3e16dd4:	c3e521bd 	.word	0xc3e521bd
-c3e16dd8:	c3e521b6 	.word	0xc3e521b6
-c3e16ddc:	c3e521a0 	.word	0xc3e521a0
-c3e16de0:	c3e521c5 	.word	0xc3e521c5
-c3e16de4:	c3e521e3 	.word	0xc3e521e3
-c3e16de8:	c3e51fc2 	.word	0xc3e51fc2
-c3e16dec:	c3e5217e 	.word	0xc3e5217e
-c3e16df0:	c3e521fb 	.word	0xc3e521fb
-c3e16df4:	c3e5229e 	.word	0xc3e5229e
-c3e16df8:	c3e52229 	.word	0xc3e52229
-c3e16dfc:	c3e52209 	.word	0xc3e52209
-c3e16e00:	c3e52222 	.word	0xc3e52222
-c3e16e04:	c3e52244 	.word	0xc3e52244
-c3e16e08:	c3e52248 	.word	0xc3e52248
+c3e16dd0:	c3e4df94 	.word	0xc3e4df94
+c3e16dd4:	c3e521b5 	.word	0xc3e521b5
+c3e16dd8:	c3e521ae 	.word	0xc3e521ae
+c3e16ddc:	c3e52198 	.word	0xc3e52198
+c3e16de0:	c3e521bd 	.word	0xc3e521bd
+c3e16de4:	c3e521db 	.word	0xc3e521db
+c3e16de8:	c3e51fba 	.word	0xc3e51fba
+c3e16dec:	c3e52176 	.word	0xc3e52176
+c3e16df0:	c3e521f3 	.word	0xc3e521f3
+c3e16df4:	c3e52296 	.word	0xc3e52296
+c3e16df8:	c3e52221 	.word	0xc3e52221
+c3e16dfc:	c3e52201 	.word	0xc3e52201
+c3e16e00:	c3e5221a 	.word	0xc3e5221a
+c3e16e04:	c3e5223c 	.word	0xc3e5223c
+c3e16e08:	c3e52240 	.word	0xc3e52240
 
 c3e16e0c <update_from_sd>:
 c3e16e0c:	e92d40f0 	push	{r4, r5, r6, r7, lr}
@@ -24746,20 +24746,20 @@ c3e16f2c:	e3a01020 	mov	r1, #32
 c3e16f30:	ebfffd33 	bl	c3e16404 <rx_handler>
 c3e16f34:	e28dd020 	add	sp, sp, #32
 c3e16f38:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e16f3c:	c3e5227c 	.word	0xc3e5227c
-c3e16f40:	c3e52260 	.word	0xc3e52260
+c3e16f3c:	c3e52274 	.word	0xc3e52274
+c3e16f40:	c3e52258 	.word	0xc3e52258
 c3e16f44:	002e8b57 	.word	0x002e8b57
-c3e16f48:	c3e508e7 	.word	0xc3e508e7
-c3e16f4c:	c3e4edd9 	.word	0xc3e4edd9
-c3e16f50:	c3e52282 	.word	0xc3e52282
-c3e16f54:	c3e5229b 	.word	0xc3e5229b
-c3e16f58:	c3e522a1 	.word	0xc3e522a1
+c3e16f48:	c3e508df 	.word	0xc3e508df
+c3e16f4c:	c3e4edd1 	.word	0xc3e4edd1
+c3e16f50:	c3e5227a 	.word	0xc3e5227a
+c3e16f54:	c3e52293 	.word	0xc3e52293
+c3e16f58:	c3e52299 	.word	0xc3e52299
 c3e16f5c:	c3e71dec 	.word	0xc3e71dec
-c3e16f60:	c3e522b4 	.word	0xc3e522b4
-c3e16f64:	c3e522cd 	.word	0xc3e522cd
-c3e16f68:	c3e522dc 	.word	0xc3e522dc
-c3e16f6c:	c3e4f900 	.word	0xc3e4f900
-c3e16f70:	c3e522e2 	.word	0xc3e522e2
+c3e16f60:	c3e522ac 	.word	0xc3e522ac
+c3e16f64:	c3e522c5 	.word	0xc3e522c5
+c3e16f68:	c3e522d4 	.word	0xc3e522d4
+c3e16f6c:	c3e4f8f8 	.word	0xc3e4f8f8
+c3e16f70:	c3e522da 	.word	0xc3e522da
 
 c3e16f74 <update_all>:
 c3e16f74:	e92d4010 	push	{r4, lr}
@@ -24822,17 +24822,17 @@ c3e17054:	e1a02000 	mov	r2, r0
 c3e17058:	e1a03000 	mov	r3, r0
 c3e1705c:	e8bd4010 	pop	{r4, lr}
 c3e17060:	eaffab7a 	b	c3e01e50 <do_reset>
-c3e17064:	c3e522e8 	.word	0xc3e522e8
-c3e17068:	c3e582f4 	.word	0xc3e582f4
-c3e1706c:	c3e522ff 	.word	0xc3e522ff
-c3e17070:	c3e51f76 	.word	0xc3e51f76
-c3e17074:	c3e5231d 	.word	0xc3e5231d
-c3e17078:	c3e4df9c 	.word	0xc3e4df9c
-c3e1707c:	c3e52327 	.word	0xc3e52327
-c3e17080:	c3e52331 	.word	0xc3e52331
-c3e17084:	c3e508f3 	.word	0xc3e508f3
-c3e17088:	c3e51e25 	.word	0xc3e51e25
-c3e1708c:	c3e4ea40 	.word	0xc3e4ea40
+c3e17064:	c3e522e0 	.word	0xc3e522e0
+c3e17068:	c3e582ec 	.word	0xc3e582ec
+c3e1706c:	c3e522f7 	.word	0xc3e522f7
+c3e17070:	c3e51f6e 	.word	0xc3e51f6e
+c3e17074:	c3e52315 	.word	0xc3e52315
+c3e17078:	c3e4df94 	.word	0xc3e4df94
+c3e1707c:	c3e5231f 	.word	0xc3e5231f
+c3e17080:	c3e52329 	.word	0xc3e52329
+c3e17084:	c3e508eb 	.word	0xc3e508eb
+c3e17088:	c3e51e1d 	.word	0xc3e51e1d
+c3e1708c:	c3e4ea38 	.word	0xc3e4ea38
 
 c3e17090 <do_sdfuse>:
 c3e17090:	e92d4070 	push	{r4, r5, r6, lr}
@@ -24961,28 +24961,28 @@ c3e17278:	eb0008c4 	bl	c3e19590 <strcmp>
 c3e1727c:	e3500000 	cmp	r0, #0
 c3e17280:	1affffe1 	bne	c3e1720c <do_sdfuse+0x17c>
 c3e17284:	eaffffaf 	b	c3e17148 <do_sdfuse+0xb8>
-c3e17288:	c3e522e8 	.word	0xc3e522e8
-c3e1728c:	c3e582f4 	.word	0xc3e582f4
-c3e17290:	c3e522ff 	.word	0xc3e522ff
-c3e17294:	c3e508c1 	.word	0xc3e508c1
-c3e17298:	c3e52341 	.word	0xc3e52341
-c3e1729c:	c3e5236f 	.word	0xc3e5236f
-c3e172a0:	c3e5238c 	.word	0xc3e5238c
-c3e172a4:	c3e5227c 	.word	0xc3e5227c
-c3e172a8:	c3e523a2 	.word	0xc3e523a2
-c3e172ac:	c3e523b8 	.word	0xc3e523b8
-c3e172b0:	c3e51f76 	.word	0xc3e51f76
-c3e172b4:	c3e5231d 	.word	0xc3e5231d
-c3e172b8:	c3e4df9c 	.word	0xc3e4df9c
-c3e172bc:	c3e52327 	.word	0xc3e52327
-c3e172c0:	c3e52331 	.word	0xc3e52331
-c3e172c4:	c3e508f3 	.word	0xc3e508f3
-c3e172c8:	c3e51e25 	.word	0xc3e51e25
-c3e172cc:	c3e4ea40 	.word	0xc3e4ea40
-c3e172d0:	c3e522e2 	.word	0xc3e522e2
-c3e172d4:	c3e4f900 	.word	0xc3e4f900
-c3e172d8:	c3e4da91 	.word	0xc3e4da91
-c3e172dc:	c3e523c1 	.word	0xc3e523c1
+c3e17288:	c3e522e0 	.word	0xc3e522e0
+c3e1728c:	c3e582ec 	.word	0xc3e582ec
+c3e17290:	c3e522f7 	.word	0xc3e522f7
+c3e17294:	c3e508b9 	.word	0xc3e508b9
+c3e17298:	c3e52339 	.word	0xc3e52339
+c3e1729c:	c3e52367 	.word	0xc3e52367
+c3e172a0:	c3e52384 	.word	0xc3e52384
+c3e172a4:	c3e52274 	.word	0xc3e52274
+c3e172a8:	c3e5239a 	.word	0xc3e5239a
+c3e172ac:	c3e523b0 	.word	0xc3e523b0
+c3e172b0:	c3e51f6e 	.word	0xc3e51f6e
+c3e172b4:	c3e52315 	.word	0xc3e52315
+c3e172b8:	c3e4df94 	.word	0xc3e4df94
+c3e172bc:	c3e5231f 	.word	0xc3e5231f
+c3e172c0:	c3e52329 	.word	0xc3e52329
+c3e172c4:	c3e508eb 	.word	0xc3e508eb
+c3e172c8:	c3e51e1d 	.word	0xc3e51e1d
+c3e172cc:	c3e4ea38 	.word	0xc3e4ea38
+c3e172d0:	c3e522da 	.word	0xc3e522da
+c3e172d4:	c3e4f8f8 	.word	0xc3e4f8f8
+c3e172d8:	c3e4da89 	.word	0xc3e4da89
+c3e172dc:	c3e523b9 	.word	0xc3e523b9
 
 c3e172e0 <calc_unit>:
 c3e172e0:	e24dd00c 	sub	sp, sp, #12
@@ -25236,8 +25236,8 @@ c3e1769c:	e3500001 	cmp	r0, #1
 c3e176a0:	03a00000 	moveq	r0, #0
 c3e176a4:	13e00000 	mvnne	r0, #0
 c3e176a8:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e176ac:	c3e52648 	.word	0xc3e52648
-c3e176b0:	c3e52667 	.word	0xc3e52667
+c3e176ac:	c3e52640 	.word	0xc3e52640
+c3e176b0:	c3e5265f 	.word	0xc3e5265f
 
 c3e176b4 <get_mmc_mbr>:
 c3e176b4:	e92d4070 	push	{r4, r5, r6, lr}
@@ -25266,8 +25266,8 @@ c3e1770c:	e3500001 	cmp	r0, #1
 c3e17710:	03a00000 	moveq	r0, #0
 c3e17714:	13e00000 	mvnne	r0, #0
 c3e17718:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e1771c:	c3e52648 	.word	0xc3e52648
-c3e17720:	c3e52667 	.word	0xc3e52667
+c3e1771c:	c3e52640 	.word	0xc3e52640
+c3e17720:	c3e5265f 	.word	0xc3e5265f
 
 c3e17724 <get_mmc_block_count>:
 c3e17724:	e3a01000 	mov	r1, #0
@@ -25287,8 +25287,8 @@ c3e17758:	e3e00000 	mvn	r0, #0
 c3e1775c:	e8bd8010 	pop	{r4, pc}
 c3e17760:	e594008c 	ldr	r0, [r4, #140]	; 0x8c
 c3e17764:	e8bd8010 	pop	{r4, pc}
-c3e17768:	c3e52648 	.word	0xc3e52648
-c3e1776c:	c3e52667 	.word	0xc3e52667
+c3e17768:	c3e52640 	.word	0xc3e52640
+c3e1776c:	c3e5265f 	.word	0xc3e5265f
 
 c3e17770 <decode_partitionInfo>:
 c3e17770:	e92d4030 	push	{r4, r5, lr}
@@ -25445,12 +25445,12 @@ c3e179b8:	ebffdff3 	bl	c3e0f98c <printf>
 c3e179bc:	e3a00001 	mov	r0, #1
 c3e179c0:	e28dd0a4 	add	sp, sp, #164	; 0xa4
 c3e179c4:	e8bd8030 	pop	{r4, r5, pc}
-c3e179c8:	c3e515f2 	.word	0xc3e515f2
-c3e179cc:	c3e52692 	.word	0xc3e52692
-c3e179d0:	c3e526db 	.word	0xc3e526db
-c3e179d4:	c3e52714 	.word	0xc3e52714
-c3e179d8:	c3e5274d 	.word	0xc3e5274d
-c3e179dc:	c3e52786 	.word	0xc3e52786
+c3e179c8:	c3e515ea 	.word	0xc3e515ea
+c3e179cc:	c3e5268a 	.word	0xc3e5268a
+c3e179d0:	c3e526d3 	.word	0xc3e526d3
+c3e179d4:	c3e5270c 	.word	0xc3e5270c
+c3e179d8:	c3e52745 	.word	0xc3e52745
+c3e179dc:	c3e5277e 	.word	0xc3e5277e
 
 c3e179e0 <encode_partitionInfo>:
 c3e179e0:	e24dd010 	sub	sp, sp, #16
@@ -25691,7 +25691,7 @@ c3e17d78:	ea000000 	b	c3e17d80 <create_mmc_fdisk+0x7c>
 c3e17d7c:	e3e00000 	mvn	r0, #0
 c3e17d80:	e28ddc02 	add	sp, sp, #512	; 0x200
 c3e17d84:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e17d88:	c3e527bf 	.word	0xc3e527bf
+c3e17d88:	c3e527b7 	.word	0xc3e527b7
 
 c3e17d8c <do_fdisk>:
 c3e17d8c:	e3520003 	cmp	r2, #3
@@ -25721,9 +25721,9 @@ c3e17de8:	e59f0010 	ldr	r0, [pc, #16]	; c3e17e00 <do_fdisk+0x74>
 c3e17dec:	ebffdee6 	bl	c3e0f98c <printf>
 c3e17df0:	e3a00000 	mov	r0, #0
 c3e17df4:	e8bd8030 	pop	{r4, r5, pc}
-c3e17df8:	c3e527f9 	.word	0xc3e527f9
-c3e17dfc:	c3e527fc 	.word	0xc3e527fc
-c3e17e00:	c3e527d3 	.word	0xc3e527d3
+c3e17df8:	c3e527f1 	.word	0xc3e527f1
+c3e17dfc:	c3e527f4 	.word	0xc3e527f4
+c3e17e00:	c3e527cb 	.word	0xc3e527cb
 
 c3e17e04 <env_get_char_spec>:
 c3e17e04:	e5983014 	ldr	r3, [r8, #20]
@@ -25737,7 +25737,7 @@ c3e17e18:	e5881014 	str	r1, [r8, #20]
 c3e17e1c:	e3a00000 	mov	r0, #0
 c3e17e20:	e5883018 	str	r3, [r8, #24]
 c3e17e24:	e12fff1e 	bx	lr
-c3e17e28:	c3e54244 	.word	0xc3e54244
+c3e17e28:	c3e5423c 	.word	0xc3e5423c
 
 c3e17e2c <saveenv_nand>:
 c3e17e2c:	e3a00000 	mov	r0, #0
@@ -25777,11 +25777,11 @@ c3e17ea0:	e3a02001 	mov	r2, #1
 c3e17ea4:	e5840000 	str	r0, [r4]
 c3e17ea8:	e5882018 	str	r2, [r8, #24]
 c3e17eac:	e8bd8030 	pop	{r4, r5, pc}
-c3e17eb0:	c3e58244 	.word	0xc3e58244
-c3e17eb4:	c3e52879 	.word	0xc3e52879
-c3e17eb8:	c3e51433 	.word	0xc3e51433
+c3e17eb0:	c3e5823c 	.word	0xc3e5823c
+c3e17eb4:	c3e52871 	.word	0xc3e52871
+c3e17eb8:	c3e5142b 	.word	0xc3e5142b
 c3e17ebc:	c3e71fbc 	.word	0xc3e71fbc
-c3e17ec0:	c3e54244 	.word	0xc3e54244
+c3e17ec0:	c3e5423c 	.word	0xc3e5423c
 c3e17ec4:	00003ffc 	.word	0x00003ffc
 
 c3e17ec8 <env_relocate_spec_onenand>:
@@ -25873,7 +25873,7 @@ c3e17ff0:	e59f0008 	ldr	r0, [pc, #8]	; c3e18000 <saveenv_onenand+0x14>
 c3e17ff4:	ebffde64 	bl	c3e0f98c <printf>
 c3e17ff8:	e3a00001 	mov	r0, #1
 c3e17ffc:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e18000:	c3e528a3 	.word	0xc3e528a3
+c3e18000:	c3e5289b 	.word	0xc3e5289b
 
 c3e18004 <saveenv_nor>:
 c3e18004:	e59f20dc 	ldr	r2, [pc, #220]	; c3e180e8 <saveenv_nor+0xe4>
@@ -25936,7 +25936,7 @@ c3e180e4:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
 c3e180e8:	c3e71fc0 	.word	0xc3e71fc0
 c3e180ec:	8007c000 	.word	0x8007c000
 c3e180f0:	c3e71fbc 	.word	0xc3e71fbc
-c3e180f4:	c3e4d354 	.word	0xc3e4d354
+c3e180f4:	c3e4d34c 	.word	0xc3e4d34c
 
 c3e180f8 <saveenv_movinand>:
 c3e180f8:	e59f301c 	ldr	r3, [pc, #28]	; c3e1811c <saveenv_movinand+0x24>
@@ -25949,7 +25949,7 @@ c3e18110:	ebffde0b 	bl	c3e0f944 <puts>
 c3e18114:	e3a00001 	mov	r0, #1
 c3e18118:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
 c3e1811c:	c3e71fbc 	.word	0xc3e71fbc
-c3e18120:	c3e4d354 	.word	0xc3e4d354
+c3e18120:	c3e4d34c 	.word	0xc3e4d34c
 
 c3e18124 <saveenv>:
 c3e18124:	e59f3058 	ldr	r3, [pc, #88]	; c3e18184 <saveenv+0x60>
@@ -25977,7 +25977,7 @@ c3e18178:	ebffde03 	bl	c3e0f98c <printf>
 c3e1817c:	e3a00000 	mov	r0, #0
 c3e18180:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
 c3e18184:	e010f000 	.word	0xe010f000
-c3e18188:	c3e528d1 	.word	0xc3e528d1
+c3e18188:	c3e528c9 	.word	0xc3e528c9
 
 c3e1818c <gunzip>:
 c3e1818c:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -26060,12 +26060,12 @@ c3e182bc:	eb000a1b 	bl	c3e1ab30 <inflateEnd>
 c3e182c0:	e1a0000b 	mov	r0, fp
 c3e182c4:	e28dd034 	add	sp, sp, #52	; 0x34
 c3e182c8:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e182cc:	c3e528fb 	.word	0xc3e528fb
-c3e182d0:	c3e52914 	.word	0xc3e52914
+c3e182cc:	c3e528f3 	.word	0xc3e528f3
+c3e182d0:	c3e5290c 	.word	0xc3e5290c
 c3e182d4:	c3e182ec 	.word	0xc3e182ec
 c3e182d8:	c3e182e4 	.word	0xc3e182e4
-c3e182dc:	c3e52939 	.word	0xc3e52939
-c3e182e0:	c3e5295c 	.word	0xc3e5295c
+c3e182dc:	c3e52931 	.word	0xc3e52931
+c3e182e0:	c3e52954 	.word	0xc3e52954
 
 c3e182e4 <zfree>:
 c3e182e4:	e1a00001 	mov	r0, r1
@@ -26095,7 +26095,7 @@ c3e18330:	e1520001 	cmp	r2, r1
 c3e18334:	bafffff4 	blt	c3e1830c <cyg_crc16+0x10>
 c3e18338:	e1a00003 	mov	r0, r3
 c3e1833c:	e8bd8010 	pop	{r4, pc}
-c3e18340:	c3e2a2ac 	.word	0xc3e2a2ac
+c3e18340:	c3e2a2a4 	.word	0xc3e2a2a4
 
 c3e18344 <board_init>:
 c3e18344:	e3a0333a 	mov	r3, #-402653184	; 0xe8000000
@@ -26162,7 +26162,7 @@ c3e1840c:	e59f0008 	ldr	r0, [pc, #8]	; c3e1841c <checkboard+0x14>
 c3e18410:	ebffdd5d 	bl	c3e0f98c <printf>
 c3e18414:	e3a00000 	mov	r0, #0
 c3e18418:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e1841c:	c3e5297a 	.word	0xc3e5297a
+c3e1841c:	c3e52972 	.word	0xc3e52972
 
 c3e18420 <read_hword>:
 c3e18420:	e3a01102 	mov	r1, #-2147483648	; 0x80000000
@@ -26231,20 +26231,20 @@ c3e18510:	baffffea 	blt	c3e184c0 <flash_print_info+0x8c>
 c3e18514:	e59f0038 	ldr	r0, [pc, #56]	; c3e18554 <flash_print_info+0x120>
 c3e18518:	e8bd40f0 	pop	{r4, r5, r6, r7, lr}
 c3e1851c:	eaffdd1a 	b	c3e0f98c <printf>
-c3e18520:	c3e5298a 	.word	0xc3e5298a
-c3e18524:	c3e52995 	.word	0xc3e52995
-c3e18528:	c3e52990 	.word	0xc3e52990
+c3e18520:	c3e52982 	.word	0xc3e52982
+c3e18524:	c3e5298d 	.word	0xc3e5298d
+c3e18528:	c3e52988 	.word	0xc3e52988
 c3e1852c:	0000225b 	.word	0x0000225b
-c3e18530:	c3e529d7 	.word	0xc3e529d7
-c3e18534:	c3e529a5 	.word	0xc3e529a5
-c3e18538:	c3e529be 	.word	0xc3e529be
-c3e1853c:	c3e529ea 	.word	0xc3e529ea
-c3e18540:	c3e52a08 	.word	0xc3e52a08
-c3e18544:	c3e52a22 	.word	0xc3e52a22
-c3e18548:	c3e4ddb9 	.word	0xc3e4ddb9
-c3e1854c:	c3e52a27 	.word	0xc3e52a27
-c3e18550:	c3e52a2d 	.word	0xc3e52a2d
-c3e18554:	c3e515f2 	.word	0xc3e515f2
+c3e18530:	c3e529cf 	.word	0xc3e529cf
+c3e18534:	c3e5299d 	.word	0xc3e5299d
+c3e18538:	c3e529b6 	.word	0xc3e529b6
+c3e1853c:	c3e529e2 	.word	0xc3e529e2
+c3e18540:	c3e52a00 	.word	0xc3e52a00
+c3e18544:	c3e52a1a 	.word	0xc3e52a1a
+c3e18548:	c3e4ddb1 	.word	0xc3e4ddb1
+c3e1854c:	c3e52a1f 	.word	0xc3e52a1f
+c3e18550:	c3e52a25 	.word	0xc3e52a25
+c3e18554:	c3e515ea 	.word	0xc3e515ea
 
 c3e18558 <write_hword>:
 c3e18558:	e92d46f0 	push	{r4, r5, r6, r7, r9, sl, lr}
@@ -26435,8 +26435,8 @@ c3e18830:	e8bd44f0 	pop	{r4, r5, r6, r7, sl, lr}
 c3e18834:	eaffff47 	b	c3e18558 <write_hword>
 c3e18838:	e1a0000a 	mov	r0, sl
 c3e1883c:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
-c3e18840:	c3e52a36 	.word	0xc3e52a36
-c3e18844:	c3e4d2a1 	.word	0xc3e4d2a1
+c3e18840:	c3e52a2e 	.word	0xc3e52a2e
+c3e18844:	c3e4d299 	.word	0xc3e4d299
 
 c3e18848 <flash_erase_all>:
 c3e18848:	e92d4030 	push	{r4, r5, lr}
@@ -26492,7 +26492,7 @@ c3e1890c:	e1a00005 	mov	r0, r5
 c3e18910:	e1c430b0 	strh	r3, [r4]
 c3e18914:	e8bd8030 	pop	{r4, r5, pc}
 c3e18918:	0000ffff 	.word	0x0000ffff
-c3e1891c:	c3e52a47 	.word	0xc3e52a47
+c3e1891c:	c3e52a3f 	.word	0xc3e52a3f
 c3e18920:	80000a00 	.word	0x80000a00
 c3e18924:	80000500 	.word	0x80000500
 c3e18928:	fffff0f0 	.word	0xfffff0f0
@@ -26501,9 +26501,9 @@ c3e18930:	00005555 	.word	0x00005555
 c3e18934:	ffff8080 	.word	0xffff8080
 c3e18938:	00001010 	.word	0x00001010
 c3e1893c:	00002710 	.word	0x00002710
-c3e18940:	c3e52a36 	.word	0xc3e52a36
-c3e18944:	c3e4d2a1 	.word	0xc3e4d2a1
-c3e18948:	c3e52a58 	.word	0xc3e52a58
+c3e18940:	c3e52a2e 	.word	0xc3e52a2e
+c3e18944:	c3e4d299 	.word	0xc3e4d299
+c3e18948:	c3e52a50 	.word	0xc3e52a50
 
 c3e1894c <flash_erase>:
 c3e1894c:	e92d46f0 	push	{r4, r5, r6, r7, r9, sl, lr}
@@ -26616,7 +26616,7 @@ c3e18af4:	0affffd2 	beq	c3e18a44 <flash_erase+0xf8>
 c3e18af8:	e3a03002 	mov	r3, #2
 c3e18afc:	eaffffdc 	b	c3e18a74 <flash_erase+0x128>
 c3e18b00:	0000ffff 	.word	0x0000ffff
-c3e18b04:	c3e52a6c 	.word	0xc3e52a6c
+c3e18b04:	c3e52a64 	.word	0xc3e52a64
 c3e18b08:	80000a00 	.word	0x80000a00
 c3e18b0c:	80000500 	.word	0x80000500
 c3e18b10:	fffff0f0 	.word	0xfffff0f0
@@ -26625,9 +26625,9 @@ c3e18b18:	00005555 	.word	0x00005555
 c3e18b1c:	ffff8080 	.word	0xffff8080
 c3e18b20:	00003030 	.word	0x00003030
 c3e18b24:	013e0ce6 	.word	0x013e0ce6
-c3e18b28:	c3e52a84 	.word	0xc3e52a84
-c3e18b2c:	c3e52a89 	.word	0xc3e52a89
-c3e18b30:	c3e52a36 	.word	0xc3e52a36
+c3e18b28:	c3e52a7c 	.word	0xc3e52a7c
+c3e18b2c:	c3e52a81 	.word	0xc3e52a81
+c3e18b30:	c3e52a2e 	.word	0xc3e52a2e
 c3e18b34:	00002710 	.word	0x00002710
 
 c3e18b38 <flash_init>:
@@ -26748,7 +26748,7 @@ c3e18cf4:	e0220420 	eor	r0, r2, r0, lsr #8
 c3e18cf8:	1afffff6 	bne	c3e18cd8 <crc32+0xdc>
 c3e18cfc:	e1e00000 	mvn	r0, r0
 c3e18d00:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e18d04:	c3e2a4ac 	.word	0xc3e2a4ac
+c3e18d04:	c3e2a4a4 	.word	0xc3e2a4a4
 
 c3e18d08 <crc32_wd>:
 c3e18d08:	eaffffbb 	b	c3e18bfc <crc32>
@@ -26801,9 +26801,9 @@ c3e18db8:	e59f0010 	ldr	r0, [pc, #16]	; c3e18dd0 <print_size+0xc4>
 c3e18dbc:	e8bd46f0 	pop	{r4, r5, r6, r7, r9, sl, lr}
 c3e18dc0:	eaffdaf1 	b	c3e0f98c <printf>
 c3e18dc4:	000fffff 	.word	0x000fffff
-c3e18dc8:	c3e52a95 	.word	0xc3e52a95
-c3e18dcc:	c3e52a9a 	.word	0xc3e52a9a
-c3e18dd0:	c3e52a9f 	.word	0xc3e52a9f
+c3e18dc8:	c3e52a8d 	.word	0xc3e52a8d
+c3e18dcc:	c3e52a92 	.word	0xc3e52a92
+c3e18dd0:	c3e52a97 	.word	0xc3e52a97
 
 c3e18dd4 <display_options>:
 c3e18dd4:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -26812,7 +26812,7 @@ c3e18ddc:	e59f100c 	ldr	r1, [pc, #12]	; c3e18df0 <display_options+0x1c>
 c3e18de0:	ebffdae9 	bl	c3e0f98c <printf>
 c3e18de4:	e3a00000 	mov	r0, #0
 c3e18de8:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
-c3e18dec:	c3e4cfa9 	.word	0xc3e4cfa9
+c3e18dec:	c3e4cfa1 	.word	0xc3e4cfa1
 c3e18df0:	c3e2a130 	.word	0xc3e2a130
 
 c3e18df4 <print_buffer>:
@@ -26898,12 +26898,12 @@ c3e18f2c:	1affffc5 	bne	c3e18e48 <print_buffer+0x54>
 c3e18f30:	e1a00009 	mov	r0, r9
 c3e18f34:	e28dd040 	add	sp, sp, #64	; 0x40
 c3e18f38:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e18f3c:	c3e502f2 	.word	0xc3e502f2
-c3e18f40:	c3e4d6fd 	.word	0xc3e4d6fd
-c3e18f44:	c3e502f9 	.word	0xc3e502f9
-c3e18f48:	c3e502ff 	.word	0xc3e502ff
-c3e18f4c:	c3e4ddba 	.word	0xc3e4ddba
-c3e18f50:	c3e58314 	.word	0xc3e58314
+c3e18f3c:	c3e502ea 	.word	0xc3e502ea
+c3e18f40:	c3e4d6f5 	.word	0xc3e4d6f5
+c3e18f44:	c3e502f1 	.word	0xc3e502f1
+c3e18f48:	c3e502f7 	.word	0xc3e502f7
+c3e18f4c:	c3e4ddb2 	.word	0xc3e4ddb2
+c3e18f50:	c3e5830c 	.word	0xc3e5830c
 
 c3e18f54 <lmb_dump_all>:
 c3e18f54:	e12fff1e 	bx	lr
@@ -27274,7 +27274,7 @@ c3e194a4:	e59f0008 	ldr	r0, [pc, #8]	; c3e194b4 <lmb_alloc_base+0x30>
 c3e194a8:	ebffd937 	bl	c3e0f98c <printf>
 c3e194ac:	e1a00006 	mov	r0, r6
 c3e194b0:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e194b4:	c3e52aa6 	.word	0xc3e52aa6
+c3e194b4:	c3e52a9e 	.word	0xc3e52a9e
 
 c3e194b8 <lmb_alloc>:
 c3e194b8:	e3a03000 	mov	r3, #0
@@ -27714,7 +27714,7 @@ c3e19ab4:	3affffee 	bcc	c3e19a74 <simple_strtoul+0x5c>
 c3e19ab8:	e3510000 	cmp	r1, #0
 c3e19abc:	15813000 	strne	r3, [r1]
 c3e19ac0:	e8bd8030 	pop	{r4, r5, pc}
-c3e19ac4:	c3e58314 	.word	0xc3e58314
+c3e19ac4:	c3e5830c 	.word	0xc3e5830c
 
 c3e19ac8 <simple_strtol>:
 c3e19ac8:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -27888,8 +27888,8 @@ c3e19d54:	e2833001 	add	r3, r3, #1
 c3e19d58:	cafffff8 	bgt	c3e19d40 <number+0x218>
 c3e19d5c:	e28dd054 	add	sp, sp, #84	; 0x54
 c3e19d60:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e19d64:	c3e52aff 	.word	0xc3e52aff
-c3e19d68:	c3e52ada 	.word	0xc3e52ada
+c3e19d64:	c3e52af7 	.word	0xc3e52af7
+c3e19d68:	c3e52ad2 	.word	0xc3e52ad2
 
 c3e19d6c <panic>:
 c3e19d6c:	e92d000f 	push	{r0, r1, r2, r3}
@@ -28178,7 +28178,7 @@ c3e1a1cc:	1affff00 	bne	c3e19dd4 <vsprintf+0x18>
 c3e1a1d0:	e5ca3000 	strb	r3, [sl]
 c3e1a1d4:	e066000a 	rsb	r0, r6, sl
 c3e1a1d8:	e8bd86fe 	pop	{r1, r2, r3, r4, r5, r6, r7, r9, sl, pc}
-c3e1a1dc:	c3e52b24 	.word	0xc3e52b24
+c3e1a1dc:	c3e52b1c 	.word	0xc3e52b1c
 
 c3e1a1e0 <sprintf>:
 c3e1a1e0:	e92d000e 	push	{r1, r2, r3}
@@ -28200,7 +28200,7 @@ c3e1a214:	e59f000c 	ldr	r0, [pc, #12]	; c3e1a228 <falloc+0x20>
 c3e1a218:	e5831000 	str	r1, [r3]
 c3e1a21c:	e0800181 	add	r0, r0, r1, lsl #3
 c3e1a220:	e12fff1e 	bx	lr
-c3e1a224:	c3e58414 	.word	0xc3e58414
+c3e1a224:	c3e5840c 	.word	0xc3e5840c
 c3e1a228:	c3e722a4 	.word	0xc3e722a4
 
 c3e1a22c <ffree>:
@@ -28701,12 +28701,12 @@ c3e1a9c8:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
 c3e1a9cc:	c3e7429c 	.word	0xc3e7429c
 c3e1a9d0:	c3e1a208 	.word	0xc3e1a208
 c3e1a9d4:	c3e1a22c 	.word	0xc3e1a22c
-c3e1a9d8:	c3e58494 	.word	0xc3e58494
+c3e1a9d8:	c3e5848c 	.word	0xc3e5848c
 c3e1a9dc:	c3e73340 	.word	0xc3e73340
 c3e1a9e0:	00000101 	.word	0x00000101
-c3e1a9e4:	c3e58418 	.word	0xc3e58418
-c3e1a9e8:	c3e58510 	.word	0xc3e58510
-c3e1a9ec:	c3e58588 	.word	0xc3e58588
+c3e1a9e4:	c3e58410 	.word	0xc3e58410
+c3e1a9e8:	c3e58508 	.word	0xc3e58508
+c3e1a9ec:	c3e58580 	.word	0xc3e58580
 c3e1a9f0:	c3e73348 	.word	0xc3e73348
 c3e1a9f4:	c3e73344 	.word	0xc3e73344
 
@@ -30297,25 +30297,25 @@ c3e1c258:	e5842004 	str	r2, [r4, #4]
 c3e1c25c:	e5840008 	str	r0, [r4, #8]
 c3e1c260:	e584a000 	str	sl, [r4]
 c3e1c264:	ea000043 	b	c3e1c378 <inflate+0x1100>
-c3e1c268:	c3e52b2b 	.word	0xc3e52b2b
-c3e1c26c:	c3e52b46 	.word	0xc3e52b46
-c3e1c270:	c3e52b5a 	.word	0xc3e52b5a
-c3e1c274:	c3e52b6f 	.word	0xc3e52b6f
-c3e1c278:	c3e52b86 	.word	0xc3e52b86
-c3e1c27c:	c3e52b99 	.word	0xc3e52b99
-c3e1c280:	c3e52bb6 	.word	0xc3e52bb6
-c3e1c284:	c3e52bda 	.word	0xc3e52bda
-c3e1c288:	c3e52c02 	.word	0xc3e52c02
-c3e1c28c:	c3e52c26 	.word	0xc3e52c26
-c3e1c290:	c3e58494 	.word	0xc3e58494
-c3e1c294:	c3e58418 	.word	0xc3e58418
-c3e1c298:	c3e52c40 	.word	0xc3e52c40
-c3e1c29c:	c3e52c63 	.word	0xc3e52c63
+c3e1c268:	c3e52b23 	.word	0xc3e52b23
+c3e1c26c:	c3e52b3e 	.word	0xc3e52b3e
+c3e1c270:	c3e52b52 	.word	0xc3e52b52
+c3e1c274:	c3e52b67 	.word	0xc3e52b67
+c3e1c278:	c3e52b7e 	.word	0xc3e52b7e
+c3e1c27c:	c3e52b91 	.word	0xc3e52b91
+c3e1c280:	c3e52bae 	.word	0xc3e52bae
+c3e1c284:	c3e52bd2 	.word	0xc3e52bd2
+c3e1c288:	c3e52bfa 	.word	0xc3e52bfa
+c3e1c28c:	c3e52c1e 	.word	0xc3e52c1e
+c3e1c290:	c3e5848c 	.word	0xc3e5848c
+c3e1c294:	c3e58410 	.word	0xc3e58410
+c3e1c298:	c3e52c38 	.word	0xc3e52c38
+c3e1c29c:	c3e52c5b 	.word	0xc3e52c5b
 c3e1c2a0:	00000101 	.word	0x00000101
-c3e1c2a4:	c3e52c98 	.word	0xc3e52c98
-c3e1c2a8:	c3e52c82 	.word	0xc3e52c82
-c3e1c2ac:	c3e2a8ac 	.word	0xc3e2a8ac
-c3e1c2b0:	c3e52cb4 	.word	0xc3e52cb4
+c3e1c2a4:	c3e52c90 	.word	0xc3e52c90
+c3e1c2a8:	c3e52c7a 	.word	0xc3e52c7a
+c3e1c2ac:	c3e2a8a4 	.word	0xc3e2a8a4
+c3e1c2b0:	c3e52cac 	.word	0xc3e52cac
 c3e1c2b4:	e3100040 	tst	r0, #64	; 0x40
 c3e1c2b8:	1a00000d 	bne	c3e1c2f4 <inflate+0x107c>
 c3e1c2bc:	e594004c 	ldr	r0, [r4, #76]	; 0x4c
@@ -31219,7 +31219,7 @@ c3e1d070:	e59c2008 	ldr	r2, [ip, #8]
 c3e1d074:	e5832004 	str	r2, [r3, #4]
 c3e1d078:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
 c3e1d07c:	c3e73400 	.word	0xc3e73400
-c3e1d080:	c3e52d1e 	.word	0xc3e52d1e
+c3e1d080:	c3e52d16 	.word	0xc3e52d16
 
 c3e1d084 <sohci_submit_job>:
 c3e1d084:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -31547,11 +31547,11 @@ c3e1d588:	e3a00000 	mov	r0, #0
 c3e1d58c:	e28dd014 	add	sp, sp, #20
 c3e1d590:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
 c3e1d594:	c3e73400 	.word	0xc3e73400
-c3e1d598:	c3e52d35 	.word	0xc3e52d35
-c3e1d59c:	c3e52d55 	.word	0xc3e52d55
-c3e1d5a0:	c3e52d98 	.word	0xc3e52d98
-c3e1d5a4:	c3e52d77 	.word	0xc3e52d77
-c3e1d5a8:	c3e52dba 	.word	0xc3e52dba
+c3e1d598:	c3e52d2d 	.word	0xc3e52d2d
+c3e1d59c:	c3e52d4d 	.word	0xc3e52d4d
+c3e1d5a0:	c3e52d90 	.word	0xc3e52d90
+c3e1d5a4:	c3e52d6f 	.word	0xc3e52d6f
+c3e1d5a8:	c3e52db2 	.word	0xc3e52db2
 c3e1d5ac:	f0100000 	.word	0xf0100000
 c3e1d5b0:	f0080000 	.word	0xf0080000
 c3e1d5b4:	f0140000 	.word	0xf0140000
@@ -31912,7 +31912,7 @@ c3e1dab4:	e3a02000 	mov	r2, #0
 c3e1dab8:	e5832048 	str	r2, [r3, #72]	; 0x48
 c3e1dabc:	e8bd8010 	pop	{r4, pc}
 c3e1dac0:	c3e74a00 	.word	0xc3e74a00
-c3e1dac4:	c3e58624 	.word	0xc3e58624
+c3e1dac4:	c3e5861c 	.word	0xc3e5861c
 
 c3e1dac8 <s3c_usb_get_status>:
 c3e1dac8:	e59f308c 	ldr	r3, [pc, #140]	; c3e1db5c <s3c_usb_get_status+0x94>
@@ -32109,10 +32109,10 @@ c3e1ddb0:	e59f3004 	ldr	r3, [pc, #4]	; c3e1ddbc <s3c_usb_set_otherspeed_conf_des
 c3e1ddb4:	e5832048 	str	r2, [r3, #72]	; 0x48
 c3e1ddb8:	e8bd8010 	pop	{r4, pc}
 c3e1ddbc:	c3e74a00 	.word	0xc3e74a00
-c3e1ddc0:	c3e2a93c 	.word	0xc3e2a93c
-c3e1ddc4:	c3e2a948 	.word	0xc3e2a948
-c3e1ddc8:	c3e2a968 	.word	0xc3e2a968
-c3e1ddcc:	c3e2a974 	.word	0xc3e2a974
+c3e1ddc0:	c3e2a934 	.word	0xc3e2a934
+c3e1ddc4:	c3e2a940 	.word	0xc3e2a940
+c3e1ddc8:	c3e2a960 	.word	0xc3e2a960
+c3e1ddcc:	c3e2a96c 	.word	0xc3e2a96c
 
 c3e1ddd0 <s3c_usb_transfer_ep0>:
 c3e1ddd0:	e59f3864 	ldr	r3, [pc, #2148]	; c3e1e63c <s3c_usb_transfer_ep0+0x86c>
@@ -32655,13 +32655,13 @@ c3e1e630:	e3a03000 	mov	r3, #0
 c3e1e634:	e5843048 	str	r3, [r4, #72]	; 0x48
 c3e1e638:	e8bd8010 	pop	{r4, pc}
 c3e1e63c:	c3e74a00 	.word	0xc3e74a00
-c3e1e640:	c3e2a994 	.word	0xc3e2a994
-c3e1e644:	c3e2a970 	.word	0xc3e2a970
-c3e1e648:	c3e2a978 	.word	0xc3e2a978
-c3e1e64c:	c3e2a980 	.word	0xc3e2a980
-c3e1e650:	c3e2a9a0 	.word	0xc3e2a9a0
-c3e1e654:	c3e2a9a4 	.word	0xc3e2a9a4
-c3e1e658:	c3e2a9bc 	.word	0xc3e2a9bc
+c3e1e640:	c3e2a98c 	.word	0xc3e2a98c
+c3e1e644:	c3e2a968 	.word	0xc3e2a968
+c3e1e648:	c3e2a970 	.word	0xc3e2a970
+c3e1e64c:	c3e2a978 	.word	0xc3e2a978
+c3e1e650:	c3e2a998 	.word	0xc3e2a998
+c3e1e654:	c3e2a99c 	.word	0xc3e2a99c
+c3e1e658:	c3e2a9b4 	.word	0xc3e2a9b4
 
 c3e1e65c <s3c_usb_int_bulkin>:
 c3e1e65c:	e92d4070 	push	{r4, r5, r6, lr}
@@ -33169,7 +33169,7 @@ c3e1edb8:	ebffc2f3 	bl	c3e0f98c <printf>
 c3e1edbc:	e3a00000 	mov	r0, #0
 c3e1edc0:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
 c3e1edc4:	c3e74a00 	.word	0xc3e74a00
-c3e1edc8:	c3e52ddb 	.word	0xc3e52ddb
+c3e1edc8:	c3e52dd3 	.word	0xc3e52dd3
 
 c3e1edcc <s3c_usb_verify_checksum>:
 c3e1edcc:	e92d44f0 	push	{r4, r5, r6, r7, sl, lr}
@@ -33208,12 +33208,12 @@ c3e1ee4c:	ebffc2ce 	bl	c3e0f98c <printf>
 c3e1ee50:	e59f0018 	ldr	r0, [pc, #24]	; c3e1ee70 <s3c_usb_verify_checksum+0xa4>
 c3e1ee54:	e8bd44f0 	pop	{r4, r5, r6, r7, sl, lr}
 c3e1ee58:	eaffc2cb 	b	c3e0f98c <printf>
-c3e1ee5c:	c3e52e09 	.word	0xc3e52e09
+c3e1ee5c:	c3e52e01 	.word	0xc3e52e01
 c3e1ee60:	c3e74a00 	.word	0xc3e74a00
-c3e1ee64:	c3e4d2a1 	.word	0xc3e4d2a1
-c3e1ee68:	c3e52e27 	.word	0xc3e52e27
-c3e1ee6c:	c3e52e37 	.word	0xc3e52e37
-c3e1ee70:	c3e52e59 	.word	0xc3e52e59
+c3e1ee64:	c3e4d299 	.word	0xc3e4d299
+c3e1ee68:	c3e52e1f 	.word	0xc3e52e1f
+c3e1ee6c:	c3e52e2f 	.word	0xc3e52e2f
+c3e1ee70:	c3e52e51 	.word	0xc3e52e51
 
 c3e1ee74 <s3c_usb_download_continue>:
 c3e1ee74:	e92d4030 	push	{r4, r5, lr}
@@ -33257,7 +33257,7 @@ c3e1ef08:	e3a03001 	mov	r3, #1
 c3e1ef0c:	e58430a0 	str	r3, [r4, #160]	; 0xa0
 c3e1ef10:	e8bd8030 	pop	{r4, r5, pc}
 c3e1ef14:	c3e74a00 	.word	0xc3e74a00
-c3e1ef18:	c3e52e6c 	.word	0xc3e52e6c
+c3e1ef18:	c3e52e64 	.word	0xc3e52e64
 
 c3e1ef1c <s3c_usb_int_bulkout>:
 c3e1ef1c:	e59f201c 	ldr	r2, [pc, #28]	; c3e1ef40 <s3c_usb_int_bulkout+0x24>
@@ -33319,9 +33319,9 @@ c3e1efe8:	bafffff9 	blt	c3e1efd4 <s3c_usb_print_pkt+0x1c>
 c3e1efec:	e59f000c 	ldr	r0, [pc, #12]	; c3e1f000 <s3c_usb_print_pkt+0x48>
 c3e1eff0:	e8bd4070 	pop	{r4, r5, r6, lr}
 c3e1eff4:	eaffc264 	b	c3e0f98c <printf>
-c3e1eff8:	c3e52eac 	.word	0xc3e52eac
-c3e1effc:	c3e52ec0 	.word	0xc3e52ec0
-c3e1f000:	c3e5231a 	.word	0xc3e5231a
+c3e1eff8:	c3e52ea4 	.word	0xc3e52ea4
+c3e1effc:	c3e52eb8 	.word	0xc3e52eb8
+c3e1f000:	c3e52312 	.word	0xc3e52312
 
 c3e1f004 <s3c_usb_dma_out_done>:
 c3e1f004:	e59f3094 	ldr	r3, [pc, #148]	; c3e1f0a0 <s3c_usb_dma_out_done+0x9c>
@@ -33489,8 +33489,8 @@ c3e1f270:	e59f000c 	ldr	r0, [pc, #12]	; c3e1f284 <s3c_usb_wait_cable_insert+0x48
 c3e1f274:	ebffc1c4 	bl	c3e0f98c <printf>
 c3e1f278:	e1a04005 	mov	r4, r5
 c3e1f27c:	eafffff0 	b	c3e1f244 <s3c_usb_wait_cable_insert+0x8>
-c3e1f280:	c3e52ec4 	.word	0xc3e52ec4
-c3e1f284:	c3e52eda 	.word	0xc3e52eda
+c3e1f280:	c3e52ebc 	.word	0xc3e52ebc
+c3e1f284:	c3e52ed2 	.word	0xc3e52ed2
 
 c3e1f288 <s3c_usb_init_phy>:
 c3e1f288:	e92d4010 	push	{r4, lr}
@@ -33544,7 +33544,7 @@ c3e1f33c:	e3a00000 	mov	r0, #0
 c3e1f340:	e8bd8008 	pop	{r3, pc}
 c3e1f344:	e010e000 	.word	0xe010e000
 c3e1f348:	c3e74a00 	.word	0xc3e74a00
-c3e1f34c:	c3e52f02 	.word	0xc3e52f02
+c3e1f34c:	c3e52efa 	.word	0xc3e52efa
 
 c3e1f350 <fboot_usb_phy_off>:
 c3e1f350:	e59f201c 	ldr	r2, [pc, #28]	; c3e1f374 <fboot_usb_phy_off+0x24>
@@ -33903,7 +33903,7 @@ c3e1f850:	e3a02000 	mov	r2, #0
 c3e1f854:	e5832048 	str	r2, [r3, #72]	; 0x48
 c3e1f858:	e8bd8010 	pop	{r4, pc}
 c3e1f85c:	c3e74ab0 	.word	0xc3e74ab0
-c3e1f860:	c3e5865c 	.word	0xc3e5865c
+c3e1f860:	c3e58654 	.word	0xc3e58654
 
 c3e1f864 <fboot_usb_get_status>:
 c3e1f864:	e59f308c 	ldr	r3, [pc, #140]	; c3e1f8f8 <fboot_usb_get_status+0x94>
@@ -34100,10 +34100,10 @@ c3e1fb4c:	e59f3004 	ldr	r3, [pc, #4]	; c3e1fb58 <fboot_usb_set_otherspeed_conf_d
 c3e1fb50:	e5832048 	str	r2, [r3, #72]	; 0x48
 c3e1fb54:	e8bd8010 	pop	{r4, pc}
 c3e1fb58:	c3e74ab0 	.word	0xc3e74ab0
-c3e1fb5c:	c3e2a9e8 	.word	0xc3e2a9e8
-c3e1fb60:	c3e2a9f4 	.word	0xc3e2a9f4
-c3e1fb64:	c3e2aa14 	.word	0xc3e2aa14
-c3e1fb68:	c3e2aa20 	.word	0xc3e2aa20
+c3e1fb5c:	c3e2a9e0 	.word	0xc3e2a9e0
+c3e1fb60:	c3e2a9ec 	.word	0xc3e2a9ec
+c3e1fb64:	c3e2aa0c 	.word	0xc3e2aa0c
+c3e1fb68:	c3e2aa18 	.word	0xc3e2aa18
 
 c3e1fb6c <fboot_usb_transfer_ep0>:
 c3e1fb6c:	e92d4010 	push	{r4, lr}
@@ -34653,14 +34653,14 @@ c3e203e8:	e5843048 	str	r3, [r4, #72]	; 0x48
 c3e203ec:	e8bd8010 	pop	{r4, pc}
 c3e203f0:	c3e74ab0 	.word	0xc3e74ab0
 c3e203f4:	c3e74ac0 	.word	0xc3e74ac0
-c3e203f8:	c3e2aa40 	.word	0xc3e2aa40
-c3e203fc:	c3e2aa1c 	.word	0xc3e2aa1c
-c3e20400:	c3e2aa24 	.word	0xc3e2aa24
-c3e20404:	c3e2aa2c 	.word	0xc3e2aa2c
-c3e20408:	c3e2aa4c 	.word	0xc3e2aa4c
-c3e2040c:	c3e2aa50 	.word	0xc3e2aa50
-c3e20410:	c3e2aa68 	.word	0xc3e2aa68
-c3e20414:	c3e2aa80 	.word	0xc3e2aa80
+c3e203f8:	c3e2aa38 	.word	0xc3e2aa38
+c3e203fc:	c3e2aa14 	.word	0xc3e2aa14
+c3e20400:	c3e2aa1c 	.word	0xc3e2aa1c
+c3e20404:	c3e2aa24 	.word	0xc3e2aa24
+c3e20408:	c3e2aa44 	.word	0xc3e2aa44
+c3e2040c:	c3e2aa48 	.word	0xc3e2aa48
+c3e20410:	c3e2aa60 	.word	0xc3e2aa60
+c3e20414:	c3e2aa78 	.word	0xc3e2aa78
 
 c3e20418 <fboot_usb_upload_start>:
 c3e20418:	e92d40f7 	push	{r0, r1, r2, r4, r5, r6, r7, lr}
@@ -35181,12 +35181,12 @@ c3e20b90:	e1a003a0 	lsr	r0, r0, #7
 c3e20b94:	e2200001 	eor	r0, r0, #1
 c3e20b98:	e2000001 	and	r0, r0, #1
 c3e20b9c:	e8bd8010 	pop	{r4, pc}
-c3e20ba0:	c3e51f81 	.word	0xc3e51f81
+c3e20ba0:	c3e51f79 	.word	0xc3e51f79
 c3e20ba4:	e1600000 	.word	0xe1600000
 c3e20ba8:	e0200000 	.word	0xe0200000
 c3e20bac:	33333333 	.word	0x33333333
 c3e20bb0:	0000aaaa 	.word	0x0000aaaa
-c3e20bb4:	c3e52f20 	.word	0xc3e52f20
+c3e20bb4:	c3e52f18 	.word	0xc3e52f18
 
 c3e20bb8 <fboot_usb_set_init>:
 c3e20bb8:	e3a0333b 	mov	r3, #-335544320	; 0xec000000
@@ -35211,7 +35211,7 @@ c3e20c00:	ebffbb61 	bl	c3e0f98c <printf>
 c3e20c04:	e3a00000 	mov	r0, #0
 c3e20c08:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
 c3e20c0c:	c3e74ab0 	.word	0xc3e74ab0
-c3e20c10:	c3e52ddb 	.word	0xc3e52ddb
+c3e20c10:	c3e52dd3 	.word	0xc3e52dd3
 
 c3e20c14 <fboot_usb_verify_checksum>:
 c3e20c14:	e59f3080 	ldr	r3, [pc, #128]	; c3e20c9c <fboot_usb_verify_checksum+0x88>
@@ -35249,10 +35249,10 @@ c3e20c90:	e59f0014 	ldr	r0, [pc, #20]	; c3e20cac <fboot_usb_verify_checksum+0x98
 c3e20c94:	e8bd44f0 	pop	{r4, r5, r6, r7, sl, lr}
 c3e20c98:	eaffbb3b 	b	c3e0f98c <printf>
 c3e20c9c:	c3e74ab0 	.word	0xc3e74ab0
-c3e20ca0:	c3e4d2a1 	.word	0xc3e4d2a1
-c3e20ca4:	c3e52e27 	.word	0xc3e52e27
-c3e20ca8:	c3e52e37 	.word	0xc3e52e37
-c3e20cac:	c3e52e59 	.word	0xc3e52e59
+c3e20ca0:	c3e4d299 	.word	0xc3e4d299
+c3e20ca4:	c3e52e1f 	.word	0xc3e52e1f
+c3e20ca8:	c3e52e2f 	.word	0xc3e52e2f
+c3e20cac:	c3e52e51 	.word	0xc3e52e51
 
 c3e20cb0 <fboot_usb_download_continue>:
 c3e20cb0:	e92d4030 	push	{r4, r5, lr}
@@ -35296,7 +35296,7 @@ c3e20d44:	e3a03001 	mov	r3, #1
 c3e20d48:	e58430a8 	str	r3, [r4, #168]	; 0xa8
 c3e20d4c:	e8bd8030 	pop	{r4, r5, pc}
 c3e20d50:	c3e74ab0 	.word	0xc3e74ab0
-c3e20d54:	c3e52e6c 	.word	0xc3e52e6c
+c3e20d54:	c3e52e64 	.word	0xc3e52e64
 
 c3e20d58 <fboot_usb_print_pkt>:
 c3e20d58:	e92d4070 	push	{r4, r5, r6, lr}
@@ -35313,8 +35313,8 @@ c3e20d80:	bafffff9 	blt	c3e20d6c <fboot_usb_print_pkt+0x14>
 c3e20d84:	e59f0008 	ldr	r0, [pc, #8]	; c3e20d94 <fboot_usb_print_pkt+0x3c>
 c3e20d88:	e8bd4070 	pop	{r4, r5, r6, lr}
 c3e20d8c:	eaffbafe 	b	c3e0f98c <printf>
-c3e20d90:	c3e52ec0 	.word	0xc3e52ec0
-c3e20d94:	c3e5231a 	.word	0xc3e5231a
+c3e20d90:	c3e52eb8 	.word	0xc3e52eb8
+c3e20d94:	c3e52312 	.word	0xc3e52312
 
 c3e20d98 <fboot_usb_dma_out_done>:
 c3e20d98:	e59f3094 	ldr	r3, [pc, #148]	; c3e20e34 <fboot_usb_dma_out_done+0x9c>
@@ -35439,7 +35439,7 @@ c3e20f60:	e59f0008 	ldr	r0, [pc, #8]	; c3e20f70 <fboot_usb_wait_cable_insert+0x3
 c3e20f64:	ebffba88 	bl	c3e0f98c <printf>
 c3e20f68:	e1a04005 	mov	r4, r5
 c3e20f6c:	eafffff3 	b	c3e20f40 <fboot_usb_wait_cable_insert+0x8>
-c3e20f70:	c3e52eda 	.word	0xc3e52eda
+c3e20f70:	c3e52ed2 	.word	0xc3e52ed2
 
 c3e20f74 <fboot_usb_init_phy>:
 c3e20f74:	e92d4010 	push	{r4, lr}
@@ -35493,7 +35493,7 @@ c3e21028:	e3a00000 	mov	r0, #0
 c3e2102c:	e8bd8008 	pop	{r3, pc}
 c3e21030:	e010e000 	.word	0xe010e000
 c3e21034:	c3e74ab0 	.word	0xc3e74ab0
-c3e21038:	c3e52f02 	.word	0xc3e52f02
+c3e21038:	c3e52efa 	.word	0xc3e52efa
 
 c3e2103c <fastboot_init>:
 c3e2103c:	e92d40f0 	push	{r4, r5, r6, r7, lr}
@@ -35545,11 +35545,11 @@ c3e210f0:	ebffe1cc 	bl	c3e19828 <memset>
 c3e210f4:	e3a00000 	mov	r0, #0
 c3e210f8:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
 c3e210fc:	c3e74ab0 	.word	0xc3e74ab0
-c3e21100:	c3e52f40 	.word	0xc3e52f40
-c3e21104:	c3e52f4e 	.word	0xc3e52f4e
-c3e21108:	c3e5227d 	.word	0xc3e5227d
-c3e2110c:	c3e52f55 	.word	0xc3e52f55
-c3e21110:	c3e52f5e 	.word	0xc3e52f5e
+c3e21100:	c3e52f38 	.word	0xc3e52f38
+c3e21104:	c3e52f46 	.word	0xc3e52f46
+c3e21108:	c3e52275 	.word	0xc3e52275
+c3e2110c:	c3e52f4d 	.word	0xc3e52f4d
+c3e21110:	c3e52f56 	.word	0xc3e52f56
 
 c3e21114 <fboot_usb_int_bulkout>:
 c3e21114:	e92d4030 	push	{r4, r5, lr}
@@ -35584,8 +35584,8 @@ c3e21184:	e28000dc 	add	r0, r0, #220	; 0xdc
 c3e21188:	e12fff33 	blx	r3
 c3e2118c:	e8bd8030 	pop	{r4, r5, pc}
 c3e21190:	c3e74b8c 	.word	0xc3e74b8c
-c3e21194:	c3e2aa98 	.word	0xc3e2aa98
-c3e21198:	c3e52f6f 	.word	0xc3e52f6f
+c3e21194:	c3e2aa90 	.word	0xc3e2aa90
+c3e21198:	c3e52f67 	.word	0xc3e52f67
 c3e2119c:	c3e74ab0 	.word	0xc3e74ab0
 
 c3e211a0 <fboot_usb_pkt_receive>:
@@ -35714,13 +35714,13 @@ c3e21368 <LCD_setfgcolor>:
 c3e21368:	e59f3004 	ldr	r3, [pc, #4]	; c3e21374 <LCD_setfgcolor+0xc>
 c3e2136c:	e5830000 	str	r0, [r3]
 c3e21370:	e12fff1e 	bx	lr
-c3e21374:	c3e5875c 	.word	0xc3e5875c
+c3e21374:	c3e58754 	.word	0xc3e58754
 
 c3e21378 <LCD_setleftcolor>:
 c3e21378:	e59f3004 	ldr	r3, [pc, #4]	; c3e21384 <LCD_setleftcolor+0xc>
 c3e2137c:	e5830004 	str	r0, [r3, #4]
 c3e21380:	e12fff1e 	bx	lr
-c3e21384:	c3e5875c 	.word	0xc3e5875c
+c3e21384:	c3e58754 	.word	0xc3e58754
 
 c3e21388 <LCD_setprogress>:
 c3e21388:	e59f209c 	ldr	r2, [pc, #156]	; c3e2142c <LCD_setprogress+0xa4>
@@ -35764,7 +35764,7 @@ c3e2141c:	e2833001 	add	r3, r3, #1
 c3e21420:	e3530f7d 	cmp	r3, #500	; 0x1f4
 c3e21424:	3affffee 	bcc	c3e213e4 <LCD_setprogress+0x5c>
 c3e21428:	e8bd8010 	pop	{r4, pc}
-c3e2142c:	c3e5875c 	.word	0xc3e5875c
+c3e2142c:	c3e58754 	.word	0xc3e58754
 c3e21430:	001428a0 	.word	0x001428a0
 
 c3e21434 <LCD_Initialize_NONAME1>:
@@ -35872,7 +35872,7 @@ c3e2158c:	e5932000 	ldr	r2, [r3]
 c3e21590:	e0833102 	add	r3, r3, r2, lsl #2
 c3e21594:	e5843000 	str	r3, [r4]
 c3e21598:	e8bd8070 	pop	{r4, r5, r6, pc}
-c3e2159c:	c3e52f86 	.word	0xc3e52f86
+c3e2159c:	c3e52f7e 	.word	0xc3e52f7e
 c3e215a0:	c3e74da0 	.word	0xc3e74da0
 c3e215a4:	41001099 	.word	0x41001099
 
@@ -36017,16 +36017,16 @@ c3e217c8:	e1a0300b 	mov	r3, fp
 c3e217cc:	ebff819f 	bl	c3e01e50 <do_reset>
 c3e217d0:	e28dd018 	add	sp, sp, #24
 c3e217d4:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e217d8:	c3e4e60e 	.word	0xc3e4e60e
-c3e217dc:	c3e52f8e 	.word	0xc3e52f8e
-c3e217e0:	c3e52f95 	.word	0xc3e52f95
-c3e217e4:	c3e52fb9 	.word	0xc3e52fb9
+c3e217d8:	c3e4e606 	.word	0xc3e4e606
+c3e217dc:	c3e52f86 	.word	0xc3e52f86
+c3e217e0:	c3e52f8d 	.word	0xc3e52f8d
+c3e217e4:	c3e52fb1 	.word	0xc3e52fb1
 c3e217e8:	54410001 	.word	0x54410001
 c3e217ec:	54410002 	.word	0x54410002
 c3e217f0:	c3e74da0 	.word	0xc3e74da0
 c3e217f4:	54410009 	.word	0x54410009
 c3e217f8:	54420005 	.word	0x54420005
-c3e217fc:	c3e52fdd 	.word	0xc3e52fdd
+c3e217fc:	c3e52fd5 	.word	0xc3e52fd5
 
 c3e21800 <flush_cache>:
 c3e21800:	e12fff1e 	bx	lr
@@ -36321,9 +36321,9 @@ c3e21c38:	ea000000 	b	c3e21c40 <read_bootsectandvi+0xe0>
 c3e21c3c:	e3e00000 	mvn	r0, #0
 c3e21c40:	e28ddc02 	add	sp, sp, #512	; 0x200
 c3e21c44:	e8bd80f0 	pop	{r4, r5, r6, r7, pc}
-c3e21c48:	c3e52ff4 	.word	0xc3e52ff4
-c3e21c4c:	c3e52ffd 	.word	0xc3e52ffd
-c3e21c50:	c3e53006 	.word	0xc3e53006
+c3e21c48:	c3e52fec 	.word	0xc3e52fec
+c3e21c4c:	c3e52ff5 	.word	0xc3e52ff5
+c3e21c50:	c3e52ffe 	.word	0xc3e52ffe
 
 c3e21c54 <file_fat_detectfs>:
 c3e21c54:	e92d4070 	push	{r4, r5, r6, lr}
@@ -36396,19 +36396,19 @@ c3e21d5c:	e1a00004 	mov	r0, r4
 c3e21d60:	e28dd06c 	add	sp, sp, #108	; 0x6c
 c3e21d64:	e8bd8070 	pop	{r4, r5, r6, pc}
 c3e21d68:	c3e74da4 	.word	0xc3e74da4
-c3e21d6c:	c3e5300f 	.word	0xc3e5300f
-c3e21d70:	c3e53022 	.word	0xc3e53022
-c3e21d74:	c3e5302f 	.word	0xc3e5302f
-c3e21d78:	c3e53033 	.word	0xc3e53033
-c3e21d7c:	c3e53038 	.word	0xc3e53038
-c3e21d80:	c3e5303e 	.word	0xc3e5303e
-c3e21d84:	c3e53042 	.word	0xc3e53042
-c3e21d88:	c3e53046 	.word	0xc3e53046
-c3e21d8c:	c3e5304d 	.word	0xc3e5304d
-c3e21d90:	c3e53055 	.word	0xc3e53055
-c3e21d94:	c3e53064 	.word	0xc3e53064
-c3e21d98:	c3e58764 	.word	0xc3e58764
-c3e21d9c:	c3e5307c 	.word	0xc3e5307c
+c3e21d6c:	c3e53007 	.word	0xc3e53007
+c3e21d70:	c3e5301a 	.word	0xc3e5301a
+c3e21d74:	c3e53027 	.word	0xc3e53027
+c3e21d78:	c3e5302b 	.word	0xc3e5302b
+c3e21d7c:	c3e53030 	.word	0xc3e53030
+c3e21d80:	c3e53036 	.word	0xc3e53036
+c3e21d84:	c3e5303a 	.word	0xc3e5303a
+c3e21d88:	c3e5303e 	.word	0xc3e5303e
+c3e21d8c:	c3e53045 	.word	0xc3e53045
+c3e21d90:	c3e5304d 	.word	0xc3e5304d
+c3e21d94:	c3e5305c 	.word	0xc3e5305c
+c3e21d98:	c3e5875c 	.word	0xc3e5875c
+c3e21d9c:	c3e53074 	.word	0xc3e53074
 
 c3e21da0 <get_cluster>:
 c3e21da0:	e3510000 	cmp	r1, #0
@@ -36554,7 +36554,7 @@ c3e21fc4:	caffffb9 	bgt	c3e21eb0 <get_vfatname+0x6c>
 c3e21fc8:	eaffffbe 	b	c3e21ec8 <get_vfatname+0x84>
 c3e21fcc:	00000c0a 	.word	0x00000c0a
 c3e21fd0:	0000fff0 	.word	0x0000fff0
-c3e21fd4:	c3e5309f 	.word	0xc3e5309f
+c3e21fd4:	c3e53097 	.word	0xc3e53097
 c3e21fd8:	c3e74dac 	.word	0xc3e74dac
 
 c3e21fdc <get_name>:
@@ -37169,22 +37169,22 @@ c3e22950:	00000c04 	.word	0x00000c04
 c3e22954:	00000c06 	.word	0x00000c06
 c3e22958:	00000c08 	.word	0x00000c08
 c3e2295c:	00000c0c 	.word	0x00000c0c
-c3e22960:	c3e501b6 	.word	0xc3e501b6
+c3e22960:	c3e501ae 	.word	0xc3e501ae
 c3e22964:	0000ffff 	.word	0x0000ffff
 c3e22968:	c3e84dac 	.word	0xc3e84dac
 c3e2296c:	c3e84dcc 	.word	0xc3e84dcc
-c3e22970:	c3e530d2 	.word	0xc3e530d2
-c3e22974:	c3e530b2 	.word	0xc3e530b2
-c3e22978:	c3e530c4 	.word	0xc3e530c4
+c3e22970:	c3e530ca 	.word	0xc3e530ca
+c3e22974:	c3e530aa 	.word	0xc3e530aa
+c3e22978:	c3e530bc 	.word	0xc3e530bc
 c3e2297c:	c3e84fcc 	.word	0xc3e84fcc
 c3e22980:	fffffeae 	.word	0xfffffeae
 c3e22984:	fffffea8 	.word	0xfffffea8
 c3e22988:	c3e94dac 	.word	0xc3e94dac
 c3e2298c:	c3e94dcc 	.word	0xc3e94dcc
 c3e22990:	0000fff0 	.word	0x0000fff0
-c3e22994:	c3e5309f 	.word	0xc3e5309f
+c3e22994:	c3e53097 	.word	0xc3e53097
 c3e22998:	00000c0a 	.word	0x00000c0a
-c3e2299c:	c3e530eb 	.word	0xc3e530eb
+c3e2299c:	c3e530e3 	.word	0xc3e530e3
 
 c3e229a0 <file_fat_read>:
 c3e229a0:	e92d4070 	push	{r4, r5, r6, lr}
@@ -37200,7 +37200,7 @@ c3e229c4:	e1a02006 	mov	r2, r6
 c3e229c8:	e3a03000 	mov	r3, #0
 c3e229cc:	e8bd4070 	pop	{r4, r5, r6, lr}
 c3e229d0:	eafffdb0 	b	c3e22098 <do_fat_read>
-c3e229d4:	c3e53102 	.word	0xc3e53102
+c3e229d4:	c3e530fa 	.word	0xc3e530fa
 
 c3e229d8 <file_fat_ls>:
 c3e229d8:	e3a01000 	mov	r1, #0
@@ -37272,11 +37272,11 @@ c3e22ad4:	e3e00000 	mvn	r0, #0
 c3e22ad8:	e28ddf93 	add	sp, sp, #588	; 0x24c
 c3e22adc:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
 c3e22ae0:	c3e74da4 	.word	0xc3e74da4
-c3e22ae4:	c3e5310e 	.word	0xc3e5310e
-c3e22ae8:	c3e58764 	.word	0xc3e58764
-c3e22aec:	c3e5312f 	.word	0xc3e5312f
-c3e22af0:	c3e53133 	.word	0xc3e53133
-c3e22af4:	c3e5315e 	.word	0xc3e5315e
+c3e22ae4:	c3e53106 	.word	0xc3e53106
+c3e22ae8:	c3e5875c 	.word	0xc3e5875c
+c3e22aec:	c3e53127 	.word	0xc3e53127
+c3e22af0:	c3e5312b 	.word	0xc3e5312b
+c3e22af4:	c3e53156 	.word	0xc3e53156
 
 c3e22af8 <fat_format_device>:
 c3e22af8:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -37660,35 +37660,35 @@ c3e230dc:	ebffb22a 	bl	c3e0f98c <printf>
 c3e230e0:	e3a07000 	mov	r7, #0
 c3e230e4:	eaffffed 	b	c3e230a0 <fat_format_device+0x5a8>
 c3e230e8:	c3e74da4 	.word	0xc3e74da4
-c3e230ec:	c3e5310e 	.word	0xc3e5310e
-c3e230f0:	c3e5318c 	.word	0xc3e5318c
-c3e230f4:	c3e58764 	.word	0xc3e58764
-c3e230f8:	c3e5312f 	.word	0xc3e5312f
-c3e230fc:	c3e53133 	.word	0xc3e53133
-c3e23100:	c3e5315e 	.word	0xc3e5315e
-c3e23104:	c3e531a1 	.word	0xc3e531a1
-c3e23108:	c3e531bc 	.word	0xc3e531bc
-c3e2310c:	c3e531df 	.word	0xc3e531df
-c3e23110:	c3e531e7 	.word	0xc3e531e7
-c3e23114:	c3e53210 	.word	0xc3e53210
-c3e23118:	c3e5321b 	.word	0xc3e5321b
-c3e2311c:	c3e53227 	.word	0xc3e53227
-c3e23120:	c3e53233 	.word	0xc3e53233
-c3e23124:	c3e5323d 	.word	0xc3e5323d
-c3e23128:	c3e53248 	.word	0xc3e53248
-c3e2312c:	c3e5324e 	.word	0xc3e5324e
-c3e23130:	c3e5325f 	.word	0xc3e5325f
-c3e23134:	c3e53268 	.word	0xc3e53268
-c3e23138:	c3e5326e 	.word	0xc3e5326e
-c3e2313c:	c3e53285 	.word	0xc3e53285
-c3e23140:	c3e532aa 	.word	0xc3e532aa
-c3e23144:	c3e532cd 	.word	0xc3e532cd
-c3e23148:	c3e532ea 	.word	0xc3e532ea
-c3e2314c:	c3e532fb 	.word	0xc3e532fb
-c3e23150:	c3e4d2a1 	.word	0xc3e4d2a1
-c3e23154:	c3e515f2 	.word	0xc3e515f2
-c3e23158:	c3e53318 	.word	0xc3e53318
-c3e2315c:	c3e5332f 	.word	0xc3e5332f
+c3e230ec:	c3e53106 	.word	0xc3e53106
+c3e230f0:	c3e53184 	.word	0xc3e53184
+c3e230f4:	c3e5875c 	.word	0xc3e5875c
+c3e230f8:	c3e53127 	.word	0xc3e53127
+c3e230fc:	c3e5312b 	.word	0xc3e5312b
+c3e23100:	c3e53156 	.word	0xc3e53156
+c3e23104:	c3e53199 	.word	0xc3e53199
+c3e23108:	c3e531b4 	.word	0xc3e531b4
+c3e2310c:	c3e531d7 	.word	0xc3e531d7
+c3e23110:	c3e531df 	.word	0xc3e531df
+c3e23114:	c3e53208 	.word	0xc3e53208
+c3e23118:	c3e53213 	.word	0xc3e53213
+c3e2311c:	c3e5321f 	.word	0xc3e5321f
+c3e23120:	c3e5322b 	.word	0xc3e5322b
+c3e23124:	c3e53235 	.word	0xc3e53235
+c3e23128:	c3e53240 	.word	0xc3e53240
+c3e2312c:	c3e53246 	.word	0xc3e53246
+c3e23130:	c3e53257 	.word	0xc3e53257
+c3e23134:	c3e53260 	.word	0xc3e53260
+c3e23138:	c3e53266 	.word	0xc3e53266
+c3e2313c:	c3e5327d 	.word	0xc3e5327d
+c3e23140:	c3e532a2 	.word	0xc3e532a2
+c3e23144:	c3e532c5 	.word	0xc3e532c5
+c3e23148:	c3e532e2 	.word	0xc3e532e2
+c3e2314c:	c3e532f3 	.word	0xc3e532f3
+c3e23150:	c3e4d299 	.word	0xc3e4d299
+c3e23154:	c3e515ea 	.word	0xc3e515ea
+c3e23158:	c3e53310 	.word	0xc3e53310
+c3e2315c:	c3e53327 	.word	0xc3e53327
 
 c3e23160 <get_random_val>:
 c3e23160:	e59f300c 	ldr	r3, [pc, #12]	; c3e23174 <get_random_val+0x14>
@@ -38368,34 +38368,34 @@ c3e23bd4:	e3550019 	cmp	r5, #25
 c3e23bd8:	1355001b 	cmpne	r5, #27
 c3e23bdc:	1a000030 	bne	c3e23ca4 <ext2fs_format+0xae8>
 c3e23be0:	ea000020 	b	c3e23c68 <ext2fs_format+0xaac>
-c3e23be4:	c3e5310e 	.word	0xc3e5310e
-c3e23be8:	c3e5318c 	.word	0xc3e5318c
-c3e23bec:	c3e5334d 	.word	0xc3e5334d
-c3e23bf0:	c3e5315e 	.word	0xc3e5315e
-c3e23bf4:	c3e531a1 	.word	0xc3e531a1
-c3e23bf8:	c3e5337b 	.word	0xc3e5337b
-c3e23bfc:	c3e53397 	.word	0xc3e53397
-c3e23c00:	c3e533ba 	.word	0xc3e533ba
-c3e23c04:	c3e533d6 	.word	0xc3e533d6
-c3e23c08:	c3e533f2 	.word	0xc3e533f2
-c3e23c0c:	c3e5340e 	.word	0xc3e5340e
-c3e23c10:	c3e5342a 	.word	0xc3e5342a
-c3e23c14:	c3e5344a 	.word	0xc3e5344a
-c3e23c18:	c3e5346b 	.word	0xc3e5346b
-c3e23c1c:	c3e5348d 	.word	0xc3e5348d
-c3e23c20:	c3e534a2 	.word	0xc3e534a2
+c3e23be4:	c3e53106 	.word	0xc3e53106
+c3e23be8:	c3e53184 	.word	0xc3e53184
+c3e23bec:	c3e53345 	.word	0xc3e53345
+c3e23bf0:	c3e53156 	.word	0xc3e53156
+c3e23bf4:	c3e53199 	.word	0xc3e53199
+c3e23bf8:	c3e53373 	.word	0xc3e53373
+c3e23bfc:	c3e5338f 	.word	0xc3e5338f
+c3e23c00:	c3e533b2 	.word	0xc3e533b2
+c3e23c04:	c3e533ce 	.word	0xc3e533ce
+c3e23c08:	c3e533ea 	.word	0xc3e533ea
+c3e23c0c:	c3e53406 	.word	0xc3e53406
+c3e23c10:	c3e53422 	.word	0xc3e53422
+c3e23c14:	c3e53442 	.word	0xc3e53442
+c3e23c18:	c3e53463 	.word	0xc3e53463
+c3e23c1c:	c3e53485 	.word	0xc3e53485
+c3e23c20:	c3e5349a 	.word	0xc3e5349a
 c3e23c24:	00007ffe 	.word	0x00007ffe
-c3e23c28:	c3e534ba 	.word	0xc3e534ba
-c3e23c2c:	c3e534de 	.word	0xc3e534de
-c3e23c30:	c3e534f7 	.word	0xc3e534f7
-c3e23c34:	c3e53541 	.word	0xc3e53541
-c3e23c38:	c3e53519 	.word	0xc3e53519
-c3e23c3c:	c3e53560 	.word	0xc3e53560
-c3e23c40:	c3e53584 	.word	0xc3e53584
-c3e23c44:	c3e535a1 	.word	0xc3e535a1
-c3e23c48:	c3e4d2a1 	.word	0xc3e4d2a1
-c3e23c4c:	c3e515f2 	.word	0xc3e515f2
-c3e23c50:	c3e535c4 	.word	0xc3e535c4
+c3e23c28:	c3e534b2 	.word	0xc3e534b2
+c3e23c2c:	c3e534d6 	.word	0xc3e534d6
+c3e23c30:	c3e534ef 	.word	0xc3e534ef
+c3e23c34:	c3e53539 	.word	0xc3e53539
+c3e23c38:	c3e53511 	.word	0xc3e53511
+c3e23c3c:	c3e53558 	.word	0xc3e53558
+c3e23c40:	c3e5357c 	.word	0xc3e5357c
+c3e23c44:	c3e53599 	.word	0xc3e53599
+c3e23c48:	c3e4d299 	.word	0xc3e4d299
+c3e23c4c:	c3e515ea 	.word	0xc3e515ea
+c3e23c50:	c3e535bc 	.word	0xc3e535bc
 c3e23c54:	e2451029 	sub	r1, r5, #41	; 0x29
 c3e23c58:	e3510008 	cmp	r1, #8
 c3e23c5c:	8a000010 	bhi	c3e23ca4 <ext2fs_format+0xae8>
@@ -40310,12 +40310,12 @@ c3e25a2c:	e59bf064 	ldr	pc, [fp, #100]	; 0x64
 c3e25a30:	e3500008 	cmp	r0, #8
 c3e25a34:	1afffa55 	bne	c3e24390 <ext2fs_format+0x11d4>
 c3e25a38:	eafffa57 	b	c3e2439c <ext2fs_format+0x11e0>
-c3e25a3c:	c3e535e0 	.word	0xc3e535e0
-c3e25a40:	c3e535fa 	.word	0xc3e535fa
-c3e25a44:	c3e53617 	.word	0xc3e53617
-c3e25a48:	c3e53634 	.word	0xc3e53634
-c3e25a4c:	c3e5364b 	.word	0xc3e5364b
-c3e25a50:	c3e53662 	.word	0xc3e53662
+c3e25a3c:	c3e535d8 	.word	0xc3e535d8
+c3e25a40:	c3e535f2 	.word	0xc3e535f2
+c3e25a44:	c3e5360f 	.word	0xc3e5360f
+c3e25a48:	c3e5362c 	.word	0xc3e5362c
+c3e25a4c:	c3e53643 	.word	0xc3e53643
+c3e25a50:	c3e5365a 	.word	0xc3e5365a
 
 c3e25a54 <ext2fs_free_node>:
 c3e25a54:	e59f3014 	ldr	r3, [pc, #20]	; c3e25a70 <ext2fs_free_node+0x1c>
@@ -40372,7 +40372,7 @@ c3e25b14:	e5843010 	str	r3, [r4, #16]
 c3e25b18:	e3a00000 	mov	r0, #0
 c3e25b1c:	e8bd8010 	pop	{r4, pc}
 c3e25b20:	c3ea4dac 	.word	0xc3ea4dac
-c3e25b24:	c3e58768 	.word	0xc3e58768
+c3e25b24:	c3e58760 	.word	0xc3e58760
 
 c3e25b28 <ext2fs_read_inode>:
 c3e25b28:	e92d40f0 	push	{r4, r5, r6, r7, lr}
@@ -40470,7 +40470,7 @@ c3e25c8c:	e5823000 	str	r3, [r2]
 c3e25c90:	e8bd8030 	pop	{r4, r5, pc}
 c3e25c94:	0000ef53 	.word	0x0000ef53
 c3e25c98:	c3ea4dac 	.word	0xc3ea4dac
-c3e25c9c:	c3e53685 	.word	0xc3e53685
+c3e25c9c:	c3e5367d 	.word	0xc3e5367d
 
 c3e25ca0 <ext2fs_read_file>:
 c3e25ca0:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -40774,14 +40774,14 @@ c3e26144:	e3e00000 	mvn	r0, #0
 c3e26148:	e28dd030 	add	sp, sp, #48	; 0x30
 c3e2614c:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
 c3e26150:	c3ea4dac 	.word	0xc3ea4dac
-c3e26154:	c3e536a9 	.word	0xc3e536a9
-c3e26158:	c3e58768 	.word	0xc3e58768
-c3e2615c:	c3e536db 	.word	0xc3e536db
-c3e26160:	c3e53706 	.word	0xc3e53706
-c3e26164:	c3e5373a 	.word	0xc3e5373a
-c3e26168:	c3e53767 	.word	0xc3e53767
-c3e2616c:	c3e5379b 	.word	0xc3e5379b
-c3e26170:	c3e537c8 	.word	0xc3e537c8
+c3e26154:	c3e536a1 	.word	0xc3e536a1
+c3e26158:	c3e58760 	.word	0xc3e58760
+c3e2615c:	c3e536d3 	.word	0xc3e536d3
+c3e26160:	c3e536fe 	.word	0xc3e536fe
+c3e26164:	c3e53732 	.word	0xc3e53732
+c3e26168:	c3e5375f 	.word	0xc3e5375f
+c3e2616c:	c3e53793 	.word	0xc3e53793
+c3e26170:	c3e537c0 	.word	0xc3e537c0
 
 c3e26174 <ext2fs_read>:
 c3e26174:	e59fc02c 	ldr	ip, [pc, #44]	; c3e261a8 <ext2fs_read+0x34>
@@ -40953,11 +40953,11 @@ c3e26400:	e3a05000 	mov	r5, #0
 c3e26404:	e1a00005 	mov	r0, r5
 c3e26408:	e24bd01c 	sub	sp, fp, #28
 c3e2640c:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e26410:	c3e537ff 	.word	0xc3e537ff
-c3e26414:	c3e53806 	.word	0xc3e53806
-c3e26418:	c3e5380d 	.word	0xc3e5380d
-c3e2641c:	c3e4ddb8 	.word	0xc3e4ddb8
-c3e26420:	c3e53814 	.word	0xc3e53814
+c3e26410:	c3e537f7 	.word	0xc3e537f7
+c3e26414:	c3e537fe 	.word	0xc3e537fe
+c3e26418:	c3e53805 	.word	0xc3e53805
+c3e2641c:	c3e4ddb0 	.word	0xc3e4ddb0
+c3e26420:	c3e5380c 	.word	0xc3e5380c
 
 c3e26424 <ext2fs_find_file1>:
 c3e26424:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}
@@ -41228,7 +41228,7 @@ c3e2682c:	ebfffc88 	bl	c3e25a54 <ext2fs_free_node>
 c3e26830:	e3a00000 	mov	r0, #0
 c3e26834:	e8bd8018 	pop	{r3, r4, pc}
 c3e26838:	c3ea4dac 	.word	0xc3ea4dac
-c3e2683c:	c3e5381d 	.word	0xc3e5381d
+c3e2683c:	c3e53815 	.word	0xc3e53815
 
 c3e26840 <ext2fs_devread>:
 c3e26840:	e3500000 	cmp	r0, #0
@@ -41343,11 +41343,11 @@ c3e269f0:	e3a00001 	mov	r0, #1
 c3e269f4:	e28ddb01 	add	sp, sp, #1024	; 0x400
 c3e269f8:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
 c3e269fc:	c3ea4dc8 	.word	0xc3ea4dc8
-c3e26a00:	c3e5383c 	.word	0xc3e5383c
-c3e26a04:	c3e53873 	.word	0xc3e53873
-c3e26a08:	c3e5389e 	.word	0xc3e5389e
-c3e26a0c:	c3e538c2 	.word	0xc3e538c2
-c3e26a10:	c3e538eb 	.word	0xc3e538eb
+c3e26a00:	c3e53834 	.word	0xc3e53834
+c3e26a04:	c3e5386b 	.word	0xc3e5386b
+c3e26a08:	c3e53896 	.word	0xc3e53896
+c3e26a0c:	c3e538ba 	.word	0xc3e538ba
+c3e26a10:	c3e538e3 	.word	0xc3e538e3
 
 c3e26a14 <ext2fs_set_blk_dev>:
 c3e26a14:	e59f2040 	ldr	r2, [pc, #64]	; c3e26a5c <ext2fs_set_blk_dev+0x48>
@@ -41473,20 +41473,20 @@ c3e26be8:	e8bd86f0 	pop	{r4, r5, r6, r7, r9, sl, pc}
 c3e26bec:	e28dd00c 	add	sp, sp, #12
 c3e26bf0:	e8bd46f0 	pop	{r4, r5, r6, r7, r9, sl, lr}
 c3e26bf4:	eaffa352 	b	c3e0f944 <puts>
-c3e26bf8:	c3e53918 	.word	0xc3e53918
-c3e26bfc:	c3e5393e 	.word	0xc3e5393e
-c3e26c00:	c3e5395b 	.word	0xc3e5395b
-c3e26c04:	c3e53a01 	.word	0xc3e53a01
-c3e26c08:	c3e53969 	.word	0xc3e53969
-c3e26c0c:	c3e5397c 	.word	0xc3e5397c
-c3e26c10:	c3e53987 	.word	0xc3e53987
-c3e26c14:	c3e5398c 	.word	0xc3e5398c
-c3e26c18:	c3e53993 	.word	0xc3e53993
-c3e26c1c:	c3e539a2 	.word	0xc3e539a2
-c3e26c20:	c3e539a7 	.word	0xc3e539a7
-c3e26c24:	c3e515f2 	.word	0xc3e515f2
-c3e26c28:	c3e539eb 	.word	0xc3e539eb
-c3e26c2c:	c3e539b0 	.word	0xc3e539b0
+c3e26bf8:	c3e53910 	.word	0xc3e53910
+c3e26bfc:	c3e53936 	.word	0xc3e53936
+c3e26c00:	c3e53953 	.word	0xc3e53953
+c3e26c04:	c3e539f9 	.word	0xc3e539f9
+c3e26c08:	c3e53961 	.word	0xc3e53961
+c3e26c0c:	c3e53974 	.word	0xc3e53974
+c3e26c10:	c3e5397f 	.word	0xc3e5397f
+c3e26c14:	c3e53984 	.word	0xc3e53984
+c3e26c18:	c3e5398b 	.word	0xc3e5398b
+c3e26c1c:	c3e5399a 	.word	0xc3e5399a
+c3e26c20:	c3e5399f 	.word	0xc3e5399f
+c3e26c24:	c3e515ea 	.word	0xc3e515ea
+c3e26c28:	c3e539e3 	.word	0xc3e539e3
+c3e26c2c:	c3e539a8 	.word	0xc3e539a8
 
 c3e26c30 <get_partition_info>:
 c3e26c30:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
@@ -41533,7 +41533,7 @@ c3e26cc0:	e1a03008 	mov	r3, r8
 c3e26cc4:	e25a0000 	subs	r0, sl, #0
 c3e26cc8:	1affffed 	bne	c3e26c84 <get_dev+0x14>
 c3e26ccc:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
-c3e26cd0:	c3e2aa9c 	.word	0xc3e2aa9c
+c3e26cd0:	c3e2aa94 	.word	0xc3e2aa94
 
 c3e26cd4 <print_part>:
 c3e26cd4:	e92d4010 	push	{r4, lr}
@@ -41580,17 +41580,17 @@ c3e26d74:	ea000141 	b	c3e27280 <print_part_dos>
 c3e26d78:	e59f002c 	ldr	r0, [pc, #44]	; c3e26dac <print_part+0xd8>
 c3e26d7c:	e8bd4010 	pop	{r4, lr}
 c3e26d80:	eaffa2ef 	b	c3e0f944 <puts>
-c3e26d84:	c3e53a10 	.word	0xc3e53a10
-c3e26d88:	c3e5302f 	.word	0xc3e5302f
-c3e26d8c:	c3e53a24 	.word	0xc3e53a24
-c3e26d90:	c3e53033 	.word	0xc3e53033
-c3e26d94:	c3e53038 	.word	0xc3e53038
-c3e26d98:	c3e5303e 	.word	0xc3e5303e
-c3e26d9c:	c3e53042 	.word	0xc3e53042
-c3e26da0:	c3e53a29 	.word	0xc3e53a29
-c3e26da4:	c3e53a31 	.word	0xc3e53a31
-c3e26da8:	c3e53a57 	.word	0xc3e53a57
-c3e26dac:	c3e53a5b 	.word	0xc3e53a5b
+c3e26d84:	c3e53a08 	.word	0xc3e53a08
+c3e26d88:	c3e53027 	.word	0xc3e53027
+c3e26d8c:	c3e53a1c 	.word	0xc3e53a1c
+c3e26d90:	c3e5302b 	.word	0xc3e5302b
+c3e26d94:	c3e53030 	.word	0xc3e53030
+c3e26d98:	c3e53036 	.word	0xc3e53036
+c3e26d9c:	c3e5303a 	.word	0xc3e5303a
+c3e26da0:	c3e53a21 	.word	0xc3e53a21
+c3e26da4:	c3e53a29 	.word	0xc3e53a29
+c3e26da8:	c3e53a4f 	.word	0xc3e53a4f
+c3e26dac:	c3e53a53 	.word	0xc3e53a53
 
 c3e26db0 <le32_to_int>:
 c3e26db0:	e5d03002 	ldrb	r3, [r0, #2]
@@ -41776,14 +41776,14 @@ c3e27064:	1affffe9 	bne	c3e27010 <get_partition_info_extended+0x1c8>
 c3e27068:	e3e00000 	mvn	r0, #0
 c3e2706c:	e28ddf85 	add	sp, sp, #532	; 0x214
 c3e27070:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e27074:	c3e53a77 	.word	0xc3e53a77
-c3e27078:	c3e53aa2 	.word	0xc3e53aa2
-c3e2707c:	c3e53ac7 	.word	0xc3e53ac7
-c3e27080:	c3e53acf 	.word	0xc3e53acf
-c3e27084:	c3e53ad7 	.word	0xc3e53ad7
-c3e27088:	c3e53ae1 	.word	0xc3e53ae1
-c3e2708c:	c3e53aeb 	.word	0xc3e53aeb
-c3e27090:	c3e4e144 	.word	0xc3e4e144
+c3e27074:	c3e53a6f 	.word	0xc3e53a6f
+c3e27078:	c3e53a9a 	.word	0xc3e53a9a
+c3e2707c:	c3e53abf 	.word	0xc3e53abf
+c3e27080:	c3e53ac7 	.word	0xc3e53ac7
+c3e27084:	c3e53acf 	.word	0xc3e53acf
+c3e27088:	c3e53ad9 	.word	0xc3e53ad9
+c3e2708c:	c3e53ae3 	.word	0xc3e53ae3
+c3e27090:	c3e4e13c 	.word	0xc3e4e13c
 
 c3e27094 <get_partition_info_dos>:
 c3e27094:	e92d4003 	push	{r0, r1, lr}
@@ -41904,13 +41904,13 @@ c3e27254:	e5dd2029 	ldrb	r2, [sp, #41]	; 0x29
 c3e27258:	ebffa1cb 	bl	c3e0f98c <printf>
 c3e2725c:	e28ddf85 	add	sp, sp, #532	; 0x214
 c3e27260:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e27264:	c3e53a77 	.word	0xc3e53a77
-c3e27268:	c3e5312f 	.word	0xc3e5312f
-c3e2726c:	c3e53aa2 	.word	0xc3e53aa2
-c3e27270:	c3e501b6 	.word	0xc3e501b6
-c3e27274:	c3e53af3 	.word	0xc3e53af3
-c3e27278:	c3e53af9 	.word	0xc3e53af9
-c3e2727c:	c3e53b0f 	.word	0xc3e53b0f
+c3e27264:	c3e53a6f 	.word	0xc3e53a6f
+c3e27268:	c3e53127 	.word	0xc3e53127
+c3e2726c:	c3e53a9a 	.word	0xc3e53a9a
+c3e27270:	c3e501ae 	.word	0xc3e501ae
+c3e27274:	c3e53aeb 	.word	0xc3e53aeb
+c3e27278:	c3e53af1 	.word	0xc3e53af1
+c3e2727c:	c3e53b07 	.word	0xc3e53b07
 
 c3e27280 <print_part_dos>:
 c3e27280:	e92d4010 	push	{r4, lr}
@@ -41923,7 +41923,7 @@ c3e27298:	e1a02001 	mov	r2, r1
 c3e2729c:	e3a03001 	mov	r3, #1
 c3e272a0:	e8bd4010 	pop	{r4, lr}
 c3e272a4:	eaffff82 	b	c3e270b4 <print_partition_extended>
-c3e272a8:	c3e53b2c 	.word	0xc3e53b2c
+c3e272a8:	c3e53b24 	.word	0xc3e53b24
 
 c3e272ac <GregorianDay>:
 c3e272ac:	e92d44f0 	push	{r4, r5, r6, r7, sl, lr}
@@ -41984,7 +41984,7 @@ c3e27384:	ebff6de5 	bl	c3e02b20 <__modsi3>
 c3e27388:	e5840018 	str	r0, [r4, #24]
 c3e2738c:	e28dd030 	add	sp, sp, #48	; 0x30
 c3e27390:	e8bd84f0 	pop	{r4, r5, r6, r7, sl, pc}
-c3e27394:	c3e2aaac 	.word	0xc3e2aaac
+c3e27394:	c3e2aaa4 	.word	0xc3e2aaa4
 c3e27398:	0000016d 	.word	0x0000016d
 
 c3e2739c <to_tm>:
@@ -42053,7 +42053,7 @@ c3e27490:	00015180 	.word	0x00015180
 c3e27494:	000007b2 	.word	0x000007b2
 c3e27498:	0000016e 	.word	0x0000016e
 c3e2749c:	0000016d 	.word	0x0000016d
-c3e274a0:	c3e58770 	.word	0xc3e58770
+c3e274a0:	c3e58768 	.word	0xc3e58768
 
 c3e274a4 <mktime>:
 c3e274a4:	e92d44f0 	push	{r4, r5, r6, r7, sl, lr}
@@ -42251,7 +42251,7 @@ c3e27788:	e58430b8 	str	r3, [r4, #184]	; 0xb8
 c3e2778c:	e58430bc 	str	r3, [r4, #188]	; 0xbc
 c3e27790:	e58400ac 	str	r0, [r4, #172]	; 0xac
 c3e27794:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e27798:	c3e587a0 	.word	0xc3e587a0
+c3e27798:	c3e58798 	.word	0xc3e58798
 
 c3e2779c <lcd_reg_init>:
 c3e2779c:	e59f2434 	ldr	r2, [pc, #1076]	; c3e27bd8 <lcd_reg_init+0x43c>
@@ -42526,7 +42526,7 @@ c3e27bcc:	e28dd004 	add	sp, sp, #4
 c3e27bd0:	e8bd4ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, lr}
 c3e27bd4:	eaff6749 	b	c3e01900 <udelay>
 c3e27bd8:	e0107000 	.word	0xe0107000
-c3e27bdc:	c3e587a0 	.word	0xc3e587a0
+c3e27bdc:	c3e58798 	.word	0xc3e58798
 c3e27be0:	0028c060 	.word	0x0028c060
 c3e27be4:	ffb859c1 	.word	0xffb859c1
 c3e27be8:	000186a0 	.word	0x000186a0
@@ -42541,7 +42541,7 @@ c3e27c00:	eb0001c0 	bl	c3e28308 <display_logo>
 c3e27c04:	e3a00001 	mov	r0, #1
 c3e27c08:	e49de004 	pop	{lr}		; (ldr lr, [sp], #4)
 c3e27c0c:	eafffe4a 	b	c3e2753c <backlight_brigness_init>
-c3e27c10:	c3e58870 	.word	0xc3e58870
+c3e27c10:	c3e58868 	.word	0xc3e58868
 
 c3e27c14 <fb_soft_blit_bitmap>:
 c3e27c14:	e92d40f0 	push	{r4, r5, r6, r7, lr}
@@ -43114,7 +43114,7 @@ c3e284ac:	ebfffeb4 	bl	c3e27f84 <bitmap_destroy>
 c3e284b0:	e1a00007 	mov	r0, r7
 c3e284b4:	e28dd05c 	add	sp, sp, #92	; 0x5c
 c3e284b8:	e8bd8ef0 	pop	{r4, r5, r6, r7, r9, sl, fp, pc}
-c3e284bc:	c3e2aadc 	.word	0xc3e2aadc
+c3e284bc:	c3e2aad4 	.word	0xc3e2aad4
 
 c3e284c0 <bitmap_blit_replace_directN>:
 c3e284c0:	e92d4ef0 	push	{r4, r5, r6, r7, r9, sl, fp, lr}

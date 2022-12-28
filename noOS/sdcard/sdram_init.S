@@ -3,7 +3,7 @@
 #if 1
 #define DMC0_MEMCONTROL		0x00202400 	// MemControl	BL=4, 1Chip, DDR2 Type, dynamic self refresh, force precharge, dynamic power down off
 
-#define DMC0_MEMCONFIG_0	0x20F01323	// MemConfig0	256MB config, 8 banks,Mapping Method[12:15]0:linear, 1:linterleaved, 2:Mixed
+#define DMC0_MEMCONFIG_0	0x20F01323 	// MemConfig0	256MB config, 8 banks,Mapping Method[12:15]0:linear, 1:linterleaved, 2:Mixed
 #define DMC0_MEMCONFIG_1	0x30F00312	// MemConfig1		默认值
 
 #define DMC0_TIMINGA_REF	0x00000618	// TimingAref	7.8us*133MHz=1038(0x40E), 100MHz=780(0x30C), 20MHz=156(0x9C), 10MHz=78(0x4E)
@@ -269,8 +269,8 @@ find_lock_val:
 // 上面是DRAM0初始化步骤
 /*******************************************************************************************/	
 // 下面是DRAM1初始化步骤，两者没有联系，是并列的。
-
-	/* DMC1 initialization */
+ /*
+    //DMC1 initialization 
 	ldr	r0, =APB_DMC_1_BASE
 	ldr	r1, =0x00101000				@Phycontrol0 DLL parameter setting
 	str	r1, [r0, #DMC_PHYCONTROL0]
@@ -299,12 +299,12 @@ find_lock_val1:
 	orr	r1, r2, #0x3				@Force Value locking
 	str	r1, [r0, #DMC_PHYCONTROL0]
 	
-#if 0	/* Memory margin test 10.01.05 */
+#if 0	
 	orr	r1, r2, #0x1				@DLL off
 	str	r1, [r0, #DMC_PHYCONTROL0]
 #endif
 
-	/* settinf fot DDR2 */
+	// settinf fot DDR2
 	ldr	r0, =APB_DMC_1_BASE
 
 	ldr	r1, =0x0FFF2010				@auto refresh off
@@ -415,5 +415,7 @@ find_lock_val1:
 
 	ldr	r1, =DMC1_MEMCONTROL			@MemControl	BL=4, 2 chip, DDR2 type, dynamic self refresh, force precharge, dynamic power down off
 	str	r1, [r0, #DMC_MEMCONTROL]
+
+*/
 	// 函数返回
 	mov pc, lr

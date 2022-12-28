@@ -27,7 +27,7 @@ int main(void)
         
 
 	uart_init();
-printf("main \r\n");	
+printf(" jump to main \r\n");	
       
 	
 //lcd_test();	

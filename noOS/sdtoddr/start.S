@@ -64,7 +64,7 @@ _start:
    
 	bl sdram_asm_init
 
- // bl buzzer_on
+  	bl buzzer_init
 	//mov  r0, #1                  // 根据ATPCS规则，r0存放第一个参数
         //swi   1  
 
@@ -74,13 +74,13 @@ _start:
     
 
        // bl stack_init
-
+/*
+  */      	
         adr r0, _start
         ldr r1, =_start         
         ldr r2, =bss_start      
         cmp r0, r1                     
         beq clean_bss    
-        	
 	bl copy_bl2_2_ddr
 /*
 copy_loop:
@@ -106,9 +106,8 @@ run_on_dram:
         //mov  r1, #8
         //bl printf
     
+	//bl buzzer_on           // 
         ldr pc, =main   
-           
-	//bl main           // 从这里之后就可以开始调用C程序了
 		
 // 汇编最后的这个死循环不能丢
 	b .

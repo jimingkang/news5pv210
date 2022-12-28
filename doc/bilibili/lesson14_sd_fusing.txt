@@ -1,0 +1,78 @@
+???????sd_fusing.sh?????????,???sd_fdisk.c????3????,
+
+        //encode_partitionInfo(partInfo[0], &mbr[0x1CE]);
+        //encode_partitionInfo(partInfo[1], &mbr[0x1DE]);
+        //encode_partitionInfo(partInfo[2], &mbr[0x1EE]);
+        encode_partitionInfo(partInfo[3], &mbr[0x1BE]);
+
+?????????????4????????uboot?????????fdisk,???????SD?:
+
+uboot-myx210 # fdisk -c 1 (1 ???????mmc2(x210???sd??,mmc0???inand,mmc2,mmc3???sd?,??????????,???mmc2?)))
+
+partion #    size(MB)     block start #    block count    partition_Id
+   1           256            20480          524288          0x83
+   2           120           544768          245760          0x83
+   3           100           790528          204800          0x83(????linux)
+   4         14697           995328        30100480          0x83(????rootfs)
+
+-------------------------------------------------------------------------zhi
+
+????sd_fusing.sh,??????????,???????
+
+####################################
+# make partition
+#jimmy comment echo "make sd card partition"
+#echo "./sd_fdisk $1"
+#sudo ./sd_fdisk $1
+#sudo dd iflag=dsync oflag=dsync if=sd_mbr.dat of=$1
+#rm sd_mbr.dat
+
+####################################
+# format
+#umount $partition1 2> /dev/null
+#umount $partition2 2> /dev/null
+#umount $partition3 2> /dev/null
+#umount $partition4 2> /dev/null
+
+#echo "mkfs.vfat -F 32 $partition1"
+#sudo mkfs.vfat -F 32 $partition1
+
+#echo "mkfs.ext2 $partition2"
+#mkfs.ext2 $partition2
+
+#echo "mkfs.ext2 $partition3"
+#mkfs.ext2 $partition3
+
+#echo "mkfs.ext2 $partition4"
+#mkfs.ext2 $partition4
+
+
+bl1_position=1
+uboot_position=49
+
+echo "BL1 fusing"
+sudo ./mkbl1 ../u-boot.bin SD-bl1-8k.bin 8192
+sudo dd iflag=dsync oflag=dsync if=SD-bl1-8k.bin of=$1 seek=$bl1_position
+rm SD-bl1-8k.bin
+#<u-boot fusing>
+echo "u-boot fusing"
+sudo dd iflag=dsync oflag=dsync if=../u-boot.bin of=$1 seek=$uboot_position
+ 
+
+——————————————————————————————————————————
+
+???uboot???(??sd??1-49?8kbu??,49???uboot?????4??????),??????linux? /dev/sdb3 ?rootfs?/dev/sdb3
+
+ubuntu# sudo dd if=/tftpboot/zImage-qt of=/dev/sdb3 bs=1k count=20000 (20000?,???10M)
+ ubuntu#sudo dd if=/tftpboot/rootfs_qt4.ext3 of=/dev/sdb4 bs=1k count=512000  (512000  ?,???256M)
+
+?????????????:
+
+mmcblk1p4?mmc2??????????????sdb4
+
+myx210#setenv bootargs "noinitrd console=ttySAC2,115200 root=/dev/mmcblk1p4 rw init=/linuxrc rootfstype=ext3"
+
+myx210# setenv bootcmd "  mmc read 1 30008000 790528(??3?????) 10000(????size,??5M); bootm 30008000"
+————————————————
+????:???CSDN???????????,??CC 4.0 BY-SA????,????????????????
+????:https://blog.csdn.net/conjimmy/article/details/128404925

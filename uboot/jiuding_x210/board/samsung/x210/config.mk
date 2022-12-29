@@ -1,1 +1,0 @@
-TEXT_BASE = 0xc3e00000

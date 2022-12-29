@@ -1,0 +1,15 @@
+objs := led.o key.o irq.o mmu.o uart.o nand.o  i2c.o lcd.o dm9000.o 
+
+
+all : $(objs)
+	arm-linux-ld -r -o dev.o $^
+	
+	
+%.o : %.c
+	arm-linux-gcc ${CFLAGS} -c $^
+	
+%.o : %.S
+	arm-linux-gcc ${CFLAGS} -c $^
+	
+clean :
+	rm *.o *.bak 

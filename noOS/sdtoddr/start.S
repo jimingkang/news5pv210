@@ -41,7 +41,15 @@ _start:
 	mcr p15,0,r0,c1,c0,0
 	ldr r0 ,=_start
 	mcr p15,0,r0,c12,c0,0
-*/
+
+ 
+ */
+	ldr r0, =0xE010E81C
+	ldr r1, [r0]
+	ldr r2, =0x301
+	orr r1, r1, r2
+	str r1, [r0]
+
 	// 第1步：关看门狗（向WTCON的bit5写入0即可）
 	ldr r0, =WTCON
 	ldr r1, =0x0

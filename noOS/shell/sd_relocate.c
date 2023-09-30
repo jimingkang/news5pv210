@@ -34,7 +34,6 @@ void copy_bl2_2_ddr(void)
 // BL2 = (void *)DDR_START_ADDR;
 //  (*BL2)();
 
-	buzzer_on();
 	delay();
 }
 

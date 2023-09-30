@@ -53,10 +53,10 @@ rm sd_mbr.dat
  
 ####################################
 # format
-umount $partition1 2> /dev/null
-umount $partition2 2> /dev/null
-umount $partition3 2> /dev/null
-umount $partition4 2> /dev/null
+sudo umount $partition1 2> /dev/null
+sudo umount $partition2 2> /dev/null
+sudo umount $partition3 2> /dev/null
+sudo umount $partition4 2> /dev/null
 
 echo "mkfs.vfat -F 32 $partition1"
 mkfs.vfat -F 32 $partition1

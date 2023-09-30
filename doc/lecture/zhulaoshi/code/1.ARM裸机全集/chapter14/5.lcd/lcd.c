@@ -1,7 +1,7 @@
 #include "main.h"
 #include "ascii.h"
 #include "800480.h"
-
+//#include <stdio.h>
 #define GPF0CON			(*(volatile unsigned long *)0xE0200120)
 #define GPF1CON			(*(volatile unsigned long *)0xE0200140)
 #define GPF2CON			(*(volatile unsigned long *)0xE0200160)
@@ -29,20 +29,28 @@
 
 #define VIDTCON0 		(*(volatile unsigned long *)0xF8000010)
 #define VIDTCON1 		(*(volatile unsigned long *)0xF8000014)
-
+/**
 #define HSPW 			(40)				// 1~40 DCLK
 #define HBPD			(10 - 1)			// 46
 #define HFPD 			(240 - 1)			// 16 210 354
 #define VSPW			(20)				// 1~20 DCLK
 #define VBPD 			(10 - 1)			// 23
 #define VFPD 			(30 - 1)			// 7 22 147
-
-
+*/
+#define HSPW 			(5)		// 1~40 DCLK
+#define HBPD			(45 - 1)			// 46
+#define HFPD 			(45 - 1)			// 16 210 354
+#define VSPW			(0)				// 1~20 DCLK
+#define VBPD 			(16 - 1)			// 23
+#define VFPD 			(16 - 1)			// 7 22 147
 
 // FB地址
-#define FB_ADDR			(0x23000000)
-#define ROW				(480)
-#define COL				(800)
+#define FB_ADDR			(0x33000000)
+//#define FB_ADDR			(0x23000000)
+#define ROW				(272)
+#define COL				(480)
+//#define ROW				(480)
+//#define COL				(800)
 #define HOZVAL			(COL-1)
 #define LINEVAL			(ROW-1)
 
@@ -87,12 +95,14 @@ static void lcd_init(void)
 
 	// bit[6]:选择需要分频
 	// bit[6~13]:分频系数为5，即VCLK = 166M/(4+1) = 33M
-	VIDCON0 |= 4<<6 | 1<<4;
-
+	//VIDCON0 |= 4<<6 | 1<<4;
+	VIDCON0 |= 15<<6 | 1<<4;
+/// printf("test setting clck");
 
 	// H43-HSD043I9W1.pdf(p13) 时序图：VSYNC和HSYNC都是低脉冲
 	// s5pv210芯片手册(p1207) 时序图：VSYNC和HSYNC都是高脉冲有效，所以需要反转
 	VIDCON1 |= 1<<5 | 1<<6;
+	//VIDCON1 |= 0<<5 | 0<<6;
 
 	// 设置时序
 	VIDTCON0 = VBPD<<16 | VFPD<<8 | VSPW<<0;
@@ -109,8 +119,10 @@ static void lcd_init(void)
 
 #define LeftTopX     0
 #define LeftTopY     0
-#define RightBotX   799
-#define RightBotY   479
+#define RightBotX   479
+#define RightBotY   271
+//#define RightBotX   799
+//#define RightBotY   479
 
 	// 设置window0的上下左右
 	// 设置的是显存空间的大小

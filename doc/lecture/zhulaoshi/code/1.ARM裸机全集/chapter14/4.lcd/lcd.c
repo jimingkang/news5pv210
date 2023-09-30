@@ -39,7 +39,8 @@
 
 
 // FBµÿ÷∑
-#define FB_ADDR			(0x23000000)
+#define FB_ADDR			(0x33000000)
+//#define FB_ADDR			(0x23000000)
 #define ROW				(480)
 #define COL				(800)
 #define HOZVAL			(COL-1)

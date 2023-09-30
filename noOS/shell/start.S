@@ -59,7 +59,7 @@ _start:
 	
         // 第2步：初始化时钟
 	bl clock_init
-	bl buzzer_init
+	//bl buzzer_init
 	// 第3步：设置SVC栈
 	ldr sp, =SVC_STACK
 	
@@ -72,7 +72,7 @@ _start:
    
 	bl sdram_asm_init
 
-  	bl buzzer_init
+  	//bl buzzer_init
 	//mov  r0, #1                  // 根据ATPCS规则，r0存放第一个参数
         //swi   1  
 
